@@ -2,6 +2,8 @@
 
 Hey Coding Enthusiasts! 🚀 Welcome to an exciting project that's about to revolutionize the way we create Spring Boot REST APIs. This isn't just another app; it's a journey into the world of **Domain-Specific Language (DSL) for Generating Spring Boot REST APIs**. Buckle up for a coding adventure like never before! 🌟✨
 
+<img width="218" alt="image" src="https://github.com/AbderrazzakNfissi/SpringFluentDSL-Code-in-Harmony/assets/110425764/496f30bf-cd5a-4b9f-9247-a55775405b92">
+
 ## Introduction
 
 Creating Spring Boot APIs is about to become as delightful as choosing your favorite ice cream flavor. 🍦 We're not just building an app; we're creating a language, a DSL that will make Spring Boot dance to our commands! 🌐💃
