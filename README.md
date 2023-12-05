@@ -85,6 +85,10 @@ This is just a glimpse - our generated Spring Boot project will have controllers
 
 ![architecture__technique drawio](https://github.com/AbderrazzakNfissi/SpringFluentDSL-Code-in-Harmony/assets/110425764/34743d64-9e08-4250-8be1-83a8e6bf7446)
 
+## Meta Model of SpringFluentDSL :)
+
+![metamodel](https://github.com/AbderrazzakNfissi/SpringFluentDSL-Code-in-Harmony/assets/110425764/dc089bcc-212e-40e4-922f-1fafc99720ab)
+
 ## Getting Started
 
 1. Clone this repository.
