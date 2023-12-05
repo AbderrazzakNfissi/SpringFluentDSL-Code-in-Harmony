@@ -1,0 +1,29 @@
+Manifest-Version: 1.0
+Automatic-Module-Name: org.xtext.spring.fluent
+Bundle-ManifestVersion: 2
+Bundle-Name: org.xtext.spring.fluent
+Bundle-Vendor: My Company
+Bundle-Version: 1.0.0.qualifier
+Bundle-SymbolicName: org.xtext.spring.fluent; singleton:=true
+Bundle-ActivationPolicy: lazy
+Require-Bundle: org.eclipse.xtext,
+ org.eclipse.xtext.xbase,
+ org.eclipse.equinox.common;bundle-version="3.16.0",
+ org.eclipse.emf.ecore,
+ org.eclipse.xtext.xbase.lib;bundle-version="2.14.0",
+ org.eclipse.xtext.util,
+ org.eclipse.emf.common,
+ org.antlr.runtime;bundle-version="[3.2.0,3.2.1)"
+Bundle-RequiredExecutionEnvironment: JavaSE-17
+Export-Package: org.xtext.spring.fluent.services,
+ org.xtext.spring.fluent.springFluentDSL.util,
+ org.xtext.spring.fluent.serializer,
+ org.xtext.spring.fluent.generator,
+ org.xtext.spring.fluent.springFluentDSL.impl,
+ org.xtext.spring.fluent.parser.antlr,
+ org.xtext.spring.fluent,
+ org.xtext.spring.fluent.springFluentDSL,
+ org.xtext.spring.fluent.parser.antlr.internal,
+ org.xtext.spring.fluent.scoping,
+ org.xtext.spring.fluent.validation
+Import-Package: org.apache.log4j

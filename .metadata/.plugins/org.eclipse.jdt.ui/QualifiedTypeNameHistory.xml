@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="org.xtext.spring.fluent.validation.SpringFluentDSLConfigurableIssueCodesProvider"/>
+    <fullyQualifiedTypeName name="org.xtext.spring.fluent.springFluentDSL.AppName"/>
+    <fullyQualifiedTypeName name="org.xtext.spring.fluent.springFluentDSL.Dependencies"/>
+    <fullyQualifiedTypeName name="org.eclipse.xtext.validation.Check"/>
+    <fullyQualifiedTypeName name="org.xtext.spring.fluent.springFluentDSL.Prefix"/>
+    <fullyQualifiedTypeName name="java.net.MalformedURLException"/>
+    <fullyQualifiedTypeName name="java.net.URL"/>
+    <fullyQualifiedTypeName name="org.xtext.spring.fluent.springFluentDSL.SpringFluentDSLPackage"/>
+    <fullyQualifiedTypeName name="javax.swing.text.html.parser.Entity"/>
+    <fullyQualifiedTypeName name="java.awt.Taskbar.Feature"/>
+    <fullyQualifiedTypeName name="java.security.KeyStore.Entry.Attribute"/>
+    <fullyQualifiedTypeName name="org.xtext.spring.fluent.springFluentDSL.Feature"/>
+    <fullyQualifiedTypeName name="javax.management.relation.Relation"/>
+    <fullyQualifiedTypeName name="org.xtext.spring.fluent.springFluentDSL.Relation"/>
+    <fullyQualifiedTypeName name="org.xtext.spring.fluent.springFluentDSL.Entities"/>
+    <fullyQualifiedTypeName name="org.xtext.spring.fluent.springFluentDSL.Entity"/>
+</qualifiedTypeNameHistroy>

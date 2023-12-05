@@ -1,0 +1,66 @@
+grammar org.xtext.spring.fluent.SpringFluentDSL with org.eclipse.xtext.common.Terminals
+
+generate springFluentDSL "http://www.xtext.org/spring/fluent/SpringFluentDSL"
+
+Model:
+  prefix=Prefix
+  appName=AppName
+  dependencies=Dependencies
+  entities=Entities;
+
+Prefix:
+  {Prefix} 'prefix:' prefix=STRING;
+
+AppName:
+  {AppName} 'app_name:' appName=STRING;
+
+Dependencies:
+  {Dependencies} 'dependencies' '{'
+    dependencies+=Dependency (',' dependencies+=Dependency)*
+  '}';
+
+enum DependencyType:
+  SpringDataJpa | SpringWeb | Lombok | MySQLDriver | DevTools; //to complete
+
+Dependency:
+  {Dependency} dependency=DependencyType;
+
+Entities:
+  {Entities} 'entities' '{'
+    elements+=Entity*
+  '}';
+
+Entity:
+  'entity' name=ID ('extends' superType=[Entity|ID])? '{'
+    features+=Feature
+  '}';
+
+Feature:
+  {Feature} operation=Operation id=IDENTITY  features+=(Attribute | Relation | Strategy)*; 
+
+IDENTITY:
+	'id' ':' Attribute 'pk' ;
+
+Operation:
+  'ops' ':' (
+    ('c')?  ('r')?  ('u')? ('d')? | ('none')?
+  );
+  
+Attribute:
+  name=ID ':' type=Type;
+ 
+ 
+enum Type:
+  Long | Integer | Double | String | Date | Time | Boolean;
+   
+
+Relation:
+  name=ID ':' target=[Entity|ID] type=('mto' | 'otm' | 'oto' | 'mtm');
+
+Strategy :
+	{Strategy} 'strategy' ':'
+	 strategy=('SingleTable' | 'JoinedTable' | 'TablePerClass');
+	
+
+
+

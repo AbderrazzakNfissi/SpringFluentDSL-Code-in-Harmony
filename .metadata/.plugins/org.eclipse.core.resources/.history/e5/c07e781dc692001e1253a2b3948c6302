@@ -1,0 +1,45 @@
+grammar org.xtext.spring.fluent.SpringFluentDSL with org.eclipse.xtext.common.Terminals
+
+generate springFluentDSL "http://www.xtext.org/spring/fluent/SpringFluentDSL"
+
+Model:
+  elements+=Element*;
+
+Element:
+  Prefix | AppName | Dependencies | Entities;
+
+Prefix:
+  'prefix:' prefix=STRING;
+
+AppName:
+  'app_name:' appName=STRING;
+
+Dependencies:
+  'dependencies' '{'
+    dependencies+=Dependency (',' dependencies+=Dependency)*
+  '}';
+
+enum DependencyType:
+  SpringDataJpa | SpringWeb | Lombok | MySQLDriver | DevTools;
+
+Dependency:
+  '-' dependency=DependencyType;
+  
+Entity:
+  'entity' name=ID ('extends' superType=[Entity|ID])? '{'
+    operations+=Operation*
+  '}';
+
+Operation:
+  'ops:' ops=STRING;
+
+Relation:
+  relationType=('mto' | 'otm') target=[Entity|ID];
+
+ModelElement:
+  Entity | Relation;
+
+Entities:
+  {Entities} 'entities' '{'
+    elements+=ModelElement*
+  '}';
