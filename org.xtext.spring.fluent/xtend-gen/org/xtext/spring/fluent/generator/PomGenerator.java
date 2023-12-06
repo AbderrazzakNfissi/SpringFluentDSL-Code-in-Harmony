@@ -1,0 +1,86 @@
+package org.xtext.spring.fluent.generator;
+
+import org.eclipse.xtend2.lib.StringConcatenation;
+import org.eclipse.xtext.generator.IFileSystemAccess2;
+
+@SuppressWarnings("all")
+public class PomGenerator {
+  public void generatePom(final String appName, final IFileSystemAccess2 fsa) {
+    StringConcatenation _builder = new StringConcatenation();
+    _builder.append("<?xml version=\"1.0\" encoding=\"UTF-8\"?>");
+    _builder.newLine();
+    _builder.append("<project xmlns=\"http://maven.apache.org/POM/4.0.0\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\"");
+    _builder.newLine();
+    _builder.append("\t");
+    _builder.append("xsi:schemaLocation=\"http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd\">");
+    _builder.newLine();
+    _builder.append("\t");
+    _builder.append("<modelVersion>4.0.0</modelVersion>");
+    _builder.newLine();
+    _builder.append("\t");
+    _builder.append("<parent>");
+    _builder.newLine();
+    _builder.append("\t\t");
+    _builder.append("<groupId>org.springframework.boot</groupId>");
+    _builder.newLine();
+    _builder.append("\t\t");
+    _builder.append("<artifactId>spring-boot-starter-parent</artifactId>");
+    _builder.newLine();
+    _builder.append("\t\t");
+    _builder.append("<version>3.1.3</version>");
+    _builder.newLine();
+    _builder.append("\t\t");
+    _builder.append("<relativePath/> <!-- lookup parent from repository -->");
+    _builder.newLine();
+    _builder.append("\t");
+    _builder.append("</parent>");
+    _builder.newLine();
+    _builder.newLine();
+    _builder.append("\t");
+    _builder.append("<groupId>ma.");
+    String _lowerCase = appName.toLowerCase();
+    String _plus = (_builder.toString() + _lowerCase);
+    StringConcatenation _builder_1 = new StringConcatenation();
+    _builder_1.append("</groupId>");
+    _builder_1.newLine();
+    _builder_1.append("           \t");
+    _builder_1.append("<artifactId>");
+    String _plus_1 = (_plus + _builder_1);
+    String _plus_2 = (_plus_1 + appName);
+    StringConcatenation _builder_2 = new StringConcatenation();
+    _builder_2.append("</artifactId>");
+    _builder_2.newLine();
+    _builder_2.append("           \t");
+    _builder_2.append("<version>0.0.1-SNAPSHOT</version>");
+    _builder_2.newLine();
+    _builder_2.append("           \t");
+    _builder_2.append("<name>");
+    String _plus_3 = (_plus_2 + _builder_2);
+    String _lowerCase_1 = appName.toLowerCase();
+    String _plus_4 = (_plus_3 + _lowerCase_1);
+    StringConcatenation _builder_3 = new StringConcatenation();
+    _builder_3.append("</name>");
+    _builder_3.newLine();
+    _builder_3.append("           \t");
+    _builder_3.append("<description>");
+    String _plus_5 = (_plus_4 + _builder_3);
+    String _lowerCase_2 = appName.toLowerCase();
+    String _plus_6 = (_plus_5 + _lowerCase_2);
+    StringConcatenation _builder_4 = new StringConcatenation();
+    _builder_4.append("</description>");
+    _builder_4.newLine();
+    _builder_4.append("           ");
+    _builder_4.newLine();
+    _builder_4.append("           \t");
+    _builder_4.append("<properties>");
+    _builder_4.newLine();
+    _builder_4.append("           \t\t");
+    _builder_4.append("<java.version>17</java.version>");
+    _builder_4.newLine();
+    _builder_4.append("           \t");
+    _builder_4.append("</properties>");
+    _builder_4.newLine();
+    final String pomContent = (_plus_6 + _builder_4);
+    fsa.generateFile("pom.xml", pomContent);
+  }
+}
