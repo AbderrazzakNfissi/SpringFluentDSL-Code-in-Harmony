@@ -29,26 +29,26 @@ import org.eclipse.emf.ecore.EObject;
 public interface Feature extends EObject
 {
   /**
-   * Returns the value of the '<em><b>Operation</b></em>' attribute.
+   * Returns the value of the '<em><b>Operation</b></em>' containment reference.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @return the value of the '<em>Operation</em>' attribute.
-   * @see #setOperation(String)
+   * @return the value of the '<em>Operation</em>' containment reference.
+   * @see #setOperation(Operation)
    * @see org.xtext.spring.fluent.springFluentDSL.SpringFluentDSLPackage#getFeature_Operation()
-   * @model
+   * @model containment="true"
    * @generated
    */
-  String getOperation();
+  Operation getOperation();
 
   /**
-   * Sets the value of the '{@link org.xtext.spring.fluent.springFluentDSL.Feature#getOperation <em>Operation</em>}' attribute.
+   * Sets the value of the '{@link org.xtext.spring.fluent.springFluentDSL.Feature#getOperation <em>Operation</em>}' containment reference.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @param value the new value of the '<em>Operation</em>' attribute.
+   * @param value the new value of the '<em>Operation</em>' containment reference.
    * @see #getOperation()
    * @generated
    */
-  void setOperation(String value);
+  void setOperation(Operation value);
 
   /**
    * Returns the value of the '<em><b>Id</b></em>' containment reference.

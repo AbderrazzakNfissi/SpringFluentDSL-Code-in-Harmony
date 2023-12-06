@@ -775,14 +775,14 @@ ruleIDENTITY returns [EObject current=null]
 ;
 
 // Entry rule entryRuleOperation
-entryRuleOperation returns [String current=null]:
+entryRuleOperation returns [EObject current=null]:
 	{ newCompositeNode(grammarAccess.getOperationRule()); }
 	iv_ruleOperation=ruleOperation
-	{ $current=$iv_ruleOperation.current.getText(); }
+	{ $current=$iv_ruleOperation.current; }
 	EOF;
 
 // Rule Operation
-ruleOperation returns [AntlrDatatypeRuleToken current=new AntlrDatatypeRuleToken()]
+ruleOperation returns [EObject current=null]
 @init {
 	enterRule();
 }
@@ -790,53 +790,95 @@ ruleOperation returns [AntlrDatatypeRuleToken current=new AntlrDatatypeRuleToken
 	leaveRule();
 }:
 	(
-		kw='ops'
+		otherlv_0='ops'
 		{
-			$current.merge(kw);
-			newLeafNode(kw, grammarAccess.getOperationAccess().getOpsKeyword_0());
+			newLeafNode(otherlv_0, grammarAccess.getOperationAccess().getOpsKeyword_0());
 		}
-		kw=':'
+		otherlv_1=':'
 		{
-			$current.merge(kw);
-			newLeafNode(kw, grammarAccess.getOperationAccess().getColonKeyword_1());
+			newLeafNode(otherlv_1, grammarAccess.getOperationAccess().getColonKeyword_1());
 		}
+		{
+			newCompositeNode(grammarAccess.getOperationAccess().getOperationTypeParserRuleCall_2());
+		}
+		this_OperationType_2=ruleOperationType
+		{
+			$current = $this_OperationType_2.current;
+			afterParserOrEnumRuleCall();
+		}
+	)
+;
+
+// Entry rule entryRuleOperationType
+entryRuleOperationType returns [EObject current=null]:
+	{ newCompositeNode(grammarAccess.getOperationTypeRule()); }
+	iv_ruleOperationType=ruleOperationType
+	{ $current=$iv_ruleOperationType.current; }
+	EOF;
+
+// Rule OperationType
+ruleOperationType returns [EObject current=null]
+@init {
+	enterRule();
+}
+@after {
+	leaveRule();
+}:
+	(
 		(
 			(
-				(
-					kw='c'
-					{
-						$current.merge(kw);
-						newLeafNode(kw, grammarAccess.getOperationAccess().getCKeyword_2_0_0());
-					}
-				)?
-				(
-					kw='r'
-					{
-						$current.merge(kw);
-						newLeafNode(kw, grammarAccess.getOperationAccess().getRKeyword_2_0_1());
-					}
-				)?
-				(
-					kw='u'
-					{
-						$current.merge(kw);
-						newLeafNode(kw, grammarAccess.getOperationAccess().getUKeyword_2_0_2());
-					}
-				)?
-				(
-					kw='d'
-					{
-						$current.merge(kw);
-						newLeafNode(kw, grammarAccess.getOperationAccess().getDKeyword_2_0_3());
-					}
-				)?
-			)
-			    |
-			(
-				kw='none'
 				{
-					$current.merge(kw);
-					newLeafNode(kw, grammarAccess.getOperationAccess().getNoneKeyword_2_1());
+					$current = forceCreateModelElement(
+						grammarAccess.getOperationTypeAccess().getOperationTypeAction_0_0(),
+						$current);
+				}
+			)
+			(
+				(
+					lv_oprationType_1_0='c'
+					{
+						newLeafNode(lv_oprationType_1_0, grammarAccess.getOperationTypeAccess().getOprationTypeCKeyword_0_1_0());
+					}
+					{
+						if ($current==null) {
+							$current = createModelElement(grammarAccess.getOperationTypeRule());
+						}
+						setWithLastConsumed($current, "oprationType", lv_oprationType_1_0, "c");
+					}
+				)
+			)?
+			(
+				otherlv_2='r'
+				{
+					newLeafNode(otherlv_2, grammarAccess.getOperationTypeAccess().getRKeyword_0_2());
+				}
+			)?
+			(
+				otherlv_3='u'
+				{
+					newLeafNode(otherlv_3, grammarAccess.getOperationTypeAccess().getUKeyword_0_3());
+				}
+			)?
+			(
+				otherlv_4='d'
+				{
+					newLeafNode(otherlv_4, grammarAccess.getOperationTypeAccess().getDKeyword_0_4());
+				}
+			)?
+		)
+		    |
+		(
+			(
+				{
+					$current = forceCreateModelElement(
+						grammarAccess.getOperationTypeAccess().getOperationTypeAction_1_0(),
+						$current);
+				}
+			)
+			(
+				otherlv_6='none'
+				{
+					newLeafNode(otherlv_6, grammarAccess.getOperationTypeAccess().getNoneKeyword_1_1());
 				}
 			)?
 		)

@@ -463,22 +463,16 @@ public class SpringFluentDSLGrammarAccess extends AbstractElementFinder.Abstract
 		private final Group cGroup = (Group)rule.eContents().get(1);
 		private final Keyword cOpsKeyword_0 = (Keyword)cGroup.eContents().get(0);
 		private final Keyword cColonKeyword_1 = (Keyword)cGroup.eContents().get(1);
-		private final Alternatives cAlternatives_2 = (Alternatives)cGroup.eContents().get(2);
-		private final Group cGroup_2_0 = (Group)cAlternatives_2.eContents().get(0);
-		private final Keyword cCKeyword_2_0_0 = (Keyword)cGroup_2_0.eContents().get(0);
-		private final Keyword cRKeyword_2_0_1 = (Keyword)cGroup_2_0.eContents().get(1);
-		private final Keyword cUKeyword_2_0_2 = (Keyword)cGroup_2_0.eContents().get(2);
-		private final Keyword cDKeyword_2_0_3 = (Keyword)cGroup_2_0.eContents().get(3);
-		private final Keyword cNoneKeyword_2_1 = (Keyword)cAlternatives_2.eContents().get(1);
+		private final RuleCall cOperationTypeParserRuleCall_2 = (RuleCall)cGroup.eContents().get(2);
 		
 		//Operation:
 		//  'ops' ':' (
-		//    ('c')?  ('r')?  ('u')? ('d')? | ('none')?
+		//    OperationType
 		//  );
 		@Override public ParserRule getRule() { return rule; }
 		
 		//'ops' ':' (
-		//  ('c')?  ('r')?  ('u')? ('d')? | ('none')?
+		//  OperationType
 		//)
 		public Group getGroup() { return cGroup; }
 		
@@ -489,27 +483,60 @@ public class SpringFluentDSLGrammarAccess extends AbstractElementFinder.Abstract
 		public Keyword getColonKeyword_1() { return cColonKeyword_1; }
 		
 		//(
-		//   ('c')?  ('r')?  ('u')? ('d')? | ('none')?
+		//   OperationType
 		// )
-		public Alternatives getAlternatives_2() { return cAlternatives_2; }
+		public RuleCall getOperationTypeParserRuleCall_2() { return cOperationTypeParserRuleCall_2; }
+	}
+	public class OperationTypeElements extends AbstractParserRuleElementFinder {
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.xtext.spring.fluent.SpringFluentDSL.OperationType");
+		private final Alternatives cAlternatives = (Alternatives)rule.eContents().get(1);
+		private final Group cGroup_0 = (Group)cAlternatives.eContents().get(0);
+		private final Action cOperationTypeAction_0_0 = (Action)cGroup_0.eContents().get(0);
+		private final Assignment cOprationTypeAssignment_0_1 = (Assignment)cGroup_0.eContents().get(1);
+		private final Keyword cOprationTypeCKeyword_0_1_0 = (Keyword)cOprationTypeAssignment_0_1.eContents().get(0);
+		private final Keyword cRKeyword_0_2 = (Keyword)cGroup_0.eContents().get(2);
+		private final Keyword cUKeyword_0_3 = (Keyword)cGroup_0.eContents().get(3);
+		private final Keyword cDKeyword_0_4 = (Keyword)cGroup_0.eContents().get(4);
+		private final Group cGroup_1 = (Group)cAlternatives.eContents().get(1);
+		private final Action cOperationTypeAction_1_0 = (Action)cGroup_1.eContents().get(0);
+		private final Keyword cNoneKeyword_1_1 = (Keyword)cGroup_1.eContents().get(1);
 		
-		//('c')?  ('r')?  ('u')? ('d')?
-		public Group getGroup_2_0() { return cGroup_2_0; }
+		//OperationType:
+		//    {OperationType} oprationType = ('c')?  ('r')?  ('u')? ('d')? | {OperationType} ('none')?;
+		@Override public ParserRule getRule() { return rule; }
 		
-		//('c')?
-		public Keyword getCKeyword_2_0_0() { return cCKeyword_2_0_0; }
+		//{OperationType} oprationType = ('c')?  ('r')?  ('u')? ('d')? | {OperationType} ('none')?
+		public Alternatives getAlternatives() { return cAlternatives; }
+		
+		//{OperationType} oprationType = ('c')?  ('r')?  ('u')? ('d')?
+		public Group getGroup_0() { return cGroup_0; }
+		
+		//{OperationType}
+		public Action getOperationTypeAction_0_0() { return cOperationTypeAction_0_0; }
+		
+		//oprationType = ('c')?
+		public Assignment getOprationTypeAssignment_0_1() { return cOprationTypeAssignment_0_1; }
+		
+		//('c')
+		public Keyword getOprationTypeCKeyword_0_1_0() { return cOprationTypeCKeyword_0_1_0; }
 		
 		//('r')?
-		public Keyword getRKeyword_2_0_1() { return cRKeyword_2_0_1; }
+		public Keyword getRKeyword_0_2() { return cRKeyword_0_2; }
 		
 		//('u')?
-		public Keyword getUKeyword_2_0_2() { return cUKeyword_2_0_2; }
+		public Keyword getUKeyword_0_3() { return cUKeyword_0_3; }
 		
 		//('d')?
-		public Keyword getDKeyword_2_0_3() { return cDKeyword_2_0_3; }
+		public Keyword getDKeyword_0_4() { return cDKeyword_0_4; }
+		
+		//{OperationType} ('none')?
+		public Group getGroup_1() { return cGroup_1; }
+		
+		//{OperationType}
+		public Action getOperationTypeAction_1_0() { return cOperationTypeAction_1_0; }
 		
 		//('none')?
-		public Keyword getNoneKeyword_2_1() { return cNoneKeyword_2_1; }
+		public Keyword getNoneKeyword_1_1() { return cNoneKeyword_1_1; }
 	}
 	public class AttributeElements extends AbstractParserRuleElementFinder {
 		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.xtext.spring.fluent.SpringFluentDSL.Attribute");
@@ -744,6 +771,7 @@ public class SpringFluentDSLGrammarAccess extends AbstractElementFinder.Abstract
 	private final StrategyElements pStrategy;
 	private final IDENTITYElements pIDENTITY;
 	private final OperationElements pOperation;
+	private final OperationTypeElements pOperationType;
 	private final AttributeElements pAttribute;
 	private final TypeElements eType;
 	private final RelationElements pRelation;
@@ -769,6 +797,7 @@ public class SpringFluentDSLGrammarAccess extends AbstractElementFinder.Abstract
 		this.pStrategy = new StrategyElements();
 		this.pIDENTITY = new IDENTITYElements();
 		this.pOperation = new OperationElements();
+		this.pOperationType = new OperationTypeElements();
 		this.pAttribute = new AttributeElements();
 		this.eType = new TypeElements();
 		this.pRelation = new RelationElements();
@@ -928,7 +957,7 @@ public class SpringFluentDSLGrammarAccess extends AbstractElementFinder.Abstract
 	
 	//Operation:
 	//  'ops' ':' (
-	//    ('c')?  ('r')?  ('u')? ('d')? | ('none')?
+	//    OperationType
 	//  );
 	public OperationElements getOperationAccess() {
 		return pOperation;
@@ -936,6 +965,16 @@ public class SpringFluentDSLGrammarAccess extends AbstractElementFinder.Abstract
 	
 	public ParserRule getOperationRule() {
 		return getOperationAccess().getRule();
+	}
+	
+	//OperationType:
+	//    {OperationType} oprationType = ('c')?  ('r')?  ('u')? ('d')? | {OperationType} ('none')?;
+	public OperationTypeElements getOperationTypeAccess() {
+		return pOperationType;
+	}
+	
+	public ParserRule getOperationTypeRule() {
+		return getOperationTypeAccess().getRule();
 	}
 	
 	//Attribute:

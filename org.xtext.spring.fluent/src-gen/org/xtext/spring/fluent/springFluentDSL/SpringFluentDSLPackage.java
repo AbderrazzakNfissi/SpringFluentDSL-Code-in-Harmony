@@ -319,7 +319,7 @@ public interface SpringFluentDSLPackage extends EPackage
   int FEATURE = 7;
 
   /**
-   * The feature id for the '<em><b>Operation</b></em>' attribute.
+   * The feature id for the '<em><b>Operation</b></em>' containment reference.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
@@ -420,6 +420,53 @@ public interface SpringFluentDSLPackage extends EPackage
   int IDENTITY_FEATURE_COUNT = 1;
 
   /**
+   * The meta object id for the '{@link org.xtext.spring.fluent.springFluentDSL.impl.OperationImpl <em>Operation</em>}' class.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see org.xtext.spring.fluent.springFluentDSL.impl.OperationImpl
+   * @see org.xtext.spring.fluent.springFluentDSL.impl.SpringFluentDSLPackageImpl#getOperation()
+   * @generated
+   */
+  int OPERATION = 10;
+
+  /**
+   * The number of structural features of the '<em>Operation</em>' class.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int OPERATION_FEATURE_COUNT = 0;
+
+  /**
+   * The meta object id for the '{@link org.xtext.spring.fluent.springFluentDSL.impl.OperationTypeImpl <em>Operation Type</em>}' class.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see org.xtext.spring.fluent.springFluentDSL.impl.OperationTypeImpl
+   * @see org.xtext.spring.fluent.springFluentDSL.impl.SpringFluentDSLPackageImpl#getOperationType()
+   * @generated
+   */
+  int OPERATION_TYPE = 11;
+
+  /**
+   * The feature id for the '<em><b>Opration Type</b></em>' attribute.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int OPERATION_TYPE__OPRATION_TYPE = OPERATION_FEATURE_COUNT + 0;
+
+  /**
+   * The number of structural features of the '<em>Operation Type</em>' class.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int OPERATION_TYPE_FEATURE_COUNT = OPERATION_FEATURE_COUNT + 1;
+
+  /**
    * The meta object id for the '{@link org.xtext.spring.fluent.springFluentDSL.impl.AttributeImpl <em>Attribute</em>}' class.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
@@ -427,7 +474,7 @@ public interface SpringFluentDSLPackage extends EPackage
    * @see org.xtext.spring.fluent.springFluentDSL.impl.SpringFluentDSLPackageImpl#getAttribute()
    * @generated
    */
-  int ATTRIBUTE = 10;
+  int ATTRIBUTE = 12;
 
   /**
    * The feature id for the '<em><b>Name</b></em>' attribute.
@@ -464,7 +511,7 @@ public interface SpringFluentDSLPackage extends EPackage
    * @see org.xtext.spring.fluent.springFluentDSL.impl.SpringFluentDSLPackageImpl#getRelation()
    * @generated
    */
-  int RELATION = 11;
+  int RELATION = 13;
 
   /**
    * The feature id for the '<em><b>Name</b></em>' attribute.
@@ -510,7 +557,7 @@ public interface SpringFluentDSLPackage extends EPackage
    * @see org.xtext.spring.fluent.springFluentDSL.impl.SpringFluentDSLPackageImpl#getDependencyType()
    * @generated
    */
-  int DEPENDENCY_TYPE = 12;
+  int DEPENDENCY_TYPE = 14;
 
   /**
    * The meta object id for the '{@link org.xtext.spring.fluent.springFluentDSL.Type <em>Type</em>}' enum.
@@ -520,7 +567,7 @@ public interface SpringFluentDSLPackage extends EPackage
    * @see org.xtext.spring.fluent.springFluentDSL.impl.SpringFluentDSLPackageImpl#getType()
    * @generated
    */
-  int TYPE = 13;
+  int TYPE = 15;
 
 
   /**
@@ -747,15 +794,15 @@ public interface SpringFluentDSLPackage extends EPackage
   EClass getFeature();
 
   /**
-   * Returns the meta object for the attribute '{@link org.xtext.spring.fluent.springFluentDSL.Feature#getOperation <em>Operation</em>}'.
+   * Returns the meta object for the containment reference '{@link org.xtext.spring.fluent.springFluentDSL.Feature#getOperation <em>Operation</em>}'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @return the meta object for the attribute '<em>Operation</em>'.
+   * @return the meta object for the containment reference '<em>Operation</em>'.
    * @see org.xtext.spring.fluent.springFluentDSL.Feature#getOperation()
    * @see #getFeature()
    * @generated
    */
-  EAttribute getFeature_Operation();
+  EReference getFeature_Operation();
 
   /**
    * Returns the meta object for the containment reference '{@link org.xtext.spring.fluent.springFluentDSL.Feature#getId <em>Id</em>}'.
@@ -831,6 +878,37 @@ public interface SpringFluentDSLPackage extends EPackage
    * @generated
    */
   EAttribute getIDENTITY_Type();
+
+  /**
+   * Returns the meta object for class '{@link org.xtext.spring.fluent.springFluentDSL.Operation <em>Operation</em>}'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return the meta object for class '<em>Operation</em>'.
+   * @see org.xtext.spring.fluent.springFluentDSL.Operation
+   * @generated
+   */
+  EClass getOperation();
+
+  /**
+   * Returns the meta object for class '{@link org.xtext.spring.fluent.springFluentDSL.OperationType <em>Operation Type</em>}'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return the meta object for class '<em>Operation Type</em>'.
+   * @see org.xtext.spring.fluent.springFluentDSL.OperationType
+   * @generated
+   */
+  EClass getOperationType();
+
+  /**
+   * Returns the meta object for the attribute '{@link org.xtext.spring.fluent.springFluentDSL.OperationType#getOprationType <em>Opration Type</em>}'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return the meta object for the attribute '<em>Opration Type</em>'.
+   * @see org.xtext.spring.fluent.springFluentDSL.OperationType#getOprationType()
+   * @see #getOperationType()
+   * @generated
+   */
+  EAttribute getOperationType_OprationType();
 
   /**
    * Returns the meta object for class '{@link org.xtext.spring.fluent.springFluentDSL.Attribute <em>Attribute</em>}'.
@@ -1135,12 +1213,12 @@ public interface SpringFluentDSLPackage extends EPackage
     EClass FEATURE = eINSTANCE.getFeature();
 
     /**
-     * The meta object literal for the '<em><b>Operation</b></em>' attribute feature.
+     * The meta object literal for the '<em><b>Operation</b></em>' containment reference feature.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
      * @generated
      */
-    EAttribute FEATURE__OPERATION = eINSTANCE.getFeature_Operation();
+    EReference FEATURE__OPERATION = eINSTANCE.getFeature_Operation();
 
     /**
      * The meta object literal for the '<em><b>Id</b></em>' containment reference feature.
@@ -1201,6 +1279,34 @@ public interface SpringFluentDSLPackage extends EPackage
      * @generated
      */
     EAttribute IDENTITY__TYPE = eINSTANCE.getIDENTITY_Type();
+
+    /**
+     * The meta object literal for the '{@link org.xtext.spring.fluent.springFluentDSL.impl.OperationImpl <em>Operation</em>}' class.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @see org.xtext.spring.fluent.springFluentDSL.impl.OperationImpl
+     * @see org.xtext.spring.fluent.springFluentDSL.impl.SpringFluentDSLPackageImpl#getOperation()
+     * @generated
+     */
+    EClass OPERATION = eINSTANCE.getOperation();
+
+    /**
+     * The meta object literal for the '{@link org.xtext.spring.fluent.springFluentDSL.impl.OperationTypeImpl <em>Operation Type</em>}' class.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @see org.xtext.spring.fluent.springFluentDSL.impl.OperationTypeImpl
+     * @see org.xtext.spring.fluent.springFluentDSL.impl.SpringFluentDSLPackageImpl#getOperationType()
+     * @generated
+     */
+    EClass OPERATION_TYPE = eINSTANCE.getOperationType();
+
+    /**
+     * The meta object literal for the '<em><b>Opration Type</b></em>' attribute feature.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    EAttribute OPERATION_TYPE__OPRATION_TYPE = eINSTANCE.getOperationType_OprationType();
 
     /**
      * The meta object literal for the '{@link org.xtext.spring.fluent.springFluentDSL.impl.AttributeImpl <em>Attribute</em>}' class.

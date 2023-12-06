@@ -24,6 +24,7 @@ import org.xtext.spring.fluent.springFluentDSL.Entity;
 import org.xtext.spring.fluent.springFluentDSL.Feature;
 import org.xtext.spring.fluent.springFluentDSL.IDENTITY;
 import org.xtext.spring.fluent.springFluentDSL.Model;
+import org.xtext.spring.fluent.springFluentDSL.OperationType;
 import org.xtext.spring.fluent.springFluentDSL.Prefix;
 import org.xtext.spring.fluent.springFluentDSL.Relation;
 import org.xtext.spring.fluent.springFluentDSL.SpringFluentDSLPackage;
@@ -69,6 +70,9 @@ public class SpringFluentDSLSemanticSequencer extends AbstractDelegatingSemantic
 				return; 
 			case SpringFluentDSLPackage.MODEL:
 				sequence_Model(context, (Model) semanticObject); 
+				return; 
+			case SpringFluentDSLPackage.OPERATION_TYPE:
+				sequence_OperationType(context, (OperationType) semanticObject); 
 				return; 
 			case SpringFluentDSLPackage.PREFIX:
 				sequence_Prefix(context, (Prefix) semanticObject); 
@@ -249,6 +253,21 @@ public class SpringFluentDSLSemanticSequencer extends AbstractDelegatingSemantic
 		feeder.accept(grammarAccess.getModelAccess().getDependenciesDependenciesParserRuleCall_2_0(), semanticObject.getDependencies());
 		feeder.accept(grammarAccess.getModelAccess().getEntitiesEntitiesParserRuleCall_3_0(), semanticObject.getEntities());
 		feeder.finish();
+	}
+	
+	
+	/**
+	 * <pre>
+	 * Contexts:
+	 *     Operation returns OperationType
+	 *     OperationType returns OperationType
+	 *
+	 * Constraint:
+	 *     oprationType='c'?
+	 * </pre>
+	 */
+	protected void sequence_OperationType(ISerializationContext context, OperationType semanticObject) {
+		genericSequencer.createSequence(context, semanticObject);
 	}
 	
 	

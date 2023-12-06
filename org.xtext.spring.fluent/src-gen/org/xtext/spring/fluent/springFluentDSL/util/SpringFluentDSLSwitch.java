@@ -143,6 +143,21 @@ public class SpringFluentDSLSwitch<T> extends Switch<T>
         if (result == null) result = defaultCase(theEObject);
         return result;
       }
+      case SpringFluentDSLPackage.OPERATION:
+      {
+        Operation operation = (Operation)theEObject;
+        T result = caseOperation(operation);
+        if (result == null) result = defaultCase(theEObject);
+        return result;
+      }
+      case SpringFluentDSLPackage.OPERATION_TYPE:
+      {
+        OperationType operationType = (OperationType)theEObject;
+        T result = caseOperationType(operationType);
+        if (result == null) result = caseOperation(operationType);
+        if (result == null) result = defaultCase(theEObject);
+        return result;
+      }
       case SpringFluentDSLPackage.ATTRIBUTE:
       {
         Attribute attribute = (Attribute)theEObject;
@@ -317,6 +332,38 @@ public class SpringFluentDSLSwitch<T> extends Switch<T>
    * @generated
    */
   public T caseIDENTITY(IDENTITY object)
+  {
+    return null;
+  }
+
+  /**
+   * Returns the result of interpreting the object as an instance of '<em>Operation</em>'.
+   * <!-- begin-user-doc -->
+   * This implementation returns null;
+   * returning a non-null result will terminate the switch.
+   * <!-- end-user-doc -->
+   * @param object the target of the switch.
+   * @return the result of interpreting the object as an instance of '<em>Operation</em>'.
+   * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+   * @generated
+   */
+  public T caseOperation(Operation object)
+  {
+    return null;
+  }
+
+  /**
+   * Returns the result of interpreting the object as an instance of '<em>Operation Type</em>'.
+   * <!-- begin-user-doc -->
+   * This implementation returns null;
+   * returning a non-null result will terminate the switch.
+   * <!-- end-user-doc -->
+   * @param object the target of the switch.
+   * @return the result of interpreting the object as an instance of '<em>Operation Type</em>'.
+   * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+   * @generated
+   */
+  public T caseOperationType(OperationType object)
   {
     return null;
   }

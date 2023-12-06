@@ -146,10 +146,10 @@ public class InternalSpringFluentDSLLexer extends Lexer {
         try {
             int _type = T__14;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // InternalSpringFluentDSL.g:14:7: ( 'none' )
-            // InternalSpringFluentDSL.g:14:9: 'none'
+            // InternalSpringFluentDSL.g:14:7: ( 'mto' )
+            // InternalSpringFluentDSL.g:14:9: 'mto'
             {
-            match("none"); 
+            match("mto"); 
 
 
             }
@@ -167,10 +167,10 @@ public class InternalSpringFluentDSLLexer extends Lexer {
         try {
             int _type = T__15;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // InternalSpringFluentDSL.g:15:7: ( 'mto' )
-            // InternalSpringFluentDSL.g:15:9: 'mto'
+            // InternalSpringFluentDSL.g:15:7: ( 'otm' )
+            // InternalSpringFluentDSL.g:15:9: 'otm'
             {
-            match("mto"); 
+            match("otm"); 
 
 
             }
@@ -188,10 +188,10 @@ public class InternalSpringFluentDSLLexer extends Lexer {
         try {
             int _type = T__16;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // InternalSpringFluentDSL.g:16:7: ( 'otm' )
-            // InternalSpringFluentDSL.g:16:9: 'otm'
+            // InternalSpringFluentDSL.g:16:7: ( 'oto' )
+            // InternalSpringFluentDSL.g:16:9: 'oto'
             {
-            match("otm"); 
+            match("oto"); 
 
 
             }
@@ -209,10 +209,10 @@ public class InternalSpringFluentDSLLexer extends Lexer {
         try {
             int _type = T__17;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // InternalSpringFluentDSL.g:17:7: ( 'oto' )
-            // InternalSpringFluentDSL.g:17:9: 'oto'
+            // InternalSpringFluentDSL.g:17:7: ( 'mtm' )
+            // InternalSpringFluentDSL.g:17:9: 'mtm'
             {
-            match("oto"); 
+            match("mtm"); 
 
 
             }
@@ -230,10 +230,10 @@ public class InternalSpringFluentDSLLexer extends Lexer {
         try {
             int _type = T__18;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // InternalSpringFluentDSL.g:18:7: ( 'mtm' )
-            // InternalSpringFluentDSL.g:18:9: 'mtm'
+            // InternalSpringFluentDSL.g:18:7: ( 'SpringDataJpa' )
+            // InternalSpringFluentDSL.g:18:9: 'SpringDataJpa'
             {
-            match("mtm"); 
+            match("SpringDataJpa"); 
 
 
             }
@@ -251,10 +251,10 @@ public class InternalSpringFluentDSLLexer extends Lexer {
         try {
             int _type = T__19;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // InternalSpringFluentDSL.g:19:7: ( 'SpringDataJpa' )
-            // InternalSpringFluentDSL.g:19:9: 'SpringDataJpa'
+            // InternalSpringFluentDSL.g:19:7: ( 'SpringWeb' )
+            // InternalSpringFluentDSL.g:19:9: 'SpringWeb'
             {
-            match("SpringDataJpa"); 
+            match("SpringWeb"); 
 
 
             }
@@ -272,10 +272,10 @@ public class InternalSpringFluentDSLLexer extends Lexer {
         try {
             int _type = T__20;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // InternalSpringFluentDSL.g:20:7: ( 'SpringWeb' )
-            // InternalSpringFluentDSL.g:20:9: 'SpringWeb'
+            // InternalSpringFluentDSL.g:20:7: ( 'Lombok' )
+            // InternalSpringFluentDSL.g:20:9: 'Lombok'
             {
-            match("SpringWeb"); 
+            match("Lombok"); 
 
 
             }
@@ -293,10 +293,10 @@ public class InternalSpringFluentDSLLexer extends Lexer {
         try {
             int _type = T__21;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // InternalSpringFluentDSL.g:21:7: ( 'Lombok' )
-            // InternalSpringFluentDSL.g:21:9: 'Lombok'
+            // InternalSpringFluentDSL.g:21:7: ( 'MySQLDriver' )
+            // InternalSpringFluentDSL.g:21:9: 'MySQLDriver'
             {
-            match("Lombok"); 
+            match("MySQLDriver"); 
 
 
             }
@@ -314,10 +314,10 @@ public class InternalSpringFluentDSLLexer extends Lexer {
         try {
             int _type = T__22;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // InternalSpringFluentDSL.g:22:7: ( 'MySQLDriver' )
-            // InternalSpringFluentDSL.g:22:9: 'MySQLDriver'
+            // InternalSpringFluentDSL.g:22:7: ( 'DevTools' )
+            // InternalSpringFluentDSL.g:22:9: 'DevTools'
             {
-            match("MySQLDriver"); 
+            match("DevTools"); 
 
 
             }
@@ -335,10 +335,10 @@ public class InternalSpringFluentDSLLexer extends Lexer {
         try {
             int _type = T__23;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // InternalSpringFluentDSL.g:23:7: ( 'DevTools' )
-            // InternalSpringFluentDSL.g:23:9: 'DevTools'
+            // InternalSpringFluentDSL.g:23:7: ( 'Thymeleaf' )
+            // InternalSpringFluentDSL.g:23:9: 'Thymeleaf'
             {
-            match("DevTools"); 
+            match("Thymeleaf"); 
 
 
             }
@@ -356,10 +356,10 @@ public class InternalSpringFluentDSLLexer extends Lexer {
         try {
             int _type = T__24;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // InternalSpringFluentDSL.g:24:7: ( 'Thymeleaf' )
-            // InternalSpringFluentDSL.g:24:9: 'Thymeleaf'
+            // InternalSpringFluentDSL.g:24:7: ( 'Swagger' )
+            // InternalSpringFluentDSL.g:24:9: 'Swagger'
             {
-            match("Thymeleaf"); 
+            match("Swagger"); 
 
 
             }
@@ -377,10 +377,10 @@ public class InternalSpringFluentDSLLexer extends Lexer {
         try {
             int _type = T__25;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // InternalSpringFluentDSL.g:25:7: ( 'Swagger' )
-            // InternalSpringFluentDSL.g:25:9: 'Swagger'
+            // InternalSpringFluentDSL.g:25:7: ( 'SpringSecurity' )
+            // InternalSpringFluentDSL.g:25:9: 'SpringSecurity'
             {
-            match("Swagger"); 
+            match("SpringSecurity"); 
 
 
             }
@@ -398,10 +398,10 @@ public class InternalSpringFluentDSLLexer extends Lexer {
         try {
             int _type = T__26;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // InternalSpringFluentDSL.g:26:7: ( 'SpringSecurity' )
-            // InternalSpringFluentDSL.g:26:9: 'SpringSecurity'
+            // InternalSpringFluentDSL.g:26:7: ( 'Long' )
+            // InternalSpringFluentDSL.g:26:9: 'Long'
             {
-            match("SpringSecurity"); 
+            match("Long"); 
 
 
             }
@@ -419,10 +419,10 @@ public class InternalSpringFluentDSLLexer extends Lexer {
         try {
             int _type = T__27;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // InternalSpringFluentDSL.g:27:7: ( 'Long' )
-            // InternalSpringFluentDSL.g:27:9: 'Long'
+            // InternalSpringFluentDSL.g:27:7: ( 'Integer' )
+            // InternalSpringFluentDSL.g:27:9: 'Integer'
             {
-            match("Long"); 
+            match("Integer"); 
 
 
             }
@@ -440,10 +440,10 @@ public class InternalSpringFluentDSLLexer extends Lexer {
         try {
             int _type = T__28;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // InternalSpringFluentDSL.g:28:7: ( 'Integer' )
-            // InternalSpringFluentDSL.g:28:9: 'Integer'
+            // InternalSpringFluentDSL.g:28:7: ( 'Double' )
+            // InternalSpringFluentDSL.g:28:9: 'Double'
             {
-            match("Integer"); 
+            match("Double"); 
 
 
             }
@@ -461,10 +461,10 @@ public class InternalSpringFluentDSLLexer extends Lexer {
         try {
             int _type = T__29;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // InternalSpringFluentDSL.g:29:7: ( 'Double' )
-            // InternalSpringFluentDSL.g:29:9: 'Double'
+            // InternalSpringFluentDSL.g:29:7: ( 'String' )
+            // InternalSpringFluentDSL.g:29:9: 'String'
             {
-            match("Double"); 
+            match("String"); 
 
 
             }
@@ -482,10 +482,10 @@ public class InternalSpringFluentDSLLexer extends Lexer {
         try {
             int _type = T__30;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // InternalSpringFluentDSL.g:30:7: ( 'String' )
-            // InternalSpringFluentDSL.g:30:9: 'String'
+            // InternalSpringFluentDSL.g:30:7: ( 'Date' )
+            // InternalSpringFluentDSL.g:30:9: 'Date'
             {
-            match("String"); 
+            match("Date"); 
 
 
             }
@@ -503,10 +503,10 @@ public class InternalSpringFluentDSLLexer extends Lexer {
         try {
             int _type = T__31;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // InternalSpringFluentDSL.g:31:7: ( 'Date' )
-            // InternalSpringFluentDSL.g:31:9: 'Date'
+            // InternalSpringFluentDSL.g:31:7: ( 'Time' )
+            // InternalSpringFluentDSL.g:31:9: 'Time'
             {
-            match("Date"); 
+            match("Time"); 
 
 
             }
@@ -524,10 +524,10 @@ public class InternalSpringFluentDSLLexer extends Lexer {
         try {
             int _type = T__32;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // InternalSpringFluentDSL.g:32:7: ( 'Time' )
-            // InternalSpringFluentDSL.g:32:9: 'Time'
+            // InternalSpringFluentDSL.g:32:7: ( 'Boolean' )
+            // InternalSpringFluentDSL.g:32:9: 'Boolean'
             {
-            match("Time"); 
+            match("Boolean"); 
 
 
             }
@@ -545,10 +545,10 @@ public class InternalSpringFluentDSLLexer extends Lexer {
         try {
             int _type = T__33;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // InternalSpringFluentDSL.g:33:7: ( 'Boolean' )
-            // InternalSpringFluentDSL.g:33:9: 'Boolean'
+            // InternalSpringFluentDSL.g:33:7: ( 'prefix:' )
+            // InternalSpringFluentDSL.g:33:9: 'prefix:'
             {
-            match("Boolean"); 
+            match("prefix:"); 
 
 
             }
@@ -566,10 +566,10 @@ public class InternalSpringFluentDSLLexer extends Lexer {
         try {
             int _type = T__34;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // InternalSpringFluentDSL.g:34:7: ( 'prefix:' )
-            // InternalSpringFluentDSL.g:34:9: 'prefix:'
+            // InternalSpringFluentDSL.g:34:7: ( 'app_name:' )
+            // InternalSpringFluentDSL.g:34:9: 'app_name:'
             {
-            match("prefix:"); 
+            match("app_name:"); 
 
 
             }
@@ -587,10 +587,10 @@ public class InternalSpringFluentDSLLexer extends Lexer {
         try {
             int _type = T__35;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // InternalSpringFluentDSL.g:35:7: ( 'app_name:' )
-            // InternalSpringFluentDSL.g:35:9: 'app_name:'
+            // InternalSpringFluentDSL.g:35:7: ( 'dependencies' )
+            // InternalSpringFluentDSL.g:35:9: 'dependencies'
             {
-            match("app_name:"); 
+            match("dependencies"); 
 
 
             }
@@ -608,11 +608,10 @@ public class InternalSpringFluentDSLLexer extends Lexer {
         try {
             int _type = T__36;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // InternalSpringFluentDSL.g:36:7: ( 'dependencies' )
-            // InternalSpringFluentDSL.g:36:9: 'dependencies'
+            // InternalSpringFluentDSL.g:36:7: ( '{' )
+            // InternalSpringFluentDSL.g:36:9: '{'
             {
-            match("dependencies"); 
-
+            match('{'); 
 
             }
 
@@ -629,10 +628,10 @@ public class InternalSpringFluentDSLLexer extends Lexer {
         try {
             int _type = T__37;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // InternalSpringFluentDSL.g:37:7: ( '{' )
-            // InternalSpringFluentDSL.g:37:9: '{'
+            // InternalSpringFluentDSL.g:37:7: ( '}' )
+            // InternalSpringFluentDSL.g:37:9: '}'
             {
-            match('{'); 
+            match('}'); 
 
             }
 
@@ -649,10 +648,10 @@ public class InternalSpringFluentDSLLexer extends Lexer {
         try {
             int _type = T__38;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // InternalSpringFluentDSL.g:38:7: ( '}' )
-            // InternalSpringFluentDSL.g:38:9: '}'
+            // InternalSpringFluentDSL.g:38:7: ( ',' )
+            // InternalSpringFluentDSL.g:38:9: ','
             {
-            match('}'); 
+            match(','); 
 
             }
 
@@ -669,10 +668,11 @@ public class InternalSpringFluentDSLLexer extends Lexer {
         try {
             int _type = T__39;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // InternalSpringFluentDSL.g:39:7: ( ',' )
-            // InternalSpringFluentDSL.g:39:9: ','
+            // InternalSpringFluentDSL.g:39:7: ( 'entities' )
+            // InternalSpringFluentDSL.g:39:9: 'entities'
             {
-            match(','); 
+            match("entities"); 
+
 
             }
 
@@ -689,10 +689,10 @@ public class InternalSpringFluentDSLLexer extends Lexer {
         try {
             int _type = T__40;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // InternalSpringFluentDSL.g:40:7: ( 'entities' )
-            // InternalSpringFluentDSL.g:40:9: 'entities'
+            // InternalSpringFluentDSL.g:40:7: ( 'entity' )
+            // InternalSpringFluentDSL.g:40:9: 'entity'
             {
-            match("entities"); 
+            match("entity"); 
 
 
             }
@@ -710,10 +710,10 @@ public class InternalSpringFluentDSLLexer extends Lexer {
         try {
             int _type = T__41;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // InternalSpringFluentDSL.g:41:7: ( 'entity' )
-            // InternalSpringFluentDSL.g:41:9: 'entity'
+            // InternalSpringFluentDSL.g:41:7: ( 'extends' )
+            // InternalSpringFluentDSL.g:41:9: 'extends'
             {
-            match("entity"); 
+            match("extends"); 
 
 
             }
@@ -731,11 +731,10 @@ public class InternalSpringFluentDSLLexer extends Lexer {
         try {
             int _type = T__42;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // InternalSpringFluentDSL.g:42:7: ( 'extends' )
-            // InternalSpringFluentDSL.g:42:9: 'extends'
+            // InternalSpringFluentDSL.g:42:7: ( '[' )
+            // InternalSpringFluentDSL.g:42:9: '['
             {
-            match("extends"); 
-
+            match('['); 
 
             }
 
@@ -752,10 +751,11 @@ public class InternalSpringFluentDSLLexer extends Lexer {
         try {
             int _type = T__43;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // InternalSpringFluentDSL.g:43:7: ( '[' )
-            // InternalSpringFluentDSL.g:43:9: '['
+            // InternalSpringFluentDSL.g:43:7: ( 'strategy' )
+            // InternalSpringFluentDSL.g:43:9: 'strategy'
             {
-            match('['); 
+            match("strategy"); 
+
 
             }
 
@@ -772,11 +772,10 @@ public class InternalSpringFluentDSLLexer extends Lexer {
         try {
             int _type = T__44;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // InternalSpringFluentDSL.g:44:7: ( 'strategy' )
-            // InternalSpringFluentDSL.g:44:9: 'strategy'
+            // InternalSpringFluentDSL.g:44:7: ( '=' )
+            // InternalSpringFluentDSL.g:44:9: '='
             {
-            match("strategy"); 
-
+            match('='); 
 
             }
 
@@ -793,10 +792,10 @@ public class InternalSpringFluentDSLLexer extends Lexer {
         try {
             int _type = T__45;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // InternalSpringFluentDSL.g:45:7: ( '=' )
-            // InternalSpringFluentDSL.g:45:9: '='
+            // InternalSpringFluentDSL.g:45:7: ( ']' )
+            // InternalSpringFluentDSL.g:45:9: ']'
             {
-            match('='); 
+            match(']'); 
 
             }
 
@@ -813,10 +812,11 @@ public class InternalSpringFluentDSLLexer extends Lexer {
         try {
             int _type = T__46;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // InternalSpringFluentDSL.g:46:7: ( ']' )
-            // InternalSpringFluentDSL.g:46:9: ']'
+            // InternalSpringFluentDSL.g:46:7: ( 'id' )
+            // InternalSpringFluentDSL.g:46:9: 'id'
             {
-            match(']'); 
+            match("id"); 
+
 
             }
 
@@ -833,11 +833,10 @@ public class InternalSpringFluentDSLLexer extends Lexer {
         try {
             int _type = T__47;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // InternalSpringFluentDSL.g:47:7: ( 'id' )
-            // InternalSpringFluentDSL.g:47:9: 'id'
+            // InternalSpringFluentDSL.g:47:7: ( ':' )
+            // InternalSpringFluentDSL.g:47:9: ':'
             {
-            match("id"); 
-
+            match(':'); 
 
             }
 
@@ -854,10 +853,11 @@ public class InternalSpringFluentDSLLexer extends Lexer {
         try {
             int _type = T__48;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // InternalSpringFluentDSL.g:48:7: ( ':' )
-            // InternalSpringFluentDSL.g:48:9: ':'
+            // InternalSpringFluentDSL.g:48:7: ( 'pk' )
+            // InternalSpringFluentDSL.g:48:9: 'pk'
             {
-            match(':'); 
+            match("pk"); 
+
 
             }
 
@@ -874,10 +874,10 @@ public class InternalSpringFluentDSLLexer extends Lexer {
         try {
             int _type = T__49;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // InternalSpringFluentDSL.g:49:7: ( 'pk' )
-            // InternalSpringFluentDSL.g:49:9: 'pk'
+            // InternalSpringFluentDSL.g:49:7: ( 'ops' )
+            // InternalSpringFluentDSL.g:49:9: 'ops'
             {
-            match("pk"); 
+            match("ops"); 
 
 
             }
@@ -895,11 +895,10 @@ public class InternalSpringFluentDSLLexer extends Lexer {
         try {
             int _type = T__50;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // InternalSpringFluentDSL.g:50:7: ( 'ops' )
-            // InternalSpringFluentDSL.g:50:9: 'ops'
+            // InternalSpringFluentDSL.g:50:7: ( 'r' )
+            // InternalSpringFluentDSL.g:50:9: 'r'
             {
-            match("ops"); 
-
+            match('r'); 
 
             }
 
@@ -916,10 +915,10 @@ public class InternalSpringFluentDSLLexer extends Lexer {
         try {
             int _type = T__51;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // InternalSpringFluentDSL.g:51:7: ( 'c' )
-            // InternalSpringFluentDSL.g:51:9: 'c'
+            // InternalSpringFluentDSL.g:51:7: ( 'u' )
+            // InternalSpringFluentDSL.g:51:9: 'u'
             {
-            match('c'); 
+            match('u'); 
 
             }
 
@@ -936,10 +935,10 @@ public class InternalSpringFluentDSLLexer extends Lexer {
         try {
             int _type = T__52;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // InternalSpringFluentDSL.g:52:7: ( 'r' )
-            // InternalSpringFluentDSL.g:52:9: 'r'
+            // InternalSpringFluentDSL.g:52:7: ( 'd' )
+            // InternalSpringFluentDSL.g:52:9: 'd'
             {
-            match('r'); 
+            match('d'); 
 
             }
 
@@ -956,10 +955,11 @@ public class InternalSpringFluentDSLLexer extends Lexer {
         try {
             int _type = T__53;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // InternalSpringFluentDSL.g:53:7: ( 'u' )
-            // InternalSpringFluentDSL.g:53:9: 'u'
+            // InternalSpringFluentDSL.g:53:7: ( 'none' )
+            // InternalSpringFluentDSL.g:53:9: 'none'
             {
-            match('u'); 
+            match("none"); 
+
 
             }
 
@@ -976,10 +976,10 @@ public class InternalSpringFluentDSLLexer extends Lexer {
         try {
             int _type = T__54;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // InternalSpringFluentDSL.g:54:7: ( 'd' )
-            // InternalSpringFluentDSL.g:54:9: 'd'
+            // InternalSpringFluentDSL.g:54:7: ( 'c' )
+            // InternalSpringFluentDSL.g:54:9: 'c'
             {
-            match('d'); 
+            match('c'); 
 
             }
 
@@ -996,10 +996,10 @@ public class InternalSpringFluentDSLLexer extends Lexer {
         try {
             int _type = RULE_ID;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // InternalSpringFluentDSL.g:2682:9: ( ( '^' )? ( 'a' .. 'z' | 'A' .. 'Z' | '_' ) ( 'a' .. 'z' | 'A' .. 'Z' | '_' | '0' .. '9' )* )
-            // InternalSpringFluentDSL.g:2682:11: ( '^' )? ( 'a' .. 'z' | 'A' .. 'Z' | '_' ) ( 'a' .. 'z' | 'A' .. 'Z' | '_' | '0' .. '9' )*
+            // InternalSpringFluentDSL.g:2807:9: ( ( '^' )? ( 'a' .. 'z' | 'A' .. 'Z' | '_' ) ( 'a' .. 'z' | 'A' .. 'Z' | '_' | '0' .. '9' )* )
+            // InternalSpringFluentDSL.g:2807:11: ( '^' )? ( 'a' .. 'z' | 'A' .. 'Z' | '_' ) ( 'a' .. 'z' | 'A' .. 'Z' | '_' | '0' .. '9' )*
             {
-            // InternalSpringFluentDSL.g:2682:11: ( '^' )?
+            // InternalSpringFluentDSL.g:2807:11: ( '^' )?
             int alt1=2;
             int LA1_0 = input.LA(1);
 
@@ -1008,7 +1008,7 @@ public class InternalSpringFluentDSLLexer extends Lexer {
             }
             switch (alt1) {
                 case 1 :
-                    // InternalSpringFluentDSL.g:2682:11: '^'
+                    // InternalSpringFluentDSL.g:2807:11: '^'
                     {
                     match('^'); 
 
@@ -1026,7 +1026,7 @@ public class InternalSpringFluentDSLLexer extends Lexer {
                 recover(mse);
                 throw mse;}
 
-            // InternalSpringFluentDSL.g:2682:40: ( 'a' .. 'z' | 'A' .. 'Z' | '_' | '0' .. '9' )*
+            // InternalSpringFluentDSL.g:2807:40: ( 'a' .. 'z' | 'A' .. 'Z' | '_' | '0' .. '9' )*
             loop2:
             do {
                 int alt2=2;
@@ -1075,10 +1075,10 @@ public class InternalSpringFluentDSLLexer extends Lexer {
         try {
             int _type = RULE_INT;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // InternalSpringFluentDSL.g:2684:10: ( ( '0' .. '9' )+ )
-            // InternalSpringFluentDSL.g:2684:12: ( '0' .. '9' )+
+            // InternalSpringFluentDSL.g:2809:10: ( ( '0' .. '9' )+ )
+            // InternalSpringFluentDSL.g:2809:12: ( '0' .. '9' )+
             {
-            // InternalSpringFluentDSL.g:2684:12: ( '0' .. '9' )+
+            // InternalSpringFluentDSL.g:2809:12: ( '0' .. '9' )+
             int cnt3=0;
             loop3:
             do {
@@ -1092,7 +1092,7 @@ public class InternalSpringFluentDSLLexer extends Lexer {
 
                 switch (alt3) {
             	case 1 :
-            	    // InternalSpringFluentDSL.g:2684:13: '0' .. '9'
+            	    // InternalSpringFluentDSL.g:2809:13: '0' .. '9'
             	    {
             	    matchRange('0','9'); 
 
@@ -1124,10 +1124,10 @@ public class InternalSpringFluentDSLLexer extends Lexer {
         try {
             int _type = RULE_STRING;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // InternalSpringFluentDSL.g:2686:13: ( ( '\"' ( '\\\\' . | ~ ( ( '\\\\' | '\"' ) ) )* '\"' | '\\'' ( '\\\\' . | ~ ( ( '\\\\' | '\\'' ) ) )* '\\'' ) )
-            // InternalSpringFluentDSL.g:2686:15: ( '\"' ( '\\\\' . | ~ ( ( '\\\\' | '\"' ) ) )* '\"' | '\\'' ( '\\\\' . | ~ ( ( '\\\\' | '\\'' ) ) )* '\\'' )
+            // InternalSpringFluentDSL.g:2811:13: ( ( '\"' ( '\\\\' . | ~ ( ( '\\\\' | '\"' ) ) )* '\"' | '\\'' ( '\\\\' . | ~ ( ( '\\\\' | '\\'' ) ) )* '\\'' ) )
+            // InternalSpringFluentDSL.g:2811:15: ( '\"' ( '\\\\' . | ~ ( ( '\\\\' | '\"' ) ) )* '\"' | '\\'' ( '\\\\' . | ~ ( ( '\\\\' | '\\'' ) ) )* '\\'' )
             {
-            // InternalSpringFluentDSL.g:2686:15: ( '\"' ( '\\\\' . | ~ ( ( '\\\\' | '\"' ) ) )* '\"' | '\\'' ( '\\\\' . | ~ ( ( '\\\\' | '\\'' ) ) )* '\\'' )
+            // InternalSpringFluentDSL.g:2811:15: ( '\"' ( '\\\\' . | ~ ( ( '\\\\' | '\"' ) ) )* '\"' | '\\'' ( '\\\\' . | ~ ( ( '\\\\' | '\\'' ) ) )* '\\'' )
             int alt6=2;
             int LA6_0 = input.LA(1);
 
@@ -1145,10 +1145,10 @@ public class InternalSpringFluentDSLLexer extends Lexer {
             }
             switch (alt6) {
                 case 1 :
-                    // InternalSpringFluentDSL.g:2686:16: '\"' ( '\\\\' . | ~ ( ( '\\\\' | '\"' ) ) )* '\"'
+                    // InternalSpringFluentDSL.g:2811:16: '\"' ( '\\\\' . | ~ ( ( '\\\\' | '\"' ) ) )* '\"'
                     {
                     match('\"'); 
-                    // InternalSpringFluentDSL.g:2686:20: ( '\\\\' . | ~ ( ( '\\\\' | '\"' ) ) )*
+                    // InternalSpringFluentDSL.g:2811:20: ( '\\\\' . | ~ ( ( '\\\\' | '\"' ) ) )*
                     loop4:
                     do {
                         int alt4=3;
@@ -1164,7 +1164,7 @@ public class InternalSpringFluentDSLLexer extends Lexer {
 
                         switch (alt4) {
                     	case 1 :
-                    	    // InternalSpringFluentDSL.g:2686:21: '\\\\' .
+                    	    // InternalSpringFluentDSL.g:2811:21: '\\\\' .
                     	    {
                     	    match('\\'); 
                     	    matchAny(); 
@@ -1172,7 +1172,7 @@ public class InternalSpringFluentDSLLexer extends Lexer {
                     	    }
                     	    break;
                     	case 2 :
-                    	    // InternalSpringFluentDSL.g:2686:28: ~ ( ( '\\\\' | '\"' ) )
+                    	    // InternalSpringFluentDSL.g:2811:28: ~ ( ( '\\\\' | '\"' ) )
                     	    {
                     	    if ( (input.LA(1)>='\u0000' && input.LA(1)<='!')||(input.LA(1)>='#' && input.LA(1)<='[')||(input.LA(1)>=']' && input.LA(1)<='\uFFFF') ) {
                     	        input.consume();
@@ -1197,10 +1197,10 @@ public class InternalSpringFluentDSLLexer extends Lexer {
                     }
                     break;
                 case 2 :
-                    // InternalSpringFluentDSL.g:2686:48: '\\'' ( '\\\\' . | ~ ( ( '\\\\' | '\\'' ) ) )* '\\''
+                    // InternalSpringFluentDSL.g:2811:48: '\\'' ( '\\\\' . | ~ ( ( '\\\\' | '\\'' ) ) )* '\\''
                     {
                     match('\''); 
-                    // InternalSpringFluentDSL.g:2686:53: ( '\\\\' . | ~ ( ( '\\\\' | '\\'' ) ) )*
+                    // InternalSpringFluentDSL.g:2811:53: ( '\\\\' . | ~ ( ( '\\\\' | '\\'' ) ) )*
                     loop5:
                     do {
                         int alt5=3;
@@ -1216,7 +1216,7 @@ public class InternalSpringFluentDSLLexer extends Lexer {
 
                         switch (alt5) {
                     	case 1 :
-                    	    // InternalSpringFluentDSL.g:2686:54: '\\\\' .
+                    	    // InternalSpringFluentDSL.g:2811:54: '\\\\' .
                     	    {
                     	    match('\\'); 
                     	    matchAny(); 
@@ -1224,7 +1224,7 @@ public class InternalSpringFluentDSLLexer extends Lexer {
                     	    }
                     	    break;
                     	case 2 :
-                    	    // InternalSpringFluentDSL.g:2686:61: ~ ( ( '\\\\' | '\\'' ) )
+                    	    // InternalSpringFluentDSL.g:2811:61: ~ ( ( '\\\\' | '\\'' ) )
                     	    {
                     	    if ( (input.LA(1)>='\u0000' && input.LA(1)<='&')||(input.LA(1)>='(' && input.LA(1)<='[')||(input.LA(1)>=']' && input.LA(1)<='\uFFFF') ) {
                     	        input.consume();
@@ -1267,12 +1267,12 @@ public class InternalSpringFluentDSLLexer extends Lexer {
         try {
             int _type = RULE_ML_COMMENT;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // InternalSpringFluentDSL.g:2688:17: ( '/*' ( options {greedy=false; } : . )* '*/' )
-            // InternalSpringFluentDSL.g:2688:19: '/*' ( options {greedy=false; } : . )* '*/'
+            // InternalSpringFluentDSL.g:2813:17: ( '/*' ( options {greedy=false; } : . )* '*/' )
+            // InternalSpringFluentDSL.g:2813:19: '/*' ( options {greedy=false; } : . )* '*/'
             {
             match("/*"); 
 
-            // InternalSpringFluentDSL.g:2688:24: ( options {greedy=false; } : . )*
+            // InternalSpringFluentDSL.g:2813:24: ( options {greedy=false; } : . )*
             loop7:
             do {
                 int alt7=2;
@@ -1297,7 +1297,7 @@ public class InternalSpringFluentDSLLexer extends Lexer {
 
                 switch (alt7) {
             	case 1 :
-            	    // InternalSpringFluentDSL.g:2688:52: .
+            	    // InternalSpringFluentDSL.g:2813:52: .
             	    {
             	    matchAny(); 
 
@@ -1327,12 +1327,12 @@ public class InternalSpringFluentDSLLexer extends Lexer {
         try {
             int _type = RULE_SL_COMMENT;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // InternalSpringFluentDSL.g:2690:17: ( '//' (~ ( ( '\\n' | '\\r' ) ) )* ( ( '\\r' )? '\\n' )? )
-            // InternalSpringFluentDSL.g:2690:19: '//' (~ ( ( '\\n' | '\\r' ) ) )* ( ( '\\r' )? '\\n' )?
+            // InternalSpringFluentDSL.g:2815:17: ( '//' (~ ( ( '\\n' | '\\r' ) ) )* ( ( '\\r' )? '\\n' )? )
+            // InternalSpringFluentDSL.g:2815:19: '//' (~ ( ( '\\n' | '\\r' ) ) )* ( ( '\\r' )? '\\n' )?
             {
             match("//"); 
 
-            // InternalSpringFluentDSL.g:2690:24: (~ ( ( '\\n' | '\\r' ) ) )*
+            // InternalSpringFluentDSL.g:2815:24: (~ ( ( '\\n' | '\\r' ) ) )*
             loop8:
             do {
                 int alt8=2;
@@ -1345,7 +1345,7 @@ public class InternalSpringFluentDSLLexer extends Lexer {
 
                 switch (alt8) {
             	case 1 :
-            	    // InternalSpringFluentDSL.g:2690:24: ~ ( ( '\\n' | '\\r' ) )
+            	    // InternalSpringFluentDSL.g:2815:24: ~ ( ( '\\n' | '\\r' ) )
             	    {
             	    if ( (input.LA(1)>='\u0000' && input.LA(1)<='\t')||(input.LA(1)>='\u000B' && input.LA(1)<='\f')||(input.LA(1)>='\u000E' && input.LA(1)<='\uFFFF') ) {
             	        input.consume();
@@ -1365,7 +1365,7 @@ public class InternalSpringFluentDSLLexer extends Lexer {
                 }
             } while (true);
 
-            // InternalSpringFluentDSL.g:2690:40: ( ( '\\r' )? '\\n' )?
+            // InternalSpringFluentDSL.g:2815:40: ( ( '\\r' )? '\\n' )?
             int alt10=2;
             int LA10_0 = input.LA(1);
 
@@ -1374,9 +1374,9 @@ public class InternalSpringFluentDSLLexer extends Lexer {
             }
             switch (alt10) {
                 case 1 :
-                    // InternalSpringFluentDSL.g:2690:41: ( '\\r' )? '\\n'
+                    // InternalSpringFluentDSL.g:2815:41: ( '\\r' )? '\\n'
                     {
-                    // InternalSpringFluentDSL.g:2690:41: ( '\\r' )?
+                    // InternalSpringFluentDSL.g:2815:41: ( '\\r' )?
                     int alt9=2;
                     int LA9_0 = input.LA(1);
 
@@ -1385,7 +1385,7 @@ public class InternalSpringFluentDSLLexer extends Lexer {
                     }
                     switch (alt9) {
                         case 1 :
-                            // InternalSpringFluentDSL.g:2690:41: '\\r'
+                            // InternalSpringFluentDSL.g:2815:41: '\\r'
                             {
                             match('\r'); 
 
@@ -1417,10 +1417,10 @@ public class InternalSpringFluentDSLLexer extends Lexer {
         try {
             int _type = RULE_WS;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // InternalSpringFluentDSL.g:2692:9: ( ( ' ' | '\\t' | '\\r' | '\\n' )+ )
-            // InternalSpringFluentDSL.g:2692:11: ( ' ' | '\\t' | '\\r' | '\\n' )+
+            // InternalSpringFluentDSL.g:2817:9: ( ( ' ' | '\\t' | '\\r' | '\\n' )+ )
+            // InternalSpringFluentDSL.g:2817:11: ( ' ' | '\\t' | '\\r' | '\\n' )+
             {
-            // InternalSpringFluentDSL.g:2692:11: ( ' ' | '\\t' | '\\r' | '\\n' )+
+            // InternalSpringFluentDSL.g:2817:11: ( ' ' | '\\t' | '\\r' | '\\n' )+
             int cnt11=0;
             loop11:
             do {
@@ -1474,8 +1474,8 @@ public class InternalSpringFluentDSLLexer extends Lexer {
         try {
             int _type = RULE_ANY_OTHER;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // InternalSpringFluentDSL.g:2694:16: ( . )
-            // InternalSpringFluentDSL.g:2694:18: .
+            // InternalSpringFluentDSL.g:2819:16: ( . )
+            // InternalSpringFluentDSL.g:2819:18: .
             {
             matchAny(); 
 
@@ -1859,45 +1859,45 @@ public class InternalSpringFluentDSLLexer extends Lexer {
 
     protected DFA12 dfa12 = new DFA12(this);
     static final String DFA12_eotS =
-        "\1\uffff\15\50\1\74\3\uffff\1\50\1\uffff\1\50\2\uffff\1\50\1\uffff\1\110\1\111\1\112\1\43\2\uffff\3\43\2\uffff\4\50\1\uffff\20\50\1\147\2\50\4\uffff\2\50\1\uffff\1\50\2\uffff\1\155\11\uffff\11\50\1\167\1\170\1\171\1\172\1\173\11\50\1\uffff\5\50\1\uffff\7\50\1\u0091\1\u0092\5\uffff\1\50\1\u0094\3\50\1\u0098\17\50\2\uffff\1\50\1\uffff\3\50\1\uffff\13\50\1\u00ba\3\50\1\u00be\2\50\1\u00c1\6\50\1\u00c8\6\50\1\u00cf\1\uffff\3\50\1\uffff\2\50\1\uffff\1\u00d5\1\u00d6\1\uffff\3\50\1\uffff\1\u00da\5\50\1\uffff\4\50\1\u00e4\2\uffff\2\50\1\u00e7\1\uffff\1\u00e8\2\50\1\u00eb\3\50\1\u00ef\1\50\2\uffff\1\50\2\uffff\2\50\1\uffff\3\50\1\uffff\2\50\1\u00f9\2\50\1\u00fc\1\50\1\u00fe\1\50\1\uffff\2\50\1\uffff\1\50\1\uffff\1\u0103\1\u0104\1\50\1\u0106\2\uffff\1\u0107\2\uffff";
+        "\1\uffff\14\50\1\73\3\uffff\1\50\1\uffff\1\50\2\uffff\1\50\1\uffff\1\107\1\110\1\50\1\112\1\43\2\uffff\3\43\2\uffff\4\50\1\uffff\17\50\1\146\2\50\4\uffff\2\50\1\uffff\1\50\2\uffff\1\154\3\uffff\1\50\6\uffff\10\50\1\166\1\167\1\170\1\171\1\172\11\50\1\uffff\5\50\1\uffff\10\50\1\u0091\5\uffff\1\50\1\u0093\3\50\1\u0097\10\50\1\u00a0\7\50\1\uffff\1\50\1\uffff\3\50\1\uffff\10\50\1\uffff\3\50\1\u00ba\3\50\1\u00be\2\50\1\u00c1\6\50\1\u00c8\6\50\1\u00cf\1\uffff\3\50\1\uffff\2\50\1\uffff\1\u00d5\1\u00d6\1\uffff\3\50\1\uffff\1\u00da\5\50\1\uffff\4\50\1\u00e4\2\uffff\2\50\1\u00e7\1\uffff\1\u00e8\2\50\1\u00eb\3\50\1\u00ef\1\50\2\uffff\1\50\2\uffff\2\50\1\uffff\3\50\1\uffff\2\50\1\u00f9\2\50\1\u00fc\1\50\1\u00fe\1\50\1\uffff\2\50\1\uffff\1\50\1\uffff\1\u0103\1\u0104\1\50\1\u0106\2\uffff\1\u0107\2\uffff";
     static final String DFA12_eofS =
         "\u0108\uffff";
     static final String DFA12_minS =
-        "\1\0\1\151\1\157\1\141\1\157\1\164\1\160\1\157\1\171\1\141\1\156\1\157\1\153\1\160\1\60\3\uffff\1\156\1\uffff\1\164\2\uffff\1\144\1\uffff\3\60\1\101\2\uffff\2\0\1\52\2\uffff\1\156\1\162\1\141\1\162\1\uffff\1\151\1\142\1\171\1\155\1\156\2\155\1\163\1\155\1\123\1\166\1\165\2\164\1\157\1\145\1\60\2\160\4\uffff\2\164\1\uffff\1\162\2\uffff\1\60\11\uffff\1\147\1\151\1\147\1\151\1\156\1\154\1\155\2\145\5\60\1\142\1\147\1\121\1\124\1\142\2\145\1\154\1\146\1\uffff\1\137\1\145\1\151\1\145\1\141\1\uffff\1\154\1\156\1\147\1\156\3\145\2\60\5\uffff\1\157\1\60\1\114\1\157\1\154\1\60\1\147\1\145\1\151\2\156\1\164\1\156\1\164\1\145\1\147\1\145\1\147\1\144\1\120\1\154\2\uffff\1\153\1\uffff\1\104\1\157\1\145\1\uffff\1\145\1\141\1\170\1\141\1\144\1\151\1\144\1\145\1\124\1\104\1\162\1\60\1\124\2\145\1\60\1\162\1\154\1\60\1\162\1\156\1\72\1\155\2\145\1\60\1\163\1\147\2\141\2\145\1\60\1\uffff\1\141\1\162\1\141\1\uffff\1\151\1\163\1\uffff\2\60\1\uffff\1\145\1\156\1\163\1\uffff\1\60\1\171\1\142\1\164\1\142\1\143\1\uffff\1\142\1\103\1\146\1\166\1\60\2\uffff\1\72\1\143\1\60\1\uffff\1\60\1\154\1\141\1\60\1\165\2\154\1\60\1\145\2\uffff\1\151\2\uffff\1\145\1\112\1\uffff\1\162\1\145\1\141\1\uffff\1\162\1\145\1\60\1\160\1\151\1\60\1\163\1\60\1\163\1\uffff\1\141\1\164\1\uffff\1\163\1\uffff\2\60\1\171\1\60\2\uffff\1\60\2\uffff";
+        "\1\0\1\151\1\157\1\141\1\164\1\160\1\157\1\171\1\141\1\156\1\157\1\153\1\160\1\60\3\uffff\1\156\1\uffff\1\164\2\uffff\1\144\1\uffff\2\60\1\157\1\60\1\101\2\uffff\2\0\1\52\2\uffff\1\156\1\162\1\141\1\162\1\uffff\1\151\1\142\1\171\3\155\1\163\1\155\1\123\1\166\1\165\2\164\1\157\1\145\1\60\2\160\4\uffff\2\164\1\uffff\1\162\2\uffff\1\60\3\uffff\1\156\6\uffff\1\147\1\151\1\147\1\151\1\156\1\154\1\155\1\145\5\60\1\142\1\147\1\121\1\124\1\142\2\145\1\154\1\146\1\uffff\1\137\1\145\1\151\1\145\1\141\1\uffff\1\145\1\154\1\156\1\147\1\156\3\145\1\60\5\uffff\1\157\1\60\1\114\1\157\1\154\1\60\1\147\1\145\1\151\2\156\1\164\1\156\1\164\1\60\1\145\1\147\1\145\1\147\1\144\1\120\1\154\1\uffff\1\153\1\uffff\1\104\1\157\1\145\1\uffff\1\145\1\141\1\170\1\141\1\144\1\151\1\144\1\145\1\uffff\1\124\1\104\1\162\1\60\1\124\2\145\1\60\1\162\1\154\1\60\1\162\1\156\1\72\1\155\2\145\1\60\1\163\1\147\2\141\2\145\1\60\1\uffff\1\141\1\162\1\141\1\uffff\1\151\1\163\1\uffff\2\60\1\uffff\1\145\1\156\1\163\1\uffff\1\60\1\171\1\142\1\164\1\142\1\143\1\uffff\1\142\1\103\1\146\1\166\1\60\2\uffff\1\72\1\143\1\60\1\uffff\1\60\1\154\1\141\1\60\1\165\2\154\1\60\1\145\2\uffff\1\151\2\uffff\1\145\1\112\1\uffff\1\162\1\145\1\141\1\uffff\1\162\1\145\1\60\1\160\1\151\1\60\1\163\1\60\1\163\1\uffff\1\141\1\164\1\uffff\1\163\1\uffff\2\60\1\171\1\60\2\uffff\1\60\2\uffff";
     static final String DFA12_maxS =
-        "\1\uffff\1\167\1\157\1\151\1\157\2\164\1\157\1\171\1\157\1\156\1\157\1\162\1\160\1\172\3\uffff\1\170\1\uffff\1\164\2\uffff\1\144\1\uffff\4\172\2\uffff\2\uffff\1\57\2\uffff\1\156\1\162\1\141\1\162\1\uffff\1\151\1\142\1\171\1\155\1\156\2\157\1\163\1\156\1\123\1\166\1\165\2\164\1\157\1\145\1\172\2\160\4\uffff\2\164\1\uffff\1\162\2\uffff\1\172\11\uffff\1\147\1\151\1\147\1\151\1\156\1\154\1\155\2\145\5\172\1\142\1\147\1\121\1\124\1\142\2\145\1\154\1\146\1\uffff\1\137\1\145\1\151\1\145\1\141\1\uffff\1\154\1\156\1\147\1\156\3\145\2\172\5\uffff\1\157\1\172\1\114\1\157\1\154\1\172\1\147\1\145\1\151\2\156\1\164\1\156\1\164\1\145\1\147\1\145\1\147\1\144\1\120\1\154\2\uffff\1\153\1\uffff\1\104\1\157\1\145\1\uffff\1\145\1\141\1\170\1\141\1\144\1\171\1\144\1\145\1\124\1\127\1\162\1\172\1\124\2\145\1\172\1\162\1\154\1\172\1\162\1\156\1\72\1\155\2\145\1\172\1\163\1\147\2\141\2\145\1\172\1\uffff\1\141\1\162\1\141\1\uffff\1\151\1\163\1\uffff\2\172\1\uffff\1\145\1\156\1\163\1\uffff\1\172\1\171\1\142\1\164\1\142\1\143\1\uffff\1\142\1\103\1\146\1\166\1\172\2\uffff\1\72\1\143\1\172\1\uffff\1\172\1\154\1\141\1\172\1\165\2\154\1\172\1\145\2\uffff\1\151\2\uffff\1\145\1\112\1\uffff\1\162\1\145\1\141\1\uffff\1\162\1\145\1\172\1\160\1\151\1\172\1\163\1\172\1\163\1\uffff\1\141\1\164\1\uffff\1\163\1\uffff\2\172\1\171\1\172\2\uffff\1\172\2\uffff";
+        "\1\uffff\1\167\1\157\1\151\2\164\1\157\1\171\1\157\1\156\1\157\1\162\1\160\1\172\3\uffff\1\170\1\uffff\1\164\2\uffff\1\144\1\uffff\2\172\1\157\2\172\2\uffff\2\uffff\1\57\2\uffff\1\156\1\162\1\141\1\162\1\uffff\1\151\1\142\1\171\1\155\2\157\1\163\1\156\1\123\1\166\1\165\2\164\1\157\1\145\1\172\2\160\4\uffff\2\164\1\uffff\1\162\2\uffff\1\172\3\uffff\1\156\6\uffff\1\147\1\151\1\147\1\151\1\156\1\154\1\155\1\145\5\172\1\142\1\147\1\121\1\124\1\142\2\145\1\154\1\146\1\uffff\1\137\1\145\1\151\1\145\1\141\1\uffff\1\145\1\154\1\156\1\147\1\156\3\145\1\172\5\uffff\1\157\1\172\1\114\1\157\1\154\1\172\1\147\1\145\1\151\2\156\1\164\1\156\1\164\1\172\1\145\1\147\1\145\1\147\1\144\1\120\1\154\1\uffff\1\153\1\uffff\1\104\1\157\1\145\1\uffff\1\145\1\141\1\170\1\141\1\144\1\171\1\144\1\145\1\uffff\1\124\1\127\1\162\1\172\1\124\2\145\1\172\1\162\1\154\1\172\1\162\1\156\1\72\1\155\2\145\1\172\1\163\1\147\2\141\2\145\1\172\1\uffff\1\141\1\162\1\141\1\uffff\1\151\1\163\1\uffff\2\172\1\uffff\1\145\1\156\1\163\1\uffff\1\172\1\171\1\142\1\164\1\142\1\143\1\uffff\1\142\1\103\1\146\1\166\1\172\2\uffff\1\72\1\143\1\172\1\uffff\1\172\1\154\1\141\1\172\1\165\2\154\1\172\1\145\2\uffff\1\151\2\uffff\1\145\1\112\1\uffff\1\162\1\145\1\141\1\uffff\1\162\1\145\1\172\1\160\1\151\1\172\1\163\1\172\1\163\1\uffff\1\141\1\164\1\uffff\1\163\1\uffff\2\172\1\171\1\172\2\uffff\1\172\2\uffff";
     static final String DFA12_acceptS =
-        "\17\uffff\1\33\1\34\1\35\1\uffff\1\41\1\uffff\1\43\1\44\1\uffff\1\46\4\uffff\1\55\1\56\3\uffff\1\62\1\63\4\uffff\1\55\23\uffff\1\54\1\33\1\34\1\35\2\uffff\1\41\1\uffff\1\43\1\44\1\uffff\1\46\1\51\1\52\1\53\1\56\1\57\1\60\1\61\1\62\27\uffff\1\47\5\uffff\1\45\11\uffff\1\5\1\10\1\6\1\7\1\50\25\uffff\1\26\1\4\1\uffff\1\21\3\uffff\1\25\41\uffff\1\24\3\uffff\1\13\2\uffff\1\23\2\uffff\1\30\3\uffff\1\37\6\uffff\1\17\5\uffff\1\22\1\27\3\uffff\1\40\11\uffff\1\15\1\31\1\uffff\1\36\1\42\2\uffff\1\12\3\uffff\1\16\11\uffff\1\1\2\uffff\1\2\1\uffff\1\14\4\uffff\1\32\1\11\1\uffff\1\3\1\20";
+        "\16\uffff\1\32\1\33\1\34\1\uffff\1\40\1\uffff\1\42\1\43\1\uffff\1\45\5\uffff\1\55\1\56\3\uffff\1\62\1\63\4\uffff\1\55\22\uffff\1\52\1\32\1\33\1\34\2\uffff\1\40\1\uffff\1\42\1\43\1\uffff\1\45\1\50\1\51\1\uffff\1\54\1\56\1\57\1\60\1\61\1\62\26\uffff\1\46\5\uffff\1\44\11\uffff\1\4\1\7\1\5\1\6\1\47\26\uffff\1\25\1\uffff\1\20\3\uffff\1\24\10\uffff\1\53\31\uffff\1\23\3\uffff\1\12\2\uffff\1\22\2\uffff\1\27\3\uffff\1\36\6\uffff\1\16\5\uffff\1\21\1\26\3\uffff\1\37\11\uffff\1\14\1\30\1\uffff\1\35\1\41\2\uffff\1\11\3\uffff\1\15\11\uffff\1\1\2\uffff\1\2\1\uffff\1\13\4\uffff\1\31\1\10\1\uffff\1\3\1\17";
     static final String DFA12_specialS =
         "\1\0\36\uffff\1\1\1\2\u00e7\uffff}>";
     static final String[] DFA12_transitionS = {
-            "\11\43\2\42\2\43\1\42\22\43\1\42\1\43\1\37\4\43\1\40\4\43\1\21\2\43\1\41\12\36\1\30\2\43\1\25\3\43\1\35\1\13\1\35\1\11\4\35\1\12\1\2\1\35\1\7\1\10\5\35\1\1\1\3\6\35\1\23\1\43\1\26\1\34\1\35\1\43\1\15\1\35\1\31\1\16\1\22\3\35\1\27\3\35\1\5\1\4\1\6\1\14\1\35\1\32\1\24\1\35\1\33\5\35\1\17\1\43\1\20\uff82\43",
+            "\11\43\2\42\2\43\1\42\22\43\1\42\1\43\1\37\4\43\1\40\4\43\1\20\2\43\1\41\12\36\1\27\2\43\1\24\3\43\1\35\1\12\1\35\1\10\4\35\1\11\1\2\1\35\1\6\1\7\5\35\1\1\1\3\6\35\1\22\1\43\1\25\1\34\1\35\1\43\1\14\1\35\1\33\1\15\1\21\3\35\1\26\3\35\1\4\1\32\1\5\1\13\1\35\1\30\1\23\1\35\1\31\5\35\1\16\1\43\1\17\uff82\43",
             "\1\44\6\uffff\1\45\3\uffff\1\47\2\uffff\1\46",
             "\1\51",
             "\1\52\6\uffff\1\53\1\54",
             "\1\55",
-            "\1\56",
-            "\1\60\3\uffff\1\57",
+            "\1\57\3\uffff\1\56",
+            "\1\60",
             "\1\61",
-            "\1\62",
-            "\1\65\3\uffff\1\63\11\uffff\1\64",
+            "\1\64\3\uffff\1\62\11\uffff\1\63",
+            "\1\65",
             "\1\66",
-            "\1\67",
-            "\1\71\6\uffff\1\70",
-            "\1\72",
-            "\12\50\7\uffff\32\50\4\uffff\1\50\1\uffff\4\50\1\73\25\50",
+            "\1\70\6\uffff\1\67",
+            "\1\71",
+            "\12\50\7\uffff\32\50\4\uffff\1\50\1\uffff\4\50\1\72\25\50",
             "",
             "",
             "",
-            "\1\100\11\uffff\1\101",
+            "\1\77\11\uffff\1\100",
             "",
-            "\1\103",
+            "\1\102",
             "",
             "",
-            "\1\106",
+            "\1\105",
             "",
             "\12\50\7\uffff\32\50\4\uffff\1\50\1\uffff\32\50",
             "\12\50\7\uffff\32\50\4\uffff\1\50\1\uffff\32\50",
+            "\1\111",
             "\12\50\7\uffff\32\50\4\uffff\1\50\1\uffff\32\50",
             "\32\50\4\uffff\1\50\1\uffff\32\50",
             "",
@@ -1916,35 +1916,35 @@ public class InternalSpringFluentDSLLexer extends Lexer {
             "\1\125",
             "\1\126",
             "\1\127",
-            "\1\130",
-            "\1\132\1\uffff\1\131",
-            "\1\133\1\uffff\1\134",
-            "\1\135",
-            "\1\136\1\137",
+            "\1\131\1\uffff\1\130",
+            "\1\132\1\uffff\1\133",
+            "\1\134",
+            "\1\135\1\136",
+            "\1\137",
             "\1\140",
             "\1\141",
             "\1\142",
             "\1\143",
             "\1\144",
             "\1\145",
-            "\1\146",
             "\12\50\7\uffff\32\50\4\uffff\1\50\1\uffff\32\50",
+            "\1\147",
             "\1\150",
+            "",
+            "",
+            "",
+            "",
             "\1\151",
-            "",
-            "",
-            "",
-            "",
             "\1\152",
+            "",
             "\1\153",
             "",
-            "\1\154",
-            "",
             "",
             "\12\50\7\uffff\32\50\4\uffff\1\50\1\uffff\32\50",
             "",
             "",
             "",
+            "\1\155",
             "",
             "",
             "",
@@ -1959,12 +1959,12 @@ public class InternalSpringFluentDSLLexer extends Lexer {
             "\1\163",
             "\1\164",
             "\1\165",
-            "\1\166",
             "\12\50\7\uffff\32\50\4\uffff\1\50\1\uffff\32\50",
             "\12\50\7\uffff\32\50\4\uffff\1\50\1\uffff\32\50",
             "\12\50\7\uffff\32\50\4\uffff\1\50\1\uffff\32\50",
             "\12\50\7\uffff\32\50\4\uffff\1\50\1\uffff\32\50",
             "\12\50\7\uffff\32\50\4\uffff\1\50\1\uffff\32\50",
+            "\1\173",
             "\1\174",
             "\1\175",
             "\1\176",
@@ -1973,14 +1973,14 @@ public class InternalSpringFluentDSLLexer extends Lexer {
             "\1\u0081",
             "\1\u0082",
             "\1\u0083",
-            "\1\u0084",
             "",
+            "\1\u0084",
             "\1\u0085",
             "\1\u0086",
             "\1\u0087",
             "\1\u0088",
-            "\1\u0089",
             "",
+            "\1\u0089",
             "\1\u008a",
             "\1\u008b",
             "\1\u008c",
@@ -1989,18 +1989,18 @@ public class InternalSpringFluentDSLLexer extends Lexer {
             "\1\u008f",
             "\1\u0090",
             "\12\50\7\uffff\32\50\4\uffff\1\50\1\uffff\32\50",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "\1\u0092",
             "\12\50\7\uffff\32\50\4\uffff\1\50\1\uffff\32\50",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "\1\u0093",
-            "\12\50\7\uffff\32\50\4\uffff\1\50\1\uffff\32\50",
+            "\1\u0094",
             "\1\u0095",
             "\1\u0096",
-            "\1\u0097",
             "\12\50\7\uffff\32\50\4\uffff\1\50\1\uffff\32\50",
+            "\1\u0098",
             "\1\u0099",
             "\1\u009a",
             "\1\u009b",
@@ -2008,7 +2008,7 @@ public class InternalSpringFluentDSLLexer extends Lexer {
             "\1\u009d",
             "\1\u009e",
             "\1\u009f",
-            "\1\u00a0",
+            "\12\50\7\uffff\32\50\4\uffff\1\50\1\uffff\32\50",
             "\1\u00a1",
             "\1\u00a2",
             "\1\u00a3",
@@ -2016,7 +2016,6 @@ public class InternalSpringFluentDSLLexer extends Lexer {
             "\1\u00a5",
             "\1\u00a6",
             "\1\u00a7",
-            "",
             "",
             "\1\u00a8",
             "",
@@ -2032,6 +2031,7 @@ public class InternalSpringFluentDSLLexer extends Lexer {
             "\1\u00b1\17\uffff\1\u00b2",
             "\1\u00b3",
             "\1\u00b4",
+            "",
             "\1\u00b5",
             "\1\u00b6\16\uffff\1\u00b8\3\uffff\1\u00b7",
             "\1\u00b9",
@@ -2183,53 +2183,53 @@ public class InternalSpringFluentDSLLexer extends Lexer {
 
                         else if ( (LA12_0=='T') ) {s = 3;}
 
-                        else if ( (LA12_0=='n') ) {s = 4;}
+                        else if ( (LA12_0=='m') ) {s = 4;}
 
-                        else if ( (LA12_0=='m') ) {s = 5;}
+                        else if ( (LA12_0=='o') ) {s = 5;}
 
-                        else if ( (LA12_0=='o') ) {s = 6;}
+                        else if ( (LA12_0=='L') ) {s = 6;}
 
-                        else if ( (LA12_0=='L') ) {s = 7;}
+                        else if ( (LA12_0=='M') ) {s = 7;}
 
-                        else if ( (LA12_0=='M') ) {s = 8;}
+                        else if ( (LA12_0=='D') ) {s = 8;}
 
-                        else if ( (LA12_0=='D') ) {s = 9;}
+                        else if ( (LA12_0=='I') ) {s = 9;}
 
-                        else if ( (LA12_0=='I') ) {s = 10;}
+                        else if ( (LA12_0=='B') ) {s = 10;}
 
-                        else if ( (LA12_0=='B') ) {s = 11;}
+                        else if ( (LA12_0=='p') ) {s = 11;}
 
-                        else if ( (LA12_0=='p') ) {s = 12;}
+                        else if ( (LA12_0=='a') ) {s = 12;}
 
-                        else if ( (LA12_0=='a') ) {s = 13;}
+                        else if ( (LA12_0=='d') ) {s = 13;}
 
-                        else if ( (LA12_0=='d') ) {s = 14;}
+                        else if ( (LA12_0=='{') ) {s = 14;}
 
-                        else if ( (LA12_0=='{') ) {s = 15;}
+                        else if ( (LA12_0=='}') ) {s = 15;}
 
-                        else if ( (LA12_0=='}') ) {s = 16;}
+                        else if ( (LA12_0==',') ) {s = 16;}
 
-                        else if ( (LA12_0==',') ) {s = 17;}
+                        else if ( (LA12_0=='e') ) {s = 17;}
 
-                        else if ( (LA12_0=='e') ) {s = 18;}
+                        else if ( (LA12_0=='[') ) {s = 18;}
 
-                        else if ( (LA12_0=='[') ) {s = 19;}
+                        else if ( (LA12_0=='s') ) {s = 19;}
 
-                        else if ( (LA12_0=='s') ) {s = 20;}
+                        else if ( (LA12_0=='=') ) {s = 20;}
 
-                        else if ( (LA12_0=='=') ) {s = 21;}
+                        else if ( (LA12_0==']') ) {s = 21;}
 
-                        else if ( (LA12_0==']') ) {s = 22;}
+                        else if ( (LA12_0=='i') ) {s = 22;}
 
-                        else if ( (LA12_0=='i') ) {s = 23;}
+                        else if ( (LA12_0==':') ) {s = 23;}
 
-                        else if ( (LA12_0==':') ) {s = 24;}
+                        else if ( (LA12_0=='r') ) {s = 24;}
 
-                        else if ( (LA12_0=='c') ) {s = 25;}
+                        else if ( (LA12_0=='u') ) {s = 25;}
 
-                        else if ( (LA12_0=='r') ) {s = 26;}
+                        else if ( (LA12_0=='n') ) {s = 26;}
 
-                        else if ( (LA12_0=='u') ) {s = 27;}
+                        else if ( (LA12_0=='c') ) {s = 27;}
 
                         else if ( (LA12_0=='^') ) {s = 28;}
 

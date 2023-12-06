@@ -20,6 +20,8 @@ import org.xtext.spring.fluent.springFluentDSL.Entities;
 import org.xtext.spring.fluent.springFluentDSL.Entity;
 import org.xtext.spring.fluent.springFluentDSL.Feature;
 import org.xtext.spring.fluent.springFluentDSL.Model;
+import org.xtext.spring.fluent.springFluentDSL.Operation;
+import org.xtext.spring.fluent.springFluentDSL.OperationType;
 import org.xtext.spring.fluent.springFluentDSL.Prefix;
 import org.xtext.spring.fluent.springFluentDSL.Relation;
 import org.xtext.spring.fluent.springFluentDSL.SpringFluentDSLFactory;
@@ -104,6 +106,20 @@ public class SpringFluentDSLPackageImpl extends EPackageImpl implements SpringFl
    * @generated
    */
   private EClass identityEClass = null;
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  private EClass operationEClass = null;
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  private EClass operationTypeEClass = null;
 
   /**
    * <!-- begin-user-doc -->
@@ -432,9 +448,9 @@ public class SpringFluentDSLPackageImpl extends EPackageImpl implements SpringFl
    * @generated
    */
   @Override
-  public EAttribute getFeature_Operation()
+  public EReference getFeature_Operation()
   {
-    return (EAttribute)featureEClass.getEStructuralFeatures().get(0);
+    return (EReference)featureEClass.getEStructuralFeatures().get(0);
   }
 
   /**
@@ -512,6 +528,39 @@ public class SpringFluentDSLPackageImpl extends EPackageImpl implements SpringFl
   public EAttribute getIDENTITY_Type()
   {
     return (EAttribute)identityEClass.getEStructuralFeatures().get(0);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  @Override
+  public EClass getOperation()
+  {
+    return operationEClass;
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  @Override
+  public EClass getOperationType()
+  {
+    return operationTypeEClass;
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  @Override
+  public EAttribute getOperationType_OprationType()
+  {
+    return (EAttribute)operationTypeEClass.getEStructuralFeatures().get(0);
   }
 
   /**
@@ -672,7 +721,7 @@ public class SpringFluentDSLPackageImpl extends EPackageImpl implements SpringFl
     createEReference(entityEClass, ENTITY__FEATURE);
 
     featureEClass = createEClass(FEATURE);
-    createEAttribute(featureEClass, FEATURE__OPERATION);
+    createEReference(featureEClass, FEATURE__OPERATION);
     createEReference(featureEClass, FEATURE__ID);
     createEReference(featureEClass, FEATURE__ATTRIBUTES);
     createEReference(featureEClass, FEATURE__RELATIONS);
@@ -682,6 +731,11 @@ public class SpringFluentDSLPackageImpl extends EPackageImpl implements SpringFl
 
     identityEClass = createEClass(IDENTITY);
     createEAttribute(identityEClass, IDENTITY__TYPE);
+
+    operationEClass = createEClass(OPERATION);
+
+    operationTypeEClass = createEClass(OPERATION_TYPE);
+    createEAttribute(operationTypeEClass, OPERATION_TYPE__OPRATION_TYPE);
 
     attributeEClass = createEClass(ATTRIBUTE);
     createEAttribute(attributeEClass, ATTRIBUTE__NAME);
@@ -726,6 +780,7 @@ public class SpringFluentDSLPackageImpl extends EPackageImpl implements SpringFl
     // Set bounds for type parameters
 
     // Add supertypes to classes
+    operationTypeEClass.getESuperTypes().add(this.getOperation());
 
     // Initialize classes and features; add operations and parameters
     initEClass(modelEClass, Model.class, "Model", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
@@ -756,7 +811,7 @@ public class SpringFluentDSLPackageImpl extends EPackageImpl implements SpringFl
     initEReference(getEntity_Feature(), this.getFeature(), null, "feature", null, 0, 1, Entity.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
     initEClass(featureEClass, Feature.class, "Feature", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-    initEAttribute(getFeature_Operation(), ecorePackage.getEString(), "operation", null, 0, 1, Feature.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+    initEReference(getFeature_Operation(), this.getOperation(), null, "operation", null, 0, 1, Feature.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
     initEReference(getFeature_Id(), this.getIDENTITY(), null, "id", null, 0, 1, Feature.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
     initEReference(getFeature_Attributes(), this.getAttribute(), null, "attributes", null, 0, -1, Feature.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
     initEReference(getFeature_Relations(), this.getRelation(), null, "relations", null, 0, -1, Feature.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
@@ -766,6 +821,11 @@ public class SpringFluentDSLPackageImpl extends EPackageImpl implements SpringFl
 
     initEClass(identityEClass, org.xtext.spring.fluent.springFluentDSL.IDENTITY.class, "IDENTITY", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
     initEAttribute(getIDENTITY_Type(), this.getType(), "type", null, 0, 1, org.xtext.spring.fluent.springFluentDSL.IDENTITY.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+    initEClass(operationEClass, Operation.class, "Operation", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+
+    initEClass(operationTypeEClass, OperationType.class, "OperationType", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+    initEAttribute(getOperationType_OprationType(), ecorePackage.getEString(), "oprationType", null, 0, 1, OperationType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
     initEClass(attributeEClass, Attribute.class, "Attribute", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
     initEAttribute(getAttribute_Name(), ecorePackage.getEString(), "name", null, 0, 1, Attribute.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);

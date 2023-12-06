@@ -126,6 +126,16 @@ public class SpringFluentDSLAdapterFactory extends AdapterFactoryImpl
         return createIDENTITYAdapter();
       }
       @Override
+      public Adapter caseOperation(Operation object)
+      {
+        return createOperationAdapter();
+      }
+      @Override
+      public Adapter caseOperationType(OperationType object)
+      {
+        return createOperationTypeAdapter();
+      }
+      @Override
       public Adapter caseAttribute(Attribute object)
       {
         return createAttributeAdapter();
@@ -303,6 +313,36 @@ public class SpringFluentDSLAdapterFactory extends AdapterFactoryImpl
    * @generated
    */
   public Adapter createIDENTITYAdapter()
+  {
+    return null;
+  }
+
+  /**
+   * Creates a new adapter for an object of class '{@link org.xtext.spring.fluent.springFluentDSL.Operation <em>Operation</em>}'.
+   * <!-- begin-user-doc -->
+   * This default implementation returns null so that we can easily ignore cases;
+   * it's useful to ignore a case when inheritance will catch all the cases anyway.
+   * <!-- end-user-doc -->
+   * @return the new adapter.
+   * @see org.xtext.spring.fluent.springFluentDSL.Operation
+   * @generated
+   */
+  public Adapter createOperationAdapter()
+  {
+    return null;
+  }
+
+  /**
+   * Creates a new adapter for an object of class '{@link org.xtext.spring.fluent.springFluentDSL.OperationType <em>Operation Type</em>}'.
+   * <!-- begin-user-doc -->
+   * This default implementation returns null so that we can easily ignore cases;
+   * it's useful to ignore a case when inheritance will catch all the cases anyway.
+   * <!-- end-user-doc -->
+   * @return the new adapter.
+   * @see org.xtext.spring.fluent.springFluentDSL.OperationType
+   * @generated
+   */
+  public Adapter createOperationTypeAdapter()
   {
     return null;
   }

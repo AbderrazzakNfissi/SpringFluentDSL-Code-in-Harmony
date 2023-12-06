@@ -32,7 +32,7 @@ public class SpringFluentDSLParser extends AbstractContentAssistParser {
 		
 		private static void init(ImmutableMap.Builder<AbstractElement, String> builder, SpringFluentDSLGrammarAccess grammarAccess) {
 			builder.put(grammarAccess.getStrategyAccess().getStrategyAlternatives_1_0(), "rule__Strategy__StrategyAlternatives_1_0");
-			builder.put(grammarAccess.getOperationAccess().getAlternatives_2(), "rule__Operation__Alternatives_2");
+			builder.put(grammarAccess.getOperationTypeAccess().getAlternatives(), "rule__OperationType__Alternatives");
 			builder.put(grammarAccess.getRelationAccess().getTypeAlternatives_3_0(), "rule__Relation__TypeAlternatives_3_0");
 			builder.put(grammarAccess.getDependencyTypeAccess().getAlternatives(), "rule__DependencyType__Alternatives");
 			builder.put(grammarAccess.getTypeAccess().getAlternatives(), "rule__Type__Alternatives");
@@ -49,7 +49,8 @@ public class SpringFluentDSLParser extends AbstractContentAssistParser {
 			builder.put(grammarAccess.getStrategyAccess().getGroup(), "rule__Strategy__Group__0");
 			builder.put(grammarAccess.getIDENTITYAccess().getGroup(), "rule__IDENTITY__Group__0");
 			builder.put(grammarAccess.getOperationAccess().getGroup(), "rule__Operation__Group__0");
-			builder.put(grammarAccess.getOperationAccess().getGroup_2_0(), "rule__Operation__Group_2_0__0");
+			builder.put(grammarAccess.getOperationTypeAccess().getGroup_0(), "rule__OperationType__Group_0__0");
+			builder.put(grammarAccess.getOperationTypeAccess().getGroup_1(), "rule__OperationType__Group_1__0");
 			builder.put(grammarAccess.getAttributeAccess().getGroup(), "rule__Attribute__Group__0");
 			builder.put(grammarAccess.getRelationAccess().getGroup(), "rule__Relation__Group__0");
 			builder.put(grammarAccess.getModelAccess().getPrefixAssignment_0(), "rule__Model__PrefixAssignment_0");
@@ -72,6 +73,7 @@ public class SpringFluentDSLParser extends AbstractContentAssistParser {
 			builder.put(grammarAccess.getFeatureAccess().getRelationsAssignment_4(), "rule__Feature__RelationsAssignment_4");
 			builder.put(grammarAccess.getStrategyAccess().getStrategyAssignment_1(), "rule__Strategy__StrategyAssignment_1");
 			builder.put(grammarAccess.getIDENTITYAccess().getTypeAssignment_2(), "rule__IDENTITY__TypeAssignment_2");
+			builder.put(grammarAccess.getOperationTypeAccess().getOprationTypeAssignment_0_1(), "rule__OperationType__OprationTypeAssignment_0_1");
 			builder.put(grammarAccess.getAttributeAccess().getNameAssignment_0(), "rule__Attribute__NameAssignment_0");
 			builder.put(grammarAccess.getAttributeAccess().getTypeAssignment_2(), "rule__Attribute__TypeAssignment_2");
 			builder.put(grammarAccess.getRelationAccess().getNameAssignment_0(), "rule__Relation__NameAssignment_0");

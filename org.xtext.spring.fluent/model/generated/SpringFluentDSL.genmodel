@@ -53,7 +53,7 @@
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference SpringFluentDSL.ecore#//Entity/feature"/>
     </genClasses>
     <genClasses ecoreClass="SpringFluentDSL.ecore#//Feature">
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute SpringFluentDSL.ecore#//Feature/operation"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference SpringFluentDSL.ecore#//Feature/operation"/>
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference SpringFluentDSL.ecore#//Feature/id"/>
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference SpringFluentDSL.ecore#//Feature/attributes"/>
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference SpringFluentDSL.ecore#//Feature/relations"/>
@@ -63,6 +63,10 @@
     </genClasses>
     <genClasses ecoreClass="SpringFluentDSL.ecore#//IDENTITY">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute SpringFluentDSL.ecore#//IDENTITY/type"/>
+    </genClasses>
+    <genClasses ecoreClass="SpringFluentDSL.ecore#//Operation"/>
+    <genClasses ecoreClass="SpringFluentDSL.ecore#//OperationType">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute SpringFluentDSL.ecore#//OperationType/oprationType"/>
     </genClasses>
     <genClasses ecoreClass="SpringFluentDSL.ecore#//Attribute">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute SpringFluentDSL.ecore#//Attribute/name"/>

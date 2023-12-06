@@ -22,6 +22,7 @@ import org.eclipse.emf.ecore.util.InternalEList;
 import org.xtext.spring.fluent.springFluentDSL.Attribute;
 import org.xtext.spring.fluent.springFluentDSL.Feature;
 import org.xtext.spring.fluent.springFluentDSL.IDENTITY;
+import org.xtext.spring.fluent.springFluentDSL.Operation;
 import org.xtext.spring.fluent.springFluentDSL.Relation;
 import org.xtext.spring.fluent.springFluentDSL.SpringFluentDSLPackage;
 
@@ -44,24 +45,14 @@ import org.xtext.spring.fluent.springFluentDSL.SpringFluentDSLPackage;
 public class FeatureImpl extends MinimalEObjectImpl.Container implements Feature
 {
   /**
-   * The default value of the '{@link #getOperation() <em>Operation</em>}' attribute.
+   * The cached value of the '{@link #getOperation() <em>Operation</em>}' containment reference.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @see #getOperation()
    * @generated
    * @ordered
    */
-  protected static final String OPERATION_EDEFAULT = null;
-
-  /**
-   * The cached value of the '{@link #getOperation() <em>Operation</em>}' attribute.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #getOperation()
-   * @generated
-   * @ordered
-   */
-  protected String operation = OPERATION_EDEFAULT;
+  protected Operation operation;
 
   /**
    * The cached value of the '{@link #getId() <em>Id</em>}' containment reference.
@@ -120,7 +111,7 @@ public class FeatureImpl extends MinimalEObjectImpl.Container implements Feature
    * @generated
    */
   @Override
-  public String getOperation()
+  public Operation getOperation()
   {
     return operation;
   }
@@ -130,13 +121,38 @@ public class FeatureImpl extends MinimalEObjectImpl.Container implements Feature
    * <!-- end-user-doc -->
    * @generated
    */
-  @Override
-  public void setOperation(String newOperation)
+  public NotificationChain basicSetOperation(Operation newOperation, NotificationChain msgs)
   {
-    String oldOperation = operation;
+    Operation oldOperation = operation;
     operation = newOperation;
     if (eNotificationRequired())
-      eNotify(new ENotificationImpl(this, Notification.SET, SpringFluentDSLPackage.FEATURE__OPERATION, oldOperation, operation));
+    {
+      ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, SpringFluentDSLPackage.FEATURE__OPERATION, oldOperation, newOperation);
+      if (msgs == null) msgs = notification; else msgs.add(notification);
+    }
+    return msgs;
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  @Override
+  public void setOperation(Operation newOperation)
+  {
+    if (newOperation != operation)
+    {
+      NotificationChain msgs = null;
+      if (operation != null)
+        msgs = ((InternalEObject)operation).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - SpringFluentDSLPackage.FEATURE__OPERATION, null, msgs);
+      if (newOperation != null)
+        msgs = ((InternalEObject)newOperation).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - SpringFluentDSLPackage.FEATURE__OPERATION, null, msgs);
+      msgs = basicSetOperation(newOperation, msgs);
+      if (msgs != null) msgs.dispatch();
+    }
+    else if (eNotificationRequired())
+      eNotify(new ENotificationImpl(this, Notification.SET, SpringFluentDSLPackage.FEATURE__OPERATION, newOperation, newOperation));
   }
 
   /**
@@ -229,6 +245,8 @@ public class FeatureImpl extends MinimalEObjectImpl.Container implements Feature
   {
     switch (featureID)
     {
+      case SpringFluentDSLPackage.FEATURE__OPERATION:
+        return basicSetOperation(null, msgs);
       case SpringFluentDSLPackage.FEATURE__ID:
         return basicSetId(null, msgs);
       case SpringFluentDSLPackage.FEATURE__ATTRIBUTES:
@@ -273,7 +291,7 @@ public class FeatureImpl extends MinimalEObjectImpl.Container implements Feature
     switch (featureID)
     {
       case SpringFluentDSLPackage.FEATURE__OPERATION:
-        setOperation((String)newValue);
+        setOperation((Operation)newValue);
         return;
       case SpringFluentDSLPackage.FEATURE__ID:
         setId((IDENTITY)newValue);
@@ -301,7 +319,7 @@ public class FeatureImpl extends MinimalEObjectImpl.Container implements Feature
     switch (featureID)
     {
       case SpringFluentDSLPackage.FEATURE__OPERATION:
-        setOperation(OPERATION_EDEFAULT);
+        setOperation((Operation)null);
         return;
       case SpringFluentDSLPackage.FEATURE__ID:
         setId((IDENTITY)null);
@@ -327,7 +345,7 @@ public class FeatureImpl extends MinimalEObjectImpl.Container implements Feature
     switch (featureID)
     {
       case SpringFluentDSLPackage.FEATURE__OPERATION:
-        return OPERATION_EDEFAULT == null ? operation != null : !OPERATION_EDEFAULT.equals(operation);
+        return operation != null;
       case SpringFluentDSLPackage.FEATURE__ID:
         return id != null;
       case SpringFluentDSLPackage.FEATURE__ATTRIBUTES:
@@ -336,23 +354,6 @@ public class FeatureImpl extends MinimalEObjectImpl.Container implements Feature
         return relations != null && !relations.isEmpty();
     }
     return super.eIsSet(featureID);
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  @Override
-  public String toString()
-  {
-    if (eIsProxy()) return super.toString();
-
-    StringBuilder result = new StringBuilder(super.toString());
-    result.append(" (operation: ");
-    result.append(operation);
-    result.append(')');
-    return result.toString();
   }
 
 } //FeatureImpl

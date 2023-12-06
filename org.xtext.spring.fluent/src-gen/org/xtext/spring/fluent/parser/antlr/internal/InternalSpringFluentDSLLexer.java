@@ -996,10 +996,10 @@ public class InternalSpringFluentDSLLexer extends Lexer {
         try {
             int _type = RULE_ID;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // InternalSpringFluentDSL.g:1151:9: ( ( '^' )? ( 'a' .. 'z' | 'A' .. 'Z' | '_' ) ( 'a' .. 'z' | 'A' .. 'Z' | '_' | '0' .. '9' )* )
-            // InternalSpringFluentDSL.g:1151:11: ( '^' )? ( 'a' .. 'z' | 'A' .. 'Z' | '_' ) ( 'a' .. 'z' | 'A' .. 'Z' | '_' | '0' .. '9' )*
+            // InternalSpringFluentDSL.g:1193:9: ( ( '^' )? ( 'a' .. 'z' | 'A' .. 'Z' | '_' ) ( 'a' .. 'z' | 'A' .. 'Z' | '_' | '0' .. '9' )* )
+            // InternalSpringFluentDSL.g:1193:11: ( '^' )? ( 'a' .. 'z' | 'A' .. 'Z' | '_' ) ( 'a' .. 'z' | 'A' .. 'Z' | '_' | '0' .. '9' )*
             {
-            // InternalSpringFluentDSL.g:1151:11: ( '^' )?
+            // InternalSpringFluentDSL.g:1193:11: ( '^' )?
             int alt1=2;
             int LA1_0 = input.LA(1);
 
@@ -1008,7 +1008,7 @@ public class InternalSpringFluentDSLLexer extends Lexer {
             }
             switch (alt1) {
                 case 1 :
-                    // InternalSpringFluentDSL.g:1151:11: '^'
+                    // InternalSpringFluentDSL.g:1193:11: '^'
                     {
                     match('^'); 
 
@@ -1026,7 +1026,7 @@ public class InternalSpringFluentDSLLexer extends Lexer {
                 recover(mse);
                 throw mse;}
 
-            // InternalSpringFluentDSL.g:1151:40: ( 'a' .. 'z' | 'A' .. 'Z' | '_' | '0' .. '9' )*
+            // InternalSpringFluentDSL.g:1193:40: ( 'a' .. 'z' | 'A' .. 'Z' | '_' | '0' .. '9' )*
             loop2:
             do {
                 int alt2=2;
@@ -1075,10 +1075,10 @@ public class InternalSpringFluentDSLLexer extends Lexer {
         try {
             int _type = RULE_INT;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // InternalSpringFluentDSL.g:1153:10: ( ( '0' .. '9' )+ )
-            // InternalSpringFluentDSL.g:1153:12: ( '0' .. '9' )+
+            // InternalSpringFluentDSL.g:1195:10: ( ( '0' .. '9' )+ )
+            // InternalSpringFluentDSL.g:1195:12: ( '0' .. '9' )+
             {
-            // InternalSpringFluentDSL.g:1153:12: ( '0' .. '9' )+
+            // InternalSpringFluentDSL.g:1195:12: ( '0' .. '9' )+
             int cnt3=0;
             loop3:
             do {
@@ -1092,7 +1092,7 @@ public class InternalSpringFluentDSLLexer extends Lexer {
 
                 switch (alt3) {
             	case 1 :
-            	    // InternalSpringFluentDSL.g:1153:13: '0' .. '9'
+            	    // InternalSpringFluentDSL.g:1195:13: '0' .. '9'
             	    {
             	    matchRange('0','9'); 
 
@@ -1124,10 +1124,10 @@ public class InternalSpringFluentDSLLexer extends Lexer {
         try {
             int _type = RULE_STRING;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // InternalSpringFluentDSL.g:1155:13: ( ( '\"' ( '\\\\' . | ~ ( ( '\\\\' | '\"' ) ) )* '\"' | '\\'' ( '\\\\' . | ~ ( ( '\\\\' | '\\'' ) ) )* '\\'' ) )
-            // InternalSpringFluentDSL.g:1155:15: ( '\"' ( '\\\\' . | ~ ( ( '\\\\' | '\"' ) ) )* '\"' | '\\'' ( '\\\\' . | ~ ( ( '\\\\' | '\\'' ) ) )* '\\'' )
+            // InternalSpringFluentDSL.g:1197:13: ( ( '\"' ( '\\\\' . | ~ ( ( '\\\\' | '\"' ) ) )* '\"' | '\\'' ( '\\\\' . | ~ ( ( '\\\\' | '\\'' ) ) )* '\\'' ) )
+            // InternalSpringFluentDSL.g:1197:15: ( '\"' ( '\\\\' . | ~ ( ( '\\\\' | '\"' ) ) )* '\"' | '\\'' ( '\\\\' . | ~ ( ( '\\\\' | '\\'' ) ) )* '\\'' )
             {
-            // InternalSpringFluentDSL.g:1155:15: ( '\"' ( '\\\\' . | ~ ( ( '\\\\' | '\"' ) ) )* '\"' | '\\'' ( '\\\\' . | ~ ( ( '\\\\' | '\\'' ) ) )* '\\'' )
+            // InternalSpringFluentDSL.g:1197:15: ( '\"' ( '\\\\' . | ~ ( ( '\\\\' | '\"' ) ) )* '\"' | '\\'' ( '\\\\' . | ~ ( ( '\\\\' | '\\'' ) ) )* '\\'' )
             int alt6=2;
             int LA6_0 = input.LA(1);
 
@@ -1145,10 +1145,10 @@ public class InternalSpringFluentDSLLexer extends Lexer {
             }
             switch (alt6) {
                 case 1 :
-                    // InternalSpringFluentDSL.g:1155:16: '\"' ( '\\\\' . | ~ ( ( '\\\\' | '\"' ) ) )* '\"'
+                    // InternalSpringFluentDSL.g:1197:16: '\"' ( '\\\\' . | ~ ( ( '\\\\' | '\"' ) ) )* '\"'
                     {
                     match('\"'); 
-                    // InternalSpringFluentDSL.g:1155:20: ( '\\\\' . | ~ ( ( '\\\\' | '\"' ) ) )*
+                    // InternalSpringFluentDSL.g:1197:20: ( '\\\\' . | ~ ( ( '\\\\' | '\"' ) ) )*
                     loop4:
                     do {
                         int alt4=3;
@@ -1164,7 +1164,7 @@ public class InternalSpringFluentDSLLexer extends Lexer {
 
                         switch (alt4) {
                     	case 1 :
-                    	    // InternalSpringFluentDSL.g:1155:21: '\\\\' .
+                    	    // InternalSpringFluentDSL.g:1197:21: '\\\\' .
                     	    {
                     	    match('\\'); 
                     	    matchAny(); 
@@ -1172,7 +1172,7 @@ public class InternalSpringFluentDSLLexer extends Lexer {
                     	    }
                     	    break;
                     	case 2 :
-                    	    // InternalSpringFluentDSL.g:1155:28: ~ ( ( '\\\\' | '\"' ) )
+                    	    // InternalSpringFluentDSL.g:1197:28: ~ ( ( '\\\\' | '\"' ) )
                     	    {
                     	    if ( (input.LA(1)>='\u0000' && input.LA(1)<='!')||(input.LA(1)>='#' && input.LA(1)<='[')||(input.LA(1)>=']' && input.LA(1)<='\uFFFF') ) {
                     	        input.consume();
@@ -1197,10 +1197,10 @@ public class InternalSpringFluentDSLLexer extends Lexer {
                     }
                     break;
                 case 2 :
-                    // InternalSpringFluentDSL.g:1155:48: '\\'' ( '\\\\' . | ~ ( ( '\\\\' | '\\'' ) ) )* '\\''
+                    // InternalSpringFluentDSL.g:1197:48: '\\'' ( '\\\\' . | ~ ( ( '\\\\' | '\\'' ) ) )* '\\''
                     {
                     match('\''); 
-                    // InternalSpringFluentDSL.g:1155:53: ( '\\\\' . | ~ ( ( '\\\\' | '\\'' ) ) )*
+                    // InternalSpringFluentDSL.g:1197:53: ( '\\\\' . | ~ ( ( '\\\\' | '\\'' ) ) )*
                     loop5:
                     do {
                         int alt5=3;
@@ -1216,7 +1216,7 @@ public class InternalSpringFluentDSLLexer extends Lexer {
 
                         switch (alt5) {
                     	case 1 :
-                    	    // InternalSpringFluentDSL.g:1155:54: '\\\\' .
+                    	    // InternalSpringFluentDSL.g:1197:54: '\\\\' .
                     	    {
                     	    match('\\'); 
                     	    matchAny(); 
@@ -1224,7 +1224,7 @@ public class InternalSpringFluentDSLLexer extends Lexer {
                     	    }
                     	    break;
                     	case 2 :
-                    	    // InternalSpringFluentDSL.g:1155:61: ~ ( ( '\\\\' | '\\'' ) )
+                    	    // InternalSpringFluentDSL.g:1197:61: ~ ( ( '\\\\' | '\\'' ) )
                     	    {
                     	    if ( (input.LA(1)>='\u0000' && input.LA(1)<='&')||(input.LA(1)>='(' && input.LA(1)<='[')||(input.LA(1)>=']' && input.LA(1)<='\uFFFF') ) {
                     	        input.consume();
@@ -1267,12 +1267,12 @@ public class InternalSpringFluentDSLLexer extends Lexer {
         try {
             int _type = RULE_ML_COMMENT;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // InternalSpringFluentDSL.g:1157:17: ( '/*' ( options {greedy=false; } : . )* '*/' )
-            // InternalSpringFluentDSL.g:1157:19: '/*' ( options {greedy=false; } : . )* '*/'
+            // InternalSpringFluentDSL.g:1199:17: ( '/*' ( options {greedy=false; } : . )* '*/' )
+            // InternalSpringFluentDSL.g:1199:19: '/*' ( options {greedy=false; } : . )* '*/'
             {
             match("/*"); 
 
-            // InternalSpringFluentDSL.g:1157:24: ( options {greedy=false; } : . )*
+            // InternalSpringFluentDSL.g:1199:24: ( options {greedy=false; } : . )*
             loop7:
             do {
                 int alt7=2;
@@ -1297,7 +1297,7 @@ public class InternalSpringFluentDSLLexer extends Lexer {
 
                 switch (alt7) {
             	case 1 :
-            	    // InternalSpringFluentDSL.g:1157:52: .
+            	    // InternalSpringFluentDSL.g:1199:52: .
             	    {
             	    matchAny(); 
 
@@ -1327,12 +1327,12 @@ public class InternalSpringFluentDSLLexer extends Lexer {
         try {
             int _type = RULE_SL_COMMENT;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // InternalSpringFluentDSL.g:1159:17: ( '//' (~ ( ( '\\n' | '\\r' ) ) )* ( ( '\\r' )? '\\n' )? )
-            // InternalSpringFluentDSL.g:1159:19: '//' (~ ( ( '\\n' | '\\r' ) ) )* ( ( '\\r' )? '\\n' )?
+            // InternalSpringFluentDSL.g:1201:17: ( '//' (~ ( ( '\\n' | '\\r' ) ) )* ( ( '\\r' )? '\\n' )? )
+            // InternalSpringFluentDSL.g:1201:19: '//' (~ ( ( '\\n' | '\\r' ) ) )* ( ( '\\r' )? '\\n' )?
             {
             match("//"); 
 
-            // InternalSpringFluentDSL.g:1159:24: (~ ( ( '\\n' | '\\r' ) ) )*
+            // InternalSpringFluentDSL.g:1201:24: (~ ( ( '\\n' | '\\r' ) ) )*
             loop8:
             do {
                 int alt8=2;
@@ -1345,7 +1345,7 @@ public class InternalSpringFluentDSLLexer extends Lexer {
 
                 switch (alt8) {
             	case 1 :
-            	    // InternalSpringFluentDSL.g:1159:24: ~ ( ( '\\n' | '\\r' ) )
+            	    // InternalSpringFluentDSL.g:1201:24: ~ ( ( '\\n' | '\\r' ) )
             	    {
             	    if ( (input.LA(1)>='\u0000' && input.LA(1)<='\t')||(input.LA(1)>='\u000B' && input.LA(1)<='\f')||(input.LA(1)>='\u000E' && input.LA(1)<='\uFFFF') ) {
             	        input.consume();
@@ -1365,7 +1365,7 @@ public class InternalSpringFluentDSLLexer extends Lexer {
                 }
             } while (true);
 
-            // InternalSpringFluentDSL.g:1159:40: ( ( '\\r' )? '\\n' )?
+            // InternalSpringFluentDSL.g:1201:40: ( ( '\\r' )? '\\n' )?
             int alt10=2;
             int LA10_0 = input.LA(1);
 
@@ -1374,9 +1374,9 @@ public class InternalSpringFluentDSLLexer extends Lexer {
             }
             switch (alt10) {
                 case 1 :
-                    // InternalSpringFluentDSL.g:1159:41: ( '\\r' )? '\\n'
+                    // InternalSpringFluentDSL.g:1201:41: ( '\\r' )? '\\n'
                     {
-                    // InternalSpringFluentDSL.g:1159:41: ( '\\r' )?
+                    // InternalSpringFluentDSL.g:1201:41: ( '\\r' )?
                     int alt9=2;
                     int LA9_0 = input.LA(1);
 
@@ -1385,7 +1385,7 @@ public class InternalSpringFluentDSLLexer extends Lexer {
                     }
                     switch (alt9) {
                         case 1 :
-                            // InternalSpringFluentDSL.g:1159:41: '\\r'
+                            // InternalSpringFluentDSL.g:1201:41: '\\r'
                             {
                             match('\r'); 
 
@@ -1417,10 +1417,10 @@ public class InternalSpringFluentDSLLexer extends Lexer {
         try {
             int _type = RULE_WS;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // InternalSpringFluentDSL.g:1161:9: ( ( ' ' | '\\t' | '\\r' | '\\n' )+ )
-            // InternalSpringFluentDSL.g:1161:11: ( ' ' | '\\t' | '\\r' | '\\n' )+
+            // InternalSpringFluentDSL.g:1203:9: ( ( ' ' | '\\t' | '\\r' | '\\n' )+ )
+            // InternalSpringFluentDSL.g:1203:11: ( ' ' | '\\t' | '\\r' | '\\n' )+
             {
-            // InternalSpringFluentDSL.g:1161:11: ( ' ' | '\\t' | '\\r' | '\\n' )+
+            // InternalSpringFluentDSL.g:1203:11: ( ' ' | '\\t' | '\\r' | '\\n' )+
             int cnt11=0;
             loop11:
             do {
@@ -1474,8 +1474,8 @@ public class InternalSpringFluentDSLLexer extends Lexer {
         try {
             int _type = RULE_ANY_OTHER;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // InternalSpringFluentDSL.g:1163:16: ( . )
-            // InternalSpringFluentDSL.g:1163:18: .
+            // InternalSpringFluentDSL.g:1205:16: ( . )
+            // InternalSpringFluentDSL.g:1205:18: .
             {
             matchAny(); 
 

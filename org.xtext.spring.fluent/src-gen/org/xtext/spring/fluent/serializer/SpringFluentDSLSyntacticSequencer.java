@@ -10,6 +10,10 @@ import org.eclipse.xtext.IGrammarAccess;
 import org.eclipse.xtext.RuleCall;
 import org.eclipse.xtext.nodemodel.INode;
 import org.eclipse.xtext.serializer.analysis.GrammarAlias.AbstractElementAlias;
+import org.eclipse.xtext.serializer.analysis.GrammarAlias.AlternativeAlias;
+import org.eclipse.xtext.serializer.analysis.GrammarAlias.GroupAlias;
+import org.eclipse.xtext.serializer.analysis.GrammarAlias.TokenAlias;
+import org.eclipse.xtext.serializer.analysis.ISyntacticSequencerPDAProvider.ISynNavigable;
 import org.eclipse.xtext.serializer.analysis.ISyntacticSequencerPDAProvider.ISynTransition;
 import org.eclipse.xtext.serializer.sequencer.AbstractSyntacticSequencer;
 import org.xtext.spring.fluent.services.SpringFluentDSLGrammarAccess;
@@ -18,10 +22,18 @@ import org.xtext.spring.fluent.services.SpringFluentDSLGrammarAccess;
 public class SpringFluentDSLSyntacticSequencer extends AbstractSyntacticSequencer {
 
 	protected SpringFluentDSLGrammarAccess grammarAccess;
+	protected AbstractElementAlias match_OperationType_DKeyword_0_4_q;
+	protected AbstractElementAlias match_OperationType_RKeyword_0_2_q;
+	protected AbstractElementAlias match_OperationType_UKeyword_0_3_q;
+	protected AbstractElementAlias match_OperationType___NoneKeyword_1_1_or___RKeyword_0_2_q_UKeyword_0_3_q_DKeyword_0_4_q____q;
 	
 	@Inject
 	protected void init(IGrammarAccess access) {
 		grammarAccess = (SpringFluentDSLGrammarAccess) access;
+		match_OperationType_DKeyword_0_4_q = new TokenAlias(false, true, grammarAccess.getOperationTypeAccess().getDKeyword_0_4());
+		match_OperationType_RKeyword_0_2_q = new TokenAlias(false, true, grammarAccess.getOperationTypeAccess().getRKeyword_0_2());
+		match_OperationType_UKeyword_0_3_q = new TokenAlias(false, true, grammarAccess.getOperationTypeAccess().getUKeyword_0_3());
+		match_OperationType___NoneKeyword_1_1_or___RKeyword_0_2_q_UKeyword_0_3_q_DKeyword_0_4_q____q = new AlternativeAlias(false, true, new GroupAlias(false, false, new TokenAlias(false, true, grammarAccess.getOperationTypeAccess().getRKeyword_0_2()), new TokenAlias(false, true, grammarAccess.getOperationTypeAccess().getUKeyword_0_3()), new TokenAlias(false, true, grammarAccess.getOperationTypeAccess().getDKeyword_0_4())), new TokenAlias(false, false, grammarAccess.getOperationTypeAccess().getNoneKeyword_1_1()));
 	}
 	
 	@Override
@@ -36,8 +48,73 @@ public class SpringFluentDSLSyntacticSequencer extends AbstractSyntacticSequence
 		List<INode> transitionNodes = collectNodes(fromNode, toNode);
 		for (AbstractElementAlias syntax : transition.getAmbiguousSyntaxes()) {
 			List<INode> syntaxNodes = getNodesFor(transitionNodes, syntax);
-			acceptNodes(getLastNavigableState(), syntaxNodes);
+			if (match_OperationType_DKeyword_0_4_q.equals(syntax))
+				emit_OperationType_DKeyword_0_4_q(semanticObject, getLastNavigableState(), syntaxNodes);
+			else if (match_OperationType_RKeyword_0_2_q.equals(syntax))
+				emit_OperationType_RKeyword_0_2_q(semanticObject, getLastNavigableState(), syntaxNodes);
+			else if (match_OperationType_UKeyword_0_3_q.equals(syntax))
+				emit_OperationType_UKeyword_0_3_q(semanticObject, getLastNavigableState(), syntaxNodes);
+			else if (match_OperationType___NoneKeyword_1_1_or___RKeyword_0_2_q_UKeyword_0_3_q_DKeyword_0_4_q____q.equals(syntax))
+				emit_OperationType___NoneKeyword_1_1_or___RKeyword_0_2_q_UKeyword_0_3_q_DKeyword_0_4_q____q(semanticObject, getLastNavigableState(), syntaxNodes);
+			else acceptNodes(getLastNavigableState(), syntaxNodes);
 		}
 	}
 
+	/**
+	 * <pre>
+	 * Ambiguous syntax:
+	 *     'd'?
+	 *
+	 * This ambiguous syntax occurs at:
+	 *     oprationType='c' 'r'? 'u'? (ambiguity) (rule end)
+	 
+	 * </pre>
+	 */
+	protected void emit_OperationType_DKeyword_0_4_q(EObject semanticObject, ISynNavigable transition, List<INode> nodes) {
+		acceptNodes(transition, nodes);
+	}
+	
+	/**
+	 * <pre>
+	 * Ambiguous syntax:
+	 *     'r'?
+	 *
+	 * This ambiguous syntax occurs at:
+	 *     oprationType='c' (ambiguity) 'u'? 'd'? (rule end)
+	 
+	 * </pre>
+	 */
+	protected void emit_OperationType_RKeyword_0_2_q(EObject semanticObject, ISynNavigable transition, List<INode> nodes) {
+		acceptNodes(transition, nodes);
+	}
+	
+	/**
+	 * <pre>
+	 * Ambiguous syntax:
+	 *     'u'?
+	 *
+	 * This ambiguous syntax occurs at:
+	 *     oprationType='c' 'r'? (ambiguity) 'd'? (rule end)
+	 
+	 * </pre>
+	 */
+	protected void emit_OperationType_UKeyword_0_3_q(EObject semanticObject, ISynNavigable transition, List<INode> nodes) {
+		acceptNodes(transition, nodes);
+	}
+	
+	/**
+	 * <pre>
+	 * Ambiguous syntax:
+	 *     (('r'? 'u'? 'd'?) | 'none')?
+	 *
+	 * This ambiguous syntax occurs at:
+	 *     (rule start) 'ops' ':' (ambiguity) (rule start)
+	 *     (rule start) (ambiguity) (rule start)
+	 
+	 * </pre>
+	 */
+	protected void emit_OperationType___NoneKeyword_1_1_or___RKeyword_0_2_q_UKeyword_0_3_q_DKeyword_0_4_q____q(EObject semanticObject, ISynNavigable transition, List<INode> nodes) {
+		acceptNodes(transition, nodes);
+	}
+	
 }
