@@ -1,9 +1,0 @@
-grammar org.xtext.spring.fluent.SpringFluentDSL with org.eclipse.xtext.common.Terminals
-
-generate springFluentDSL "http://www.xtext.org/spring/fluent/SpringFluentDSL"
-
-Model:
-	greetings+=Greeting*;
-	
-Greeting:
-	'Hello' name=ID '!';
