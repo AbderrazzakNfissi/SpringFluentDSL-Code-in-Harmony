@@ -29,4 +29,5 @@ class PomGenerator {
         '''
         fsa.generateFile('pom.xml', pomContent)
     }
+
 }

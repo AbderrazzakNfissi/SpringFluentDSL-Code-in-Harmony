@@ -23,6 +23,10 @@ public class SpringFluentDSLGenerator extends AbstractGenerator {
     EObject _head = IterableExtensions.<EObject>head(resource.getContents());
     final Model model = ((Model) _head);
     final String appName = model.getAppName().getAppName();
+    final PomGenerator pomGenerator = new PomGenerator();
+    final DependenciesGenerator dependenciesGenerator = new DependenciesGenerator();
+    pomGenerator.generatePom(appName, fsa);
+    dependenciesGenerator.generateDependencies(model.getDependencies(), fsa);
     String _lowerCase = appName.toLowerCase();
     final String basePackage = ("com." + _lowerCase);
     final EntityGenerator entityGenerator = new EntityGenerator();
