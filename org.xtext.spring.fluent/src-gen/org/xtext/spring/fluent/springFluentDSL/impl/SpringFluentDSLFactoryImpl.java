@@ -77,7 +77,6 @@ public class SpringFluentDSLFactoryImpl extends EFactoryImpl implements SpringFl
       case SpringFluentDSLPackage.STRATEGY: return createStrategy();
       case SpringFluentDSLPackage.IDENTITY: return createIDENTITY();
       case SpringFluentDSLPackage.OPERATION: return createOperation();
-      case SpringFluentDSLPackage.OPERATION_TYPE: return createOperationType();
       case SpringFluentDSLPackage.ATTRIBUTE: return createAttribute();
       case SpringFluentDSLPackage.RELATION: return createRelation();
       default:
@@ -253,18 +252,6 @@ public class SpringFluentDSLFactoryImpl extends EFactoryImpl implements SpringFl
   {
     OperationImpl operation = new OperationImpl();
     return operation;
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  @Override
-  public OperationType createOperationType()
-  {
-    OperationTypeImpl operationType = new OperationTypeImpl();
-    return operationType;
   }
 
   /**

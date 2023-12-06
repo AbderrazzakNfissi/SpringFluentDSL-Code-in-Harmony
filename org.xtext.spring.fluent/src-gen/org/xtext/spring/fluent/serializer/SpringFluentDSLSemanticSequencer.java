@@ -24,7 +24,7 @@ import org.xtext.spring.fluent.springFluentDSL.Entity;
 import org.xtext.spring.fluent.springFluentDSL.Feature;
 import org.xtext.spring.fluent.springFluentDSL.IDENTITY;
 import org.xtext.spring.fluent.springFluentDSL.Model;
-import org.xtext.spring.fluent.springFluentDSL.OperationType;
+import org.xtext.spring.fluent.springFluentDSL.Operation;
 import org.xtext.spring.fluent.springFluentDSL.Prefix;
 import org.xtext.spring.fluent.springFluentDSL.Relation;
 import org.xtext.spring.fluent.springFluentDSL.SpringFluentDSLPackage;
@@ -71,8 +71,8 @@ public class SpringFluentDSLSemanticSequencer extends AbstractDelegatingSemantic
 			case SpringFluentDSLPackage.MODEL:
 				sequence_Model(context, (Model) semanticObject); 
 				return; 
-			case SpringFluentDSLPackage.OPERATION_TYPE:
-				sequence_OperationType(context, (OperationType) semanticObject); 
+			case SpringFluentDSLPackage.OPERATION:
+				sequence_Operation(context, (Operation) semanticObject); 
 				return; 
 			case SpringFluentDSLPackage.PREFIX:
 				sequence_Prefix(context, (Prefix) semanticObject); 
@@ -259,15 +259,20 @@ public class SpringFluentDSLSemanticSequencer extends AbstractDelegatingSemantic
 	/**
 	 * <pre>
 	 * Contexts:
-	 *     Operation returns OperationType
-	 *     OperationType returns OperationType
+	 *     Operation returns Operation
 	 *
 	 * Constraint:
-	 *     oprationType='c'?
+	 *     operation=STRING
 	 * </pre>
 	 */
-	protected void sequence_OperationType(ISerializationContext context, OperationType semanticObject) {
-		genericSequencer.createSequence(context, semanticObject);
+	protected void sequence_Operation(ISerializationContext context, Operation semanticObject) {
+		if (errorAcceptor != null) {
+			if (transientValues.isValueTransient(semanticObject, SpringFluentDSLPackage.Literals.OPERATION__OPERATION) == ValueTransient.YES)
+				errorAcceptor.accept(diagnosticProvider.createFeatureValueMissing(semanticObject, SpringFluentDSLPackage.Literals.OPERATION__OPERATION));
+		}
+		SequenceFeeder feeder = createSequencerFeeder(context, semanticObject);
+		feeder.accept(grammarAccess.getOperationAccess().getOperationSTRINGTerminalRuleCall_2_0(), semanticObject.getOperation());
+		feeder.finish();
 	}
 	
 	

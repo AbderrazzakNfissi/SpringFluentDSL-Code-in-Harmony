@@ -22,6 +22,7 @@ public class SpringFluentDSLGenerator extends AbstractGenerator {
   public void doGenerate(final Resource resource, final IFileSystemAccess2 fsa, final IGeneratorContext context) {
     EObject _head = IterableExtensions.<EObject>head(resource.getContents());
     final Model model = ((Model) _head);
+    final String prefix = model.getPrefix().getPrefix();
     final String appName = model.getAppName().getAppName();
     final PomGenerator pomGenerator = new PomGenerator();
     final DependenciesGenerator dependenciesGenerator = new DependenciesGenerator();
@@ -37,7 +38,7 @@ public class SpringFluentDSLGenerator extends AbstractGenerator {
     for (final Entity entity : _filter) {
       {
         entityGenerator.generateEntity(entity, fsa, basePackage);
-        controllerGenerator.generateController(entity, fsa, basePackage);
+        controllerGenerator.generateController(entity, fsa, basePackage, prefix);
         repositoryGenerator.generateRepository(entity, fsa, basePackage);
         serviceGenerator.generateService(entity, fsa, basePackage);
       }

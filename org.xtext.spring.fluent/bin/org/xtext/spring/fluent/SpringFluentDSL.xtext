@@ -51,11 +51,8 @@ IDENTITY:
 
 Operation:
   'ops' ':' (
-    OperationType
+    operation=STRING
   );
-  
-OperationType:
-	{OperationType} oprationType = ('c')?  ('r')?  ('u')? ('d')? | {OperationType} ('none')?;
   
 Attribute:
   name=ID ':' type=Type;

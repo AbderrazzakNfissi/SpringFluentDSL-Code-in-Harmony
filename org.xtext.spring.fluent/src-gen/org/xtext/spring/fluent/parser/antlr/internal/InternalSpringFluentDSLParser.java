@@ -22,9 +22,8 @@ import java.util.ArrayList;
 @SuppressWarnings("all")
 public class InternalSpringFluentDSLParser extends AbstractInternalAntlrParser {
     public static final String[] tokenNames = new String[] {
-        "<invalid>", "<EOR>", "<DOWN>", "<UP>", "RULE_STRING", "RULE_ID", "RULE_INT", "RULE_ML_COMMENT", "RULE_SL_COMMENT", "RULE_WS", "RULE_ANY_OTHER", "'prefix:'", "'app_name:'", "'dependencies'", "'{'", "','", "'}'", "'entities'", "'entity'", "'extends'", "'['", "'strategy'", "'='", "']'", "'SingleTable'", "'JoinedTable'", "'TablePerClass'", "'id'", "':'", "'pk'", "'ops'", "'c'", "'r'", "'u'", "'d'", "'none'", "'mto'", "'otm'", "'oto'", "'mtm'", "'SpringDataJpa'", "'SpringWeb'", "'Lombok'", "'MySQLDriver'", "'DevTools'", "'Thymeleaf'", "'Swagger'", "'SpringSecurity'", "'Long'", "'Integer'", "'Double'", "'String'", "'Date'", "'Time'", "'Boolean'"
+        "<invalid>", "<EOR>", "<DOWN>", "<UP>", "RULE_STRING", "RULE_ID", "RULE_INT", "RULE_ML_COMMENT", "RULE_SL_COMMENT", "RULE_WS", "RULE_ANY_OTHER", "'prefix:'", "'app_name:'", "'dependencies'", "'{'", "','", "'}'", "'entities'", "'entity'", "'extends'", "'['", "'strategy'", "'='", "']'", "'SingleTable'", "'JoinedTable'", "'TablePerClass'", "'id'", "':'", "'pk'", "'ops'", "'mto'", "'otm'", "'oto'", "'mtm'", "'SpringDataJpa'", "'SpringWeb'", "'Lombok'", "'MySQLDriver'", "'DevTools'", "'Thymeleaf'", "'Swagger'", "'SpringSecurity'", "'Long'", "'Integer'", "'Double'", "'String'", "'Date'", "'Time'", "'Boolean'"
     };
-    public static final int T__50=50;
     public static final int T__19=19;
     public static final int T__15=15;
     public static final int T__16=16;
@@ -34,10 +33,6 @@ public class InternalSpringFluentDSLParser extends AbstractInternalAntlrParser {
     public static final int T__12=12;
     public static final int T__13=13;
     public static final int T__14=14;
-    public static final int T__51=51;
-    public static final int T__52=52;
-    public static final int T__53=53;
-    public static final int T__54=54;
     public static final int RULE_ID=5;
     public static final int T__26=26;
     public static final int T__27=27;
@@ -1411,7 +1406,7 @@ public class InternalSpringFluentDSLParser extends AbstractInternalAntlrParser {
                     if ( (LA4_1==28) ) {
                         int LA4_3 = input.LA(3);
 
-                        if ( ((LA4_3>=48 && LA4_3<=54)) ) {
+                        if ( ((LA4_3>=43 && LA4_3<=49)) ) {
                             alt4=1;
                         }
 
@@ -1867,45 +1862,58 @@ public class InternalSpringFluentDSLParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "ruleOperation"
-    // InternalSpringFluentDSL.g:785:1: ruleOperation returns [EObject current=null] : (otherlv_0= 'ops' otherlv_1= ':' this_OperationType_2= ruleOperationType ) ;
+    // InternalSpringFluentDSL.g:785:1: ruleOperation returns [EObject current=null] : (otherlv_0= 'ops' otherlv_1= ':' ( (lv_operation_2_0= RULE_STRING ) ) ) ;
     public final EObject ruleOperation() throws RecognitionException {
         EObject current = null;
 
         Token otherlv_0=null;
         Token otherlv_1=null;
-        EObject this_OperationType_2 = null;
-
+        Token lv_operation_2_0=null;
 
 
         	enterRule();
 
         try {
-            // InternalSpringFluentDSL.g:791:2: ( (otherlv_0= 'ops' otherlv_1= ':' this_OperationType_2= ruleOperationType ) )
-            // InternalSpringFluentDSL.g:792:2: (otherlv_0= 'ops' otherlv_1= ':' this_OperationType_2= ruleOperationType )
+            // InternalSpringFluentDSL.g:791:2: ( (otherlv_0= 'ops' otherlv_1= ':' ( (lv_operation_2_0= RULE_STRING ) ) ) )
+            // InternalSpringFluentDSL.g:792:2: (otherlv_0= 'ops' otherlv_1= ':' ( (lv_operation_2_0= RULE_STRING ) ) )
             {
-            // InternalSpringFluentDSL.g:792:2: (otherlv_0= 'ops' otherlv_1= ':' this_OperationType_2= ruleOperationType )
-            // InternalSpringFluentDSL.g:793:3: otherlv_0= 'ops' otherlv_1= ':' this_OperationType_2= ruleOperationType
+            // InternalSpringFluentDSL.g:792:2: (otherlv_0= 'ops' otherlv_1= ':' ( (lv_operation_2_0= RULE_STRING ) ) )
+            // InternalSpringFluentDSL.g:793:3: otherlv_0= 'ops' otherlv_1= ':' ( (lv_operation_2_0= RULE_STRING ) )
             {
             otherlv_0=(Token)match(input,30,FOLLOW_22); 
 
             			newLeafNode(otherlv_0, grammarAccess.getOperationAccess().getOpsKeyword_0());
             		
-            otherlv_1=(Token)match(input,28,FOLLOW_25); 
+            otherlv_1=(Token)match(input,28,FOLLOW_6); 
 
             			newLeafNode(otherlv_1, grammarAccess.getOperationAccess().getColonKeyword_1());
             		
+            // InternalSpringFluentDSL.g:801:3: ( (lv_operation_2_0= RULE_STRING ) )
+            // InternalSpringFluentDSL.g:802:4: (lv_operation_2_0= RULE_STRING )
+            {
+            // InternalSpringFluentDSL.g:802:4: (lv_operation_2_0= RULE_STRING )
+            // InternalSpringFluentDSL.g:803:5: lv_operation_2_0= RULE_STRING
+            {
+            lv_operation_2_0=(Token)match(input,RULE_STRING,FOLLOW_2); 
 
-            			newCompositeNode(grammarAccess.getOperationAccess().getOperationTypeParserRuleCall_2());
-            		
-            pushFollow(FOLLOW_2);
-            this_OperationType_2=ruleOperationType();
+            					newLeafNode(lv_operation_2_0, grammarAccess.getOperationAccess().getOperationSTRINGTerminalRuleCall_2_0());
+            				
 
-            state._fsp--;
+            					if (current==null) {
+            						current = createModelElement(grammarAccess.getOperationRule());
+            					}
+            					setWithLastConsumed(
+            						current,
+            						"operation",
+            						lv_operation_2_0,
+            						"org.eclipse.xtext.common.Terminals.STRING");
+            				
+
+            }
 
 
-            			current = this_OperationType_2;
-            			afterParserOrEnumRuleCall();
-            		
+            }
+
 
             }
 
@@ -1928,281 +1936,8 @@ public class InternalSpringFluentDSLParser extends AbstractInternalAntlrParser {
     // $ANTLR end "ruleOperation"
 
 
-    // $ANTLR start "entryRuleOperationType"
-    // InternalSpringFluentDSL.g:813:1: entryRuleOperationType returns [EObject current=null] : iv_ruleOperationType= ruleOperationType EOF ;
-    public final EObject entryRuleOperationType() throws RecognitionException {
-        EObject current = null;
-
-        EObject iv_ruleOperationType = null;
-
-
-        try {
-            // InternalSpringFluentDSL.g:813:54: (iv_ruleOperationType= ruleOperationType EOF )
-            // InternalSpringFluentDSL.g:814:2: iv_ruleOperationType= ruleOperationType EOF
-            {
-             newCompositeNode(grammarAccess.getOperationTypeRule()); 
-            pushFollow(FOLLOW_1);
-            iv_ruleOperationType=ruleOperationType();
-
-            state._fsp--;
-
-             current =iv_ruleOperationType; 
-            match(input,EOF,FOLLOW_2); 
-
-            }
-
-        }
-
-            catch (RecognitionException re) {
-                recover(input,re);
-                appendSkippedTokens();
-            }
-        finally {
-        }
-        return current;
-    }
-    // $ANTLR end "entryRuleOperationType"
-
-
-    // $ANTLR start "ruleOperationType"
-    // InternalSpringFluentDSL.g:820:1: ruleOperationType returns [EObject current=null] : ( ( () ( (lv_oprationType_1_0= 'c' ) )? (otherlv_2= 'r' )? (otherlv_3= 'u' )? (otherlv_4= 'd' )? ) | ( () (otherlv_6= 'none' )? ) ) ;
-    public final EObject ruleOperationType() throws RecognitionException {
-        EObject current = null;
-
-        Token lv_oprationType_1_0=null;
-        Token otherlv_2=null;
-        Token otherlv_3=null;
-        Token otherlv_4=null;
-        Token otherlv_6=null;
-
-
-        	enterRule();
-
-        try {
-            // InternalSpringFluentDSL.g:826:2: ( ( ( () ( (lv_oprationType_1_0= 'c' ) )? (otherlv_2= 'r' )? (otherlv_3= 'u' )? (otherlv_4= 'd' )? ) | ( () (otherlv_6= 'none' )? ) ) )
-            // InternalSpringFluentDSL.g:827:2: ( ( () ( (lv_oprationType_1_0= 'c' ) )? (otherlv_2= 'r' )? (otherlv_3= 'u' )? (otherlv_4= 'd' )? ) | ( () (otherlv_6= 'none' )? ) )
-            {
-            // InternalSpringFluentDSL.g:827:2: ( ( () ( (lv_oprationType_1_0= 'c' ) )? (otherlv_2= 'r' )? (otherlv_3= 'u' )? (otherlv_4= 'd' )? ) | ( () (otherlv_6= 'none' )? ) )
-            int alt12=2;
-            switch ( input.LA(1) ) {
-            case 31:
-            case 32:
-            case 33:
-            case 34:
-                {
-                alt12=1;
-                }
-                break;
-            case 27:
-                {
-                alt12=1;
-                }
-                break;
-            case EOF:
-                {
-                alt12=1;
-                }
-                break;
-            case 35:
-                {
-                alt12=2;
-                }
-                break;
-            default:
-                NoViableAltException nvae =
-                    new NoViableAltException("", 12, 0, input);
-
-                throw nvae;
-            }
-
-            switch (alt12) {
-                case 1 :
-                    // InternalSpringFluentDSL.g:828:3: ( () ( (lv_oprationType_1_0= 'c' ) )? (otherlv_2= 'r' )? (otherlv_3= 'u' )? (otherlv_4= 'd' )? )
-                    {
-                    // InternalSpringFluentDSL.g:828:3: ( () ( (lv_oprationType_1_0= 'c' ) )? (otherlv_2= 'r' )? (otherlv_3= 'u' )? (otherlv_4= 'd' )? )
-                    // InternalSpringFluentDSL.g:829:4: () ( (lv_oprationType_1_0= 'c' ) )? (otherlv_2= 'r' )? (otherlv_3= 'u' )? (otherlv_4= 'd' )?
-                    {
-                    // InternalSpringFluentDSL.g:829:4: ()
-                    // InternalSpringFluentDSL.g:830:5: 
-                    {
-
-                    					current = forceCreateModelElement(
-                    						grammarAccess.getOperationTypeAccess().getOperationTypeAction_0_0(),
-                    						current);
-                    				
-
-                    }
-
-                    // InternalSpringFluentDSL.g:836:4: ( (lv_oprationType_1_0= 'c' ) )?
-                    int alt7=2;
-                    int LA7_0 = input.LA(1);
-
-                    if ( (LA7_0==31) ) {
-                        alt7=1;
-                    }
-                    switch (alt7) {
-                        case 1 :
-                            // InternalSpringFluentDSL.g:837:5: (lv_oprationType_1_0= 'c' )
-                            {
-                            // InternalSpringFluentDSL.g:837:5: (lv_oprationType_1_0= 'c' )
-                            // InternalSpringFluentDSL.g:838:6: lv_oprationType_1_0= 'c'
-                            {
-                            lv_oprationType_1_0=(Token)match(input,31,FOLLOW_26); 
-
-                            						newLeafNode(lv_oprationType_1_0, grammarAccess.getOperationTypeAccess().getOprationTypeCKeyword_0_1_0());
-                            					
-
-                            						if (current==null) {
-                            							current = createModelElement(grammarAccess.getOperationTypeRule());
-                            						}
-                            						setWithLastConsumed(current, "oprationType", lv_oprationType_1_0, "c");
-                            					
-
-                            }
-
-
-                            }
-                            break;
-
-                    }
-
-                    // InternalSpringFluentDSL.g:850:4: (otherlv_2= 'r' )?
-                    int alt8=2;
-                    int LA8_0 = input.LA(1);
-
-                    if ( (LA8_0==32) ) {
-                        alt8=1;
-                    }
-                    switch (alt8) {
-                        case 1 :
-                            // InternalSpringFluentDSL.g:851:5: otherlv_2= 'r'
-                            {
-                            otherlv_2=(Token)match(input,32,FOLLOW_27); 
-
-                            					newLeafNode(otherlv_2, grammarAccess.getOperationTypeAccess().getRKeyword_0_2());
-                            				
-
-                            }
-                            break;
-
-                    }
-
-                    // InternalSpringFluentDSL.g:856:4: (otherlv_3= 'u' )?
-                    int alt9=2;
-                    int LA9_0 = input.LA(1);
-
-                    if ( (LA9_0==33) ) {
-                        alt9=1;
-                    }
-                    switch (alt9) {
-                        case 1 :
-                            // InternalSpringFluentDSL.g:857:5: otherlv_3= 'u'
-                            {
-                            otherlv_3=(Token)match(input,33,FOLLOW_28); 
-
-                            					newLeafNode(otherlv_3, grammarAccess.getOperationTypeAccess().getUKeyword_0_3());
-                            				
-
-                            }
-                            break;
-
-                    }
-
-                    // InternalSpringFluentDSL.g:862:4: (otherlv_4= 'd' )?
-                    int alt10=2;
-                    int LA10_0 = input.LA(1);
-
-                    if ( (LA10_0==34) ) {
-                        alt10=1;
-                    }
-                    switch (alt10) {
-                        case 1 :
-                            // InternalSpringFluentDSL.g:863:5: otherlv_4= 'd'
-                            {
-                            otherlv_4=(Token)match(input,34,FOLLOW_2); 
-
-                            					newLeafNode(otherlv_4, grammarAccess.getOperationTypeAccess().getDKeyword_0_4());
-                            				
-
-                            }
-                            break;
-
-                    }
-
-
-                    }
-
-
-                    }
-                    break;
-                case 2 :
-                    // InternalSpringFluentDSL.g:870:3: ( () (otherlv_6= 'none' )? )
-                    {
-                    // InternalSpringFluentDSL.g:870:3: ( () (otherlv_6= 'none' )? )
-                    // InternalSpringFluentDSL.g:871:4: () (otherlv_6= 'none' )?
-                    {
-                    // InternalSpringFluentDSL.g:871:4: ()
-                    // InternalSpringFluentDSL.g:872:5: 
-                    {
-
-                    					current = forceCreateModelElement(
-                    						grammarAccess.getOperationTypeAccess().getOperationTypeAction_1_0(),
-                    						current);
-                    				
-
-                    }
-
-                    // InternalSpringFluentDSL.g:878:4: (otherlv_6= 'none' )?
-                    int alt11=2;
-                    int LA11_0 = input.LA(1);
-
-                    if ( (LA11_0==35) ) {
-                        alt11=1;
-                    }
-                    switch (alt11) {
-                        case 1 :
-                            // InternalSpringFluentDSL.g:879:5: otherlv_6= 'none'
-                            {
-                            otherlv_6=(Token)match(input,35,FOLLOW_2); 
-
-                            					newLeafNode(otherlv_6, grammarAccess.getOperationTypeAccess().getNoneKeyword_1_1());
-                            				
-
-                            }
-                            break;
-
-                    }
-
-
-                    }
-
-
-                    }
-                    break;
-
-            }
-
-
-            }
-
-
-            	leaveRule();
-
-        }
-
-            catch (RecognitionException re) {
-                recover(input,re);
-                appendSkippedTokens();
-            }
-        finally {
-        }
-        return current;
-    }
-    // $ANTLR end "ruleOperationType"
-
-
     // $ANTLR start "entryRuleAttribute"
-    // InternalSpringFluentDSL.g:889:1: entryRuleAttribute returns [EObject current=null] : iv_ruleAttribute= ruleAttribute EOF ;
+    // InternalSpringFluentDSL.g:823:1: entryRuleAttribute returns [EObject current=null] : iv_ruleAttribute= ruleAttribute EOF ;
     public final EObject entryRuleAttribute() throws RecognitionException {
         EObject current = null;
 
@@ -2210,8 +1945,8 @@ public class InternalSpringFluentDSLParser extends AbstractInternalAntlrParser {
 
 
         try {
-            // InternalSpringFluentDSL.g:889:50: (iv_ruleAttribute= ruleAttribute EOF )
-            // InternalSpringFluentDSL.g:890:2: iv_ruleAttribute= ruleAttribute EOF
+            // InternalSpringFluentDSL.g:823:50: (iv_ruleAttribute= ruleAttribute EOF )
+            // InternalSpringFluentDSL.g:824:2: iv_ruleAttribute= ruleAttribute EOF
             {
              newCompositeNode(grammarAccess.getAttributeRule()); 
             pushFollow(FOLLOW_1);
@@ -2238,7 +1973,7 @@ public class InternalSpringFluentDSLParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "ruleAttribute"
-    // InternalSpringFluentDSL.g:896:1: ruleAttribute returns [EObject current=null] : ( ( (lv_name_0_0= RULE_ID ) ) otherlv_1= ':' ( (lv_type_2_0= ruleType ) ) ) ;
+    // InternalSpringFluentDSL.g:830:1: ruleAttribute returns [EObject current=null] : ( ( (lv_name_0_0= RULE_ID ) ) otherlv_1= ':' ( (lv_type_2_0= ruleType ) ) ) ;
     public final EObject ruleAttribute() throws RecognitionException {
         EObject current = null;
 
@@ -2251,17 +1986,17 @@ public class InternalSpringFluentDSLParser extends AbstractInternalAntlrParser {
         	enterRule();
 
         try {
-            // InternalSpringFluentDSL.g:902:2: ( ( ( (lv_name_0_0= RULE_ID ) ) otherlv_1= ':' ( (lv_type_2_0= ruleType ) ) ) )
-            // InternalSpringFluentDSL.g:903:2: ( ( (lv_name_0_0= RULE_ID ) ) otherlv_1= ':' ( (lv_type_2_0= ruleType ) ) )
+            // InternalSpringFluentDSL.g:836:2: ( ( ( (lv_name_0_0= RULE_ID ) ) otherlv_1= ':' ( (lv_type_2_0= ruleType ) ) ) )
+            // InternalSpringFluentDSL.g:837:2: ( ( (lv_name_0_0= RULE_ID ) ) otherlv_1= ':' ( (lv_type_2_0= ruleType ) ) )
             {
-            // InternalSpringFluentDSL.g:903:2: ( ( (lv_name_0_0= RULE_ID ) ) otherlv_1= ':' ( (lv_type_2_0= ruleType ) ) )
-            // InternalSpringFluentDSL.g:904:3: ( (lv_name_0_0= RULE_ID ) ) otherlv_1= ':' ( (lv_type_2_0= ruleType ) )
+            // InternalSpringFluentDSL.g:837:2: ( ( (lv_name_0_0= RULE_ID ) ) otherlv_1= ':' ( (lv_type_2_0= ruleType ) ) )
+            // InternalSpringFluentDSL.g:838:3: ( (lv_name_0_0= RULE_ID ) ) otherlv_1= ':' ( (lv_type_2_0= ruleType ) )
             {
-            // InternalSpringFluentDSL.g:904:3: ( (lv_name_0_0= RULE_ID ) )
-            // InternalSpringFluentDSL.g:905:4: (lv_name_0_0= RULE_ID )
+            // InternalSpringFluentDSL.g:838:3: ( (lv_name_0_0= RULE_ID ) )
+            // InternalSpringFluentDSL.g:839:4: (lv_name_0_0= RULE_ID )
             {
-            // InternalSpringFluentDSL.g:905:4: (lv_name_0_0= RULE_ID )
-            // InternalSpringFluentDSL.g:906:5: lv_name_0_0= RULE_ID
+            // InternalSpringFluentDSL.g:839:4: (lv_name_0_0= RULE_ID )
+            // InternalSpringFluentDSL.g:840:5: lv_name_0_0= RULE_ID
             {
             lv_name_0_0=(Token)match(input,RULE_ID,FOLLOW_22); 
 
@@ -2287,11 +2022,11 @@ public class InternalSpringFluentDSLParser extends AbstractInternalAntlrParser {
 
             			newLeafNode(otherlv_1, grammarAccess.getAttributeAccess().getColonKeyword_1());
             		
-            // InternalSpringFluentDSL.g:926:3: ( (lv_type_2_0= ruleType ) )
-            // InternalSpringFluentDSL.g:927:4: (lv_type_2_0= ruleType )
+            // InternalSpringFluentDSL.g:860:3: ( (lv_type_2_0= ruleType ) )
+            // InternalSpringFluentDSL.g:861:4: (lv_type_2_0= ruleType )
             {
-            // InternalSpringFluentDSL.g:927:4: (lv_type_2_0= ruleType )
-            // InternalSpringFluentDSL.g:928:5: lv_type_2_0= ruleType
+            // InternalSpringFluentDSL.g:861:4: (lv_type_2_0= ruleType )
+            // InternalSpringFluentDSL.g:862:5: lv_type_2_0= ruleType
             {
 
             					newCompositeNode(grammarAccess.getAttributeAccess().getTypeTypeEnumRuleCall_2_0());
@@ -2341,7 +2076,7 @@ public class InternalSpringFluentDSLParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "entryRuleRelation"
-    // InternalSpringFluentDSL.g:949:1: entryRuleRelation returns [EObject current=null] : iv_ruleRelation= ruleRelation EOF ;
+    // InternalSpringFluentDSL.g:883:1: entryRuleRelation returns [EObject current=null] : iv_ruleRelation= ruleRelation EOF ;
     public final EObject entryRuleRelation() throws RecognitionException {
         EObject current = null;
 
@@ -2349,8 +2084,8 @@ public class InternalSpringFluentDSLParser extends AbstractInternalAntlrParser {
 
 
         try {
-            // InternalSpringFluentDSL.g:949:49: (iv_ruleRelation= ruleRelation EOF )
-            // InternalSpringFluentDSL.g:950:2: iv_ruleRelation= ruleRelation EOF
+            // InternalSpringFluentDSL.g:883:49: (iv_ruleRelation= ruleRelation EOF )
+            // InternalSpringFluentDSL.g:884:2: iv_ruleRelation= ruleRelation EOF
             {
              newCompositeNode(grammarAccess.getRelationRule()); 
             pushFollow(FOLLOW_1);
@@ -2377,7 +2112,7 @@ public class InternalSpringFluentDSLParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "ruleRelation"
-    // InternalSpringFluentDSL.g:956:1: ruleRelation returns [EObject current=null] : ( ( (lv_name_0_0= RULE_ID ) ) otherlv_1= ':' ( (otherlv_2= RULE_ID ) ) ( ( (lv_type_3_1= 'mto' | lv_type_3_2= 'otm' | lv_type_3_3= 'oto' | lv_type_3_4= 'mtm' ) ) ) ) ;
+    // InternalSpringFluentDSL.g:890:1: ruleRelation returns [EObject current=null] : ( ( (lv_name_0_0= RULE_ID ) ) otherlv_1= ':' ( (otherlv_2= RULE_ID ) ) ( ( (lv_type_3_1= 'mto' | lv_type_3_2= 'otm' | lv_type_3_3= 'oto' | lv_type_3_4= 'mtm' ) ) ) ) ;
     public final EObject ruleRelation() throws RecognitionException {
         EObject current = null;
 
@@ -2393,17 +2128,17 @@ public class InternalSpringFluentDSLParser extends AbstractInternalAntlrParser {
         	enterRule();
 
         try {
-            // InternalSpringFluentDSL.g:962:2: ( ( ( (lv_name_0_0= RULE_ID ) ) otherlv_1= ':' ( (otherlv_2= RULE_ID ) ) ( ( (lv_type_3_1= 'mto' | lv_type_3_2= 'otm' | lv_type_3_3= 'oto' | lv_type_3_4= 'mtm' ) ) ) ) )
-            // InternalSpringFluentDSL.g:963:2: ( ( (lv_name_0_0= RULE_ID ) ) otherlv_1= ':' ( (otherlv_2= RULE_ID ) ) ( ( (lv_type_3_1= 'mto' | lv_type_3_2= 'otm' | lv_type_3_3= 'oto' | lv_type_3_4= 'mtm' ) ) ) )
+            // InternalSpringFluentDSL.g:896:2: ( ( ( (lv_name_0_0= RULE_ID ) ) otherlv_1= ':' ( (otherlv_2= RULE_ID ) ) ( ( (lv_type_3_1= 'mto' | lv_type_3_2= 'otm' | lv_type_3_3= 'oto' | lv_type_3_4= 'mtm' ) ) ) ) )
+            // InternalSpringFluentDSL.g:897:2: ( ( (lv_name_0_0= RULE_ID ) ) otherlv_1= ':' ( (otherlv_2= RULE_ID ) ) ( ( (lv_type_3_1= 'mto' | lv_type_3_2= 'otm' | lv_type_3_3= 'oto' | lv_type_3_4= 'mtm' ) ) ) )
             {
-            // InternalSpringFluentDSL.g:963:2: ( ( (lv_name_0_0= RULE_ID ) ) otherlv_1= ':' ( (otherlv_2= RULE_ID ) ) ( ( (lv_type_3_1= 'mto' | lv_type_3_2= 'otm' | lv_type_3_3= 'oto' | lv_type_3_4= 'mtm' ) ) ) )
-            // InternalSpringFluentDSL.g:964:3: ( (lv_name_0_0= RULE_ID ) ) otherlv_1= ':' ( (otherlv_2= RULE_ID ) ) ( ( (lv_type_3_1= 'mto' | lv_type_3_2= 'otm' | lv_type_3_3= 'oto' | lv_type_3_4= 'mtm' ) ) )
+            // InternalSpringFluentDSL.g:897:2: ( ( (lv_name_0_0= RULE_ID ) ) otherlv_1= ':' ( (otherlv_2= RULE_ID ) ) ( ( (lv_type_3_1= 'mto' | lv_type_3_2= 'otm' | lv_type_3_3= 'oto' | lv_type_3_4= 'mtm' ) ) ) )
+            // InternalSpringFluentDSL.g:898:3: ( (lv_name_0_0= RULE_ID ) ) otherlv_1= ':' ( (otherlv_2= RULE_ID ) ) ( ( (lv_type_3_1= 'mto' | lv_type_3_2= 'otm' | lv_type_3_3= 'oto' | lv_type_3_4= 'mtm' ) ) )
             {
-            // InternalSpringFluentDSL.g:964:3: ( (lv_name_0_0= RULE_ID ) )
-            // InternalSpringFluentDSL.g:965:4: (lv_name_0_0= RULE_ID )
+            // InternalSpringFluentDSL.g:898:3: ( (lv_name_0_0= RULE_ID ) )
+            // InternalSpringFluentDSL.g:899:4: (lv_name_0_0= RULE_ID )
             {
-            // InternalSpringFluentDSL.g:965:4: (lv_name_0_0= RULE_ID )
-            // InternalSpringFluentDSL.g:966:5: lv_name_0_0= RULE_ID
+            // InternalSpringFluentDSL.g:899:4: (lv_name_0_0= RULE_ID )
+            // InternalSpringFluentDSL.g:900:5: lv_name_0_0= RULE_ID
             {
             lv_name_0_0=(Token)match(input,RULE_ID,FOLLOW_22); 
 
@@ -2429,18 +2164,18 @@ public class InternalSpringFluentDSLParser extends AbstractInternalAntlrParser {
 
             			newLeafNode(otherlv_1, grammarAccess.getRelationAccess().getColonKeyword_1());
             		
-            // InternalSpringFluentDSL.g:986:3: ( (otherlv_2= RULE_ID ) )
-            // InternalSpringFluentDSL.g:987:4: (otherlv_2= RULE_ID )
+            // InternalSpringFluentDSL.g:920:3: ( (otherlv_2= RULE_ID ) )
+            // InternalSpringFluentDSL.g:921:4: (otherlv_2= RULE_ID )
             {
-            // InternalSpringFluentDSL.g:987:4: (otherlv_2= RULE_ID )
-            // InternalSpringFluentDSL.g:988:5: otherlv_2= RULE_ID
+            // InternalSpringFluentDSL.g:921:4: (otherlv_2= RULE_ID )
+            // InternalSpringFluentDSL.g:922:5: otherlv_2= RULE_ID
             {
 
             					if (current==null) {
             						current = createModelElement(grammarAccess.getRelationRule());
             					}
             				
-            otherlv_2=(Token)match(input,RULE_ID,FOLLOW_29); 
+            otherlv_2=(Token)match(input,RULE_ID,FOLLOW_25); 
 
             					newLeafNode(otherlv_2, grammarAccess.getRelationAccess().getTargetEntityCrossReference_2_0());
             				
@@ -2450,47 +2185,47 @@ public class InternalSpringFluentDSLParser extends AbstractInternalAntlrParser {
 
             }
 
-            // InternalSpringFluentDSL.g:999:3: ( ( (lv_type_3_1= 'mto' | lv_type_3_2= 'otm' | lv_type_3_3= 'oto' | lv_type_3_4= 'mtm' ) ) )
-            // InternalSpringFluentDSL.g:1000:4: ( (lv_type_3_1= 'mto' | lv_type_3_2= 'otm' | lv_type_3_3= 'oto' | lv_type_3_4= 'mtm' ) )
+            // InternalSpringFluentDSL.g:933:3: ( ( (lv_type_3_1= 'mto' | lv_type_3_2= 'otm' | lv_type_3_3= 'oto' | lv_type_3_4= 'mtm' ) ) )
+            // InternalSpringFluentDSL.g:934:4: ( (lv_type_3_1= 'mto' | lv_type_3_2= 'otm' | lv_type_3_3= 'oto' | lv_type_3_4= 'mtm' ) )
             {
-            // InternalSpringFluentDSL.g:1000:4: ( (lv_type_3_1= 'mto' | lv_type_3_2= 'otm' | lv_type_3_3= 'oto' | lv_type_3_4= 'mtm' ) )
-            // InternalSpringFluentDSL.g:1001:5: (lv_type_3_1= 'mto' | lv_type_3_2= 'otm' | lv_type_3_3= 'oto' | lv_type_3_4= 'mtm' )
+            // InternalSpringFluentDSL.g:934:4: ( (lv_type_3_1= 'mto' | lv_type_3_2= 'otm' | lv_type_3_3= 'oto' | lv_type_3_4= 'mtm' ) )
+            // InternalSpringFluentDSL.g:935:5: (lv_type_3_1= 'mto' | lv_type_3_2= 'otm' | lv_type_3_3= 'oto' | lv_type_3_4= 'mtm' )
             {
-            // InternalSpringFluentDSL.g:1001:5: (lv_type_3_1= 'mto' | lv_type_3_2= 'otm' | lv_type_3_3= 'oto' | lv_type_3_4= 'mtm' )
-            int alt13=4;
+            // InternalSpringFluentDSL.g:935:5: (lv_type_3_1= 'mto' | lv_type_3_2= 'otm' | lv_type_3_3= 'oto' | lv_type_3_4= 'mtm' )
+            int alt7=4;
             switch ( input.LA(1) ) {
-            case 36:
+            case 31:
                 {
-                alt13=1;
+                alt7=1;
                 }
                 break;
-            case 37:
+            case 32:
                 {
-                alt13=2;
+                alt7=2;
                 }
                 break;
-            case 38:
+            case 33:
                 {
-                alt13=3;
+                alt7=3;
                 }
                 break;
-            case 39:
+            case 34:
                 {
-                alt13=4;
+                alt7=4;
                 }
                 break;
             default:
                 NoViableAltException nvae =
-                    new NoViableAltException("", 13, 0, input);
+                    new NoViableAltException("", 7, 0, input);
 
                 throw nvae;
             }
 
-            switch (alt13) {
+            switch (alt7) {
                 case 1 :
-                    // InternalSpringFluentDSL.g:1002:6: lv_type_3_1= 'mto'
+                    // InternalSpringFluentDSL.g:936:6: lv_type_3_1= 'mto'
                     {
-                    lv_type_3_1=(Token)match(input,36,FOLLOW_2); 
+                    lv_type_3_1=(Token)match(input,31,FOLLOW_2); 
 
                     						newLeafNode(lv_type_3_1, grammarAccess.getRelationAccess().getTypeMtoKeyword_3_0_0());
                     					
@@ -2504,9 +2239,9 @@ public class InternalSpringFluentDSLParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 2 :
-                    // InternalSpringFluentDSL.g:1013:6: lv_type_3_2= 'otm'
+                    // InternalSpringFluentDSL.g:947:6: lv_type_3_2= 'otm'
                     {
-                    lv_type_3_2=(Token)match(input,37,FOLLOW_2); 
+                    lv_type_3_2=(Token)match(input,32,FOLLOW_2); 
 
                     						newLeafNode(lv_type_3_2, grammarAccess.getRelationAccess().getTypeOtmKeyword_3_0_1());
                     					
@@ -2520,9 +2255,9 @@ public class InternalSpringFluentDSLParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 3 :
-                    // InternalSpringFluentDSL.g:1024:6: lv_type_3_3= 'oto'
+                    // InternalSpringFluentDSL.g:958:6: lv_type_3_3= 'oto'
                     {
-                    lv_type_3_3=(Token)match(input,38,FOLLOW_2); 
+                    lv_type_3_3=(Token)match(input,33,FOLLOW_2); 
 
                     						newLeafNode(lv_type_3_3, grammarAccess.getRelationAccess().getTypeOtoKeyword_3_0_2());
                     					
@@ -2536,9 +2271,9 @@ public class InternalSpringFluentDSLParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 4 :
-                    // InternalSpringFluentDSL.g:1035:6: lv_type_3_4= 'mtm'
+                    // InternalSpringFluentDSL.g:969:6: lv_type_3_4= 'mtm'
                     {
-                    lv_type_3_4=(Token)match(input,39,FOLLOW_2); 
+                    lv_type_3_4=(Token)match(input,34,FOLLOW_2); 
 
                     						newLeafNode(lv_type_3_4, grammarAccess.getRelationAccess().getTypeMtmKeyword_3_0_3());
                     					
@@ -2583,7 +2318,7 @@ public class InternalSpringFluentDSLParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "ruleDependencyType"
-    // InternalSpringFluentDSL.g:1052:1: ruleDependencyType returns [Enumerator current=null] : ( (enumLiteral_0= 'SpringDataJpa' ) | (enumLiteral_1= 'SpringWeb' ) | (enumLiteral_2= 'Lombok' ) | (enumLiteral_3= 'MySQLDriver' ) | (enumLiteral_4= 'DevTools' ) | (enumLiteral_5= 'Thymeleaf' ) | (enumLiteral_6= 'Swagger' ) | (enumLiteral_7= 'SpringSecurity' ) ) ;
+    // InternalSpringFluentDSL.g:986:1: ruleDependencyType returns [Enumerator current=null] : ( (enumLiteral_0= 'SpringDataJpa' ) | (enumLiteral_1= 'SpringWeb' ) | (enumLiteral_2= 'Lombok' ) | (enumLiteral_3= 'MySQLDriver' ) | (enumLiteral_4= 'DevTools' ) | (enumLiteral_5= 'Thymeleaf' ) | (enumLiteral_6= 'Swagger' ) | (enumLiteral_7= 'SpringSecurity' ) ) ;
     public final Enumerator ruleDependencyType() throws RecognitionException {
         Enumerator current = null;
 
@@ -2600,67 +2335,67 @@ public class InternalSpringFluentDSLParser extends AbstractInternalAntlrParser {
         	enterRule();
 
         try {
-            // InternalSpringFluentDSL.g:1058:2: ( ( (enumLiteral_0= 'SpringDataJpa' ) | (enumLiteral_1= 'SpringWeb' ) | (enumLiteral_2= 'Lombok' ) | (enumLiteral_3= 'MySQLDriver' ) | (enumLiteral_4= 'DevTools' ) | (enumLiteral_5= 'Thymeleaf' ) | (enumLiteral_6= 'Swagger' ) | (enumLiteral_7= 'SpringSecurity' ) ) )
-            // InternalSpringFluentDSL.g:1059:2: ( (enumLiteral_0= 'SpringDataJpa' ) | (enumLiteral_1= 'SpringWeb' ) | (enumLiteral_2= 'Lombok' ) | (enumLiteral_3= 'MySQLDriver' ) | (enumLiteral_4= 'DevTools' ) | (enumLiteral_5= 'Thymeleaf' ) | (enumLiteral_6= 'Swagger' ) | (enumLiteral_7= 'SpringSecurity' ) )
+            // InternalSpringFluentDSL.g:992:2: ( ( (enumLiteral_0= 'SpringDataJpa' ) | (enumLiteral_1= 'SpringWeb' ) | (enumLiteral_2= 'Lombok' ) | (enumLiteral_3= 'MySQLDriver' ) | (enumLiteral_4= 'DevTools' ) | (enumLiteral_5= 'Thymeleaf' ) | (enumLiteral_6= 'Swagger' ) | (enumLiteral_7= 'SpringSecurity' ) ) )
+            // InternalSpringFluentDSL.g:993:2: ( (enumLiteral_0= 'SpringDataJpa' ) | (enumLiteral_1= 'SpringWeb' ) | (enumLiteral_2= 'Lombok' ) | (enumLiteral_3= 'MySQLDriver' ) | (enumLiteral_4= 'DevTools' ) | (enumLiteral_5= 'Thymeleaf' ) | (enumLiteral_6= 'Swagger' ) | (enumLiteral_7= 'SpringSecurity' ) )
             {
-            // InternalSpringFluentDSL.g:1059:2: ( (enumLiteral_0= 'SpringDataJpa' ) | (enumLiteral_1= 'SpringWeb' ) | (enumLiteral_2= 'Lombok' ) | (enumLiteral_3= 'MySQLDriver' ) | (enumLiteral_4= 'DevTools' ) | (enumLiteral_5= 'Thymeleaf' ) | (enumLiteral_6= 'Swagger' ) | (enumLiteral_7= 'SpringSecurity' ) )
-            int alt14=8;
+            // InternalSpringFluentDSL.g:993:2: ( (enumLiteral_0= 'SpringDataJpa' ) | (enumLiteral_1= 'SpringWeb' ) | (enumLiteral_2= 'Lombok' ) | (enumLiteral_3= 'MySQLDriver' ) | (enumLiteral_4= 'DevTools' ) | (enumLiteral_5= 'Thymeleaf' ) | (enumLiteral_6= 'Swagger' ) | (enumLiteral_7= 'SpringSecurity' ) )
+            int alt8=8;
             switch ( input.LA(1) ) {
+            case 35:
+                {
+                alt8=1;
+                }
+                break;
+            case 36:
+                {
+                alt8=2;
+                }
+                break;
+            case 37:
+                {
+                alt8=3;
+                }
+                break;
+            case 38:
+                {
+                alt8=4;
+                }
+                break;
+            case 39:
+                {
+                alt8=5;
+                }
+                break;
             case 40:
                 {
-                alt14=1;
+                alt8=6;
                 }
                 break;
             case 41:
                 {
-                alt14=2;
+                alt8=7;
                 }
                 break;
             case 42:
                 {
-                alt14=3;
-                }
-                break;
-            case 43:
-                {
-                alt14=4;
-                }
-                break;
-            case 44:
-                {
-                alt14=5;
-                }
-                break;
-            case 45:
-                {
-                alt14=6;
-                }
-                break;
-            case 46:
-                {
-                alt14=7;
-                }
-                break;
-            case 47:
-                {
-                alt14=8;
+                alt8=8;
                 }
                 break;
             default:
                 NoViableAltException nvae =
-                    new NoViableAltException("", 14, 0, input);
+                    new NoViableAltException("", 8, 0, input);
 
                 throw nvae;
             }
 
-            switch (alt14) {
+            switch (alt8) {
                 case 1 :
-                    // InternalSpringFluentDSL.g:1060:3: (enumLiteral_0= 'SpringDataJpa' )
+                    // InternalSpringFluentDSL.g:994:3: (enumLiteral_0= 'SpringDataJpa' )
                     {
-                    // InternalSpringFluentDSL.g:1060:3: (enumLiteral_0= 'SpringDataJpa' )
-                    // InternalSpringFluentDSL.g:1061:4: enumLiteral_0= 'SpringDataJpa'
+                    // InternalSpringFluentDSL.g:994:3: (enumLiteral_0= 'SpringDataJpa' )
+                    // InternalSpringFluentDSL.g:995:4: enumLiteral_0= 'SpringDataJpa'
                     {
-                    enumLiteral_0=(Token)match(input,40,FOLLOW_2); 
+                    enumLiteral_0=(Token)match(input,35,FOLLOW_2); 
 
                     				current = grammarAccess.getDependencyTypeAccess().getSpringDataJpaEnumLiteralDeclaration_0().getEnumLiteral().getInstance();
                     				newLeafNode(enumLiteral_0, grammarAccess.getDependencyTypeAccess().getSpringDataJpaEnumLiteralDeclaration_0());
@@ -2672,12 +2407,12 @@ public class InternalSpringFluentDSLParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 2 :
-                    // InternalSpringFluentDSL.g:1068:3: (enumLiteral_1= 'SpringWeb' )
+                    // InternalSpringFluentDSL.g:1002:3: (enumLiteral_1= 'SpringWeb' )
                     {
-                    // InternalSpringFluentDSL.g:1068:3: (enumLiteral_1= 'SpringWeb' )
-                    // InternalSpringFluentDSL.g:1069:4: enumLiteral_1= 'SpringWeb'
+                    // InternalSpringFluentDSL.g:1002:3: (enumLiteral_1= 'SpringWeb' )
+                    // InternalSpringFluentDSL.g:1003:4: enumLiteral_1= 'SpringWeb'
                     {
-                    enumLiteral_1=(Token)match(input,41,FOLLOW_2); 
+                    enumLiteral_1=(Token)match(input,36,FOLLOW_2); 
 
                     				current = grammarAccess.getDependencyTypeAccess().getSpringWebEnumLiteralDeclaration_1().getEnumLiteral().getInstance();
                     				newLeafNode(enumLiteral_1, grammarAccess.getDependencyTypeAccess().getSpringWebEnumLiteralDeclaration_1());
@@ -2689,12 +2424,12 @@ public class InternalSpringFluentDSLParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 3 :
-                    // InternalSpringFluentDSL.g:1076:3: (enumLiteral_2= 'Lombok' )
+                    // InternalSpringFluentDSL.g:1010:3: (enumLiteral_2= 'Lombok' )
                     {
-                    // InternalSpringFluentDSL.g:1076:3: (enumLiteral_2= 'Lombok' )
-                    // InternalSpringFluentDSL.g:1077:4: enumLiteral_2= 'Lombok'
+                    // InternalSpringFluentDSL.g:1010:3: (enumLiteral_2= 'Lombok' )
+                    // InternalSpringFluentDSL.g:1011:4: enumLiteral_2= 'Lombok'
                     {
-                    enumLiteral_2=(Token)match(input,42,FOLLOW_2); 
+                    enumLiteral_2=(Token)match(input,37,FOLLOW_2); 
 
                     				current = grammarAccess.getDependencyTypeAccess().getLombokEnumLiteralDeclaration_2().getEnumLiteral().getInstance();
                     				newLeafNode(enumLiteral_2, grammarAccess.getDependencyTypeAccess().getLombokEnumLiteralDeclaration_2());
@@ -2706,12 +2441,12 @@ public class InternalSpringFluentDSLParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 4 :
-                    // InternalSpringFluentDSL.g:1084:3: (enumLiteral_3= 'MySQLDriver' )
+                    // InternalSpringFluentDSL.g:1018:3: (enumLiteral_3= 'MySQLDriver' )
                     {
-                    // InternalSpringFluentDSL.g:1084:3: (enumLiteral_3= 'MySQLDriver' )
-                    // InternalSpringFluentDSL.g:1085:4: enumLiteral_3= 'MySQLDriver'
+                    // InternalSpringFluentDSL.g:1018:3: (enumLiteral_3= 'MySQLDriver' )
+                    // InternalSpringFluentDSL.g:1019:4: enumLiteral_3= 'MySQLDriver'
                     {
-                    enumLiteral_3=(Token)match(input,43,FOLLOW_2); 
+                    enumLiteral_3=(Token)match(input,38,FOLLOW_2); 
 
                     				current = grammarAccess.getDependencyTypeAccess().getMySQLDriverEnumLiteralDeclaration_3().getEnumLiteral().getInstance();
                     				newLeafNode(enumLiteral_3, grammarAccess.getDependencyTypeAccess().getMySQLDriverEnumLiteralDeclaration_3());
@@ -2723,12 +2458,12 @@ public class InternalSpringFluentDSLParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 5 :
-                    // InternalSpringFluentDSL.g:1092:3: (enumLiteral_4= 'DevTools' )
+                    // InternalSpringFluentDSL.g:1026:3: (enumLiteral_4= 'DevTools' )
                     {
-                    // InternalSpringFluentDSL.g:1092:3: (enumLiteral_4= 'DevTools' )
-                    // InternalSpringFluentDSL.g:1093:4: enumLiteral_4= 'DevTools'
+                    // InternalSpringFluentDSL.g:1026:3: (enumLiteral_4= 'DevTools' )
+                    // InternalSpringFluentDSL.g:1027:4: enumLiteral_4= 'DevTools'
                     {
-                    enumLiteral_4=(Token)match(input,44,FOLLOW_2); 
+                    enumLiteral_4=(Token)match(input,39,FOLLOW_2); 
 
                     				current = grammarAccess.getDependencyTypeAccess().getDevToolsEnumLiteralDeclaration_4().getEnumLiteral().getInstance();
                     				newLeafNode(enumLiteral_4, grammarAccess.getDependencyTypeAccess().getDevToolsEnumLiteralDeclaration_4());
@@ -2740,12 +2475,12 @@ public class InternalSpringFluentDSLParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 6 :
-                    // InternalSpringFluentDSL.g:1100:3: (enumLiteral_5= 'Thymeleaf' )
+                    // InternalSpringFluentDSL.g:1034:3: (enumLiteral_5= 'Thymeleaf' )
                     {
-                    // InternalSpringFluentDSL.g:1100:3: (enumLiteral_5= 'Thymeleaf' )
-                    // InternalSpringFluentDSL.g:1101:4: enumLiteral_5= 'Thymeleaf'
+                    // InternalSpringFluentDSL.g:1034:3: (enumLiteral_5= 'Thymeleaf' )
+                    // InternalSpringFluentDSL.g:1035:4: enumLiteral_5= 'Thymeleaf'
                     {
-                    enumLiteral_5=(Token)match(input,45,FOLLOW_2); 
+                    enumLiteral_5=(Token)match(input,40,FOLLOW_2); 
 
                     				current = grammarAccess.getDependencyTypeAccess().getThymeleafEnumLiteralDeclaration_5().getEnumLiteral().getInstance();
                     				newLeafNode(enumLiteral_5, grammarAccess.getDependencyTypeAccess().getThymeleafEnumLiteralDeclaration_5());
@@ -2757,12 +2492,12 @@ public class InternalSpringFluentDSLParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 7 :
-                    // InternalSpringFluentDSL.g:1108:3: (enumLiteral_6= 'Swagger' )
+                    // InternalSpringFluentDSL.g:1042:3: (enumLiteral_6= 'Swagger' )
                     {
-                    // InternalSpringFluentDSL.g:1108:3: (enumLiteral_6= 'Swagger' )
-                    // InternalSpringFluentDSL.g:1109:4: enumLiteral_6= 'Swagger'
+                    // InternalSpringFluentDSL.g:1042:3: (enumLiteral_6= 'Swagger' )
+                    // InternalSpringFluentDSL.g:1043:4: enumLiteral_6= 'Swagger'
                     {
-                    enumLiteral_6=(Token)match(input,46,FOLLOW_2); 
+                    enumLiteral_6=(Token)match(input,41,FOLLOW_2); 
 
                     				current = grammarAccess.getDependencyTypeAccess().getSwaggerEnumLiteralDeclaration_6().getEnumLiteral().getInstance();
                     				newLeafNode(enumLiteral_6, grammarAccess.getDependencyTypeAccess().getSwaggerEnumLiteralDeclaration_6());
@@ -2774,12 +2509,12 @@ public class InternalSpringFluentDSLParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 8 :
-                    // InternalSpringFluentDSL.g:1116:3: (enumLiteral_7= 'SpringSecurity' )
+                    // InternalSpringFluentDSL.g:1050:3: (enumLiteral_7= 'SpringSecurity' )
                     {
-                    // InternalSpringFluentDSL.g:1116:3: (enumLiteral_7= 'SpringSecurity' )
-                    // InternalSpringFluentDSL.g:1117:4: enumLiteral_7= 'SpringSecurity'
+                    // InternalSpringFluentDSL.g:1050:3: (enumLiteral_7= 'SpringSecurity' )
+                    // InternalSpringFluentDSL.g:1051:4: enumLiteral_7= 'SpringSecurity'
                     {
-                    enumLiteral_7=(Token)match(input,47,FOLLOW_2); 
+                    enumLiteral_7=(Token)match(input,42,FOLLOW_2); 
 
                     				current = grammarAccess.getDependencyTypeAccess().getSpringSecurityEnumLiteralDeclaration_7().getEnumLiteral().getInstance();
                     				newLeafNode(enumLiteral_7, grammarAccess.getDependencyTypeAccess().getSpringSecurityEnumLiteralDeclaration_7());
@@ -2813,7 +2548,7 @@ public class InternalSpringFluentDSLParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "ruleType"
-    // InternalSpringFluentDSL.g:1127:1: ruleType returns [Enumerator current=null] : ( (enumLiteral_0= 'Long' ) | (enumLiteral_1= 'Integer' ) | (enumLiteral_2= 'Double' ) | (enumLiteral_3= 'String' ) | (enumLiteral_4= 'Date' ) | (enumLiteral_5= 'Time' ) | (enumLiteral_6= 'Boolean' ) ) ;
+    // InternalSpringFluentDSL.g:1061:1: ruleType returns [Enumerator current=null] : ( (enumLiteral_0= 'Long' ) | (enumLiteral_1= 'Integer' ) | (enumLiteral_2= 'Double' ) | (enumLiteral_3= 'String' ) | (enumLiteral_4= 'Date' ) | (enumLiteral_5= 'Time' ) | (enumLiteral_6= 'Boolean' ) ) ;
     public final Enumerator ruleType() throws RecognitionException {
         Enumerator current = null;
 
@@ -2829,62 +2564,62 @@ public class InternalSpringFluentDSLParser extends AbstractInternalAntlrParser {
         	enterRule();
 
         try {
-            // InternalSpringFluentDSL.g:1133:2: ( ( (enumLiteral_0= 'Long' ) | (enumLiteral_1= 'Integer' ) | (enumLiteral_2= 'Double' ) | (enumLiteral_3= 'String' ) | (enumLiteral_4= 'Date' ) | (enumLiteral_5= 'Time' ) | (enumLiteral_6= 'Boolean' ) ) )
-            // InternalSpringFluentDSL.g:1134:2: ( (enumLiteral_0= 'Long' ) | (enumLiteral_1= 'Integer' ) | (enumLiteral_2= 'Double' ) | (enumLiteral_3= 'String' ) | (enumLiteral_4= 'Date' ) | (enumLiteral_5= 'Time' ) | (enumLiteral_6= 'Boolean' ) )
+            // InternalSpringFluentDSL.g:1067:2: ( ( (enumLiteral_0= 'Long' ) | (enumLiteral_1= 'Integer' ) | (enumLiteral_2= 'Double' ) | (enumLiteral_3= 'String' ) | (enumLiteral_4= 'Date' ) | (enumLiteral_5= 'Time' ) | (enumLiteral_6= 'Boolean' ) ) )
+            // InternalSpringFluentDSL.g:1068:2: ( (enumLiteral_0= 'Long' ) | (enumLiteral_1= 'Integer' ) | (enumLiteral_2= 'Double' ) | (enumLiteral_3= 'String' ) | (enumLiteral_4= 'Date' ) | (enumLiteral_5= 'Time' ) | (enumLiteral_6= 'Boolean' ) )
             {
-            // InternalSpringFluentDSL.g:1134:2: ( (enumLiteral_0= 'Long' ) | (enumLiteral_1= 'Integer' ) | (enumLiteral_2= 'Double' ) | (enumLiteral_3= 'String' ) | (enumLiteral_4= 'Date' ) | (enumLiteral_5= 'Time' ) | (enumLiteral_6= 'Boolean' ) )
-            int alt15=7;
+            // InternalSpringFluentDSL.g:1068:2: ( (enumLiteral_0= 'Long' ) | (enumLiteral_1= 'Integer' ) | (enumLiteral_2= 'Double' ) | (enumLiteral_3= 'String' ) | (enumLiteral_4= 'Date' ) | (enumLiteral_5= 'Time' ) | (enumLiteral_6= 'Boolean' ) )
+            int alt9=7;
             switch ( input.LA(1) ) {
+            case 43:
+                {
+                alt9=1;
+                }
+                break;
+            case 44:
+                {
+                alt9=2;
+                }
+                break;
+            case 45:
+                {
+                alt9=3;
+                }
+                break;
+            case 46:
+                {
+                alt9=4;
+                }
+                break;
+            case 47:
+                {
+                alt9=5;
+                }
+                break;
             case 48:
                 {
-                alt15=1;
+                alt9=6;
                 }
                 break;
             case 49:
                 {
-                alt15=2;
-                }
-                break;
-            case 50:
-                {
-                alt15=3;
-                }
-                break;
-            case 51:
-                {
-                alt15=4;
-                }
-                break;
-            case 52:
-                {
-                alt15=5;
-                }
-                break;
-            case 53:
-                {
-                alt15=6;
-                }
-                break;
-            case 54:
-                {
-                alt15=7;
+                alt9=7;
                 }
                 break;
             default:
                 NoViableAltException nvae =
-                    new NoViableAltException("", 15, 0, input);
+                    new NoViableAltException("", 9, 0, input);
 
                 throw nvae;
             }
 
-            switch (alt15) {
+            switch (alt9) {
                 case 1 :
-                    // InternalSpringFluentDSL.g:1135:3: (enumLiteral_0= 'Long' )
+                    // InternalSpringFluentDSL.g:1069:3: (enumLiteral_0= 'Long' )
                     {
-                    // InternalSpringFluentDSL.g:1135:3: (enumLiteral_0= 'Long' )
-                    // InternalSpringFluentDSL.g:1136:4: enumLiteral_0= 'Long'
+                    // InternalSpringFluentDSL.g:1069:3: (enumLiteral_0= 'Long' )
+                    // InternalSpringFluentDSL.g:1070:4: enumLiteral_0= 'Long'
                     {
-                    enumLiteral_0=(Token)match(input,48,FOLLOW_2); 
+                    enumLiteral_0=(Token)match(input,43,FOLLOW_2); 
 
                     				current = grammarAccess.getTypeAccess().getLongEnumLiteralDeclaration_0().getEnumLiteral().getInstance();
                     				newLeafNode(enumLiteral_0, grammarAccess.getTypeAccess().getLongEnumLiteralDeclaration_0());
@@ -2896,12 +2631,12 @@ public class InternalSpringFluentDSLParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 2 :
-                    // InternalSpringFluentDSL.g:1143:3: (enumLiteral_1= 'Integer' )
+                    // InternalSpringFluentDSL.g:1077:3: (enumLiteral_1= 'Integer' )
                     {
-                    // InternalSpringFluentDSL.g:1143:3: (enumLiteral_1= 'Integer' )
-                    // InternalSpringFluentDSL.g:1144:4: enumLiteral_1= 'Integer'
+                    // InternalSpringFluentDSL.g:1077:3: (enumLiteral_1= 'Integer' )
+                    // InternalSpringFluentDSL.g:1078:4: enumLiteral_1= 'Integer'
                     {
-                    enumLiteral_1=(Token)match(input,49,FOLLOW_2); 
+                    enumLiteral_1=(Token)match(input,44,FOLLOW_2); 
 
                     				current = grammarAccess.getTypeAccess().getIntegerEnumLiteralDeclaration_1().getEnumLiteral().getInstance();
                     				newLeafNode(enumLiteral_1, grammarAccess.getTypeAccess().getIntegerEnumLiteralDeclaration_1());
@@ -2913,12 +2648,12 @@ public class InternalSpringFluentDSLParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 3 :
-                    // InternalSpringFluentDSL.g:1151:3: (enumLiteral_2= 'Double' )
+                    // InternalSpringFluentDSL.g:1085:3: (enumLiteral_2= 'Double' )
                     {
-                    // InternalSpringFluentDSL.g:1151:3: (enumLiteral_2= 'Double' )
-                    // InternalSpringFluentDSL.g:1152:4: enumLiteral_2= 'Double'
+                    // InternalSpringFluentDSL.g:1085:3: (enumLiteral_2= 'Double' )
+                    // InternalSpringFluentDSL.g:1086:4: enumLiteral_2= 'Double'
                     {
-                    enumLiteral_2=(Token)match(input,50,FOLLOW_2); 
+                    enumLiteral_2=(Token)match(input,45,FOLLOW_2); 
 
                     				current = grammarAccess.getTypeAccess().getDoubleEnumLiteralDeclaration_2().getEnumLiteral().getInstance();
                     				newLeafNode(enumLiteral_2, grammarAccess.getTypeAccess().getDoubleEnumLiteralDeclaration_2());
@@ -2930,12 +2665,12 @@ public class InternalSpringFluentDSLParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 4 :
-                    // InternalSpringFluentDSL.g:1159:3: (enumLiteral_3= 'String' )
+                    // InternalSpringFluentDSL.g:1093:3: (enumLiteral_3= 'String' )
                     {
-                    // InternalSpringFluentDSL.g:1159:3: (enumLiteral_3= 'String' )
-                    // InternalSpringFluentDSL.g:1160:4: enumLiteral_3= 'String'
+                    // InternalSpringFluentDSL.g:1093:3: (enumLiteral_3= 'String' )
+                    // InternalSpringFluentDSL.g:1094:4: enumLiteral_3= 'String'
                     {
-                    enumLiteral_3=(Token)match(input,51,FOLLOW_2); 
+                    enumLiteral_3=(Token)match(input,46,FOLLOW_2); 
 
                     				current = grammarAccess.getTypeAccess().getStringEnumLiteralDeclaration_3().getEnumLiteral().getInstance();
                     				newLeafNode(enumLiteral_3, grammarAccess.getTypeAccess().getStringEnumLiteralDeclaration_3());
@@ -2947,12 +2682,12 @@ public class InternalSpringFluentDSLParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 5 :
-                    // InternalSpringFluentDSL.g:1167:3: (enumLiteral_4= 'Date' )
+                    // InternalSpringFluentDSL.g:1101:3: (enumLiteral_4= 'Date' )
                     {
-                    // InternalSpringFluentDSL.g:1167:3: (enumLiteral_4= 'Date' )
-                    // InternalSpringFluentDSL.g:1168:4: enumLiteral_4= 'Date'
+                    // InternalSpringFluentDSL.g:1101:3: (enumLiteral_4= 'Date' )
+                    // InternalSpringFluentDSL.g:1102:4: enumLiteral_4= 'Date'
                     {
-                    enumLiteral_4=(Token)match(input,52,FOLLOW_2); 
+                    enumLiteral_4=(Token)match(input,47,FOLLOW_2); 
 
                     				current = grammarAccess.getTypeAccess().getDateEnumLiteralDeclaration_4().getEnumLiteral().getInstance();
                     				newLeafNode(enumLiteral_4, grammarAccess.getTypeAccess().getDateEnumLiteralDeclaration_4());
@@ -2964,12 +2699,12 @@ public class InternalSpringFluentDSLParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 6 :
-                    // InternalSpringFluentDSL.g:1175:3: (enumLiteral_5= 'Time' )
+                    // InternalSpringFluentDSL.g:1109:3: (enumLiteral_5= 'Time' )
                     {
-                    // InternalSpringFluentDSL.g:1175:3: (enumLiteral_5= 'Time' )
-                    // InternalSpringFluentDSL.g:1176:4: enumLiteral_5= 'Time'
+                    // InternalSpringFluentDSL.g:1109:3: (enumLiteral_5= 'Time' )
+                    // InternalSpringFluentDSL.g:1110:4: enumLiteral_5= 'Time'
                     {
-                    enumLiteral_5=(Token)match(input,53,FOLLOW_2); 
+                    enumLiteral_5=(Token)match(input,48,FOLLOW_2); 
 
                     				current = grammarAccess.getTypeAccess().getTimeEnumLiteralDeclaration_5().getEnumLiteral().getInstance();
                     				newLeafNode(enumLiteral_5, grammarAccess.getTypeAccess().getTimeEnumLiteralDeclaration_5());
@@ -2981,12 +2716,12 @@ public class InternalSpringFluentDSLParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 7 :
-                    // InternalSpringFluentDSL.g:1183:3: (enumLiteral_6= 'Boolean' )
+                    // InternalSpringFluentDSL.g:1117:3: (enumLiteral_6= 'Boolean' )
                     {
-                    // InternalSpringFluentDSL.g:1183:3: (enumLiteral_6= 'Boolean' )
-                    // InternalSpringFluentDSL.g:1184:4: enumLiteral_6= 'Boolean'
+                    // InternalSpringFluentDSL.g:1117:3: (enumLiteral_6= 'Boolean' )
+                    // InternalSpringFluentDSL.g:1118:4: enumLiteral_6= 'Boolean'
                     {
-                    enumLiteral_6=(Token)match(input,54,FOLLOW_2); 
+                    enumLiteral_6=(Token)match(input,49,FOLLOW_2); 
 
                     				current = grammarAccess.getTypeAccess().getBooleanEnumLiteralDeclaration_6().getEnumLiteral().getInstance();
                     				newLeafNode(enumLiteral_6, grammarAccess.getTypeAccess().getBooleanEnumLiteralDeclaration_6());
@@ -3030,7 +2765,7 @@ public class InternalSpringFluentDSLParser extends AbstractInternalAntlrParser {
     public static final BitSet FOLLOW_5 = new BitSet(new long[]{0x0000000000020000L});
     public static final BitSet FOLLOW_6 = new BitSet(new long[]{0x0000000000000010L});
     public static final BitSet FOLLOW_7 = new BitSet(new long[]{0x0000000000004000L});
-    public static final BitSet FOLLOW_8 = new BitSet(new long[]{0x0000FF0000000000L});
+    public static final BitSet FOLLOW_8 = new BitSet(new long[]{0x000007F800000000L});
     public static final BitSet FOLLOW_9 = new BitSet(new long[]{0x0000000000018000L});
     public static final BitSet FOLLOW_10 = new BitSet(new long[]{0x0000000000050000L});
     public static final BitSet FOLLOW_11 = new BitSet(new long[]{0x0000000000000020L});
@@ -3045,12 +2780,8 @@ public class InternalSpringFluentDSLParser extends AbstractInternalAntlrParser {
     public static final BitSet FOLLOW_20 = new BitSet(new long[]{0x0000000008000000L});
     public static final BitSet FOLLOW_21 = new BitSet(new long[]{0x0000000000000022L});
     public static final BitSet FOLLOW_22 = new BitSet(new long[]{0x0000000010000000L});
-    public static final BitSet FOLLOW_23 = new BitSet(new long[]{0x007F000000000000L});
+    public static final BitSet FOLLOW_23 = new BitSet(new long[]{0x0003F80000000000L});
     public static final BitSet FOLLOW_24 = new BitSet(new long[]{0x0000000020000000L});
-    public static final BitSet FOLLOW_25 = new BitSet(new long[]{0x0000000F80000000L});
-    public static final BitSet FOLLOW_26 = new BitSet(new long[]{0x0000000700000002L});
-    public static final BitSet FOLLOW_27 = new BitSet(new long[]{0x0000000600000002L});
-    public static final BitSet FOLLOW_28 = new BitSet(new long[]{0x0000000400000002L});
-    public static final BitSet FOLLOW_29 = new BitSet(new long[]{0x000000F000000000L});
+    public static final BitSet FOLLOW_25 = new BitSet(new long[]{0x0000000780000000L});
 
 }

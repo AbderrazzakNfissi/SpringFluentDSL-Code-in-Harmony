@@ -15,12 +15,11 @@ import org.xtext.spring.fluent.springFluentDSL.Model
 class SpringFluentDSLGenerator extends AbstractGenerator {
 
    override void doGenerate(Resource resource, IFileSystemAccess2 fsa, IGeneratorContext context) {
-    val model = resource.contents.head as Model;
+       val model = resource.contents.head as Model;
 
-        
-    val appName = model.appName.appName;
-  
-  val pomGenerator = new PomGenerator
+        val prefix = model.prefix.prefix;
+        val appName = model.appName.appName;
+        val pomGenerator = new PomGenerator
         val dependenciesGenerator = new DependenciesGenerator
 
         // Generate Pom.xml
@@ -38,7 +37,7 @@ class SpringFluentDSLGenerator extends AbstractGenerator {
 
     for (entity : resource.allContents.toIterable.filter(Entity)) {
       entityGenerator.generateEntity(entity, fsa, basePackage)
-      controllerGenerator.generateController(entity, fsa, basePackage)
+      controllerGenerator.generateController(entity, fsa, basePackage,prefix)
       repositoryGenerator.generateRepository(entity, fsa, basePackage)
       serviceGenerator.generateService(entity, fsa, basePackage)
     }
