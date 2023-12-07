@@ -34,6 +34,7 @@ public class SpringFluentDSLGenerator extends AbstractGenerator {
     final ControllerGenerator controllerGenerator = new ControllerGenerator();
     final RepositoryGenerator repositoryGenerator = new RepositoryGenerator();
     final ServiceGenerator serviceGenerator = new ServiceGenerator();
+    final ExceptionsGenerator exceptionGenerator = new ExceptionsGenerator();
     final EntryApplicationGenerator entryApplicationGenerator = new EntryApplicationGenerator();
     entryApplicationGenerator.generateEntryApplication(appName, fsa, basePackage);
     Iterable<Entity> _filter = Iterables.<Entity>filter(IteratorExtensions.<EObject>toIterable(resource.getAllContents()), Entity.class);
@@ -43,6 +44,7 @@ public class SpringFluentDSLGenerator extends AbstractGenerator {
         controllerGenerator.generateController(entity, fsa, basePackage, prefix);
         repositoryGenerator.generateRepository(entity, fsa, basePackage);
         serviceGenerator.generateService(entity, fsa, basePackage);
+        exceptionGenerator.generateExceptions(entity, fsa, basePackage);
       }
     }
   }
