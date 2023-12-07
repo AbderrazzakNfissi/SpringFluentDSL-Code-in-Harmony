@@ -798,89 +798,23 @@ ruleOperation returns [EObject current=null]
 		{
 			newLeafNode(otherlv_1, grammarAccess.getOperationAccess().getColonKeyword_1());
 		}
-		{
-			newCompositeNode(grammarAccess.getOperationAccess().getOperationTypeParserRuleCall_2());
-		}
-		this_OperationType_2=ruleOperationType
-		{
-			$current = $this_OperationType_2.current;
-			afterParserOrEnumRuleCall();
-		}
-	)
-;
-
-// Entry rule entryRuleOperationType
-entryRuleOperationType returns [EObject current=null]:
-	{ newCompositeNode(grammarAccess.getOperationTypeRule()); }
-	iv_ruleOperationType=ruleOperationType
-	{ $current=$iv_ruleOperationType.current; }
-	EOF;
-
-// Rule OperationType
-ruleOperationType returns [EObject current=null]
-@init {
-	enterRule();
-}
-@after {
-	leaveRule();
-}:
-	(
 		(
 			(
+				lv_operation_2_0=RULE_STRING
 				{
-					$current = forceCreateModelElement(
-						grammarAccess.getOperationTypeAccess().getOperationTypeAction_0_0(),
-						$current);
+					newLeafNode(lv_operation_2_0, grammarAccess.getOperationAccess().getOperationSTRINGTerminalRuleCall_2_0());
+				}
+				{
+					if ($current==null) {
+						$current = createModelElement(grammarAccess.getOperationRule());
+					}
+					setWithLastConsumed(
+						$current,
+						"operation",
+						lv_operation_2_0,
+						"org.eclipse.xtext.common.Terminals.STRING");
 				}
 			)
-			(
-				(
-					lv_oprationType_1_0='c'
-					{
-						newLeafNode(lv_oprationType_1_0, grammarAccess.getOperationTypeAccess().getOprationTypeCKeyword_0_1_0());
-					}
-					{
-						if ($current==null) {
-							$current = createModelElement(grammarAccess.getOperationTypeRule());
-						}
-						setWithLastConsumed($current, "oprationType", lv_oprationType_1_0, "c");
-					}
-				)
-			)?
-			(
-				otherlv_2='r'
-				{
-					newLeafNode(otherlv_2, grammarAccess.getOperationTypeAccess().getRKeyword_0_2());
-				}
-			)?
-			(
-				otherlv_3='u'
-				{
-					newLeafNode(otherlv_3, grammarAccess.getOperationTypeAccess().getUKeyword_0_3());
-				}
-			)?
-			(
-				otherlv_4='d'
-				{
-					newLeafNode(otherlv_4, grammarAccess.getOperationTypeAccess().getDKeyword_0_4());
-				}
-			)?
-		)
-		    |
-		(
-			(
-				{
-					$current = forceCreateModelElement(
-						grammarAccess.getOperationTypeAccess().getOperationTypeAction_1_0(),
-						$current);
-				}
-			)
-			(
-				otherlv_6='none'
-				{
-					newLeafNode(otherlv_6, grammarAccess.getOperationTypeAccess().getNoneKeyword_1_1());
-				}
-			)?
 		)
 	)
 ;

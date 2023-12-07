@@ -123,15 +123,6 @@ public interface SpringFluentDSLFactory extends EFactory
   Operation createOperation();
 
   /**
-   * Returns a new object of class '<em>Operation Type</em>'.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @return a new object of class '<em>Operation Type</em>'.
-   * @generated
-   */
-  OperationType createOperationType();
-
-  /**
    * Returns a new object of class '<em>Attribute</em>'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->

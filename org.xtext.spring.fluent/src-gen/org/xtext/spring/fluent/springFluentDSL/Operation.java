@@ -10,6 +10,12 @@ import org.eclipse.emf.ecore.EObject;
  * A representation of the model object '<em><b>Operation</b></em>'.
  * <!-- end-user-doc -->
  *
+ * <p>
+ * The following features are supported:
+ * </p>
+ * <ul>
+ *   <li>{@link org.xtext.spring.fluent.springFluentDSL.Operation#getOperation <em>Operation</em>}</li>
+ * </ul>
  *
  * @see org.xtext.spring.fluent.springFluentDSL.SpringFluentDSLPackage#getOperation()
  * @model
@@ -17,4 +23,26 @@ import org.eclipse.emf.ecore.EObject;
  */
 public interface Operation extends EObject
 {
+  /**
+   * Returns the value of the '<em><b>Operation</b></em>' attribute.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return the value of the '<em>Operation</em>' attribute.
+   * @see #setOperation(String)
+   * @see org.xtext.spring.fluent.springFluentDSL.SpringFluentDSLPackage#getOperation_Operation()
+   * @model
+   * @generated
+   */
+  String getOperation();
+
+  /**
+   * Sets the value of the '{@link org.xtext.spring.fluent.springFluentDSL.Operation#getOperation <em>Operation</em>}' attribute.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @param value the new value of the '<em>Operation</em>' attribute.
+   * @see #getOperation()
+   * @generated
+   */
+  void setOperation(String value);
+
 } // Operation

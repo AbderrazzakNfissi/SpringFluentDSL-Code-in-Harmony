@@ -51,11 +51,8 @@ IDENTITY:
 
 Operation:
   'ops' ':' (
-    OperationType
+    operation=STRING
   );
-  
-OperationType:
-	{OperationType} oprationType = ('c')?  ('r')?  ('u')? ('d')? | {OperationType} ('none')?;
   
 Attribute:
   name=ID ':' type=Type;
@@ -67,6 +64,3 @@ enum Type:
 
 Relation:
   name=ID ':' target=[Entity|ID] type=('mto' | 'otm' | 'oto' | 'mtm');
-
-
-

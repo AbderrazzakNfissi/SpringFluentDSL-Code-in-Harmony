@@ -90,7 +90,7 @@ def String generateIdCode(Type type) {
                 '''
             case 'otm':
                 return '''
-                    @OneToMany(mappedBy = "''' + entityName + '''")
+                    @OneToMany(mappedBy = "''' + entityName.toLowerCase + '''")
                     private List<''' + targetEntityName + '''> ''' + r.name + ''';
                 '''
             case 'oto':
