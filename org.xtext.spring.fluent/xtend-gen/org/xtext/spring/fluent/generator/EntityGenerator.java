@@ -185,7 +185,8 @@ public class EntityGenerator {
           case "otm":
             StringConcatenation _builder_3 = new StringConcatenation();
             _builder_3.append("@OneToMany(mappedBy = \"");
-            String _plus_5 = (_builder_3.toString() + entityName);
+            String _lowerCase = entityName.toLowerCase();
+            String _plus_5 = (_builder_3.toString() + _lowerCase);
             StringConcatenation _builder_4 = new StringConcatenation();
             _builder_4.append("\")");
             _builder_4.newLine();

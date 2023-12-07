@@ -64,6 +64,3 @@ enum Type:
 
 Relation:
   name=ID ':' target=[Entity|ID] type=('mto' | 'otm' | 'oto' | 'mtm');
-
-
-
