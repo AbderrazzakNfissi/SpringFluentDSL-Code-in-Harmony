@@ -34,7 +34,9 @@ class SpringFluentDSLGenerator extends AbstractGenerator {
     val controllerGenerator = new ControllerGenerator
     val repositoryGenerator = new RepositoryGenerator
     val serviceGenerator = new ServiceGenerator
-
+    val entryApplicationGenerator = new EntryApplicationGenerator
+    
+    entryApplicationGenerator.generateEntryApplication(appName,fsa,basePackage);
     for (entity : resource.allContents.toIterable.filter(Entity)) {
       entityGenerator.generateEntity(entity, fsa, basePackage)
       controllerGenerator.generateController(entity, fsa, basePackage,prefix)
