@@ -6,6 +6,8 @@ import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.HashSet;
 import java.util.Set;
+import java.util.regex.Pattern;
+
 import org.eclipse.xtext.validation.Check;
 import org.xtext.spring.fluent.springFluentDSL.AppName;
 import org.xtext.spring.fluent.springFluentDSL.Dependencies;
@@ -13,6 +15,7 @@ import org.xtext.spring.fluent.springFluentDSL.Dependency;
 import org.xtext.spring.fluent.springFluentDSL.Entities;
 import org.xtext.spring.fluent.springFluentDSL.Entity;
 import org.xtext.spring.fluent.springFluentDSL.Feature;
+import org.xtext.spring.fluent.springFluentDSL.Operation;
 import org.xtext.spring.fluent.springFluentDSL.Prefix;
 import org.xtext.spring.fluent.springFluentDSL.Relation;
 import org.xtext.spring.fluent.springFluentDSL.Attribute;
@@ -102,5 +105,16 @@ public class SpringFluentDSLValidator extends AbstractSpringFluentDSLValidator {
 	        error("A class cannot inherit from itself.", null);
 	    }
 	}
+	
+	 
+
+    @Check
+    public void checkCRUDOpsValidation(Operation ops) {
+    	String MARKER_PATTERN = "(c)?(r)?(u)?(d)?|none";
+        String operation = ops.getOperation();
+        if (!Pattern.matches(MARKER_PATTERN, operation)) {
+            error("Invalid operation string: " + operation, null);
+        }
+    }
 	
 }
