@@ -22,17 +22,29 @@ import java.util.ArrayList;
 @SuppressWarnings("all")
 public class InternalSpringFluentDSLParser extends AbstractInternalContentAssistParser {
     public static final String[] tokenNames = new String[] {
-        "<invalid>", "<EOR>", "<DOWN>", "<UP>", "RULE_STRING", "RULE_ID", "RULE_INT", "RULE_ML_COMMENT", "RULE_SL_COMMENT", "RULE_WS", "RULE_ANY_OTHER", "'SingleTable'", "'JoinedTable'", "'TablePerClass'", "'mto'", "'otm'", "'oto'", "'mtm'", "'SpringDataJpa'", "'SpringWeb'", "'Lombok'", "'MySQLDriver'", "'DevTools'", "'Thymeleaf'", "'Swagger'", "'SpringSecurity'", "'Long'", "'Integer'", "'Double'", "'String'", "'Date'", "'Time'", "'Boolean'", "'prefix:'", "'app_name:'", "'dependencies'", "'{'", "'}'", "','", "'entities'", "'entity'", "'extends'", "'['", "'strategy'", "'='", "']'", "'id'", "':'", "'pk'", "'ops'"
+        "<invalid>", "<EOR>", "<DOWN>", "<UP>", "RULE_STRING", "RULE_ID", "RULE_INT", "RULE_ML_COMMENT", "RULE_SL_COMMENT", "RULE_WS", "RULE_ANY_OTHER", "'SingleTable'", "'JoinedTable'", "'TablePerClass'", "'mto'", "'otm'", "'oto'", "'mtm'", "'SpringDataJpa'", "'SpringWeb'", "'Lombok'", "'MySQLDriver'", "'DevTools'", "'SpringKafka'", "'SpringIntegrationWS'", "'SpringIntegrationWebFlux'", "'SpringIntegrationSecurity'", "'SpringIntegrationRedis'", "'SpringIntegrationMongoDB'", "'SpringIntegrationKafka'", "'SpringIntegrationJPA'", "'SpringIntegrationJDBC'", "'SpringIntegrationHTTP'", "'SpringIntegrationAMQP'", "'SpringWebFlux'", "'SpringWebServices'", "'SpringValidation'", "'SpringThymeleaf'", "'SpringOAuth2Client'", "'SpringJersey'", "'SpringJDBC'", "'SpringIntegration'", "'SpringDataRest'", "'SpringGraphQL'", "'SpringDataElasticsearch'", "'SpringDataJDBC'", "'SpringDataMongoDB'", "'Swagger'", "'SpringSecurity'", "'SpringActuator'", "'SpringGraphQLTest'", "'Long'", "'Integer'", "'Double'", "'String'", "'Date'", "'Time'", "'Boolean'", "'prefix:'", "'app_name:'", "'dependencies'", "'{'", "'}'", "','", "'entities'", "'entity'", "'extends'", "'['", "'strategy'", "'='", "']'", "'id'", "':'", "'pk'", "'ops'"
     };
+    public static final int T__50=50;
     public static final int T__19=19;
     public static final int T__15=15;
+    public static final int T__59=59;
     public static final int T__16=16;
     public static final int T__17=17;
     public static final int T__18=18;
     public static final int T__11=11;
+    public static final int T__55=55;
     public static final int T__12=12;
+    public static final int T__56=56;
     public static final int T__13=13;
+    public static final int T__57=57;
     public static final int T__14=14;
+    public static final int T__58=58;
+    public static final int T__51=51;
+    public static final int T__52=52;
+    public static final int T__53=53;
+    public static final int T__54=54;
+    public static final int T__60=60;
+    public static final int T__61=61;
     public static final int RULE_ID=5;
     public static final int T__26=26;
     public static final int T__27=27;
@@ -40,12 +52,23 @@ public class InternalSpringFluentDSLParser extends AbstractInternalContentAssist
     public static final int RULE_INT=6;
     public static final int T__29=29;
     public static final int T__22=22;
+    public static final int T__66=66;
     public static final int RULE_ML_COMMENT=7;
     public static final int T__23=23;
+    public static final int T__67=67;
     public static final int T__24=24;
+    public static final int T__68=68;
     public static final int T__25=25;
+    public static final int T__69=69;
+    public static final int T__62=62;
+    public static final int T__63=63;
     public static final int T__20=20;
+    public static final int T__64=64;
     public static final int T__21=21;
+    public static final int T__65=65;
+    public static final int T__70=70;
+    public static final int T__71=71;
+    public static final int T__72=72;
     public static final int RULE_STRING=4;
     public static final int RULE_SL_COMMENT=8;
     public static final int T__37=37;
@@ -55,8 +78,10 @@ public class InternalSpringFluentDSLParser extends AbstractInternalContentAssist
     public static final int T__34=34;
     public static final int T__35=35;
     public static final int T__36=36;
+    public static final int T__73=73;
     public static final int EOF=-1;
     public static final int T__30=30;
+    public static final int T__74=74;
     public static final int T__31=31;
     public static final int T__32=32;
     public static final int RULE_WS=9;
@@ -1413,14 +1438,14 @@ public class InternalSpringFluentDSLParser extends AbstractInternalContentAssist
 
 
     // $ANTLR start "rule__DependencyType__Alternatives"
-    // InternalSpringFluentDSL.g:469:1: rule__DependencyType__Alternatives : ( ( ( 'SpringDataJpa' ) ) | ( ( 'SpringWeb' ) ) | ( ( 'Lombok' ) ) | ( ( 'MySQLDriver' ) ) | ( ( 'DevTools' ) ) | ( ( 'Thymeleaf' ) ) | ( ( 'Swagger' ) ) | ( ( 'SpringSecurity' ) ) );
+    // InternalSpringFluentDSL.g:469:1: rule__DependencyType__Alternatives : ( ( ( 'SpringDataJpa' ) ) | ( ( 'SpringWeb' ) ) | ( ( 'Lombok' ) ) | ( ( 'MySQLDriver' ) ) | ( ( 'DevTools' ) ) | ( ( 'SpringKafka' ) ) | ( ( 'SpringIntegrationWS' ) ) | ( ( 'SpringIntegrationWebFlux' ) ) | ( ( 'SpringIntegrationSecurity' ) ) | ( ( 'SpringIntegrationRedis' ) ) | ( ( 'SpringIntegrationMongoDB' ) ) | ( ( 'SpringIntegrationKafka' ) ) | ( ( 'SpringIntegrationJPA' ) ) | ( ( 'SpringIntegrationJDBC' ) ) | ( ( 'SpringIntegrationHTTP' ) ) | ( ( 'SpringIntegrationAMQP' ) ) | ( ( 'SpringWebFlux' ) ) | ( ( 'SpringWebServices' ) ) | ( ( 'SpringValidation' ) ) | ( ( 'SpringThymeleaf' ) ) | ( ( 'SpringOAuth2Client' ) ) | ( ( 'SpringJersey' ) ) | ( ( 'SpringJDBC' ) ) | ( ( 'SpringIntegration' ) ) | ( ( 'SpringDataRest' ) ) | ( ( 'SpringGraphQL' ) ) | ( ( 'SpringDataElasticsearch' ) ) | ( ( 'SpringDataJDBC' ) ) | ( ( 'SpringDataMongoDB' ) ) | ( ( 'Swagger' ) ) | ( ( 'SpringSecurity' ) ) | ( ( 'SpringActuator' ) ) | ( ( 'SpringGraphQLTest' ) ) );
     public final void rule__DependencyType__Alternatives() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalSpringFluentDSL.g:473:1: ( ( ( 'SpringDataJpa' ) ) | ( ( 'SpringWeb' ) ) | ( ( 'Lombok' ) ) | ( ( 'MySQLDriver' ) ) | ( ( 'DevTools' ) ) | ( ( 'Thymeleaf' ) ) | ( ( 'Swagger' ) ) | ( ( 'SpringSecurity' ) ) )
-            int alt3=8;
+            // InternalSpringFluentDSL.g:473:1: ( ( ( 'SpringDataJpa' ) ) | ( ( 'SpringWeb' ) ) | ( ( 'Lombok' ) ) | ( ( 'MySQLDriver' ) ) | ( ( 'DevTools' ) ) | ( ( 'SpringKafka' ) ) | ( ( 'SpringIntegrationWS' ) ) | ( ( 'SpringIntegrationWebFlux' ) ) | ( ( 'SpringIntegrationSecurity' ) ) | ( ( 'SpringIntegrationRedis' ) ) | ( ( 'SpringIntegrationMongoDB' ) ) | ( ( 'SpringIntegrationKafka' ) ) | ( ( 'SpringIntegrationJPA' ) ) | ( ( 'SpringIntegrationJDBC' ) ) | ( ( 'SpringIntegrationHTTP' ) ) | ( ( 'SpringIntegrationAMQP' ) ) | ( ( 'SpringWebFlux' ) ) | ( ( 'SpringWebServices' ) ) | ( ( 'SpringValidation' ) ) | ( ( 'SpringThymeleaf' ) ) | ( ( 'SpringOAuth2Client' ) ) | ( ( 'SpringJersey' ) ) | ( ( 'SpringJDBC' ) ) | ( ( 'SpringIntegration' ) ) | ( ( 'SpringDataRest' ) ) | ( ( 'SpringGraphQL' ) ) | ( ( 'SpringDataElasticsearch' ) ) | ( ( 'SpringDataJDBC' ) ) | ( ( 'SpringDataMongoDB' ) ) | ( ( 'Swagger' ) ) | ( ( 'SpringSecurity' ) ) | ( ( 'SpringActuator' ) ) | ( ( 'SpringGraphQLTest' ) ) )
+            int alt3=33;
             switch ( input.LA(1) ) {
             case 18:
                 {
@@ -1460,6 +1485,131 @@ public class InternalSpringFluentDSLParser extends AbstractInternalContentAssist
             case 25:
                 {
                 alt3=8;
+                }
+                break;
+            case 26:
+                {
+                alt3=9;
+                }
+                break;
+            case 27:
+                {
+                alt3=10;
+                }
+                break;
+            case 28:
+                {
+                alt3=11;
+                }
+                break;
+            case 29:
+                {
+                alt3=12;
+                }
+                break;
+            case 30:
+                {
+                alt3=13;
+                }
+                break;
+            case 31:
+                {
+                alt3=14;
+                }
+                break;
+            case 32:
+                {
+                alt3=15;
+                }
+                break;
+            case 33:
+                {
+                alt3=16;
+                }
+                break;
+            case 34:
+                {
+                alt3=17;
+                }
+                break;
+            case 35:
+                {
+                alt3=18;
+                }
+                break;
+            case 36:
+                {
+                alt3=19;
+                }
+                break;
+            case 37:
+                {
+                alt3=20;
+                }
+                break;
+            case 38:
+                {
+                alt3=21;
+                }
+                break;
+            case 39:
+                {
+                alt3=22;
+                }
+                break;
+            case 40:
+                {
+                alt3=23;
+                }
+                break;
+            case 41:
+                {
+                alt3=24;
+                }
+                break;
+            case 42:
+                {
+                alt3=25;
+                }
+                break;
+            case 43:
+                {
+                alt3=26;
+                }
+                break;
+            case 44:
+                {
+                alt3=27;
+                }
+                break;
+            case 45:
+                {
+                alt3=28;
+                }
+                break;
+            case 46:
+                {
+                alt3=29;
+                }
+                break;
+            case 47:
+                {
+                alt3=30;
+                }
+                break;
+            case 48:
+                {
+                alt3=31;
+                }
+                break;
+            case 49:
+                {
+                alt3=32;
+                }
+                break;
+            case 50:
+                {
+                alt3=33;
                 }
                 break;
             default:
@@ -1576,20 +1726,20 @@ public class InternalSpringFluentDSLParser extends AbstractInternalContentAssist
                     }
                     break;
                 case 6 :
-                    // InternalSpringFluentDSL.g:504:2: ( ( 'Thymeleaf' ) )
+                    // InternalSpringFluentDSL.g:504:2: ( ( 'SpringKafka' ) )
                     {
-                    // InternalSpringFluentDSL.g:504:2: ( ( 'Thymeleaf' ) )
-                    // InternalSpringFluentDSL.g:505:3: ( 'Thymeleaf' )
+                    // InternalSpringFluentDSL.g:504:2: ( ( 'SpringKafka' ) )
+                    // InternalSpringFluentDSL.g:505:3: ( 'SpringKafka' )
                     {
-                     before(grammarAccess.getDependencyTypeAccess().getThymeleafEnumLiteralDeclaration_5()); 
-                    // InternalSpringFluentDSL.g:506:3: ( 'Thymeleaf' )
-                    // InternalSpringFluentDSL.g:506:4: 'Thymeleaf'
+                     before(grammarAccess.getDependencyTypeAccess().getSpringKafkaEnumLiteralDeclaration_5()); 
+                    // InternalSpringFluentDSL.g:506:3: ( 'SpringKafka' )
+                    // InternalSpringFluentDSL.g:506:4: 'SpringKafka'
                     {
                     match(input,23,FOLLOW_2); 
 
                     }
 
-                     after(grammarAccess.getDependencyTypeAccess().getThymeleafEnumLiteralDeclaration_5()); 
+                     after(grammarAccess.getDependencyTypeAccess().getSpringKafkaEnumLiteralDeclaration_5()); 
 
                     }
 
@@ -1597,20 +1747,20 @@ public class InternalSpringFluentDSLParser extends AbstractInternalContentAssist
                     }
                     break;
                 case 7 :
-                    // InternalSpringFluentDSL.g:510:2: ( ( 'Swagger' ) )
+                    // InternalSpringFluentDSL.g:510:2: ( ( 'SpringIntegrationWS' ) )
                     {
-                    // InternalSpringFluentDSL.g:510:2: ( ( 'Swagger' ) )
-                    // InternalSpringFluentDSL.g:511:3: ( 'Swagger' )
+                    // InternalSpringFluentDSL.g:510:2: ( ( 'SpringIntegrationWS' ) )
+                    // InternalSpringFluentDSL.g:511:3: ( 'SpringIntegrationWS' )
                     {
-                     before(grammarAccess.getDependencyTypeAccess().getSwaggerEnumLiteralDeclaration_6()); 
-                    // InternalSpringFluentDSL.g:512:3: ( 'Swagger' )
-                    // InternalSpringFluentDSL.g:512:4: 'Swagger'
+                     before(grammarAccess.getDependencyTypeAccess().getSpringIntegrationWSEnumLiteralDeclaration_6()); 
+                    // InternalSpringFluentDSL.g:512:3: ( 'SpringIntegrationWS' )
+                    // InternalSpringFluentDSL.g:512:4: 'SpringIntegrationWS'
                     {
                     match(input,24,FOLLOW_2); 
 
                     }
 
-                     after(grammarAccess.getDependencyTypeAccess().getSwaggerEnumLiteralDeclaration_6()); 
+                     after(grammarAccess.getDependencyTypeAccess().getSpringIntegrationWSEnumLiteralDeclaration_6()); 
 
                     }
 
@@ -1618,20 +1768,545 @@ public class InternalSpringFluentDSLParser extends AbstractInternalContentAssist
                     }
                     break;
                 case 8 :
-                    // InternalSpringFluentDSL.g:516:2: ( ( 'SpringSecurity' ) )
+                    // InternalSpringFluentDSL.g:516:2: ( ( 'SpringIntegrationWebFlux' ) )
                     {
-                    // InternalSpringFluentDSL.g:516:2: ( ( 'SpringSecurity' ) )
-                    // InternalSpringFluentDSL.g:517:3: ( 'SpringSecurity' )
+                    // InternalSpringFluentDSL.g:516:2: ( ( 'SpringIntegrationWebFlux' ) )
+                    // InternalSpringFluentDSL.g:517:3: ( 'SpringIntegrationWebFlux' )
                     {
-                     before(grammarAccess.getDependencyTypeAccess().getSpringSecurityEnumLiteralDeclaration_7()); 
-                    // InternalSpringFluentDSL.g:518:3: ( 'SpringSecurity' )
-                    // InternalSpringFluentDSL.g:518:4: 'SpringSecurity'
+                     before(grammarAccess.getDependencyTypeAccess().getSpringIntegrationWebFluxEnumLiteralDeclaration_7()); 
+                    // InternalSpringFluentDSL.g:518:3: ( 'SpringIntegrationWebFlux' )
+                    // InternalSpringFluentDSL.g:518:4: 'SpringIntegrationWebFlux'
                     {
                     match(input,25,FOLLOW_2); 
 
                     }
 
-                     after(grammarAccess.getDependencyTypeAccess().getSpringSecurityEnumLiteralDeclaration_7()); 
+                     after(grammarAccess.getDependencyTypeAccess().getSpringIntegrationWebFluxEnumLiteralDeclaration_7()); 
+
+                    }
+
+
+                    }
+                    break;
+                case 9 :
+                    // InternalSpringFluentDSL.g:522:2: ( ( 'SpringIntegrationSecurity' ) )
+                    {
+                    // InternalSpringFluentDSL.g:522:2: ( ( 'SpringIntegrationSecurity' ) )
+                    // InternalSpringFluentDSL.g:523:3: ( 'SpringIntegrationSecurity' )
+                    {
+                     before(grammarAccess.getDependencyTypeAccess().getSpringIntegrationSecurityEnumLiteralDeclaration_8()); 
+                    // InternalSpringFluentDSL.g:524:3: ( 'SpringIntegrationSecurity' )
+                    // InternalSpringFluentDSL.g:524:4: 'SpringIntegrationSecurity'
+                    {
+                    match(input,26,FOLLOW_2); 
+
+                    }
+
+                     after(grammarAccess.getDependencyTypeAccess().getSpringIntegrationSecurityEnumLiteralDeclaration_8()); 
+
+                    }
+
+
+                    }
+                    break;
+                case 10 :
+                    // InternalSpringFluentDSL.g:528:2: ( ( 'SpringIntegrationRedis' ) )
+                    {
+                    // InternalSpringFluentDSL.g:528:2: ( ( 'SpringIntegrationRedis' ) )
+                    // InternalSpringFluentDSL.g:529:3: ( 'SpringIntegrationRedis' )
+                    {
+                     before(grammarAccess.getDependencyTypeAccess().getSpringIntegrationRedisEnumLiteralDeclaration_9()); 
+                    // InternalSpringFluentDSL.g:530:3: ( 'SpringIntegrationRedis' )
+                    // InternalSpringFluentDSL.g:530:4: 'SpringIntegrationRedis'
+                    {
+                    match(input,27,FOLLOW_2); 
+
+                    }
+
+                     after(grammarAccess.getDependencyTypeAccess().getSpringIntegrationRedisEnumLiteralDeclaration_9()); 
+
+                    }
+
+
+                    }
+                    break;
+                case 11 :
+                    // InternalSpringFluentDSL.g:534:2: ( ( 'SpringIntegrationMongoDB' ) )
+                    {
+                    // InternalSpringFluentDSL.g:534:2: ( ( 'SpringIntegrationMongoDB' ) )
+                    // InternalSpringFluentDSL.g:535:3: ( 'SpringIntegrationMongoDB' )
+                    {
+                     before(grammarAccess.getDependencyTypeAccess().getSpringIntegrationMongoDBEnumLiteralDeclaration_10()); 
+                    // InternalSpringFluentDSL.g:536:3: ( 'SpringIntegrationMongoDB' )
+                    // InternalSpringFluentDSL.g:536:4: 'SpringIntegrationMongoDB'
+                    {
+                    match(input,28,FOLLOW_2); 
+
+                    }
+
+                     after(grammarAccess.getDependencyTypeAccess().getSpringIntegrationMongoDBEnumLiteralDeclaration_10()); 
+
+                    }
+
+
+                    }
+                    break;
+                case 12 :
+                    // InternalSpringFluentDSL.g:540:2: ( ( 'SpringIntegrationKafka' ) )
+                    {
+                    // InternalSpringFluentDSL.g:540:2: ( ( 'SpringIntegrationKafka' ) )
+                    // InternalSpringFluentDSL.g:541:3: ( 'SpringIntegrationKafka' )
+                    {
+                     before(grammarAccess.getDependencyTypeAccess().getSpringIntegrationKafkaEnumLiteralDeclaration_11()); 
+                    // InternalSpringFluentDSL.g:542:3: ( 'SpringIntegrationKafka' )
+                    // InternalSpringFluentDSL.g:542:4: 'SpringIntegrationKafka'
+                    {
+                    match(input,29,FOLLOW_2); 
+
+                    }
+
+                     after(grammarAccess.getDependencyTypeAccess().getSpringIntegrationKafkaEnumLiteralDeclaration_11()); 
+
+                    }
+
+
+                    }
+                    break;
+                case 13 :
+                    // InternalSpringFluentDSL.g:546:2: ( ( 'SpringIntegrationJPA' ) )
+                    {
+                    // InternalSpringFluentDSL.g:546:2: ( ( 'SpringIntegrationJPA' ) )
+                    // InternalSpringFluentDSL.g:547:3: ( 'SpringIntegrationJPA' )
+                    {
+                     before(grammarAccess.getDependencyTypeAccess().getSpringIntegrationJPAEnumLiteralDeclaration_12()); 
+                    // InternalSpringFluentDSL.g:548:3: ( 'SpringIntegrationJPA' )
+                    // InternalSpringFluentDSL.g:548:4: 'SpringIntegrationJPA'
+                    {
+                    match(input,30,FOLLOW_2); 
+
+                    }
+
+                     after(grammarAccess.getDependencyTypeAccess().getSpringIntegrationJPAEnumLiteralDeclaration_12()); 
+
+                    }
+
+
+                    }
+                    break;
+                case 14 :
+                    // InternalSpringFluentDSL.g:552:2: ( ( 'SpringIntegrationJDBC' ) )
+                    {
+                    // InternalSpringFluentDSL.g:552:2: ( ( 'SpringIntegrationJDBC' ) )
+                    // InternalSpringFluentDSL.g:553:3: ( 'SpringIntegrationJDBC' )
+                    {
+                     before(grammarAccess.getDependencyTypeAccess().getSpringIntegrationJDBCEnumLiteralDeclaration_13()); 
+                    // InternalSpringFluentDSL.g:554:3: ( 'SpringIntegrationJDBC' )
+                    // InternalSpringFluentDSL.g:554:4: 'SpringIntegrationJDBC'
+                    {
+                    match(input,31,FOLLOW_2); 
+
+                    }
+
+                     after(grammarAccess.getDependencyTypeAccess().getSpringIntegrationJDBCEnumLiteralDeclaration_13()); 
+
+                    }
+
+
+                    }
+                    break;
+                case 15 :
+                    // InternalSpringFluentDSL.g:558:2: ( ( 'SpringIntegrationHTTP' ) )
+                    {
+                    // InternalSpringFluentDSL.g:558:2: ( ( 'SpringIntegrationHTTP' ) )
+                    // InternalSpringFluentDSL.g:559:3: ( 'SpringIntegrationHTTP' )
+                    {
+                     before(grammarAccess.getDependencyTypeAccess().getSpringIntegrationHTTPEnumLiteralDeclaration_14()); 
+                    // InternalSpringFluentDSL.g:560:3: ( 'SpringIntegrationHTTP' )
+                    // InternalSpringFluentDSL.g:560:4: 'SpringIntegrationHTTP'
+                    {
+                    match(input,32,FOLLOW_2); 
+
+                    }
+
+                     after(grammarAccess.getDependencyTypeAccess().getSpringIntegrationHTTPEnumLiteralDeclaration_14()); 
+
+                    }
+
+
+                    }
+                    break;
+                case 16 :
+                    // InternalSpringFluentDSL.g:564:2: ( ( 'SpringIntegrationAMQP' ) )
+                    {
+                    // InternalSpringFluentDSL.g:564:2: ( ( 'SpringIntegrationAMQP' ) )
+                    // InternalSpringFluentDSL.g:565:3: ( 'SpringIntegrationAMQP' )
+                    {
+                     before(grammarAccess.getDependencyTypeAccess().getSpringIntegrationAMQPEnumLiteralDeclaration_15()); 
+                    // InternalSpringFluentDSL.g:566:3: ( 'SpringIntegrationAMQP' )
+                    // InternalSpringFluentDSL.g:566:4: 'SpringIntegrationAMQP'
+                    {
+                    match(input,33,FOLLOW_2); 
+
+                    }
+
+                     after(grammarAccess.getDependencyTypeAccess().getSpringIntegrationAMQPEnumLiteralDeclaration_15()); 
+
+                    }
+
+
+                    }
+                    break;
+                case 17 :
+                    // InternalSpringFluentDSL.g:570:2: ( ( 'SpringWebFlux' ) )
+                    {
+                    // InternalSpringFluentDSL.g:570:2: ( ( 'SpringWebFlux' ) )
+                    // InternalSpringFluentDSL.g:571:3: ( 'SpringWebFlux' )
+                    {
+                     before(grammarAccess.getDependencyTypeAccess().getSpringWebFluxEnumLiteralDeclaration_16()); 
+                    // InternalSpringFluentDSL.g:572:3: ( 'SpringWebFlux' )
+                    // InternalSpringFluentDSL.g:572:4: 'SpringWebFlux'
+                    {
+                    match(input,34,FOLLOW_2); 
+
+                    }
+
+                     after(grammarAccess.getDependencyTypeAccess().getSpringWebFluxEnumLiteralDeclaration_16()); 
+
+                    }
+
+
+                    }
+                    break;
+                case 18 :
+                    // InternalSpringFluentDSL.g:576:2: ( ( 'SpringWebServices' ) )
+                    {
+                    // InternalSpringFluentDSL.g:576:2: ( ( 'SpringWebServices' ) )
+                    // InternalSpringFluentDSL.g:577:3: ( 'SpringWebServices' )
+                    {
+                     before(grammarAccess.getDependencyTypeAccess().getSpringWebServicesEnumLiteralDeclaration_17()); 
+                    // InternalSpringFluentDSL.g:578:3: ( 'SpringWebServices' )
+                    // InternalSpringFluentDSL.g:578:4: 'SpringWebServices'
+                    {
+                    match(input,35,FOLLOW_2); 
+
+                    }
+
+                     after(grammarAccess.getDependencyTypeAccess().getSpringWebServicesEnumLiteralDeclaration_17()); 
+
+                    }
+
+
+                    }
+                    break;
+                case 19 :
+                    // InternalSpringFluentDSL.g:582:2: ( ( 'SpringValidation' ) )
+                    {
+                    // InternalSpringFluentDSL.g:582:2: ( ( 'SpringValidation' ) )
+                    // InternalSpringFluentDSL.g:583:3: ( 'SpringValidation' )
+                    {
+                     before(grammarAccess.getDependencyTypeAccess().getSpringValidationEnumLiteralDeclaration_18()); 
+                    // InternalSpringFluentDSL.g:584:3: ( 'SpringValidation' )
+                    // InternalSpringFluentDSL.g:584:4: 'SpringValidation'
+                    {
+                    match(input,36,FOLLOW_2); 
+
+                    }
+
+                     after(grammarAccess.getDependencyTypeAccess().getSpringValidationEnumLiteralDeclaration_18()); 
+
+                    }
+
+
+                    }
+                    break;
+                case 20 :
+                    // InternalSpringFluentDSL.g:588:2: ( ( 'SpringThymeleaf' ) )
+                    {
+                    // InternalSpringFluentDSL.g:588:2: ( ( 'SpringThymeleaf' ) )
+                    // InternalSpringFluentDSL.g:589:3: ( 'SpringThymeleaf' )
+                    {
+                     before(grammarAccess.getDependencyTypeAccess().getSpringThymeleafEnumLiteralDeclaration_19()); 
+                    // InternalSpringFluentDSL.g:590:3: ( 'SpringThymeleaf' )
+                    // InternalSpringFluentDSL.g:590:4: 'SpringThymeleaf'
+                    {
+                    match(input,37,FOLLOW_2); 
+
+                    }
+
+                     after(grammarAccess.getDependencyTypeAccess().getSpringThymeleafEnumLiteralDeclaration_19()); 
+
+                    }
+
+
+                    }
+                    break;
+                case 21 :
+                    // InternalSpringFluentDSL.g:594:2: ( ( 'SpringOAuth2Client' ) )
+                    {
+                    // InternalSpringFluentDSL.g:594:2: ( ( 'SpringOAuth2Client' ) )
+                    // InternalSpringFluentDSL.g:595:3: ( 'SpringOAuth2Client' )
+                    {
+                     before(grammarAccess.getDependencyTypeAccess().getSpringOAuth2ClientEnumLiteralDeclaration_20()); 
+                    // InternalSpringFluentDSL.g:596:3: ( 'SpringOAuth2Client' )
+                    // InternalSpringFluentDSL.g:596:4: 'SpringOAuth2Client'
+                    {
+                    match(input,38,FOLLOW_2); 
+
+                    }
+
+                     after(grammarAccess.getDependencyTypeAccess().getSpringOAuth2ClientEnumLiteralDeclaration_20()); 
+
+                    }
+
+
+                    }
+                    break;
+                case 22 :
+                    // InternalSpringFluentDSL.g:600:2: ( ( 'SpringJersey' ) )
+                    {
+                    // InternalSpringFluentDSL.g:600:2: ( ( 'SpringJersey' ) )
+                    // InternalSpringFluentDSL.g:601:3: ( 'SpringJersey' )
+                    {
+                     before(grammarAccess.getDependencyTypeAccess().getSpringJerseyEnumLiteralDeclaration_21()); 
+                    // InternalSpringFluentDSL.g:602:3: ( 'SpringJersey' )
+                    // InternalSpringFluentDSL.g:602:4: 'SpringJersey'
+                    {
+                    match(input,39,FOLLOW_2); 
+
+                    }
+
+                     after(grammarAccess.getDependencyTypeAccess().getSpringJerseyEnumLiteralDeclaration_21()); 
+
+                    }
+
+
+                    }
+                    break;
+                case 23 :
+                    // InternalSpringFluentDSL.g:606:2: ( ( 'SpringJDBC' ) )
+                    {
+                    // InternalSpringFluentDSL.g:606:2: ( ( 'SpringJDBC' ) )
+                    // InternalSpringFluentDSL.g:607:3: ( 'SpringJDBC' )
+                    {
+                     before(grammarAccess.getDependencyTypeAccess().getSpringJDBCEnumLiteralDeclaration_22()); 
+                    // InternalSpringFluentDSL.g:608:3: ( 'SpringJDBC' )
+                    // InternalSpringFluentDSL.g:608:4: 'SpringJDBC'
+                    {
+                    match(input,40,FOLLOW_2); 
+
+                    }
+
+                     after(grammarAccess.getDependencyTypeAccess().getSpringJDBCEnumLiteralDeclaration_22()); 
+
+                    }
+
+
+                    }
+                    break;
+                case 24 :
+                    // InternalSpringFluentDSL.g:612:2: ( ( 'SpringIntegration' ) )
+                    {
+                    // InternalSpringFluentDSL.g:612:2: ( ( 'SpringIntegration' ) )
+                    // InternalSpringFluentDSL.g:613:3: ( 'SpringIntegration' )
+                    {
+                     before(grammarAccess.getDependencyTypeAccess().getSpringIntegrationEnumLiteralDeclaration_23()); 
+                    // InternalSpringFluentDSL.g:614:3: ( 'SpringIntegration' )
+                    // InternalSpringFluentDSL.g:614:4: 'SpringIntegration'
+                    {
+                    match(input,41,FOLLOW_2); 
+
+                    }
+
+                     after(grammarAccess.getDependencyTypeAccess().getSpringIntegrationEnumLiteralDeclaration_23()); 
+
+                    }
+
+
+                    }
+                    break;
+                case 25 :
+                    // InternalSpringFluentDSL.g:618:2: ( ( 'SpringDataRest' ) )
+                    {
+                    // InternalSpringFluentDSL.g:618:2: ( ( 'SpringDataRest' ) )
+                    // InternalSpringFluentDSL.g:619:3: ( 'SpringDataRest' )
+                    {
+                     before(grammarAccess.getDependencyTypeAccess().getSpringDataRestEnumLiteralDeclaration_24()); 
+                    // InternalSpringFluentDSL.g:620:3: ( 'SpringDataRest' )
+                    // InternalSpringFluentDSL.g:620:4: 'SpringDataRest'
+                    {
+                    match(input,42,FOLLOW_2); 
+
+                    }
+
+                     after(grammarAccess.getDependencyTypeAccess().getSpringDataRestEnumLiteralDeclaration_24()); 
+
+                    }
+
+
+                    }
+                    break;
+                case 26 :
+                    // InternalSpringFluentDSL.g:624:2: ( ( 'SpringGraphQL' ) )
+                    {
+                    // InternalSpringFluentDSL.g:624:2: ( ( 'SpringGraphQL' ) )
+                    // InternalSpringFluentDSL.g:625:3: ( 'SpringGraphQL' )
+                    {
+                     before(grammarAccess.getDependencyTypeAccess().getSpringGraphQLEnumLiteralDeclaration_25()); 
+                    // InternalSpringFluentDSL.g:626:3: ( 'SpringGraphQL' )
+                    // InternalSpringFluentDSL.g:626:4: 'SpringGraphQL'
+                    {
+                    match(input,43,FOLLOW_2); 
+
+                    }
+
+                     after(grammarAccess.getDependencyTypeAccess().getSpringGraphQLEnumLiteralDeclaration_25()); 
+
+                    }
+
+
+                    }
+                    break;
+                case 27 :
+                    // InternalSpringFluentDSL.g:630:2: ( ( 'SpringDataElasticsearch' ) )
+                    {
+                    // InternalSpringFluentDSL.g:630:2: ( ( 'SpringDataElasticsearch' ) )
+                    // InternalSpringFluentDSL.g:631:3: ( 'SpringDataElasticsearch' )
+                    {
+                     before(grammarAccess.getDependencyTypeAccess().getSpringDataElasticsearchEnumLiteralDeclaration_26()); 
+                    // InternalSpringFluentDSL.g:632:3: ( 'SpringDataElasticsearch' )
+                    // InternalSpringFluentDSL.g:632:4: 'SpringDataElasticsearch'
+                    {
+                    match(input,44,FOLLOW_2); 
+
+                    }
+
+                     after(grammarAccess.getDependencyTypeAccess().getSpringDataElasticsearchEnumLiteralDeclaration_26()); 
+
+                    }
+
+
+                    }
+                    break;
+                case 28 :
+                    // InternalSpringFluentDSL.g:636:2: ( ( 'SpringDataJDBC' ) )
+                    {
+                    // InternalSpringFluentDSL.g:636:2: ( ( 'SpringDataJDBC' ) )
+                    // InternalSpringFluentDSL.g:637:3: ( 'SpringDataJDBC' )
+                    {
+                     before(grammarAccess.getDependencyTypeAccess().getSpringDataJDBCEnumLiteralDeclaration_27()); 
+                    // InternalSpringFluentDSL.g:638:3: ( 'SpringDataJDBC' )
+                    // InternalSpringFluentDSL.g:638:4: 'SpringDataJDBC'
+                    {
+                    match(input,45,FOLLOW_2); 
+
+                    }
+
+                     after(grammarAccess.getDependencyTypeAccess().getSpringDataJDBCEnumLiteralDeclaration_27()); 
+
+                    }
+
+
+                    }
+                    break;
+                case 29 :
+                    // InternalSpringFluentDSL.g:642:2: ( ( 'SpringDataMongoDB' ) )
+                    {
+                    // InternalSpringFluentDSL.g:642:2: ( ( 'SpringDataMongoDB' ) )
+                    // InternalSpringFluentDSL.g:643:3: ( 'SpringDataMongoDB' )
+                    {
+                     before(grammarAccess.getDependencyTypeAccess().getSpringDataMongoDBEnumLiteralDeclaration_28()); 
+                    // InternalSpringFluentDSL.g:644:3: ( 'SpringDataMongoDB' )
+                    // InternalSpringFluentDSL.g:644:4: 'SpringDataMongoDB'
+                    {
+                    match(input,46,FOLLOW_2); 
+
+                    }
+
+                     after(grammarAccess.getDependencyTypeAccess().getSpringDataMongoDBEnumLiteralDeclaration_28()); 
+
+                    }
+
+
+                    }
+                    break;
+                case 30 :
+                    // InternalSpringFluentDSL.g:648:2: ( ( 'Swagger' ) )
+                    {
+                    // InternalSpringFluentDSL.g:648:2: ( ( 'Swagger' ) )
+                    // InternalSpringFluentDSL.g:649:3: ( 'Swagger' )
+                    {
+                     before(grammarAccess.getDependencyTypeAccess().getSwaggerEnumLiteralDeclaration_29()); 
+                    // InternalSpringFluentDSL.g:650:3: ( 'Swagger' )
+                    // InternalSpringFluentDSL.g:650:4: 'Swagger'
+                    {
+                    match(input,47,FOLLOW_2); 
+
+                    }
+
+                     after(grammarAccess.getDependencyTypeAccess().getSwaggerEnumLiteralDeclaration_29()); 
+
+                    }
+
+
+                    }
+                    break;
+                case 31 :
+                    // InternalSpringFluentDSL.g:654:2: ( ( 'SpringSecurity' ) )
+                    {
+                    // InternalSpringFluentDSL.g:654:2: ( ( 'SpringSecurity' ) )
+                    // InternalSpringFluentDSL.g:655:3: ( 'SpringSecurity' )
+                    {
+                     before(grammarAccess.getDependencyTypeAccess().getSpringSecurityEnumLiteralDeclaration_30()); 
+                    // InternalSpringFluentDSL.g:656:3: ( 'SpringSecurity' )
+                    // InternalSpringFluentDSL.g:656:4: 'SpringSecurity'
+                    {
+                    match(input,48,FOLLOW_2); 
+
+                    }
+
+                     after(grammarAccess.getDependencyTypeAccess().getSpringSecurityEnumLiteralDeclaration_30()); 
+
+                    }
+
+
+                    }
+                    break;
+                case 32 :
+                    // InternalSpringFluentDSL.g:660:2: ( ( 'SpringActuator' ) )
+                    {
+                    // InternalSpringFluentDSL.g:660:2: ( ( 'SpringActuator' ) )
+                    // InternalSpringFluentDSL.g:661:3: ( 'SpringActuator' )
+                    {
+                     before(grammarAccess.getDependencyTypeAccess().getSpringActuatorEnumLiteralDeclaration_31()); 
+                    // InternalSpringFluentDSL.g:662:3: ( 'SpringActuator' )
+                    // InternalSpringFluentDSL.g:662:4: 'SpringActuator'
+                    {
+                    match(input,49,FOLLOW_2); 
+
+                    }
+
+                     after(grammarAccess.getDependencyTypeAccess().getSpringActuatorEnumLiteralDeclaration_31()); 
+
+                    }
+
+
+                    }
+                    break;
+                case 33 :
+                    // InternalSpringFluentDSL.g:666:2: ( ( 'SpringGraphQLTest' ) )
+                    {
+                    // InternalSpringFluentDSL.g:666:2: ( ( 'SpringGraphQLTest' ) )
+                    // InternalSpringFluentDSL.g:667:3: ( 'SpringGraphQLTest' )
+                    {
+                     before(grammarAccess.getDependencyTypeAccess().getSpringGraphQLTestEnumLiteralDeclaration_32()); 
+                    // InternalSpringFluentDSL.g:668:3: ( 'SpringGraphQLTest' )
+                    // InternalSpringFluentDSL.g:668:4: 'SpringGraphQLTest'
+                    {
+                    match(input,50,FOLLOW_2); 
+
+                    }
+
+                     after(grammarAccess.getDependencyTypeAccess().getSpringGraphQLTestEnumLiteralDeclaration_32()); 
 
                     }
 
@@ -1656,46 +2331,46 @@ public class InternalSpringFluentDSLParser extends AbstractInternalContentAssist
 
 
     // $ANTLR start "rule__Type__Alternatives"
-    // InternalSpringFluentDSL.g:526:1: rule__Type__Alternatives : ( ( ( 'Long' ) ) | ( ( 'Integer' ) ) | ( ( 'Double' ) ) | ( ( 'String' ) ) | ( ( 'Date' ) ) | ( ( 'Time' ) ) | ( ( 'Boolean' ) ) );
+    // InternalSpringFluentDSL.g:676:1: rule__Type__Alternatives : ( ( ( 'Long' ) ) | ( ( 'Integer' ) ) | ( ( 'Double' ) ) | ( ( 'String' ) ) | ( ( 'Date' ) ) | ( ( 'Time' ) ) | ( ( 'Boolean' ) ) );
     public final void rule__Type__Alternatives() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalSpringFluentDSL.g:530:1: ( ( ( 'Long' ) ) | ( ( 'Integer' ) ) | ( ( 'Double' ) ) | ( ( 'String' ) ) | ( ( 'Date' ) ) | ( ( 'Time' ) ) | ( ( 'Boolean' ) ) )
+            // InternalSpringFluentDSL.g:680:1: ( ( ( 'Long' ) ) | ( ( 'Integer' ) ) | ( ( 'Double' ) ) | ( ( 'String' ) ) | ( ( 'Date' ) ) | ( ( 'Time' ) ) | ( ( 'Boolean' ) ) )
             int alt4=7;
             switch ( input.LA(1) ) {
-            case 26:
+            case 51:
                 {
                 alt4=1;
                 }
                 break;
-            case 27:
+            case 52:
                 {
                 alt4=2;
                 }
                 break;
-            case 28:
+            case 53:
                 {
                 alt4=3;
                 }
                 break;
-            case 29:
+            case 54:
                 {
                 alt4=4;
                 }
                 break;
-            case 30:
+            case 55:
                 {
                 alt4=5;
                 }
                 break;
-            case 31:
+            case 56:
                 {
                 alt4=6;
                 }
                 break;
-            case 32:
+            case 57:
                 {
                 alt4=7;
                 }
@@ -1709,16 +2384,16 @@ public class InternalSpringFluentDSLParser extends AbstractInternalContentAssist
 
             switch (alt4) {
                 case 1 :
-                    // InternalSpringFluentDSL.g:531:2: ( ( 'Long' ) )
+                    // InternalSpringFluentDSL.g:681:2: ( ( 'Long' ) )
                     {
-                    // InternalSpringFluentDSL.g:531:2: ( ( 'Long' ) )
-                    // InternalSpringFluentDSL.g:532:3: ( 'Long' )
+                    // InternalSpringFluentDSL.g:681:2: ( ( 'Long' ) )
+                    // InternalSpringFluentDSL.g:682:3: ( 'Long' )
                     {
                      before(grammarAccess.getTypeAccess().getLongEnumLiteralDeclaration_0()); 
-                    // InternalSpringFluentDSL.g:533:3: ( 'Long' )
-                    // InternalSpringFluentDSL.g:533:4: 'Long'
+                    // InternalSpringFluentDSL.g:683:3: ( 'Long' )
+                    // InternalSpringFluentDSL.g:683:4: 'Long'
                     {
-                    match(input,26,FOLLOW_2); 
+                    match(input,51,FOLLOW_2); 
 
                     }
 
@@ -1730,16 +2405,16 @@ public class InternalSpringFluentDSLParser extends AbstractInternalContentAssist
                     }
                     break;
                 case 2 :
-                    // InternalSpringFluentDSL.g:537:2: ( ( 'Integer' ) )
+                    // InternalSpringFluentDSL.g:687:2: ( ( 'Integer' ) )
                     {
-                    // InternalSpringFluentDSL.g:537:2: ( ( 'Integer' ) )
-                    // InternalSpringFluentDSL.g:538:3: ( 'Integer' )
+                    // InternalSpringFluentDSL.g:687:2: ( ( 'Integer' ) )
+                    // InternalSpringFluentDSL.g:688:3: ( 'Integer' )
                     {
                      before(grammarAccess.getTypeAccess().getIntegerEnumLiteralDeclaration_1()); 
-                    // InternalSpringFluentDSL.g:539:3: ( 'Integer' )
-                    // InternalSpringFluentDSL.g:539:4: 'Integer'
+                    // InternalSpringFluentDSL.g:689:3: ( 'Integer' )
+                    // InternalSpringFluentDSL.g:689:4: 'Integer'
                     {
-                    match(input,27,FOLLOW_2); 
+                    match(input,52,FOLLOW_2); 
 
                     }
 
@@ -1751,16 +2426,16 @@ public class InternalSpringFluentDSLParser extends AbstractInternalContentAssist
                     }
                     break;
                 case 3 :
-                    // InternalSpringFluentDSL.g:543:2: ( ( 'Double' ) )
+                    // InternalSpringFluentDSL.g:693:2: ( ( 'Double' ) )
                     {
-                    // InternalSpringFluentDSL.g:543:2: ( ( 'Double' ) )
-                    // InternalSpringFluentDSL.g:544:3: ( 'Double' )
+                    // InternalSpringFluentDSL.g:693:2: ( ( 'Double' ) )
+                    // InternalSpringFluentDSL.g:694:3: ( 'Double' )
                     {
                      before(grammarAccess.getTypeAccess().getDoubleEnumLiteralDeclaration_2()); 
-                    // InternalSpringFluentDSL.g:545:3: ( 'Double' )
-                    // InternalSpringFluentDSL.g:545:4: 'Double'
+                    // InternalSpringFluentDSL.g:695:3: ( 'Double' )
+                    // InternalSpringFluentDSL.g:695:4: 'Double'
                     {
-                    match(input,28,FOLLOW_2); 
+                    match(input,53,FOLLOW_2); 
 
                     }
 
@@ -1772,16 +2447,16 @@ public class InternalSpringFluentDSLParser extends AbstractInternalContentAssist
                     }
                     break;
                 case 4 :
-                    // InternalSpringFluentDSL.g:549:2: ( ( 'String' ) )
+                    // InternalSpringFluentDSL.g:699:2: ( ( 'String' ) )
                     {
-                    // InternalSpringFluentDSL.g:549:2: ( ( 'String' ) )
-                    // InternalSpringFluentDSL.g:550:3: ( 'String' )
+                    // InternalSpringFluentDSL.g:699:2: ( ( 'String' ) )
+                    // InternalSpringFluentDSL.g:700:3: ( 'String' )
                     {
                      before(grammarAccess.getTypeAccess().getStringEnumLiteralDeclaration_3()); 
-                    // InternalSpringFluentDSL.g:551:3: ( 'String' )
-                    // InternalSpringFluentDSL.g:551:4: 'String'
+                    // InternalSpringFluentDSL.g:701:3: ( 'String' )
+                    // InternalSpringFluentDSL.g:701:4: 'String'
                     {
-                    match(input,29,FOLLOW_2); 
+                    match(input,54,FOLLOW_2); 
 
                     }
 
@@ -1793,16 +2468,16 @@ public class InternalSpringFluentDSLParser extends AbstractInternalContentAssist
                     }
                     break;
                 case 5 :
-                    // InternalSpringFluentDSL.g:555:2: ( ( 'Date' ) )
+                    // InternalSpringFluentDSL.g:705:2: ( ( 'Date' ) )
                     {
-                    // InternalSpringFluentDSL.g:555:2: ( ( 'Date' ) )
-                    // InternalSpringFluentDSL.g:556:3: ( 'Date' )
+                    // InternalSpringFluentDSL.g:705:2: ( ( 'Date' ) )
+                    // InternalSpringFluentDSL.g:706:3: ( 'Date' )
                     {
                      before(grammarAccess.getTypeAccess().getDateEnumLiteralDeclaration_4()); 
-                    // InternalSpringFluentDSL.g:557:3: ( 'Date' )
-                    // InternalSpringFluentDSL.g:557:4: 'Date'
+                    // InternalSpringFluentDSL.g:707:3: ( 'Date' )
+                    // InternalSpringFluentDSL.g:707:4: 'Date'
                     {
-                    match(input,30,FOLLOW_2); 
+                    match(input,55,FOLLOW_2); 
 
                     }
 
@@ -1814,16 +2489,16 @@ public class InternalSpringFluentDSLParser extends AbstractInternalContentAssist
                     }
                     break;
                 case 6 :
-                    // InternalSpringFluentDSL.g:561:2: ( ( 'Time' ) )
+                    // InternalSpringFluentDSL.g:711:2: ( ( 'Time' ) )
                     {
-                    // InternalSpringFluentDSL.g:561:2: ( ( 'Time' ) )
-                    // InternalSpringFluentDSL.g:562:3: ( 'Time' )
+                    // InternalSpringFluentDSL.g:711:2: ( ( 'Time' ) )
+                    // InternalSpringFluentDSL.g:712:3: ( 'Time' )
                     {
                      before(grammarAccess.getTypeAccess().getTimeEnumLiteralDeclaration_5()); 
-                    // InternalSpringFluentDSL.g:563:3: ( 'Time' )
-                    // InternalSpringFluentDSL.g:563:4: 'Time'
+                    // InternalSpringFluentDSL.g:713:3: ( 'Time' )
+                    // InternalSpringFluentDSL.g:713:4: 'Time'
                     {
-                    match(input,31,FOLLOW_2); 
+                    match(input,56,FOLLOW_2); 
 
                     }
 
@@ -1835,16 +2510,16 @@ public class InternalSpringFluentDSLParser extends AbstractInternalContentAssist
                     }
                     break;
                 case 7 :
-                    // InternalSpringFluentDSL.g:567:2: ( ( 'Boolean' ) )
+                    // InternalSpringFluentDSL.g:717:2: ( ( 'Boolean' ) )
                     {
-                    // InternalSpringFluentDSL.g:567:2: ( ( 'Boolean' ) )
-                    // InternalSpringFluentDSL.g:568:3: ( 'Boolean' )
+                    // InternalSpringFluentDSL.g:717:2: ( ( 'Boolean' ) )
+                    // InternalSpringFluentDSL.g:718:3: ( 'Boolean' )
                     {
                      before(grammarAccess.getTypeAccess().getBooleanEnumLiteralDeclaration_6()); 
-                    // InternalSpringFluentDSL.g:569:3: ( 'Boolean' )
-                    // InternalSpringFluentDSL.g:569:4: 'Boolean'
+                    // InternalSpringFluentDSL.g:719:3: ( 'Boolean' )
+                    // InternalSpringFluentDSL.g:719:4: 'Boolean'
                     {
-                    match(input,32,FOLLOW_2); 
+                    match(input,57,FOLLOW_2); 
 
                     }
 
@@ -1873,14 +2548,14 @@ public class InternalSpringFluentDSLParser extends AbstractInternalContentAssist
 
 
     // $ANTLR start "rule__Model__Group__0"
-    // InternalSpringFluentDSL.g:577:1: rule__Model__Group__0 : rule__Model__Group__0__Impl rule__Model__Group__1 ;
+    // InternalSpringFluentDSL.g:727:1: rule__Model__Group__0 : rule__Model__Group__0__Impl rule__Model__Group__1 ;
     public final void rule__Model__Group__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalSpringFluentDSL.g:581:1: ( rule__Model__Group__0__Impl rule__Model__Group__1 )
-            // InternalSpringFluentDSL.g:582:2: rule__Model__Group__0__Impl rule__Model__Group__1
+            // InternalSpringFluentDSL.g:731:1: ( rule__Model__Group__0__Impl rule__Model__Group__1 )
+            // InternalSpringFluentDSL.g:732:2: rule__Model__Group__0__Impl rule__Model__Group__1
             {
             pushFollow(FOLLOW_3);
             rule__Model__Group__0__Impl();
@@ -1911,21 +2586,21 @@ public class InternalSpringFluentDSLParser extends AbstractInternalContentAssist
 
 
     // $ANTLR start "rule__Model__Group__0__Impl"
-    // InternalSpringFluentDSL.g:589:1: rule__Model__Group__0__Impl : ( ( rule__Model__PrefixAssignment_0 ) ) ;
+    // InternalSpringFluentDSL.g:739:1: rule__Model__Group__0__Impl : ( ( rule__Model__PrefixAssignment_0 ) ) ;
     public final void rule__Model__Group__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalSpringFluentDSL.g:593:1: ( ( ( rule__Model__PrefixAssignment_0 ) ) )
-            // InternalSpringFluentDSL.g:594:1: ( ( rule__Model__PrefixAssignment_0 ) )
+            // InternalSpringFluentDSL.g:743:1: ( ( ( rule__Model__PrefixAssignment_0 ) ) )
+            // InternalSpringFluentDSL.g:744:1: ( ( rule__Model__PrefixAssignment_0 ) )
             {
-            // InternalSpringFluentDSL.g:594:1: ( ( rule__Model__PrefixAssignment_0 ) )
-            // InternalSpringFluentDSL.g:595:2: ( rule__Model__PrefixAssignment_0 )
+            // InternalSpringFluentDSL.g:744:1: ( ( rule__Model__PrefixAssignment_0 ) )
+            // InternalSpringFluentDSL.g:745:2: ( rule__Model__PrefixAssignment_0 )
             {
              before(grammarAccess.getModelAccess().getPrefixAssignment_0()); 
-            // InternalSpringFluentDSL.g:596:2: ( rule__Model__PrefixAssignment_0 )
-            // InternalSpringFluentDSL.g:596:3: rule__Model__PrefixAssignment_0
+            // InternalSpringFluentDSL.g:746:2: ( rule__Model__PrefixAssignment_0 )
+            // InternalSpringFluentDSL.g:746:3: rule__Model__PrefixAssignment_0
             {
             pushFollow(FOLLOW_2);
             rule__Model__PrefixAssignment_0();
@@ -1958,14 +2633,14 @@ public class InternalSpringFluentDSLParser extends AbstractInternalContentAssist
 
 
     // $ANTLR start "rule__Model__Group__1"
-    // InternalSpringFluentDSL.g:604:1: rule__Model__Group__1 : rule__Model__Group__1__Impl rule__Model__Group__2 ;
+    // InternalSpringFluentDSL.g:754:1: rule__Model__Group__1 : rule__Model__Group__1__Impl rule__Model__Group__2 ;
     public final void rule__Model__Group__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalSpringFluentDSL.g:608:1: ( rule__Model__Group__1__Impl rule__Model__Group__2 )
-            // InternalSpringFluentDSL.g:609:2: rule__Model__Group__1__Impl rule__Model__Group__2
+            // InternalSpringFluentDSL.g:758:1: ( rule__Model__Group__1__Impl rule__Model__Group__2 )
+            // InternalSpringFluentDSL.g:759:2: rule__Model__Group__1__Impl rule__Model__Group__2
             {
             pushFollow(FOLLOW_4);
             rule__Model__Group__1__Impl();
@@ -1996,21 +2671,21 @@ public class InternalSpringFluentDSLParser extends AbstractInternalContentAssist
 
 
     // $ANTLR start "rule__Model__Group__1__Impl"
-    // InternalSpringFluentDSL.g:616:1: rule__Model__Group__1__Impl : ( ( rule__Model__AppNameAssignment_1 ) ) ;
+    // InternalSpringFluentDSL.g:766:1: rule__Model__Group__1__Impl : ( ( rule__Model__AppNameAssignment_1 ) ) ;
     public final void rule__Model__Group__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalSpringFluentDSL.g:620:1: ( ( ( rule__Model__AppNameAssignment_1 ) ) )
-            // InternalSpringFluentDSL.g:621:1: ( ( rule__Model__AppNameAssignment_1 ) )
+            // InternalSpringFluentDSL.g:770:1: ( ( ( rule__Model__AppNameAssignment_1 ) ) )
+            // InternalSpringFluentDSL.g:771:1: ( ( rule__Model__AppNameAssignment_1 ) )
             {
-            // InternalSpringFluentDSL.g:621:1: ( ( rule__Model__AppNameAssignment_1 ) )
-            // InternalSpringFluentDSL.g:622:2: ( rule__Model__AppNameAssignment_1 )
+            // InternalSpringFluentDSL.g:771:1: ( ( rule__Model__AppNameAssignment_1 ) )
+            // InternalSpringFluentDSL.g:772:2: ( rule__Model__AppNameAssignment_1 )
             {
              before(grammarAccess.getModelAccess().getAppNameAssignment_1()); 
-            // InternalSpringFluentDSL.g:623:2: ( rule__Model__AppNameAssignment_1 )
-            // InternalSpringFluentDSL.g:623:3: rule__Model__AppNameAssignment_1
+            // InternalSpringFluentDSL.g:773:2: ( rule__Model__AppNameAssignment_1 )
+            // InternalSpringFluentDSL.g:773:3: rule__Model__AppNameAssignment_1
             {
             pushFollow(FOLLOW_2);
             rule__Model__AppNameAssignment_1();
@@ -2043,14 +2718,14 @@ public class InternalSpringFluentDSLParser extends AbstractInternalContentAssist
 
 
     // $ANTLR start "rule__Model__Group__2"
-    // InternalSpringFluentDSL.g:631:1: rule__Model__Group__2 : rule__Model__Group__2__Impl rule__Model__Group__3 ;
+    // InternalSpringFluentDSL.g:781:1: rule__Model__Group__2 : rule__Model__Group__2__Impl rule__Model__Group__3 ;
     public final void rule__Model__Group__2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalSpringFluentDSL.g:635:1: ( rule__Model__Group__2__Impl rule__Model__Group__3 )
-            // InternalSpringFluentDSL.g:636:2: rule__Model__Group__2__Impl rule__Model__Group__3
+            // InternalSpringFluentDSL.g:785:1: ( rule__Model__Group__2__Impl rule__Model__Group__3 )
+            // InternalSpringFluentDSL.g:786:2: rule__Model__Group__2__Impl rule__Model__Group__3
             {
             pushFollow(FOLLOW_5);
             rule__Model__Group__2__Impl();
@@ -2081,21 +2756,21 @@ public class InternalSpringFluentDSLParser extends AbstractInternalContentAssist
 
 
     // $ANTLR start "rule__Model__Group__2__Impl"
-    // InternalSpringFluentDSL.g:643:1: rule__Model__Group__2__Impl : ( ( rule__Model__DependenciesAssignment_2 ) ) ;
+    // InternalSpringFluentDSL.g:793:1: rule__Model__Group__2__Impl : ( ( rule__Model__DependenciesAssignment_2 ) ) ;
     public final void rule__Model__Group__2__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalSpringFluentDSL.g:647:1: ( ( ( rule__Model__DependenciesAssignment_2 ) ) )
-            // InternalSpringFluentDSL.g:648:1: ( ( rule__Model__DependenciesAssignment_2 ) )
+            // InternalSpringFluentDSL.g:797:1: ( ( ( rule__Model__DependenciesAssignment_2 ) ) )
+            // InternalSpringFluentDSL.g:798:1: ( ( rule__Model__DependenciesAssignment_2 ) )
             {
-            // InternalSpringFluentDSL.g:648:1: ( ( rule__Model__DependenciesAssignment_2 ) )
-            // InternalSpringFluentDSL.g:649:2: ( rule__Model__DependenciesAssignment_2 )
+            // InternalSpringFluentDSL.g:798:1: ( ( rule__Model__DependenciesAssignment_2 ) )
+            // InternalSpringFluentDSL.g:799:2: ( rule__Model__DependenciesAssignment_2 )
             {
              before(grammarAccess.getModelAccess().getDependenciesAssignment_2()); 
-            // InternalSpringFluentDSL.g:650:2: ( rule__Model__DependenciesAssignment_2 )
-            // InternalSpringFluentDSL.g:650:3: rule__Model__DependenciesAssignment_2
+            // InternalSpringFluentDSL.g:800:2: ( rule__Model__DependenciesAssignment_2 )
+            // InternalSpringFluentDSL.g:800:3: rule__Model__DependenciesAssignment_2
             {
             pushFollow(FOLLOW_2);
             rule__Model__DependenciesAssignment_2();
@@ -2128,14 +2803,14 @@ public class InternalSpringFluentDSLParser extends AbstractInternalContentAssist
 
 
     // $ANTLR start "rule__Model__Group__3"
-    // InternalSpringFluentDSL.g:658:1: rule__Model__Group__3 : rule__Model__Group__3__Impl ;
+    // InternalSpringFluentDSL.g:808:1: rule__Model__Group__3 : rule__Model__Group__3__Impl ;
     public final void rule__Model__Group__3() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalSpringFluentDSL.g:662:1: ( rule__Model__Group__3__Impl )
-            // InternalSpringFluentDSL.g:663:2: rule__Model__Group__3__Impl
+            // InternalSpringFluentDSL.g:812:1: ( rule__Model__Group__3__Impl )
+            // InternalSpringFluentDSL.g:813:2: rule__Model__Group__3__Impl
             {
             pushFollow(FOLLOW_2);
             rule__Model__Group__3__Impl();
@@ -2161,21 +2836,21 @@ public class InternalSpringFluentDSLParser extends AbstractInternalContentAssist
 
 
     // $ANTLR start "rule__Model__Group__3__Impl"
-    // InternalSpringFluentDSL.g:669:1: rule__Model__Group__3__Impl : ( ( rule__Model__EntitiesAssignment_3 ) ) ;
+    // InternalSpringFluentDSL.g:819:1: rule__Model__Group__3__Impl : ( ( rule__Model__EntitiesAssignment_3 ) ) ;
     public final void rule__Model__Group__3__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalSpringFluentDSL.g:673:1: ( ( ( rule__Model__EntitiesAssignment_3 ) ) )
-            // InternalSpringFluentDSL.g:674:1: ( ( rule__Model__EntitiesAssignment_3 ) )
+            // InternalSpringFluentDSL.g:823:1: ( ( ( rule__Model__EntitiesAssignment_3 ) ) )
+            // InternalSpringFluentDSL.g:824:1: ( ( rule__Model__EntitiesAssignment_3 ) )
             {
-            // InternalSpringFluentDSL.g:674:1: ( ( rule__Model__EntitiesAssignment_3 ) )
-            // InternalSpringFluentDSL.g:675:2: ( rule__Model__EntitiesAssignment_3 )
+            // InternalSpringFluentDSL.g:824:1: ( ( rule__Model__EntitiesAssignment_3 ) )
+            // InternalSpringFluentDSL.g:825:2: ( rule__Model__EntitiesAssignment_3 )
             {
              before(grammarAccess.getModelAccess().getEntitiesAssignment_3()); 
-            // InternalSpringFluentDSL.g:676:2: ( rule__Model__EntitiesAssignment_3 )
-            // InternalSpringFluentDSL.g:676:3: rule__Model__EntitiesAssignment_3
+            // InternalSpringFluentDSL.g:826:2: ( rule__Model__EntitiesAssignment_3 )
+            // InternalSpringFluentDSL.g:826:3: rule__Model__EntitiesAssignment_3
             {
             pushFollow(FOLLOW_2);
             rule__Model__EntitiesAssignment_3();
@@ -2208,14 +2883,14 @@ public class InternalSpringFluentDSLParser extends AbstractInternalContentAssist
 
 
     // $ANTLR start "rule__Prefix__Group__0"
-    // InternalSpringFluentDSL.g:685:1: rule__Prefix__Group__0 : rule__Prefix__Group__0__Impl rule__Prefix__Group__1 ;
+    // InternalSpringFluentDSL.g:835:1: rule__Prefix__Group__0 : rule__Prefix__Group__0__Impl rule__Prefix__Group__1 ;
     public final void rule__Prefix__Group__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalSpringFluentDSL.g:689:1: ( rule__Prefix__Group__0__Impl rule__Prefix__Group__1 )
-            // InternalSpringFluentDSL.g:690:2: rule__Prefix__Group__0__Impl rule__Prefix__Group__1
+            // InternalSpringFluentDSL.g:839:1: ( rule__Prefix__Group__0__Impl rule__Prefix__Group__1 )
+            // InternalSpringFluentDSL.g:840:2: rule__Prefix__Group__0__Impl rule__Prefix__Group__1
             {
             pushFollow(FOLLOW_6);
             rule__Prefix__Group__0__Impl();
@@ -2246,21 +2921,21 @@ public class InternalSpringFluentDSLParser extends AbstractInternalContentAssist
 
 
     // $ANTLR start "rule__Prefix__Group__0__Impl"
-    // InternalSpringFluentDSL.g:697:1: rule__Prefix__Group__0__Impl : ( () ) ;
+    // InternalSpringFluentDSL.g:847:1: rule__Prefix__Group__0__Impl : ( () ) ;
     public final void rule__Prefix__Group__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalSpringFluentDSL.g:701:1: ( ( () ) )
-            // InternalSpringFluentDSL.g:702:1: ( () )
+            // InternalSpringFluentDSL.g:851:1: ( ( () ) )
+            // InternalSpringFluentDSL.g:852:1: ( () )
             {
-            // InternalSpringFluentDSL.g:702:1: ( () )
-            // InternalSpringFluentDSL.g:703:2: ()
+            // InternalSpringFluentDSL.g:852:1: ( () )
+            // InternalSpringFluentDSL.g:853:2: ()
             {
              before(grammarAccess.getPrefixAccess().getPrefixAction_0()); 
-            // InternalSpringFluentDSL.g:704:2: ()
-            // InternalSpringFluentDSL.g:704:3: 
+            // InternalSpringFluentDSL.g:854:2: ()
+            // InternalSpringFluentDSL.g:854:3: 
             {
             }
 
@@ -2283,14 +2958,14 @@ public class InternalSpringFluentDSLParser extends AbstractInternalContentAssist
 
 
     // $ANTLR start "rule__Prefix__Group__1"
-    // InternalSpringFluentDSL.g:712:1: rule__Prefix__Group__1 : rule__Prefix__Group__1__Impl rule__Prefix__Group__2 ;
+    // InternalSpringFluentDSL.g:862:1: rule__Prefix__Group__1 : rule__Prefix__Group__1__Impl rule__Prefix__Group__2 ;
     public final void rule__Prefix__Group__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalSpringFluentDSL.g:716:1: ( rule__Prefix__Group__1__Impl rule__Prefix__Group__2 )
-            // InternalSpringFluentDSL.g:717:2: rule__Prefix__Group__1__Impl rule__Prefix__Group__2
+            // InternalSpringFluentDSL.g:866:1: ( rule__Prefix__Group__1__Impl rule__Prefix__Group__2 )
+            // InternalSpringFluentDSL.g:867:2: rule__Prefix__Group__1__Impl rule__Prefix__Group__2
             {
             pushFollow(FOLLOW_7);
             rule__Prefix__Group__1__Impl();
@@ -2321,20 +2996,20 @@ public class InternalSpringFluentDSLParser extends AbstractInternalContentAssist
 
 
     // $ANTLR start "rule__Prefix__Group__1__Impl"
-    // InternalSpringFluentDSL.g:724:1: rule__Prefix__Group__1__Impl : ( 'prefix:' ) ;
+    // InternalSpringFluentDSL.g:874:1: rule__Prefix__Group__1__Impl : ( 'prefix:' ) ;
     public final void rule__Prefix__Group__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalSpringFluentDSL.g:728:1: ( ( 'prefix:' ) )
-            // InternalSpringFluentDSL.g:729:1: ( 'prefix:' )
+            // InternalSpringFluentDSL.g:878:1: ( ( 'prefix:' ) )
+            // InternalSpringFluentDSL.g:879:1: ( 'prefix:' )
             {
-            // InternalSpringFluentDSL.g:729:1: ( 'prefix:' )
-            // InternalSpringFluentDSL.g:730:2: 'prefix:'
+            // InternalSpringFluentDSL.g:879:1: ( 'prefix:' )
+            // InternalSpringFluentDSL.g:880:2: 'prefix:'
             {
              before(grammarAccess.getPrefixAccess().getPrefixKeyword_1()); 
-            match(input,33,FOLLOW_2); 
+            match(input,58,FOLLOW_2); 
              after(grammarAccess.getPrefixAccess().getPrefixKeyword_1()); 
 
             }
@@ -2358,14 +3033,14 @@ public class InternalSpringFluentDSLParser extends AbstractInternalContentAssist
 
 
     // $ANTLR start "rule__Prefix__Group__2"
-    // InternalSpringFluentDSL.g:739:1: rule__Prefix__Group__2 : rule__Prefix__Group__2__Impl ;
+    // InternalSpringFluentDSL.g:889:1: rule__Prefix__Group__2 : rule__Prefix__Group__2__Impl ;
     public final void rule__Prefix__Group__2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalSpringFluentDSL.g:743:1: ( rule__Prefix__Group__2__Impl )
-            // InternalSpringFluentDSL.g:744:2: rule__Prefix__Group__2__Impl
+            // InternalSpringFluentDSL.g:893:1: ( rule__Prefix__Group__2__Impl )
+            // InternalSpringFluentDSL.g:894:2: rule__Prefix__Group__2__Impl
             {
             pushFollow(FOLLOW_2);
             rule__Prefix__Group__2__Impl();
@@ -2391,21 +3066,21 @@ public class InternalSpringFluentDSLParser extends AbstractInternalContentAssist
 
 
     // $ANTLR start "rule__Prefix__Group__2__Impl"
-    // InternalSpringFluentDSL.g:750:1: rule__Prefix__Group__2__Impl : ( ( rule__Prefix__PrefixAssignment_2 ) ) ;
+    // InternalSpringFluentDSL.g:900:1: rule__Prefix__Group__2__Impl : ( ( rule__Prefix__PrefixAssignment_2 ) ) ;
     public final void rule__Prefix__Group__2__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalSpringFluentDSL.g:754:1: ( ( ( rule__Prefix__PrefixAssignment_2 ) ) )
-            // InternalSpringFluentDSL.g:755:1: ( ( rule__Prefix__PrefixAssignment_2 ) )
+            // InternalSpringFluentDSL.g:904:1: ( ( ( rule__Prefix__PrefixAssignment_2 ) ) )
+            // InternalSpringFluentDSL.g:905:1: ( ( rule__Prefix__PrefixAssignment_2 ) )
             {
-            // InternalSpringFluentDSL.g:755:1: ( ( rule__Prefix__PrefixAssignment_2 ) )
-            // InternalSpringFluentDSL.g:756:2: ( rule__Prefix__PrefixAssignment_2 )
+            // InternalSpringFluentDSL.g:905:1: ( ( rule__Prefix__PrefixAssignment_2 ) )
+            // InternalSpringFluentDSL.g:906:2: ( rule__Prefix__PrefixAssignment_2 )
             {
              before(grammarAccess.getPrefixAccess().getPrefixAssignment_2()); 
-            // InternalSpringFluentDSL.g:757:2: ( rule__Prefix__PrefixAssignment_2 )
-            // InternalSpringFluentDSL.g:757:3: rule__Prefix__PrefixAssignment_2
+            // InternalSpringFluentDSL.g:907:2: ( rule__Prefix__PrefixAssignment_2 )
+            // InternalSpringFluentDSL.g:907:3: rule__Prefix__PrefixAssignment_2
             {
             pushFollow(FOLLOW_2);
             rule__Prefix__PrefixAssignment_2();
@@ -2438,14 +3113,14 @@ public class InternalSpringFluentDSLParser extends AbstractInternalContentAssist
 
 
     // $ANTLR start "rule__AppName__Group__0"
-    // InternalSpringFluentDSL.g:766:1: rule__AppName__Group__0 : rule__AppName__Group__0__Impl rule__AppName__Group__1 ;
+    // InternalSpringFluentDSL.g:916:1: rule__AppName__Group__0 : rule__AppName__Group__0__Impl rule__AppName__Group__1 ;
     public final void rule__AppName__Group__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalSpringFluentDSL.g:770:1: ( rule__AppName__Group__0__Impl rule__AppName__Group__1 )
-            // InternalSpringFluentDSL.g:771:2: rule__AppName__Group__0__Impl rule__AppName__Group__1
+            // InternalSpringFluentDSL.g:920:1: ( rule__AppName__Group__0__Impl rule__AppName__Group__1 )
+            // InternalSpringFluentDSL.g:921:2: rule__AppName__Group__0__Impl rule__AppName__Group__1
             {
             pushFollow(FOLLOW_3);
             rule__AppName__Group__0__Impl();
@@ -2476,21 +3151,21 @@ public class InternalSpringFluentDSLParser extends AbstractInternalContentAssist
 
 
     // $ANTLR start "rule__AppName__Group__0__Impl"
-    // InternalSpringFluentDSL.g:778:1: rule__AppName__Group__0__Impl : ( () ) ;
+    // InternalSpringFluentDSL.g:928:1: rule__AppName__Group__0__Impl : ( () ) ;
     public final void rule__AppName__Group__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalSpringFluentDSL.g:782:1: ( ( () ) )
-            // InternalSpringFluentDSL.g:783:1: ( () )
+            // InternalSpringFluentDSL.g:932:1: ( ( () ) )
+            // InternalSpringFluentDSL.g:933:1: ( () )
             {
-            // InternalSpringFluentDSL.g:783:1: ( () )
-            // InternalSpringFluentDSL.g:784:2: ()
+            // InternalSpringFluentDSL.g:933:1: ( () )
+            // InternalSpringFluentDSL.g:934:2: ()
             {
              before(grammarAccess.getAppNameAccess().getAppNameAction_0()); 
-            // InternalSpringFluentDSL.g:785:2: ()
-            // InternalSpringFluentDSL.g:785:3: 
+            // InternalSpringFluentDSL.g:935:2: ()
+            // InternalSpringFluentDSL.g:935:3: 
             {
             }
 
@@ -2513,14 +3188,14 @@ public class InternalSpringFluentDSLParser extends AbstractInternalContentAssist
 
 
     // $ANTLR start "rule__AppName__Group__1"
-    // InternalSpringFluentDSL.g:793:1: rule__AppName__Group__1 : rule__AppName__Group__1__Impl rule__AppName__Group__2 ;
+    // InternalSpringFluentDSL.g:943:1: rule__AppName__Group__1 : rule__AppName__Group__1__Impl rule__AppName__Group__2 ;
     public final void rule__AppName__Group__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalSpringFluentDSL.g:797:1: ( rule__AppName__Group__1__Impl rule__AppName__Group__2 )
-            // InternalSpringFluentDSL.g:798:2: rule__AppName__Group__1__Impl rule__AppName__Group__2
+            // InternalSpringFluentDSL.g:947:1: ( rule__AppName__Group__1__Impl rule__AppName__Group__2 )
+            // InternalSpringFluentDSL.g:948:2: rule__AppName__Group__1__Impl rule__AppName__Group__2
             {
             pushFollow(FOLLOW_7);
             rule__AppName__Group__1__Impl();
@@ -2551,20 +3226,20 @@ public class InternalSpringFluentDSLParser extends AbstractInternalContentAssist
 
 
     // $ANTLR start "rule__AppName__Group__1__Impl"
-    // InternalSpringFluentDSL.g:805:1: rule__AppName__Group__1__Impl : ( 'app_name:' ) ;
+    // InternalSpringFluentDSL.g:955:1: rule__AppName__Group__1__Impl : ( 'app_name:' ) ;
     public final void rule__AppName__Group__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalSpringFluentDSL.g:809:1: ( ( 'app_name:' ) )
-            // InternalSpringFluentDSL.g:810:1: ( 'app_name:' )
+            // InternalSpringFluentDSL.g:959:1: ( ( 'app_name:' ) )
+            // InternalSpringFluentDSL.g:960:1: ( 'app_name:' )
             {
-            // InternalSpringFluentDSL.g:810:1: ( 'app_name:' )
-            // InternalSpringFluentDSL.g:811:2: 'app_name:'
+            // InternalSpringFluentDSL.g:960:1: ( 'app_name:' )
+            // InternalSpringFluentDSL.g:961:2: 'app_name:'
             {
              before(grammarAccess.getAppNameAccess().getApp_nameKeyword_1()); 
-            match(input,34,FOLLOW_2); 
+            match(input,59,FOLLOW_2); 
              after(grammarAccess.getAppNameAccess().getApp_nameKeyword_1()); 
 
             }
@@ -2588,14 +3263,14 @@ public class InternalSpringFluentDSLParser extends AbstractInternalContentAssist
 
 
     // $ANTLR start "rule__AppName__Group__2"
-    // InternalSpringFluentDSL.g:820:1: rule__AppName__Group__2 : rule__AppName__Group__2__Impl ;
+    // InternalSpringFluentDSL.g:970:1: rule__AppName__Group__2 : rule__AppName__Group__2__Impl ;
     public final void rule__AppName__Group__2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalSpringFluentDSL.g:824:1: ( rule__AppName__Group__2__Impl )
-            // InternalSpringFluentDSL.g:825:2: rule__AppName__Group__2__Impl
+            // InternalSpringFluentDSL.g:974:1: ( rule__AppName__Group__2__Impl )
+            // InternalSpringFluentDSL.g:975:2: rule__AppName__Group__2__Impl
             {
             pushFollow(FOLLOW_2);
             rule__AppName__Group__2__Impl();
@@ -2621,21 +3296,21 @@ public class InternalSpringFluentDSLParser extends AbstractInternalContentAssist
 
 
     // $ANTLR start "rule__AppName__Group__2__Impl"
-    // InternalSpringFluentDSL.g:831:1: rule__AppName__Group__2__Impl : ( ( rule__AppName__AppNameAssignment_2 ) ) ;
+    // InternalSpringFluentDSL.g:981:1: rule__AppName__Group__2__Impl : ( ( rule__AppName__AppNameAssignment_2 ) ) ;
     public final void rule__AppName__Group__2__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalSpringFluentDSL.g:835:1: ( ( ( rule__AppName__AppNameAssignment_2 ) ) )
-            // InternalSpringFluentDSL.g:836:1: ( ( rule__AppName__AppNameAssignment_2 ) )
+            // InternalSpringFluentDSL.g:985:1: ( ( ( rule__AppName__AppNameAssignment_2 ) ) )
+            // InternalSpringFluentDSL.g:986:1: ( ( rule__AppName__AppNameAssignment_2 ) )
             {
-            // InternalSpringFluentDSL.g:836:1: ( ( rule__AppName__AppNameAssignment_2 ) )
-            // InternalSpringFluentDSL.g:837:2: ( rule__AppName__AppNameAssignment_2 )
+            // InternalSpringFluentDSL.g:986:1: ( ( rule__AppName__AppNameAssignment_2 ) )
+            // InternalSpringFluentDSL.g:987:2: ( rule__AppName__AppNameAssignment_2 )
             {
              before(grammarAccess.getAppNameAccess().getAppNameAssignment_2()); 
-            // InternalSpringFluentDSL.g:838:2: ( rule__AppName__AppNameAssignment_2 )
-            // InternalSpringFluentDSL.g:838:3: rule__AppName__AppNameAssignment_2
+            // InternalSpringFluentDSL.g:988:2: ( rule__AppName__AppNameAssignment_2 )
+            // InternalSpringFluentDSL.g:988:3: rule__AppName__AppNameAssignment_2
             {
             pushFollow(FOLLOW_2);
             rule__AppName__AppNameAssignment_2();
@@ -2668,14 +3343,14 @@ public class InternalSpringFluentDSLParser extends AbstractInternalContentAssist
 
 
     // $ANTLR start "rule__Dependencies__Group__0"
-    // InternalSpringFluentDSL.g:847:1: rule__Dependencies__Group__0 : rule__Dependencies__Group__0__Impl rule__Dependencies__Group__1 ;
+    // InternalSpringFluentDSL.g:997:1: rule__Dependencies__Group__0 : rule__Dependencies__Group__0__Impl rule__Dependencies__Group__1 ;
     public final void rule__Dependencies__Group__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalSpringFluentDSL.g:851:1: ( rule__Dependencies__Group__0__Impl rule__Dependencies__Group__1 )
-            // InternalSpringFluentDSL.g:852:2: rule__Dependencies__Group__0__Impl rule__Dependencies__Group__1
+            // InternalSpringFluentDSL.g:1001:1: ( rule__Dependencies__Group__0__Impl rule__Dependencies__Group__1 )
+            // InternalSpringFluentDSL.g:1002:2: rule__Dependencies__Group__0__Impl rule__Dependencies__Group__1
             {
             pushFollow(FOLLOW_4);
             rule__Dependencies__Group__0__Impl();
@@ -2706,21 +3381,21 @@ public class InternalSpringFluentDSLParser extends AbstractInternalContentAssist
 
 
     // $ANTLR start "rule__Dependencies__Group__0__Impl"
-    // InternalSpringFluentDSL.g:859:1: rule__Dependencies__Group__0__Impl : ( () ) ;
+    // InternalSpringFluentDSL.g:1009:1: rule__Dependencies__Group__0__Impl : ( () ) ;
     public final void rule__Dependencies__Group__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalSpringFluentDSL.g:863:1: ( ( () ) )
-            // InternalSpringFluentDSL.g:864:1: ( () )
+            // InternalSpringFluentDSL.g:1013:1: ( ( () ) )
+            // InternalSpringFluentDSL.g:1014:1: ( () )
             {
-            // InternalSpringFluentDSL.g:864:1: ( () )
-            // InternalSpringFluentDSL.g:865:2: ()
+            // InternalSpringFluentDSL.g:1014:1: ( () )
+            // InternalSpringFluentDSL.g:1015:2: ()
             {
              before(grammarAccess.getDependenciesAccess().getDependenciesAction_0()); 
-            // InternalSpringFluentDSL.g:866:2: ()
-            // InternalSpringFluentDSL.g:866:3: 
+            // InternalSpringFluentDSL.g:1016:2: ()
+            // InternalSpringFluentDSL.g:1016:3: 
             {
             }
 
@@ -2743,14 +3418,14 @@ public class InternalSpringFluentDSLParser extends AbstractInternalContentAssist
 
 
     // $ANTLR start "rule__Dependencies__Group__1"
-    // InternalSpringFluentDSL.g:874:1: rule__Dependencies__Group__1 : rule__Dependencies__Group__1__Impl rule__Dependencies__Group__2 ;
+    // InternalSpringFluentDSL.g:1024:1: rule__Dependencies__Group__1 : rule__Dependencies__Group__1__Impl rule__Dependencies__Group__2 ;
     public final void rule__Dependencies__Group__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalSpringFluentDSL.g:878:1: ( rule__Dependencies__Group__1__Impl rule__Dependencies__Group__2 )
-            // InternalSpringFluentDSL.g:879:2: rule__Dependencies__Group__1__Impl rule__Dependencies__Group__2
+            // InternalSpringFluentDSL.g:1028:1: ( rule__Dependencies__Group__1__Impl rule__Dependencies__Group__2 )
+            // InternalSpringFluentDSL.g:1029:2: rule__Dependencies__Group__1__Impl rule__Dependencies__Group__2
             {
             pushFollow(FOLLOW_8);
             rule__Dependencies__Group__1__Impl();
@@ -2781,20 +3456,20 @@ public class InternalSpringFluentDSLParser extends AbstractInternalContentAssist
 
 
     // $ANTLR start "rule__Dependencies__Group__1__Impl"
-    // InternalSpringFluentDSL.g:886:1: rule__Dependencies__Group__1__Impl : ( 'dependencies' ) ;
+    // InternalSpringFluentDSL.g:1036:1: rule__Dependencies__Group__1__Impl : ( 'dependencies' ) ;
     public final void rule__Dependencies__Group__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalSpringFluentDSL.g:890:1: ( ( 'dependencies' ) )
-            // InternalSpringFluentDSL.g:891:1: ( 'dependencies' )
+            // InternalSpringFluentDSL.g:1040:1: ( ( 'dependencies' ) )
+            // InternalSpringFluentDSL.g:1041:1: ( 'dependencies' )
             {
-            // InternalSpringFluentDSL.g:891:1: ( 'dependencies' )
-            // InternalSpringFluentDSL.g:892:2: 'dependencies'
+            // InternalSpringFluentDSL.g:1041:1: ( 'dependencies' )
+            // InternalSpringFluentDSL.g:1042:2: 'dependencies'
             {
              before(grammarAccess.getDependenciesAccess().getDependenciesKeyword_1()); 
-            match(input,35,FOLLOW_2); 
+            match(input,60,FOLLOW_2); 
              after(grammarAccess.getDependenciesAccess().getDependenciesKeyword_1()); 
 
             }
@@ -2818,14 +3493,14 @@ public class InternalSpringFluentDSLParser extends AbstractInternalContentAssist
 
 
     // $ANTLR start "rule__Dependencies__Group__2"
-    // InternalSpringFluentDSL.g:901:1: rule__Dependencies__Group__2 : rule__Dependencies__Group__2__Impl rule__Dependencies__Group__3 ;
+    // InternalSpringFluentDSL.g:1051:1: rule__Dependencies__Group__2 : rule__Dependencies__Group__2__Impl rule__Dependencies__Group__3 ;
     public final void rule__Dependencies__Group__2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalSpringFluentDSL.g:905:1: ( rule__Dependencies__Group__2__Impl rule__Dependencies__Group__3 )
-            // InternalSpringFluentDSL.g:906:2: rule__Dependencies__Group__2__Impl rule__Dependencies__Group__3
+            // InternalSpringFluentDSL.g:1055:1: ( rule__Dependencies__Group__2__Impl rule__Dependencies__Group__3 )
+            // InternalSpringFluentDSL.g:1056:2: rule__Dependencies__Group__2__Impl rule__Dependencies__Group__3
             {
             pushFollow(FOLLOW_9);
             rule__Dependencies__Group__2__Impl();
@@ -2856,20 +3531,20 @@ public class InternalSpringFluentDSLParser extends AbstractInternalContentAssist
 
 
     // $ANTLR start "rule__Dependencies__Group__2__Impl"
-    // InternalSpringFluentDSL.g:913:1: rule__Dependencies__Group__2__Impl : ( '{' ) ;
+    // InternalSpringFluentDSL.g:1063:1: rule__Dependencies__Group__2__Impl : ( '{' ) ;
     public final void rule__Dependencies__Group__2__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalSpringFluentDSL.g:917:1: ( ( '{' ) )
-            // InternalSpringFluentDSL.g:918:1: ( '{' )
+            // InternalSpringFluentDSL.g:1067:1: ( ( '{' ) )
+            // InternalSpringFluentDSL.g:1068:1: ( '{' )
             {
-            // InternalSpringFluentDSL.g:918:1: ( '{' )
-            // InternalSpringFluentDSL.g:919:2: '{'
+            // InternalSpringFluentDSL.g:1068:1: ( '{' )
+            // InternalSpringFluentDSL.g:1069:2: '{'
             {
              before(grammarAccess.getDependenciesAccess().getLeftCurlyBracketKeyword_2()); 
-            match(input,36,FOLLOW_2); 
+            match(input,61,FOLLOW_2); 
              after(grammarAccess.getDependenciesAccess().getLeftCurlyBracketKeyword_2()); 
 
             }
@@ -2893,14 +3568,14 @@ public class InternalSpringFluentDSLParser extends AbstractInternalContentAssist
 
 
     // $ANTLR start "rule__Dependencies__Group__3"
-    // InternalSpringFluentDSL.g:928:1: rule__Dependencies__Group__3 : rule__Dependencies__Group__3__Impl rule__Dependencies__Group__4 ;
+    // InternalSpringFluentDSL.g:1078:1: rule__Dependencies__Group__3 : rule__Dependencies__Group__3__Impl rule__Dependencies__Group__4 ;
     public final void rule__Dependencies__Group__3() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalSpringFluentDSL.g:932:1: ( rule__Dependencies__Group__3__Impl rule__Dependencies__Group__4 )
-            // InternalSpringFluentDSL.g:933:2: rule__Dependencies__Group__3__Impl rule__Dependencies__Group__4
+            // InternalSpringFluentDSL.g:1082:1: ( rule__Dependencies__Group__3__Impl rule__Dependencies__Group__4 )
+            // InternalSpringFluentDSL.g:1083:2: rule__Dependencies__Group__3__Impl rule__Dependencies__Group__4
             {
             pushFollow(FOLLOW_10);
             rule__Dependencies__Group__3__Impl();
@@ -2931,21 +3606,21 @@ public class InternalSpringFluentDSLParser extends AbstractInternalContentAssist
 
 
     // $ANTLR start "rule__Dependencies__Group__3__Impl"
-    // InternalSpringFluentDSL.g:940:1: rule__Dependencies__Group__3__Impl : ( ( rule__Dependencies__DependenciesAssignment_3 ) ) ;
+    // InternalSpringFluentDSL.g:1090:1: rule__Dependencies__Group__3__Impl : ( ( rule__Dependencies__DependenciesAssignment_3 ) ) ;
     public final void rule__Dependencies__Group__3__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalSpringFluentDSL.g:944:1: ( ( ( rule__Dependencies__DependenciesAssignment_3 ) ) )
-            // InternalSpringFluentDSL.g:945:1: ( ( rule__Dependencies__DependenciesAssignment_3 ) )
+            // InternalSpringFluentDSL.g:1094:1: ( ( ( rule__Dependencies__DependenciesAssignment_3 ) ) )
+            // InternalSpringFluentDSL.g:1095:1: ( ( rule__Dependencies__DependenciesAssignment_3 ) )
             {
-            // InternalSpringFluentDSL.g:945:1: ( ( rule__Dependencies__DependenciesAssignment_3 ) )
-            // InternalSpringFluentDSL.g:946:2: ( rule__Dependencies__DependenciesAssignment_3 )
+            // InternalSpringFluentDSL.g:1095:1: ( ( rule__Dependencies__DependenciesAssignment_3 ) )
+            // InternalSpringFluentDSL.g:1096:2: ( rule__Dependencies__DependenciesAssignment_3 )
             {
              before(grammarAccess.getDependenciesAccess().getDependenciesAssignment_3()); 
-            // InternalSpringFluentDSL.g:947:2: ( rule__Dependencies__DependenciesAssignment_3 )
-            // InternalSpringFluentDSL.g:947:3: rule__Dependencies__DependenciesAssignment_3
+            // InternalSpringFluentDSL.g:1097:2: ( rule__Dependencies__DependenciesAssignment_3 )
+            // InternalSpringFluentDSL.g:1097:3: rule__Dependencies__DependenciesAssignment_3
             {
             pushFollow(FOLLOW_2);
             rule__Dependencies__DependenciesAssignment_3();
@@ -2978,14 +3653,14 @@ public class InternalSpringFluentDSLParser extends AbstractInternalContentAssist
 
 
     // $ANTLR start "rule__Dependencies__Group__4"
-    // InternalSpringFluentDSL.g:955:1: rule__Dependencies__Group__4 : rule__Dependencies__Group__4__Impl rule__Dependencies__Group__5 ;
+    // InternalSpringFluentDSL.g:1105:1: rule__Dependencies__Group__4 : rule__Dependencies__Group__4__Impl rule__Dependencies__Group__5 ;
     public final void rule__Dependencies__Group__4() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalSpringFluentDSL.g:959:1: ( rule__Dependencies__Group__4__Impl rule__Dependencies__Group__5 )
-            // InternalSpringFluentDSL.g:960:2: rule__Dependencies__Group__4__Impl rule__Dependencies__Group__5
+            // InternalSpringFluentDSL.g:1109:1: ( rule__Dependencies__Group__4__Impl rule__Dependencies__Group__5 )
+            // InternalSpringFluentDSL.g:1110:2: rule__Dependencies__Group__4__Impl rule__Dependencies__Group__5
             {
             pushFollow(FOLLOW_10);
             rule__Dependencies__Group__4__Impl();
@@ -3016,33 +3691,33 @@ public class InternalSpringFluentDSLParser extends AbstractInternalContentAssist
 
 
     // $ANTLR start "rule__Dependencies__Group__4__Impl"
-    // InternalSpringFluentDSL.g:967:1: rule__Dependencies__Group__4__Impl : ( ( rule__Dependencies__Group_4__0 )* ) ;
+    // InternalSpringFluentDSL.g:1117:1: rule__Dependencies__Group__4__Impl : ( ( rule__Dependencies__Group_4__0 )* ) ;
     public final void rule__Dependencies__Group__4__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalSpringFluentDSL.g:971:1: ( ( ( rule__Dependencies__Group_4__0 )* ) )
-            // InternalSpringFluentDSL.g:972:1: ( ( rule__Dependencies__Group_4__0 )* )
+            // InternalSpringFluentDSL.g:1121:1: ( ( ( rule__Dependencies__Group_4__0 )* ) )
+            // InternalSpringFluentDSL.g:1122:1: ( ( rule__Dependencies__Group_4__0 )* )
             {
-            // InternalSpringFluentDSL.g:972:1: ( ( rule__Dependencies__Group_4__0 )* )
-            // InternalSpringFluentDSL.g:973:2: ( rule__Dependencies__Group_4__0 )*
+            // InternalSpringFluentDSL.g:1122:1: ( ( rule__Dependencies__Group_4__0 )* )
+            // InternalSpringFluentDSL.g:1123:2: ( rule__Dependencies__Group_4__0 )*
             {
              before(grammarAccess.getDependenciesAccess().getGroup_4()); 
-            // InternalSpringFluentDSL.g:974:2: ( rule__Dependencies__Group_4__0 )*
+            // InternalSpringFluentDSL.g:1124:2: ( rule__Dependencies__Group_4__0 )*
             loop5:
             do {
                 int alt5=2;
                 int LA5_0 = input.LA(1);
 
-                if ( (LA5_0==38) ) {
+                if ( (LA5_0==63) ) {
                     alt5=1;
                 }
 
 
                 switch (alt5) {
             	case 1 :
-            	    // InternalSpringFluentDSL.g:974:3: rule__Dependencies__Group_4__0
+            	    // InternalSpringFluentDSL.g:1124:3: rule__Dependencies__Group_4__0
             	    {
             	    pushFollow(FOLLOW_11);
             	    rule__Dependencies__Group_4__0();
@@ -3081,14 +3756,14 @@ public class InternalSpringFluentDSLParser extends AbstractInternalContentAssist
 
 
     // $ANTLR start "rule__Dependencies__Group__5"
-    // InternalSpringFluentDSL.g:982:1: rule__Dependencies__Group__5 : rule__Dependencies__Group__5__Impl ;
+    // InternalSpringFluentDSL.g:1132:1: rule__Dependencies__Group__5 : rule__Dependencies__Group__5__Impl ;
     public final void rule__Dependencies__Group__5() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalSpringFluentDSL.g:986:1: ( rule__Dependencies__Group__5__Impl )
-            // InternalSpringFluentDSL.g:987:2: rule__Dependencies__Group__5__Impl
+            // InternalSpringFluentDSL.g:1136:1: ( rule__Dependencies__Group__5__Impl )
+            // InternalSpringFluentDSL.g:1137:2: rule__Dependencies__Group__5__Impl
             {
             pushFollow(FOLLOW_2);
             rule__Dependencies__Group__5__Impl();
@@ -3114,20 +3789,20 @@ public class InternalSpringFluentDSLParser extends AbstractInternalContentAssist
 
 
     // $ANTLR start "rule__Dependencies__Group__5__Impl"
-    // InternalSpringFluentDSL.g:993:1: rule__Dependencies__Group__5__Impl : ( '}' ) ;
+    // InternalSpringFluentDSL.g:1143:1: rule__Dependencies__Group__5__Impl : ( '}' ) ;
     public final void rule__Dependencies__Group__5__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalSpringFluentDSL.g:997:1: ( ( '}' ) )
-            // InternalSpringFluentDSL.g:998:1: ( '}' )
+            // InternalSpringFluentDSL.g:1147:1: ( ( '}' ) )
+            // InternalSpringFluentDSL.g:1148:1: ( '}' )
             {
-            // InternalSpringFluentDSL.g:998:1: ( '}' )
-            // InternalSpringFluentDSL.g:999:2: '}'
+            // InternalSpringFluentDSL.g:1148:1: ( '}' )
+            // InternalSpringFluentDSL.g:1149:2: '}'
             {
              before(grammarAccess.getDependenciesAccess().getRightCurlyBracketKeyword_5()); 
-            match(input,37,FOLLOW_2); 
+            match(input,62,FOLLOW_2); 
              after(grammarAccess.getDependenciesAccess().getRightCurlyBracketKeyword_5()); 
 
             }
@@ -3151,14 +3826,14 @@ public class InternalSpringFluentDSLParser extends AbstractInternalContentAssist
 
 
     // $ANTLR start "rule__Dependencies__Group_4__0"
-    // InternalSpringFluentDSL.g:1009:1: rule__Dependencies__Group_4__0 : rule__Dependencies__Group_4__0__Impl rule__Dependencies__Group_4__1 ;
+    // InternalSpringFluentDSL.g:1159:1: rule__Dependencies__Group_4__0 : rule__Dependencies__Group_4__0__Impl rule__Dependencies__Group_4__1 ;
     public final void rule__Dependencies__Group_4__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalSpringFluentDSL.g:1013:1: ( rule__Dependencies__Group_4__0__Impl rule__Dependencies__Group_4__1 )
-            // InternalSpringFluentDSL.g:1014:2: rule__Dependencies__Group_4__0__Impl rule__Dependencies__Group_4__1
+            // InternalSpringFluentDSL.g:1163:1: ( rule__Dependencies__Group_4__0__Impl rule__Dependencies__Group_4__1 )
+            // InternalSpringFluentDSL.g:1164:2: rule__Dependencies__Group_4__0__Impl rule__Dependencies__Group_4__1
             {
             pushFollow(FOLLOW_9);
             rule__Dependencies__Group_4__0__Impl();
@@ -3189,20 +3864,20 @@ public class InternalSpringFluentDSLParser extends AbstractInternalContentAssist
 
 
     // $ANTLR start "rule__Dependencies__Group_4__0__Impl"
-    // InternalSpringFluentDSL.g:1021:1: rule__Dependencies__Group_4__0__Impl : ( ',' ) ;
+    // InternalSpringFluentDSL.g:1171:1: rule__Dependencies__Group_4__0__Impl : ( ',' ) ;
     public final void rule__Dependencies__Group_4__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalSpringFluentDSL.g:1025:1: ( ( ',' ) )
-            // InternalSpringFluentDSL.g:1026:1: ( ',' )
+            // InternalSpringFluentDSL.g:1175:1: ( ( ',' ) )
+            // InternalSpringFluentDSL.g:1176:1: ( ',' )
             {
-            // InternalSpringFluentDSL.g:1026:1: ( ',' )
-            // InternalSpringFluentDSL.g:1027:2: ','
+            // InternalSpringFluentDSL.g:1176:1: ( ',' )
+            // InternalSpringFluentDSL.g:1177:2: ','
             {
              before(grammarAccess.getDependenciesAccess().getCommaKeyword_4_0()); 
-            match(input,38,FOLLOW_2); 
+            match(input,63,FOLLOW_2); 
              after(grammarAccess.getDependenciesAccess().getCommaKeyword_4_0()); 
 
             }
@@ -3226,14 +3901,14 @@ public class InternalSpringFluentDSLParser extends AbstractInternalContentAssist
 
 
     // $ANTLR start "rule__Dependencies__Group_4__1"
-    // InternalSpringFluentDSL.g:1036:1: rule__Dependencies__Group_4__1 : rule__Dependencies__Group_4__1__Impl ;
+    // InternalSpringFluentDSL.g:1186:1: rule__Dependencies__Group_4__1 : rule__Dependencies__Group_4__1__Impl ;
     public final void rule__Dependencies__Group_4__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalSpringFluentDSL.g:1040:1: ( rule__Dependencies__Group_4__1__Impl )
-            // InternalSpringFluentDSL.g:1041:2: rule__Dependencies__Group_4__1__Impl
+            // InternalSpringFluentDSL.g:1190:1: ( rule__Dependencies__Group_4__1__Impl )
+            // InternalSpringFluentDSL.g:1191:2: rule__Dependencies__Group_4__1__Impl
             {
             pushFollow(FOLLOW_2);
             rule__Dependencies__Group_4__1__Impl();
@@ -3259,21 +3934,21 @@ public class InternalSpringFluentDSLParser extends AbstractInternalContentAssist
 
 
     // $ANTLR start "rule__Dependencies__Group_4__1__Impl"
-    // InternalSpringFluentDSL.g:1047:1: rule__Dependencies__Group_4__1__Impl : ( ( rule__Dependencies__DependenciesAssignment_4_1 ) ) ;
+    // InternalSpringFluentDSL.g:1197:1: rule__Dependencies__Group_4__1__Impl : ( ( rule__Dependencies__DependenciesAssignment_4_1 ) ) ;
     public final void rule__Dependencies__Group_4__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalSpringFluentDSL.g:1051:1: ( ( ( rule__Dependencies__DependenciesAssignment_4_1 ) ) )
-            // InternalSpringFluentDSL.g:1052:1: ( ( rule__Dependencies__DependenciesAssignment_4_1 ) )
+            // InternalSpringFluentDSL.g:1201:1: ( ( ( rule__Dependencies__DependenciesAssignment_4_1 ) ) )
+            // InternalSpringFluentDSL.g:1202:1: ( ( rule__Dependencies__DependenciesAssignment_4_1 ) )
             {
-            // InternalSpringFluentDSL.g:1052:1: ( ( rule__Dependencies__DependenciesAssignment_4_1 ) )
-            // InternalSpringFluentDSL.g:1053:2: ( rule__Dependencies__DependenciesAssignment_4_1 )
+            // InternalSpringFluentDSL.g:1202:1: ( ( rule__Dependencies__DependenciesAssignment_4_1 ) )
+            // InternalSpringFluentDSL.g:1203:2: ( rule__Dependencies__DependenciesAssignment_4_1 )
             {
              before(grammarAccess.getDependenciesAccess().getDependenciesAssignment_4_1()); 
-            // InternalSpringFluentDSL.g:1054:2: ( rule__Dependencies__DependenciesAssignment_4_1 )
-            // InternalSpringFluentDSL.g:1054:3: rule__Dependencies__DependenciesAssignment_4_1
+            // InternalSpringFluentDSL.g:1204:2: ( rule__Dependencies__DependenciesAssignment_4_1 )
+            // InternalSpringFluentDSL.g:1204:3: rule__Dependencies__DependenciesAssignment_4_1
             {
             pushFollow(FOLLOW_2);
             rule__Dependencies__DependenciesAssignment_4_1();
@@ -3306,14 +3981,14 @@ public class InternalSpringFluentDSLParser extends AbstractInternalContentAssist
 
 
     // $ANTLR start "rule__Dependency__Group__0"
-    // InternalSpringFluentDSL.g:1063:1: rule__Dependency__Group__0 : rule__Dependency__Group__0__Impl rule__Dependency__Group__1 ;
+    // InternalSpringFluentDSL.g:1213:1: rule__Dependency__Group__0 : rule__Dependency__Group__0__Impl rule__Dependency__Group__1 ;
     public final void rule__Dependency__Group__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalSpringFluentDSL.g:1067:1: ( rule__Dependency__Group__0__Impl rule__Dependency__Group__1 )
-            // InternalSpringFluentDSL.g:1068:2: rule__Dependency__Group__0__Impl rule__Dependency__Group__1
+            // InternalSpringFluentDSL.g:1217:1: ( rule__Dependency__Group__0__Impl rule__Dependency__Group__1 )
+            // InternalSpringFluentDSL.g:1218:2: rule__Dependency__Group__0__Impl rule__Dependency__Group__1
             {
             pushFollow(FOLLOW_9);
             rule__Dependency__Group__0__Impl();
@@ -3344,21 +4019,21 @@ public class InternalSpringFluentDSLParser extends AbstractInternalContentAssist
 
 
     // $ANTLR start "rule__Dependency__Group__0__Impl"
-    // InternalSpringFluentDSL.g:1075:1: rule__Dependency__Group__0__Impl : ( () ) ;
+    // InternalSpringFluentDSL.g:1225:1: rule__Dependency__Group__0__Impl : ( () ) ;
     public final void rule__Dependency__Group__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalSpringFluentDSL.g:1079:1: ( ( () ) )
-            // InternalSpringFluentDSL.g:1080:1: ( () )
+            // InternalSpringFluentDSL.g:1229:1: ( ( () ) )
+            // InternalSpringFluentDSL.g:1230:1: ( () )
             {
-            // InternalSpringFluentDSL.g:1080:1: ( () )
-            // InternalSpringFluentDSL.g:1081:2: ()
+            // InternalSpringFluentDSL.g:1230:1: ( () )
+            // InternalSpringFluentDSL.g:1231:2: ()
             {
              before(grammarAccess.getDependencyAccess().getDependencyAction_0()); 
-            // InternalSpringFluentDSL.g:1082:2: ()
-            // InternalSpringFluentDSL.g:1082:3: 
+            // InternalSpringFluentDSL.g:1232:2: ()
+            // InternalSpringFluentDSL.g:1232:3: 
             {
             }
 
@@ -3381,14 +4056,14 @@ public class InternalSpringFluentDSLParser extends AbstractInternalContentAssist
 
 
     // $ANTLR start "rule__Dependency__Group__1"
-    // InternalSpringFluentDSL.g:1090:1: rule__Dependency__Group__1 : rule__Dependency__Group__1__Impl ;
+    // InternalSpringFluentDSL.g:1240:1: rule__Dependency__Group__1 : rule__Dependency__Group__1__Impl ;
     public final void rule__Dependency__Group__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalSpringFluentDSL.g:1094:1: ( rule__Dependency__Group__1__Impl )
-            // InternalSpringFluentDSL.g:1095:2: rule__Dependency__Group__1__Impl
+            // InternalSpringFluentDSL.g:1244:1: ( rule__Dependency__Group__1__Impl )
+            // InternalSpringFluentDSL.g:1245:2: rule__Dependency__Group__1__Impl
             {
             pushFollow(FOLLOW_2);
             rule__Dependency__Group__1__Impl();
@@ -3414,21 +4089,21 @@ public class InternalSpringFluentDSLParser extends AbstractInternalContentAssist
 
 
     // $ANTLR start "rule__Dependency__Group__1__Impl"
-    // InternalSpringFluentDSL.g:1101:1: rule__Dependency__Group__1__Impl : ( ( rule__Dependency__DependencyAssignment_1 ) ) ;
+    // InternalSpringFluentDSL.g:1251:1: rule__Dependency__Group__1__Impl : ( ( rule__Dependency__DependencyAssignment_1 ) ) ;
     public final void rule__Dependency__Group__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalSpringFluentDSL.g:1105:1: ( ( ( rule__Dependency__DependencyAssignment_1 ) ) )
-            // InternalSpringFluentDSL.g:1106:1: ( ( rule__Dependency__DependencyAssignment_1 ) )
+            // InternalSpringFluentDSL.g:1255:1: ( ( ( rule__Dependency__DependencyAssignment_1 ) ) )
+            // InternalSpringFluentDSL.g:1256:1: ( ( rule__Dependency__DependencyAssignment_1 ) )
             {
-            // InternalSpringFluentDSL.g:1106:1: ( ( rule__Dependency__DependencyAssignment_1 ) )
-            // InternalSpringFluentDSL.g:1107:2: ( rule__Dependency__DependencyAssignment_1 )
+            // InternalSpringFluentDSL.g:1256:1: ( ( rule__Dependency__DependencyAssignment_1 ) )
+            // InternalSpringFluentDSL.g:1257:2: ( rule__Dependency__DependencyAssignment_1 )
             {
              before(grammarAccess.getDependencyAccess().getDependencyAssignment_1()); 
-            // InternalSpringFluentDSL.g:1108:2: ( rule__Dependency__DependencyAssignment_1 )
-            // InternalSpringFluentDSL.g:1108:3: rule__Dependency__DependencyAssignment_1
+            // InternalSpringFluentDSL.g:1258:2: ( rule__Dependency__DependencyAssignment_1 )
+            // InternalSpringFluentDSL.g:1258:3: rule__Dependency__DependencyAssignment_1
             {
             pushFollow(FOLLOW_2);
             rule__Dependency__DependencyAssignment_1();
@@ -3461,14 +4136,14 @@ public class InternalSpringFluentDSLParser extends AbstractInternalContentAssist
 
 
     // $ANTLR start "rule__Entities__Group__0"
-    // InternalSpringFluentDSL.g:1117:1: rule__Entities__Group__0 : rule__Entities__Group__0__Impl rule__Entities__Group__1 ;
+    // InternalSpringFluentDSL.g:1267:1: rule__Entities__Group__0 : rule__Entities__Group__0__Impl rule__Entities__Group__1 ;
     public final void rule__Entities__Group__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalSpringFluentDSL.g:1121:1: ( rule__Entities__Group__0__Impl rule__Entities__Group__1 )
-            // InternalSpringFluentDSL.g:1122:2: rule__Entities__Group__0__Impl rule__Entities__Group__1
+            // InternalSpringFluentDSL.g:1271:1: ( rule__Entities__Group__0__Impl rule__Entities__Group__1 )
+            // InternalSpringFluentDSL.g:1272:2: rule__Entities__Group__0__Impl rule__Entities__Group__1
             {
             pushFollow(FOLLOW_5);
             rule__Entities__Group__0__Impl();
@@ -3499,21 +4174,21 @@ public class InternalSpringFluentDSLParser extends AbstractInternalContentAssist
 
 
     // $ANTLR start "rule__Entities__Group__0__Impl"
-    // InternalSpringFluentDSL.g:1129:1: rule__Entities__Group__0__Impl : ( () ) ;
+    // InternalSpringFluentDSL.g:1279:1: rule__Entities__Group__0__Impl : ( () ) ;
     public final void rule__Entities__Group__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalSpringFluentDSL.g:1133:1: ( ( () ) )
-            // InternalSpringFluentDSL.g:1134:1: ( () )
+            // InternalSpringFluentDSL.g:1283:1: ( ( () ) )
+            // InternalSpringFluentDSL.g:1284:1: ( () )
             {
-            // InternalSpringFluentDSL.g:1134:1: ( () )
-            // InternalSpringFluentDSL.g:1135:2: ()
+            // InternalSpringFluentDSL.g:1284:1: ( () )
+            // InternalSpringFluentDSL.g:1285:2: ()
             {
              before(grammarAccess.getEntitiesAccess().getEntitiesAction_0()); 
-            // InternalSpringFluentDSL.g:1136:2: ()
-            // InternalSpringFluentDSL.g:1136:3: 
+            // InternalSpringFluentDSL.g:1286:2: ()
+            // InternalSpringFluentDSL.g:1286:3: 
             {
             }
 
@@ -3536,14 +4211,14 @@ public class InternalSpringFluentDSLParser extends AbstractInternalContentAssist
 
 
     // $ANTLR start "rule__Entities__Group__1"
-    // InternalSpringFluentDSL.g:1144:1: rule__Entities__Group__1 : rule__Entities__Group__1__Impl rule__Entities__Group__2 ;
+    // InternalSpringFluentDSL.g:1294:1: rule__Entities__Group__1 : rule__Entities__Group__1__Impl rule__Entities__Group__2 ;
     public final void rule__Entities__Group__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalSpringFluentDSL.g:1148:1: ( rule__Entities__Group__1__Impl rule__Entities__Group__2 )
-            // InternalSpringFluentDSL.g:1149:2: rule__Entities__Group__1__Impl rule__Entities__Group__2
+            // InternalSpringFluentDSL.g:1298:1: ( rule__Entities__Group__1__Impl rule__Entities__Group__2 )
+            // InternalSpringFluentDSL.g:1299:2: rule__Entities__Group__1__Impl rule__Entities__Group__2
             {
             pushFollow(FOLLOW_8);
             rule__Entities__Group__1__Impl();
@@ -3574,20 +4249,20 @@ public class InternalSpringFluentDSLParser extends AbstractInternalContentAssist
 
 
     // $ANTLR start "rule__Entities__Group__1__Impl"
-    // InternalSpringFluentDSL.g:1156:1: rule__Entities__Group__1__Impl : ( 'entities' ) ;
+    // InternalSpringFluentDSL.g:1306:1: rule__Entities__Group__1__Impl : ( 'entities' ) ;
     public final void rule__Entities__Group__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalSpringFluentDSL.g:1160:1: ( ( 'entities' ) )
-            // InternalSpringFluentDSL.g:1161:1: ( 'entities' )
+            // InternalSpringFluentDSL.g:1310:1: ( ( 'entities' ) )
+            // InternalSpringFluentDSL.g:1311:1: ( 'entities' )
             {
-            // InternalSpringFluentDSL.g:1161:1: ( 'entities' )
-            // InternalSpringFluentDSL.g:1162:2: 'entities'
+            // InternalSpringFluentDSL.g:1311:1: ( 'entities' )
+            // InternalSpringFluentDSL.g:1312:2: 'entities'
             {
              before(grammarAccess.getEntitiesAccess().getEntitiesKeyword_1()); 
-            match(input,39,FOLLOW_2); 
+            match(input,64,FOLLOW_2); 
              after(grammarAccess.getEntitiesAccess().getEntitiesKeyword_1()); 
 
             }
@@ -3611,14 +4286,14 @@ public class InternalSpringFluentDSLParser extends AbstractInternalContentAssist
 
 
     // $ANTLR start "rule__Entities__Group__2"
-    // InternalSpringFluentDSL.g:1171:1: rule__Entities__Group__2 : rule__Entities__Group__2__Impl rule__Entities__Group__3 ;
+    // InternalSpringFluentDSL.g:1321:1: rule__Entities__Group__2 : rule__Entities__Group__2__Impl rule__Entities__Group__3 ;
     public final void rule__Entities__Group__2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalSpringFluentDSL.g:1175:1: ( rule__Entities__Group__2__Impl rule__Entities__Group__3 )
-            // InternalSpringFluentDSL.g:1176:2: rule__Entities__Group__2__Impl rule__Entities__Group__3
+            // InternalSpringFluentDSL.g:1325:1: ( rule__Entities__Group__2__Impl rule__Entities__Group__3 )
+            // InternalSpringFluentDSL.g:1326:2: rule__Entities__Group__2__Impl rule__Entities__Group__3
             {
             pushFollow(FOLLOW_12);
             rule__Entities__Group__2__Impl();
@@ -3649,20 +4324,20 @@ public class InternalSpringFluentDSLParser extends AbstractInternalContentAssist
 
 
     // $ANTLR start "rule__Entities__Group__2__Impl"
-    // InternalSpringFluentDSL.g:1183:1: rule__Entities__Group__2__Impl : ( '{' ) ;
+    // InternalSpringFluentDSL.g:1333:1: rule__Entities__Group__2__Impl : ( '{' ) ;
     public final void rule__Entities__Group__2__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalSpringFluentDSL.g:1187:1: ( ( '{' ) )
-            // InternalSpringFluentDSL.g:1188:1: ( '{' )
+            // InternalSpringFluentDSL.g:1337:1: ( ( '{' ) )
+            // InternalSpringFluentDSL.g:1338:1: ( '{' )
             {
-            // InternalSpringFluentDSL.g:1188:1: ( '{' )
-            // InternalSpringFluentDSL.g:1189:2: '{'
+            // InternalSpringFluentDSL.g:1338:1: ( '{' )
+            // InternalSpringFluentDSL.g:1339:2: '{'
             {
              before(grammarAccess.getEntitiesAccess().getLeftCurlyBracketKeyword_2()); 
-            match(input,36,FOLLOW_2); 
+            match(input,61,FOLLOW_2); 
              after(grammarAccess.getEntitiesAccess().getLeftCurlyBracketKeyword_2()); 
 
             }
@@ -3686,14 +4361,14 @@ public class InternalSpringFluentDSLParser extends AbstractInternalContentAssist
 
 
     // $ANTLR start "rule__Entities__Group__3"
-    // InternalSpringFluentDSL.g:1198:1: rule__Entities__Group__3 : rule__Entities__Group__3__Impl rule__Entities__Group__4 ;
+    // InternalSpringFluentDSL.g:1348:1: rule__Entities__Group__3 : rule__Entities__Group__3__Impl rule__Entities__Group__4 ;
     public final void rule__Entities__Group__3() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalSpringFluentDSL.g:1202:1: ( rule__Entities__Group__3__Impl rule__Entities__Group__4 )
-            // InternalSpringFluentDSL.g:1203:2: rule__Entities__Group__3__Impl rule__Entities__Group__4
+            // InternalSpringFluentDSL.g:1352:1: ( rule__Entities__Group__3__Impl rule__Entities__Group__4 )
+            // InternalSpringFluentDSL.g:1353:2: rule__Entities__Group__3__Impl rule__Entities__Group__4
             {
             pushFollow(FOLLOW_12);
             rule__Entities__Group__3__Impl();
@@ -3724,33 +4399,33 @@ public class InternalSpringFluentDSLParser extends AbstractInternalContentAssist
 
 
     // $ANTLR start "rule__Entities__Group__3__Impl"
-    // InternalSpringFluentDSL.g:1210:1: rule__Entities__Group__3__Impl : ( ( rule__Entities__EntitiesAssignment_3 )* ) ;
+    // InternalSpringFluentDSL.g:1360:1: rule__Entities__Group__3__Impl : ( ( rule__Entities__EntitiesAssignment_3 )* ) ;
     public final void rule__Entities__Group__3__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalSpringFluentDSL.g:1214:1: ( ( ( rule__Entities__EntitiesAssignment_3 )* ) )
-            // InternalSpringFluentDSL.g:1215:1: ( ( rule__Entities__EntitiesAssignment_3 )* )
+            // InternalSpringFluentDSL.g:1364:1: ( ( ( rule__Entities__EntitiesAssignment_3 )* ) )
+            // InternalSpringFluentDSL.g:1365:1: ( ( rule__Entities__EntitiesAssignment_3 )* )
             {
-            // InternalSpringFluentDSL.g:1215:1: ( ( rule__Entities__EntitiesAssignment_3 )* )
-            // InternalSpringFluentDSL.g:1216:2: ( rule__Entities__EntitiesAssignment_3 )*
+            // InternalSpringFluentDSL.g:1365:1: ( ( rule__Entities__EntitiesAssignment_3 )* )
+            // InternalSpringFluentDSL.g:1366:2: ( rule__Entities__EntitiesAssignment_3 )*
             {
              before(grammarAccess.getEntitiesAccess().getEntitiesAssignment_3()); 
-            // InternalSpringFluentDSL.g:1217:2: ( rule__Entities__EntitiesAssignment_3 )*
+            // InternalSpringFluentDSL.g:1367:2: ( rule__Entities__EntitiesAssignment_3 )*
             loop6:
             do {
                 int alt6=2;
                 int LA6_0 = input.LA(1);
 
-                if ( (LA6_0==40) ) {
+                if ( (LA6_0==65) ) {
                     alt6=1;
                 }
 
 
                 switch (alt6) {
             	case 1 :
-            	    // InternalSpringFluentDSL.g:1217:3: rule__Entities__EntitiesAssignment_3
+            	    // InternalSpringFluentDSL.g:1367:3: rule__Entities__EntitiesAssignment_3
             	    {
             	    pushFollow(FOLLOW_13);
             	    rule__Entities__EntitiesAssignment_3();
@@ -3789,14 +4464,14 @@ public class InternalSpringFluentDSLParser extends AbstractInternalContentAssist
 
 
     // $ANTLR start "rule__Entities__Group__4"
-    // InternalSpringFluentDSL.g:1225:1: rule__Entities__Group__4 : rule__Entities__Group__4__Impl ;
+    // InternalSpringFluentDSL.g:1375:1: rule__Entities__Group__4 : rule__Entities__Group__4__Impl ;
     public final void rule__Entities__Group__4() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalSpringFluentDSL.g:1229:1: ( rule__Entities__Group__4__Impl )
-            // InternalSpringFluentDSL.g:1230:2: rule__Entities__Group__4__Impl
+            // InternalSpringFluentDSL.g:1379:1: ( rule__Entities__Group__4__Impl )
+            // InternalSpringFluentDSL.g:1380:2: rule__Entities__Group__4__Impl
             {
             pushFollow(FOLLOW_2);
             rule__Entities__Group__4__Impl();
@@ -3822,20 +4497,20 @@ public class InternalSpringFluentDSLParser extends AbstractInternalContentAssist
 
 
     // $ANTLR start "rule__Entities__Group__4__Impl"
-    // InternalSpringFluentDSL.g:1236:1: rule__Entities__Group__4__Impl : ( '}' ) ;
+    // InternalSpringFluentDSL.g:1386:1: rule__Entities__Group__4__Impl : ( '}' ) ;
     public final void rule__Entities__Group__4__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalSpringFluentDSL.g:1240:1: ( ( '}' ) )
-            // InternalSpringFluentDSL.g:1241:1: ( '}' )
+            // InternalSpringFluentDSL.g:1390:1: ( ( '}' ) )
+            // InternalSpringFluentDSL.g:1391:1: ( '}' )
             {
-            // InternalSpringFluentDSL.g:1241:1: ( '}' )
-            // InternalSpringFluentDSL.g:1242:2: '}'
+            // InternalSpringFluentDSL.g:1391:1: ( '}' )
+            // InternalSpringFluentDSL.g:1392:2: '}'
             {
              before(grammarAccess.getEntitiesAccess().getRightCurlyBracketKeyword_4()); 
-            match(input,37,FOLLOW_2); 
+            match(input,62,FOLLOW_2); 
              after(grammarAccess.getEntitiesAccess().getRightCurlyBracketKeyword_4()); 
 
             }
@@ -3859,14 +4534,14 @@ public class InternalSpringFluentDSLParser extends AbstractInternalContentAssist
 
 
     // $ANTLR start "rule__Entity__Group__0"
-    // InternalSpringFluentDSL.g:1252:1: rule__Entity__Group__0 : rule__Entity__Group__0__Impl rule__Entity__Group__1 ;
+    // InternalSpringFluentDSL.g:1402:1: rule__Entity__Group__0 : rule__Entity__Group__0__Impl rule__Entity__Group__1 ;
     public final void rule__Entity__Group__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalSpringFluentDSL.g:1256:1: ( rule__Entity__Group__0__Impl rule__Entity__Group__1 )
-            // InternalSpringFluentDSL.g:1257:2: rule__Entity__Group__0__Impl rule__Entity__Group__1
+            // InternalSpringFluentDSL.g:1406:1: ( rule__Entity__Group__0__Impl rule__Entity__Group__1 )
+            // InternalSpringFluentDSL.g:1407:2: rule__Entity__Group__0__Impl rule__Entity__Group__1
             {
             pushFollow(FOLLOW_14);
             rule__Entity__Group__0__Impl();
@@ -3897,20 +4572,20 @@ public class InternalSpringFluentDSLParser extends AbstractInternalContentAssist
 
 
     // $ANTLR start "rule__Entity__Group__0__Impl"
-    // InternalSpringFluentDSL.g:1264:1: rule__Entity__Group__0__Impl : ( 'entity' ) ;
+    // InternalSpringFluentDSL.g:1414:1: rule__Entity__Group__0__Impl : ( 'entity' ) ;
     public final void rule__Entity__Group__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalSpringFluentDSL.g:1268:1: ( ( 'entity' ) )
-            // InternalSpringFluentDSL.g:1269:1: ( 'entity' )
+            // InternalSpringFluentDSL.g:1418:1: ( ( 'entity' ) )
+            // InternalSpringFluentDSL.g:1419:1: ( 'entity' )
             {
-            // InternalSpringFluentDSL.g:1269:1: ( 'entity' )
-            // InternalSpringFluentDSL.g:1270:2: 'entity'
+            // InternalSpringFluentDSL.g:1419:1: ( 'entity' )
+            // InternalSpringFluentDSL.g:1420:2: 'entity'
             {
              before(grammarAccess.getEntityAccess().getEntityKeyword_0()); 
-            match(input,40,FOLLOW_2); 
+            match(input,65,FOLLOW_2); 
              after(grammarAccess.getEntityAccess().getEntityKeyword_0()); 
 
             }
@@ -3934,14 +4609,14 @@ public class InternalSpringFluentDSLParser extends AbstractInternalContentAssist
 
 
     // $ANTLR start "rule__Entity__Group__1"
-    // InternalSpringFluentDSL.g:1279:1: rule__Entity__Group__1 : rule__Entity__Group__1__Impl rule__Entity__Group__2 ;
+    // InternalSpringFluentDSL.g:1429:1: rule__Entity__Group__1 : rule__Entity__Group__1__Impl rule__Entity__Group__2 ;
     public final void rule__Entity__Group__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalSpringFluentDSL.g:1283:1: ( rule__Entity__Group__1__Impl rule__Entity__Group__2 )
-            // InternalSpringFluentDSL.g:1284:2: rule__Entity__Group__1__Impl rule__Entity__Group__2
+            // InternalSpringFluentDSL.g:1433:1: ( rule__Entity__Group__1__Impl rule__Entity__Group__2 )
+            // InternalSpringFluentDSL.g:1434:2: rule__Entity__Group__1__Impl rule__Entity__Group__2
             {
             pushFollow(FOLLOW_15);
             rule__Entity__Group__1__Impl();
@@ -3972,21 +4647,21 @@ public class InternalSpringFluentDSLParser extends AbstractInternalContentAssist
 
 
     // $ANTLR start "rule__Entity__Group__1__Impl"
-    // InternalSpringFluentDSL.g:1291:1: rule__Entity__Group__1__Impl : ( ( rule__Entity__NameAssignment_1 ) ) ;
+    // InternalSpringFluentDSL.g:1441:1: rule__Entity__Group__1__Impl : ( ( rule__Entity__NameAssignment_1 ) ) ;
     public final void rule__Entity__Group__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalSpringFluentDSL.g:1295:1: ( ( ( rule__Entity__NameAssignment_1 ) ) )
-            // InternalSpringFluentDSL.g:1296:1: ( ( rule__Entity__NameAssignment_1 ) )
+            // InternalSpringFluentDSL.g:1445:1: ( ( ( rule__Entity__NameAssignment_1 ) ) )
+            // InternalSpringFluentDSL.g:1446:1: ( ( rule__Entity__NameAssignment_1 ) )
             {
-            // InternalSpringFluentDSL.g:1296:1: ( ( rule__Entity__NameAssignment_1 ) )
-            // InternalSpringFluentDSL.g:1297:2: ( rule__Entity__NameAssignment_1 )
+            // InternalSpringFluentDSL.g:1446:1: ( ( rule__Entity__NameAssignment_1 ) )
+            // InternalSpringFluentDSL.g:1447:2: ( rule__Entity__NameAssignment_1 )
             {
              before(grammarAccess.getEntityAccess().getNameAssignment_1()); 
-            // InternalSpringFluentDSL.g:1298:2: ( rule__Entity__NameAssignment_1 )
-            // InternalSpringFluentDSL.g:1298:3: rule__Entity__NameAssignment_1
+            // InternalSpringFluentDSL.g:1448:2: ( rule__Entity__NameAssignment_1 )
+            // InternalSpringFluentDSL.g:1448:3: rule__Entity__NameAssignment_1
             {
             pushFollow(FOLLOW_2);
             rule__Entity__NameAssignment_1();
@@ -4019,14 +4694,14 @@ public class InternalSpringFluentDSLParser extends AbstractInternalContentAssist
 
 
     // $ANTLR start "rule__Entity__Group__2"
-    // InternalSpringFluentDSL.g:1306:1: rule__Entity__Group__2 : rule__Entity__Group__2__Impl rule__Entity__Group__3 ;
+    // InternalSpringFluentDSL.g:1456:1: rule__Entity__Group__2 : rule__Entity__Group__2__Impl rule__Entity__Group__3 ;
     public final void rule__Entity__Group__2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalSpringFluentDSL.g:1310:1: ( rule__Entity__Group__2__Impl rule__Entity__Group__3 )
-            // InternalSpringFluentDSL.g:1311:2: rule__Entity__Group__2__Impl rule__Entity__Group__3
+            // InternalSpringFluentDSL.g:1460:1: ( rule__Entity__Group__2__Impl rule__Entity__Group__3 )
+            // InternalSpringFluentDSL.g:1461:2: rule__Entity__Group__2__Impl rule__Entity__Group__3
             {
             pushFollow(FOLLOW_15);
             rule__Entity__Group__2__Impl();
@@ -4057,29 +4732,29 @@ public class InternalSpringFluentDSLParser extends AbstractInternalContentAssist
 
 
     // $ANTLR start "rule__Entity__Group__2__Impl"
-    // InternalSpringFluentDSL.g:1318:1: rule__Entity__Group__2__Impl : ( ( rule__Entity__Group_2__0 )? ) ;
+    // InternalSpringFluentDSL.g:1468:1: rule__Entity__Group__2__Impl : ( ( rule__Entity__Group_2__0 )? ) ;
     public final void rule__Entity__Group__2__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalSpringFluentDSL.g:1322:1: ( ( ( rule__Entity__Group_2__0 )? ) )
-            // InternalSpringFluentDSL.g:1323:1: ( ( rule__Entity__Group_2__0 )? )
+            // InternalSpringFluentDSL.g:1472:1: ( ( ( rule__Entity__Group_2__0 )? ) )
+            // InternalSpringFluentDSL.g:1473:1: ( ( rule__Entity__Group_2__0 )? )
             {
-            // InternalSpringFluentDSL.g:1323:1: ( ( rule__Entity__Group_2__0 )? )
-            // InternalSpringFluentDSL.g:1324:2: ( rule__Entity__Group_2__0 )?
+            // InternalSpringFluentDSL.g:1473:1: ( ( rule__Entity__Group_2__0 )? )
+            // InternalSpringFluentDSL.g:1474:2: ( rule__Entity__Group_2__0 )?
             {
              before(grammarAccess.getEntityAccess().getGroup_2()); 
-            // InternalSpringFluentDSL.g:1325:2: ( rule__Entity__Group_2__0 )?
+            // InternalSpringFluentDSL.g:1475:2: ( rule__Entity__Group_2__0 )?
             int alt7=2;
             int LA7_0 = input.LA(1);
 
-            if ( (LA7_0==41) ) {
+            if ( (LA7_0==66) ) {
                 alt7=1;
             }
             switch (alt7) {
                 case 1 :
-                    // InternalSpringFluentDSL.g:1325:3: rule__Entity__Group_2__0
+                    // InternalSpringFluentDSL.g:1475:3: rule__Entity__Group_2__0
                     {
                     pushFollow(FOLLOW_2);
                     rule__Entity__Group_2__0();
@@ -4115,14 +4790,14 @@ public class InternalSpringFluentDSLParser extends AbstractInternalContentAssist
 
 
     // $ANTLR start "rule__Entity__Group__3"
-    // InternalSpringFluentDSL.g:1333:1: rule__Entity__Group__3 : rule__Entity__Group__3__Impl rule__Entity__Group__4 ;
+    // InternalSpringFluentDSL.g:1483:1: rule__Entity__Group__3 : rule__Entity__Group__3__Impl rule__Entity__Group__4 ;
     public final void rule__Entity__Group__3() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalSpringFluentDSL.g:1337:1: ( rule__Entity__Group__3__Impl rule__Entity__Group__4 )
-            // InternalSpringFluentDSL.g:1338:2: rule__Entity__Group__3__Impl rule__Entity__Group__4
+            // InternalSpringFluentDSL.g:1487:1: ( rule__Entity__Group__3__Impl rule__Entity__Group__4 )
+            // InternalSpringFluentDSL.g:1488:2: rule__Entity__Group__3__Impl rule__Entity__Group__4
             {
             pushFollow(FOLLOW_16);
             rule__Entity__Group__3__Impl();
@@ -4153,20 +4828,20 @@ public class InternalSpringFluentDSLParser extends AbstractInternalContentAssist
 
 
     // $ANTLR start "rule__Entity__Group__3__Impl"
-    // InternalSpringFluentDSL.g:1345:1: rule__Entity__Group__3__Impl : ( '{' ) ;
+    // InternalSpringFluentDSL.g:1495:1: rule__Entity__Group__3__Impl : ( '{' ) ;
     public final void rule__Entity__Group__3__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalSpringFluentDSL.g:1349:1: ( ( '{' ) )
-            // InternalSpringFluentDSL.g:1350:1: ( '{' )
+            // InternalSpringFluentDSL.g:1499:1: ( ( '{' ) )
+            // InternalSpringFluentDSL.g:1500:1: ( '{' )
             {
-            // InternalSpringFluentDSL.g:1350:1: ( '{' )
-            // InternalSpringFluentDSL.g:1351:2: '{'
+            // InternalSpringFluentDSL.g:1500:1: ( '{' )
+            // InternalSpringFluentDSL.g:1501:2: '{'
             {
              before(grammarAccess.getEntityAccess().getLeftCurlyBracketKeyword_3()); 
-            match(input,36,FOLLOW_2); 
+            match(input,61,FOLLOW_2); 
              after(grammarAccess.getEntityAccess().getLeftCurlyBracketKeyword_3()); 
 
             }
@@ -4190,14 +4865,14 @@ public class InternalSpringFluentDSLParser extends AbstractInternalContentAssist
 
 
     // $ANTLR start "rule__Entity__Group__4"
-    // InternalSpringFluentDSL.g:1360:1: rule__Entity__Group__4 : rule__Entity__Group__4__Impl rule__Entity__Group__5 ;
+    // InternalSpringFluentDSL.g:1510:1: rule__Entity__Group__4 : rule__Entity__Group__4__Impl rule__Entity__Group__5 ;
     public final void rule__Entity__Group__4() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalSpringFluentDSL.g:1364:1: ( rule__Entity__Group__4__Impl rule__Entity__Group__5 )
-            // InternalSpringFluentDSL.g:1365:2: rule__Entity__Group__4__Impl rule__Entity__Group__5
+            // InternalSpringFluentDSL.g:1514:1: ( rule__Entity__Group__4__Impl rule__Entity__Group__5 )
+            // InternalSpringFluentDSL.g:1515:2: rule__Entity__Group__4__Impl rule__Entity__Group__5
             {
             pushFollow(FOLLOW_17);
             rule__Entity__Group__4__Impl();
@@ -4228,21 +4903,21 @@ public class InternalSpringFluentDSLParser extends AbstractInternalContentAssist
 
 
     // $ANTLR start "rule__Entity__Group__4__Impl"
-    // InternalSpringFluentDSL.g:1372:1: rule__Entity__Group__4__Impl : ( ( rule__Entity__FeatureAssignment_4 ) ) ;
+    // InternalSpringFluentDSL.g:1522:1: rule__Entity__Group__4__Impl : ( ( rule__Entity__FeatureAssignment_4 ) ) ;
     public final void rule__Entity__Group__4__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalSpringFluentDSL.g:1376:1: ( ( ( rule__Entity__FeatureAssignment_4 ) ) )
-            // InternalSpringFluentDSL.g:1377:1: ( ( rule__Entity__FeatureAssignment_4 ) )
+            // InternalSpringFluentDSL.g:1526:1: ( ( ( rule__Entity__FeatureAssignment_4 ) ) )
+            // InternalSpringFluentDSL.g:1527:1: ( ( rule__Entity__FeatureAssignment_4 ) )
             {
-            // InternalSpringFluentDSL.g:1377:1: ( ( rule__Entity__FeatureAssignment_4 ) )
-            // InternalSpringFluentDSL.g:1378:2: ( rule__Entity__FeatureAssignment_4 )
+            // InternalSpringFluentDSL.g:1527:1: ( ( rule__Entity__FeatureAssignment_4 ) )
+            // InternalSpringFluentDSL.g:1528:2: ( rule__Entity__FeatureAssignment_4 )
             {
              before(grammarAccess.getEntityAccess().getFeatureAssignment_4()); 
-            // InternalSpringFluentDSL.g:1379:2: ( rule__Entity__FeatureAssignment_4 )
-            // InternalSpringFluentDSL.g:1379:3: rule__Entity__FeatureAssignment_4
+            // InternalSpringFluentDSL.g:1529:2: ( rule__Entity__FeatureAssignment_4 )
+            // InternalSpringFluentDSL.g:1529:3: rule__Entity__FeatureAssignment_4
             {
             pushFollow(FOLLOW_2);
             rule__Entity__FeatureAssignment_4();
@@ -4275,14 +4950,14 @@ public class InternalSpringFluentDSLParser extends AbstractInternalContentAssist
 
 
     // $ANTLR start "rule__Entity__Group__5"
-    // InternalSpringFluentDSL.g:1387:1: rule__Entity__Group__5 : rule__Entity__Group__5__Impl ;
+    // InternalSpringFluentDSL.g:1537:1: rule__Entity__Group__5 : rule__Entity__Group__5__Impl ;
     public final void rule__Entity__Group__5() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalSpringFluentDSL.g:1391:1: ( rule__Entity__Group__5__Impl )
-            // InternalSpringFluentDSL.g:1392:2: rule__Entity__Group__5__Impl
+            // InternalSpringFluentDSL.g:1541:1: ( rule__Entity__Group__5__Impl )
+            // InternalSpringFluentDSL.g:1542:2: rule__Entity__Group__5__Impl
             {
             pushFollow(FOLLOW_2);
             rule__Entity__Group__5__Impl();
@@ -4308,20 +4983,20 @@ public class InternalSpringFluentDSLParser extends AbstractInternalContentAssist
 
 
     // $ANTLR start "rule__Entity__Group__5__Impl"
-    // InternalSpringFluentDSL.g:1398:1: rule__Entity__Group__5__Impl : ( '}' ) ;
+    // InternalSpringFluentDSL.g:1548:1: rule__Entity__Group__5__Impl : ( '}' ) ;
     public final void rule__Entity__Group__5__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalSpringFluentDSL.g:1402:1: ( ( '}' ) )
-            // InternalSpringFluentDSL.g:1403:1: ( '}' )
+            // InternalSpringFluentDSL.g:1552:1: ( ( '}' ) )
+            // InternalSpringFluentDSL.g:1553:1: ( '}' )
             {
-            // InternalSpringFluentDSL.g:1403:1: ( '}' )
-            // InternalSpringFluentDSL.g:1404:2: '}'
+            // InternalSpringFluentDSL.g:1553:1: ( '}' )
+            // InternalSpringFluentDSL.g:1554:2: '}'
             {
              before(grammarAccess.getEntityAccess().getRightCurlyBracketKeyword_5()); 
-            match(input,37,FOLLOW_2); 
+            match(input,62,FOLLOW_2); 
              after(grammarAccess.getEntityAccess().getRightCurlyBracketKeyword_5()); 
 
             }
@@ -4345,14 +5020,14 @@ public class InternalSpringFluentDSLParser extends AbstractInternalContentAssist
 
 
     // $ANTLR start "rule__Entity__Group_2__0"
-    // InternalSpringFluentDSL.g:1414:1: rule__Entity__Group_2__0 : rule__Entity__Group_2__0__Impl rule__Entity__Group_2__1 ;
+    // InternalSpringFluentDSL.g:1564:1: rule__Entity__Group_2__0 : rule__Entity__Group_2__0__Impl rule__Entity__Group_2__1 ;
     public final void rule__Entity__Group_2__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalSpringFluentDSL.g:1418:1: ( rule__Entity__Group_2__0__Impl rule__Entity__Group_2__1 )
-            // InternalSpringFluentDSL.g:1419:2: rule__Entity__Group_2__0__Impl rule__Entity__Group_2__1
+            // InternalSpringFluentDSL.g:1568:1: ( rule__Entity__Group_2__0__Impl rule__Entity__Group_2__1 )
+            // InternalSpringFluentDSL.g:1569:2: rule__Entity__Group_2__0__Impl rule__Entity__Group_2__1
             {
             pushFollow(FOLLOW_18);
             rule__Entity__Group_2__0__Impl();
@@ -4383,20 +5058,20 @@ public class InternalSpringFluentDSLParser extends AbstractInternalContentAssist
 
 
     // $ANTLR start "rule__Entity__Group_2__0__Impl"
-    // InternalSpringFluentDSL.g:1426:1: rule__Entity__Group_2__0__Impl : ( 'extends' ) ;
+    // InternalSpringFluentDSL.g:1576:1: rule__Entity__Group_2__0__Impl : ( 'extends' ) ;
     public final void rule__Entity__Group_2__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalSpringFluentDSL.g:1430:1: ( ( 'extends' ) )
-            // InternalSpringFluentDSL.g:1431:1: ( 'extends' )
+            // InternalSpringFluentDSL.g:1580:1: ( ( 'extends' ) )
+            // InternalSpringFluentDSL.g:1581:1: ( 'extends' )
             {
-            // InternalSpringFluentDSL.g:1431:1: ( 'extends' )
-            // InternalSpringFluentDSL.g:1432:2: 'extends'
+            // InternalSpringFluentDSL.g:1581:1: ( 'extends' )
+            // InternalSpringFluentDSL.g:1582:2: 'extends'
             {
              before(grammarAccess.getEntityAccess().getExtendsKeyword_2_0()); 
-            match(input,41,FOLLOW_2); 
+            match(input,66,FOLLOW_2); 
              after(grammarAccess.getEntityAccess().getExtendsKeyword_2_0()); 
 
             }
@@ -4420,14 +5095,14 @@ public class InternalSpringFluentDSLParser extends AbstractInternalContentAssist
 
 
     // $ANTLR start "rule__Entity__Group_2__1"
-    // InternalSpringFluentDSL.g:1441:1: rule__Entity__Group_2__1 : rule__Entity__Group_2__1__Impl rule__Entity__Group_2__2 ;
+    // InternalSpringFluentDSL.g:1591:1: rule__Entity__Group_2__1 : rule__Entity__Group_2__1__Impl rule__Entity__Group_2__2 ;
     public final void rule__Entity__Group_2__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalSpringFluentDSL.g:1445:1: ( rule__Entity__Group_2__1__Impl rule__Entity__Group_2__2 )
-            // InternalSpringFluentDSL.g:1446:2: rule__Entity__Group_2__1__Impl rule__Entity__Group_2__2
+            // InternalSpringFluentDSL.g:1595:1: ( rule__Entity__Group_2__1__Impl rule__Entity__Group_2__2 )
+            // InternalSpringFluentDSL.g:1596:2: rule__Entity__Group_2__1__Impl rule__Entity__Group_2__2
             {
             pushFollow(FOLLOW_19);
             rule__Entity__Group_2__1__Impl();
@@ -4458,20 +5133,20 @@ public class InternalSpringFluentDSLParser extends AbstractInternalContentAssist
 
 
     // $ANTLR start "rule__Entity__Group_2__1__Impl"
-    // InternalSpringFluentDSL.g:1453:1: rule__Entity__Group_2__1__Impl : ( '[' ) ;
+    // InternalSpringFluentDSL.g:1603:1: rule__Entity__Group_2__1__Impl : ( '[' ) ;
     public final void rule__Entity__Group_2__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalSpringFluentDSL.g:1457:1: ( ( '[' ) )
-            // InternalSpringFluentDSL.g:1458:1: ( '[' )
+            // InternalSpringFluentDSL.g:1607:1: ( ( '[' ) )
+            // InternalSpringFluentDSL.g:1608:1: ( '[' )
             {
-            // InternalSpringFluentDSL.g:1458:1: ( '[' )
-            // InternalSpringFluentDSL.g:1459:2: '['
+            // InternalSpringFluentDSL.g:1608:1: ( '[' )
+            // InternalSpringFluentDSL.g:1609:2: '['
             {
              before(grammarAccess.getEntityAccess().getLeftSquareBracketKeyword_2_1()); 
-            match(input,42,FOLLOW_2); 
+            match(input,67,FOLLOW_2); 
              after(grammarAccess.getEntityAccess().getLeftSquareBracketKeyword_2_1()); 
 
             }
@@ -4495,14 +5170,14 @@ public class InternalSpringFluentDSLParser extends AbstractInternalContentAssist
 
 
     // $ANTLR start "rule__Entity__Group_2__2"
-    // InternalSpringFluentDSL.g:1468:1: rule__Entity__Group_2__2 : rule__Entity__Group_2__2__Impl rule__Entity__Group_2__3 ;
+    // InternalSpringFluentDSL.g:1618:1: rule__Entity__Group_2__2 : rule__Entity__Group_2__2__Impl rule__Entity__Group_2__3 ;
     public final void rule__Entity__Group_2__2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalSpringFluentDSL.g:1472:1: ( rule__Entity__Group_2__2__Impl rule__Entity__Group_2__3 )
-            // InternalSpringFluentDSL.g:1473:2: rule__Entity__Group_2__2__Impl rule__Entity__Group_2__3
+            // InternalSpringFluentDSL.g:1622:1: ( rule__Entity__Group_2__2__Impl rule__Entity__Group_2__3 )
+            // InternalSpringFluentDSL.g:1623:2: rule__Entity__Group_2__2__Impl rule__Entity__Group_2__3
             {
             pushFollow(FOLLOW_20);
             rule__Entity__Group_2__2__Impl();
@@ -4533,20 +5208,20 @@ public class InternalSpringFluentDSLParser extends AbstractInternalContentAssist
 
 
     // $ANTLR start "rule__Entity__Group_2__2__Impl"
-    // InternalSpringFluentDSL.g:1480:1: rule__Entity__Group_2__2__Impl : ( 'strategy' ) ;
+    // InternalSpringFluentDSL.g:1630:1: rule__Entity__Group_2__2__Impl : ( 'strategy' ) ;
     public final void rule__Entity__Group_2__2__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalSpringFluentDSL.g:1484:1: ( ( 'strategy' ) )
-            // InternalSpringFluentDSL.g:1485:1: ( 'strategy' )
+            // InternalSpringFluentDSL.g:1634:1: ( ( 'strategy' ) )
+            // InternalSpringFluentDSL.g:1635:1: ( 'strategy' )
             {
-            // InternalSpringFluentDSL.g:1485:1: ( 'strategy' )
-            // InternalSpringFluentDSL.g:1486:2: 'strategy'
+            // InternalSpringFluentDSL.g:1635:1: ( 'strategy' )
+            // InternalSpringFluentDSL.g:1636:2: 'strategy'
             {
              before(grammarAccess.getEntityAccess().getStrategyKeyword_2_2()); 
-            match(input,43,FOLLOW_2); 
+            match(input,68,FOLLOW_2); 
              after(grammarAccess.getEntityAccess().getStrategyKeyword_2_2()); 
 
             }
@@ -4570,14 +5245,14 @@ public class InternalSpringFluentDSLParser extends AbstractInternalContentAssist
 
 
     // $ANTLR start "rule__Entity__Group_2__3"
-    // InternalSpringFluentDSL.g:1495:1: rule__Entity__Group_2__3 : rule__Entity__Group_2__3__Impl rule__Entity__Group_2__4 ;
+    // InternalSpringFluentDSL.g:1645:1: rule__Entity__Group_2__3 : rule__Entity__Group_2__3__Impl rule__Entity__Group_2__4 ;
     public final void rule__Entity__Group_2__3() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalSpringFluentDSL.g:1499:1: ( rule__Entity__Group_2__3__Impl rule__Entity__Group_2__4 )
-            // InternalSpringFluentDSL.g:1500:2: rule__Entity__Group_2__3__Impl rule__Entity__Group_2__4
+            // InternalSpringFluentDSL.g:1649:1: ( rule__Entity__Group_2__3__Impl rule__Entity__Group_2__4 )
+            // InternalSpringFluentDSL.g:1650:2: rule__Entity__Group_2__3__Impl rule__Entity__Group_2__4
             {
             pushFollow(FOLLOW_21);
             rule__Entity__Group_2__3__Impl();
@@ -4608,20 +5283,20 @@ public class InternalSpringFluentDSLParser extends AbstractInternalContentAssist
 
 
     // $ANTLR start "rule__Entity__Group_2__3__Impl"
-    // InternalSpringFluentDSL.g:1507:1: rule__Entity__Group_2__3__Impl : ( '=' ) ;
+    // InternalSpringFluentDSL.g:1657:1: rule__Entity__Group_2__3__Impl : ( '=' ) ;
     public final void rule__Entity__Group_2__3__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalSpringFluentDSL.g:1511:1: ( ( '=' ) )
-            // InternalSpringFluentDSL.g:1512:1: ( '=' )
+            // InternalSpringFluentDSL.g:1661:1: ( ( '=' ) )
+            // InternalSpringFluentDSL.g:1662:1: ( '=' )
             {
-            // InternalSpringFluentDSL.g:1512:1: ( '=' )
-            // InternalSpringFluentDSL.g:1513:2: '='
+            // InternalSpringFluentDSL.g:1662:1: ( '=' )
+            // InternalSpringFluentDSL.g:1663:2: '='
             {
              before(grammarAccess.getEntityAccess().getEqualsSignKeyword_2_3()); 
-            match(input,44,FOLLOW_2); 
+            match(input,69,FOLLOW_2); 
              after(grammarAccess.getEntityAccess().getEqualsSignKeyword_2_3()); 
 
             }
@@ -4645,14 +5320,14 @@ public class InternalSpringFluentDSLParser extends AbstractInternalContentAssist
 
 
     // $ANTLR start "rule__Entity__Group_2__4"
-    // InternalSpringFluentDSL.g:1522:1: rule__Entity__Group_2__4 : rule__Entity__Group_2__4__Impl rule__Entity__Group_2__5 ;
+    // InternalSpringFluentDSL.g:1672:1: rule__Entity__Group_2__4 : rule__Entity__Group_2__4__Impl rule__Entity__Group_2__5 ;
     public final void rule__Entity__Group_2__4() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalSpringFluentDSL.g:1526:1: ( rule__Entity__Group_2__4__Impl rule__Entity__Group_2__5 )
-            // InternalSpringFluentDSL.g:1527:2: rule__Entity__Group_2__4__Impl rule__Entity__Group_2__5
+            // InternalSpringFluentDSL.g:1676:1: ( rule__Entity__Group_2__4__Impl rule__Entity__Group_2__5 )
+            // InternalSpringFluentDSL.g:1677:2: rule__Entity__Group_2__4__Impl rule__Entity__Group_2__5
             {
             pushFollow(FOLLOW_22);
             rule__Entity__Group_2__4__Impl();
@@ -4683,21 +5358,21 @@ public class InternalSpringFluentDSLParser extends AbstractInternalContentAssist
 
 
     // $ANTLR start "rule__Entity__Group_2__4__Impl"
-    // InternalSpringFluentDSL.g:1534:1: rule__Entity__Group_2__4__Impl : ( ( rule__Entity__StrategyAssignment_2_4 ) ) ;
+    // InternalSpringFluentDSL.g:1684:1: rule__Entity__Group_2__4__Impl : ( ( rule__Entity__StrategyAssignment_2_4 ) ) ;
     public final void rule__Entity__Group_2__4__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalSpringFluentDSL.g:1538:1: ( ( ( rule__Entity__StrategyAssignment_2_4 ) ) )
-            // InternalSpringFluentDSL.g:1539:1: ( ( rule__Entity__StrategyAssignment_2_4 ) )
+            // InternalSpringFluentDSL.g:1688:1: ( ( ( rule__Entity__StrategyAssignment_2_4 ) ) )
+            // InternalSpringFluentDSL.g:1689:1: ( ( rule__Entity__StrategyAssignment_2_4 ) )
             {
-            // InternalSpringFluentDSL.g:1539:1: ( ( rule__Entity__StrategyAssignment_2_4 ) )
-            // InternalSpringFluentDSL.g:1540:2: ( rule__Entity__StrategyAssignment_2_4 )
+            // InternalSpringFluentDSL.g:1689:1: ( ( rule__Entity__StrategyAssignment_2_4 ) )
+            // InternalSpringFluentDSL.g:1690:2: ( rule__Entity__StrategyAssignment_2_4 )
             {
              before(grammarAccess.getEntityAccess().getStrategyAssignment_2_4()); 
-            // InternalSpringFluentDSL.g:1541:2: ( rule__Entity__StrategyAssignment_2_4 )
-            // InternalSpringFluentDSL.g:1541:3: rule__Entity__StrategyAssignment_2_4
+            // InternalSpringFluentDSL.g:1691:2: ( rule__Entity__StrategyAssignment_2_4 )
+            // InternalSpringFluentDSL.g:1691:3: rule__Entity__StrategyAssignment_2_4
             {
             pushFollow(FOLLOW_2);
             rule__Entity__StrategyAssignment_2_4();
@@ -4730,14 +5405,14 @@ public class InternalSpringFluentDSLParser extends AbstractInternalContentAssist
 
 
     // $ANTLR start "rule__Entity__Group_2__5"
-    // InternalSpringFluentDSL.g:1549:1: rule__Entity__Group_2__5 : rule__Entity__Group_2__5__Impl rule__Entity__Group_2__6 ;
+    // InternalSpringFluentDSL.g:1699:1: rule__Entity__Group_2__5 : rule__Entity__Group_2__5__Impl rule__Entity__Group_2__6 ;
     public final void rule__Entity__Group_2__5() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalSpringFluentDSL.g:1553:1: ( rule__Entity__Group_2__5__Impl rule__Entity__Group_2__6 )
-            // InternalSpringFluentDSL.g:1554:2: rule__Entity__Group_2__5__Impl rule__Entity__Group_2__6
+            // InternalSpringFluentDSL.g:1703:1: ( rule__Entity__Group_2__5__Impl rule__Entity__Group_2__6 )
+            // InternalSpringFluentDSL.g:1704:2: rule__Entity__Group_2__5__Impl rule__Entity__Group_2__6
             {
             pushFollow(FOLLOW_14);
             rule__Entity__Group_2__5__Impl();
@@ -4768,20 +5443,20 @@ public class InternalSpringFluentDSLParser extends AbstractInternalContentAssist
 
 
     // $ANTLR start "rule__Entity__Group_2__5__Impl"
-    // InternalSpringFluentDSL.g:1561:1: rule__Entity__Group_2__5__Impl : ( ']' ) ;
+    // InternalSpringFluentDSL.g:1711:1: rule__Entity__Group_2__5__Impl : ( ']' ) ;
     public final void rule__Entity__Group_2__5__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalSpringFluentDSL.g:1565:1: ( ( ']' ) )
-            // InternalSpringFluentDSL.g:1566:1: ( ']' )
+            // InternalSpringFluentDSL.g:1715:1: ( ( ']' ) )
+            // InternalSpringFluentDSL.g:1716:1: ( ']' )
             {
-            // InternalSpringFluentDSL.g:1566:1: ( ']' )
-            // InternalSpringFluentDSL.g:1567:2: ']'
+            // InternalSpringFluentDSL.g:1716:1: ( ']' )
+            // InternalSpringFluentDSL.g:1717:2: ']'
             {
              before(grammarAccess.getEntityAccess().getRightSquareBracketKeyword_2_5()); 
-            match(input,45,FOLLOW_2); 
+            match(input,70,FOLLOW_2); 
              after(grammarAccess.getEntityAccess().getRightSquareBracketKeyword_2_5()); 
 
             }
@@ -4805,14 +5480,14 @@ public class InternalSpringFluentDSLParser extends AbstractInternalContentAssist
 
 
     // $ANTLR start "rule__Entity__Group_2__6"
-    // InternalSpringFluentDSL.g:1576:1: rule__Entity__Group_2__6 : rule__Entity__Group_2__6__Impl ;
+    // InternalSpringFluentDSL.g:1726:1: rule__Entity__Group_2__6 : rule__Entity__Group_2__6__Impl ;
     public final void rule__Entity__Group_2__6() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalSpringFluentDSL.g:1580:1: ( rule__Entity__Group_2__6__Impl )
-            // InternalSpringFluentDSL.g:1581:2: rule__Entity__Group_2__6__Impl
+            // InternalSpringFluentDSL.g:1730:1: ( rule__Entity__Group_2__6__Impl )
+            // InternalSpringFluentDSL.g:1731:2: rule__Entity__Group_2__6__Impl
             {
             pushFollow(FOLLOW_2);
             rule__Entity__Group_2__6__Impl();
@@ -4838,21 +5513,21 @@ public class InternalSpringFluentDSLParser extends AbstractInternalContentAssist
 
 
     // $ANTLR start "rule__Entity__Group_2__6__Impl"
-    // InternalSpringFluentDSL.g:1587:1: rule__Entity__Group_2__6__Impl : ( ( rule__Entity__SuperTypeAssignment_2_6 ) ) ;
+    // InternalSpringFluentDSL.g:1737:1: rule__Entity__Group_2__6__Impl : ( ( rule__Entity__SuperTypeAssignment_2_6 ) ) ;
     public final void rule__Entity__Group_2__6__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalSpringFluentDSL.g:1591:1: ( ( ( rule__Entity__SuperTypeAssignment_2_6 ) ) )
-            // InternalSpringFluentDSL.g:1592:1: ( ( rule__Entity__SuperTypeAssignment_2_6 ) )
+            // InternalSpringFluentDSL.g:1741:1: ( ( ( rule__Entity__SuperTypeAssignment_2_6 ) ) )
+            // InternalSpringFluentDSL.g:1742:1: ( ( rule__Entity__SuperTypeAssignment_2_6 ) )
             {
-            // InternalSpringFluentDSL.g:1592:1: ( ( rule__Entity__SuperTypeAssignment_2_6 ) )
-            // InternalSpringFluentDSL.g:1593:2: ( rule__Entity__SuperTypeAssignment_2_6 )
+            // InternalSpringFluentDSL.g:1742:1: ( ( rule__Entity__SuperTypeAssignment_2_6 ) )
+            // InternalSpringFluentDSL.g:1743:2: ( rule__Entity__SuperTypeAssignment_2_6 )
             {
              before(grammarAccess.getEntityAccess().getSuperTypeAssignment_2_6()); 
-            // InternalSpringFluentDSL.g:1594:2: ( rule__Entity__SuperTypeAssignment_2_6 )
-            // InternalSpringFluentDSL.g:1594:3: rule__Entity__SuperTypeAssignment_2_6
+            // InternalSpringFluentDSL.g:1744:2: ( rule__Entity__SuperTypeAssignment_2_6 )
+            // InternalSpringFluentDSL.g:1744:3: rule__Entity__SuperTypeAssignment_2_6
             {
             pushFollow(FOLLOW_2);
             rule__Entity__SuperTypeAssignment_2_6();
@@ -4885,14 +5560,14 @@ public class InternalSpringFluentDSLParser extends AbstractInternalContentAssist
 
 
     // $ANTLR start "rule__Feature__Group__0"
-    // InternalSpringFluentDSL.g:1603:1: rule__Feature__Group__0 : rule__Feature__Group__0__Impl rule__Feature__Group__1 ;
+    // InternalSpringFluentDSL.g:1753:1: rule__Feature__Group__0 : rule__Feature__Group__0__Impl rule__Feature__Group__1 ;
     public final void rule__Feature__Group__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalSpringFluentDSL.g:1607:1: ( rule__Feature__Group__0__Impl rule__Feature__Group__1 )
-            // InternalSpringFluentDSL.g:1608:2: rule__Feature__Group__0__Impl rule__Feature__Group__1
+            // InternalSpringFluentDSL.g:1757:1: ( rule__Feature__Group__0__Impl rule__Feature__Group__1 )
+            // InternalSpringFluentDSL.g:1758:2: rule__Feature__Group__0__Impl rule__Feature__Group__1
             {
             pushFollow(FOLLOW_16);
             rule__Feature__Group__0__Impl();
@@ -4923,21 +5598,21 @@ public class InternalSpringFluentDSLParser extends AbstractInternalContentAssist
 
 
     // $ANTLR start "rule__Feature__Group__0__Impl"
-    // InternalSpringFluentDSL.g:1615:1: rule__Feature__Group__0__Impl : ( () ) ;
+    // InternalSpringFluentDSL.g:1765:1: rule__Feature__Group__0__Impl : ( () ) ;
     public final void rule__Feature__Group__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalSpringFluentDSL.g:1619:1: ( ( () ) )
-            // InternalSpringFluentDSL.g:1620:1: ( () )
+            // InternalSpringFluentDSL.g:1769:1: ( ( () ) )
+            // InternalSpringFluentDSL.g:1770:1: ( () )
             {
-            // InternalSpringFluentDSL.g:1620:1: ( () )
-            // InternalSpringFluentDSL.g:1621:2: ()
+            // InternalSpringFluentDSL.g:1770:1: ( () )
+            // InternalSpringFluentDSL.g:1771:2: ()
             {
              before(grammarAccess.getFeatureAccess().getFeatureAction_0()); 
-            // InternalSpringFluentDSL.g:1622:2: ()
-            // InternalSpringFluentDSL.g:1622:3: 
+            // InternalSpringFluentDSL.g:1772:2: ()
+            // InternalSpringFluentDSL.g:1772:3: 
             {
             }
 
@@ -4960,14 +5635,14 @@ public class InternalSpringFluentDSLParser extends AbstractInternalContentAssist
 
 
     // $ANTLR start "rule__Feature__Group__1"
-    // InternalSpringFluentDSL.g:1630:1: rule__Feature__Group__1 : rule__Feature__Group__1__Impl rule__Feature__Group__2 ;
+    // InternalSpringFluentDSL.g:1780:1: rule__Feature__Group__1 : rule__Feature__Group__1__Impl rule__Feature__Group__2 ;
     public final void rule__Feature__Group__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalSpringFluentDSL.g:1634:1: ( rule__Feature__Group__1__Impl rule__Feature__Group__2 )
-            // InternalSpringFluentDSL.g:1635:2: rule__Feature__Group__1__Impl rule__Feature__Group__2
+            // InternalSpringFluentDSL.g:1784:1: ( rule__Feature__Group__1__Impl rule__Feature__Group__2 )
+            // InternalSpringFluentDSL.g:1785:2: rule__Feature__Group__1__Impl rule__Feature__Group__2
             {
             pushFollow(FOLLOW_23);
             rule__Feature__Group__1__Impl();
@@ -4998,21 +5673,21 @@ public class InternalSpringFluentDSLParser extends AbstractInternalContentAssist
 
 
     // $ANTLR start "rule__Feature__Group__1__Impl"
-    // InternalSpringFluentDSL.g:1642:1: rule__Feature__Group__1__Impl : ( ( rule__Feature__OperationAssignment_1 ) ) ;
+    // InternalSpringFluentDSL.g:1792:1: rule__Feature__Group__1__Impl : ( ( rule__Feature__OperationAssignment_1 ) ) ;
     public final void rule__Feature__Group__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalSpringFluentDSL.g:1646:1: ( ( ( rule__Feature__OperationAssignment_1 ) ) )
-            // InternalSpringFluentDSL.g:1647:1: ( ( rule__Feature__OperationAssignment_1 ) )
+            // InternalSpringFluentDSL.g:1796:1: ( ( ( rule__Feature__OperationAssignment_1 ) ) )
+            // InternalSpringFluentDSL.g:1797:1: ( ( rule__Feature__OperationAssignment_1 ) )
             {
-            // InternalSpringFluentDSL.g:1647:1: ( ( rule__Feature__OperationAssignment_1 ) )
-            // InternalSpringFluentDSL.g:1648:2: ( rule__Feature__OperationAssignment_1 )
+            // InternalSpringFluentDSL.g:1797:1: ( ( rule__Feature__OperationAssignment_1 ) )
+            // InternalSpringFluentDSL.g:1798:2: ( rule__Feature__OperationAssignment_1 )
             {
              before(grammarAccess.getFeatureAccess().getOperationAssignment_1()); 
-            // InternalSpringFluentDSL.g:1649:2: ( rule__Feature__OperationAssignment_1 )
-            // InternalSpringFluentDSL.g:1649:3: rule__Feature__OperationAssignment_1
+            // InternalSpringFluentDSL.g:1799:2: ( rule__Feature__OperationAssignment_1 )
+            // InternalSpringFluentDSL.g:1799:3: rule__Feature__OperationAssignment_1
             {
             pushFollow(FOLLOW_2);
             rule__Feature__OperationAssignment_1();
@@ -5045,14 +5720,14 @@ public class InternalSpringFluentDSLParser extends AbstractInternalContentAssist
 
 
     // $ANTLR start "rule__Feature__Group__2"
-    // InternalSpringFluentDSL.g:1657:1: rule__Feature__Group__2 : rule__Feature__Group__2__Impl rule__Feature__Group__3 ;
+    // InternalSpringFluentDSL.g:1807:1: rule__Feature__Group__2 : rule__Feature__Group__2__Impl rule__Feature__Group__3 ;
     public final void rule__Feature__Group__2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalSpringFluentDSL.g:1661:1: ( rule__Feature__Group__2__Impl rule__Feature__Group__3 )
-            // InternalSpringFluentDSL.g:1662:2: rule__Feature__Group__2__Impl rule__Feature__Group__3
+            // InternalSpringFluentDSL.g:1811:1: ( rule__Feature__Group__2__Impl rule__Feature__Group__3 )
+            // InternalSpringFluentDSL.g:1812:2: rule__Feature__Group__2__Impl rule__Feature__Group__3
             {
             pushFollow(FOLLOW_14);
             rule__Feature__Group__2__Impl();
@@ -5083,21 +5758,21 @@ public class InternalSpringFluentDSLParser extends AbstractInternalContentAssist
 
 
     // $ANTLR start "rule__Feature__Group__2__Impl"
-    // InternalSpringFluentDSL.g:1669:1: rule__Feature__Group__2__Impl : ( ( rule__Feature__IdAssignment_2 ) ) ;
+    // InternalSpringFluentDSL.g:1819:1: rule__Feature__Group__2__Impl : ( ( rule__Feature__IdAssignment_2 ) ) ;
     public final void rule__Feature__Group__2__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalSpringFluentDSL.g:1673:1: ( ( ( rule__Feature__IdAssignment_2 ) ) )
-            // InternalSpringFluentDSL.g:1674:1: ( ( rule__Feature__IdAssignment_2 ) )
+            // InternalSpringFluentDSL.g:1823:1: ( ( ( rule__Feature__IdAssignment_2 ) ) )
+            // InternalSpringFluentDSL.g:1824:1: ( ( rule__Feature__IdAssignment_2 ) )
             {
-            // InternalSpringFluentDSL.g:1674:1: ( ( rule__Feature__IdAssignment_2 ) )
-            // InternalSpringFluentDSL.g:1675:2: ( rule__Feature__IdAssignment_2 )
+            // InternalSpringFluentDSL.g:1824:1: ( ( rule__Feature__IdAssignment_2 ) )
+            // InternalSpringFluentDSL.g:1825:2: ( rule__Feature__IdAssignment_2 )
             {
              before(grammarAccess.getFeatureAccess().getIdAssignment_2()); 
-            // InternalSpringFluentDSL.g:1676:2: ( rule__Feature__IdAssignment_2 )
-            // InternalSpringFluentDSL.g:1676:3: rule__Feature__IdAssignment_2
+            // InternalSpringFluentDSL.g:1826:2: ( rule__Feature__IdAssignment_2 )
+            // InternalSpringFluentDSL.g:1826:3: rule__Feature__IdAssignment_2
             {
             pushFollow(FOLLOW_2);
             rule__Feature__IdAssignment_2();
@@ -5130,14 +5805,14 @@ public class InternalSpringFluentDSLParser extends AbstractInternalContentAssist
 
 
     // $ANTLR start "rule__Feature__Group__3"
-    // InternalSpringFluentDSL.g:1684:1: rule__Feature__Group__3 : rule__Feature__Group__3__Impl rule__Feature__Group__4 ;
+    // InternalSpringFluentDSL.g:1834:1: rule__Feature__Group__3 : rule__Feature__Group__3__Impl rule__Feature__Group__4 ;
     public final void rule__Feature__Group__3() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalSpringFluentDSL.g:1688:1: ( rule__Feature__Group__3__Impl rule__Feature__Group__4 )
-            // InternalSpringFluentDSL.g:1689:2: rule__Feature__Group__3__Impl rule__Feature__Group__4
+            // InternalSpringFluentDSL.g:1838:1: ( rule__Feature__Group__3__Impl rule__Feature__Group__4 )
+            // InternalSpringFluentDSL.g:1839:2: rule__Feature__Group__3__Impl rule__Feature__Group__4
             {
             pushFollow(FOLLOW_14);
             rule__Feature__Group__3__Impl();
@@ -5168,20 +5843,20 @@ public class InternalSpringFluentDSLParser extends AbstractInternalContentAssist
 
 
     // $ANTLR start "rule__Feature__Group__3__Impl"
-    // InternalSpringFluentDSL.g:1696:1: rule__Feature__Group__3__Impl : ( ( rule__Feature__AttributesAssignment_3 )* ) ;
+    // InternalSpringFluentDSL.g:1846:1: rule__Feature__Group__3__Impl : ( ( rule__Feature__AttributesAssignment_3 )* ) ;
     public final void rule__Feature__Group__3__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalSpringFluentDSL.g:1700:1: ( ( ( rule__Feature__AttributesAssignment_3 )* ) )
-            // InternalSpringFluentDSL.g:1701:1: ( ( rule__Feature__AttributesAssignment_3 )* )
+            // InternalSpringFluentDSL.g:1850:1: ( ( ( rule__Feature__AttributesAssignment_3 )* ) )
+            // InternalSpringFluentDSL.g:1851:1: ( ( rule__Feature__AttributesAssignment_3 )* )
             {
-            // InternalSpringFluentDSL.g:1701:1: ( ( rule__Feature__AttributesAssignment_3 )* )
-            // InternalSpringFluentDSL.g:1702:2: ( rule__Feature__AttributesAssignment_3 )*
+            // InternalSpringFluentDSL.g:1851:1: ( ( rule__Feature__AttributesAssignment_3 )* )
+            // InternalSpringFluentDSL.g:1852:2: ( rule__Feature__AttributesAssignment_3 )*
             {
              before(grammarAccess.getFeatureAccess().getAttributesAssignment_3()); 
-            // InternalSpringFluentDSL.g:1703:2: ( rule__Feature__AttributesAssignment_3 )*
+            // InternalSpringFluentDSL.g:1853:2: ( rule__Feature__AttributesAssignment_3 )*
             loop8:
             do {
                 int alt8=2;
@@ -5190,10 +5865,10 @@ public class InternalSpringFluentDSLParser extends AbstractInternalContentAssist
                 if ( (LA8_0==RULE_ID) ) {
                     int LA8_1 = input.LA(2);
 
-                    if ( (LA8_1==47) ) {
+                    if ( (LA8_1==72) ) {
                         int LA8_3 = input.LA(3);
 
-                        if ( ((LA8_3>=26 && LA8_3<=32)) ) {
+                        if ( ((LA8_3>=51 && LA8_3<=57)) ) {
                             alt8=1;
                         }
 
@@ -5206,7 +5881,7 @@ public class InternalSpringFluentDSLParser extends AbstractInternalContentAssist
 
                 switch (alt8) {
             	case 1 :
-            	    // InternalSpringFluentDSL.g:1703:3: rule__Feature__AttributesAssignment_3
+            	    // InternalSpringFluentDSL.g:1853:3: rule__Feature__AttributesAssignment_3
             	    {
             	    pushFollow(FOLLOW_24);
             	    rule__Feature__AttributesAssignment_3();
@@ -5245,14 +5920,14 @@ public class InternalSpringFluentDSLParser extends AbstractInternalContentAssist
 
 
     // $ANTLR start "rule__Feature__Group__4"
-    // InternalSpringFluentDSL.g:1711:1: rule__Feature__Group__4 : rule__Feature__Group__4__Impl ;
+    // InternalSpringFluentDSL.g:1861:1: rule__Feature__Group__4 : rule__Feature__Group__4__Impl ;
     public final void rule__Feature__Group__4() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalSpringFluentDSL.g:1715:1: ( rule__Feature__Group__4__Impl )
-            // InternalSpringFluentDSL.g:1716:2: rule__Feature__Group__4__Impl
+            // InternalSpringFluentDSL.g:1865:1: ( rule__Feature__Group__4__Impl )
+            // InternalSpringFluentDSL.g:1866:2: rule__Feature__Group__4__Impl
             {
             pushFollow(FOLLOW_2);
             rule__Feature__Group__4__Impl();
@@ -5278,20 +5953,20 @@ public class InternalSpringFluentDSLParser extends AbstractInternalContentAssist
 
 
     // $ANTLR start "rule__Feature__Group__4__Impl"
-    // InternalSpringFluentDSL.g:1722:1: rule__Feature__Group__4__Impl : ( ( rule__Feature__RelationsAssignment_4 )* ) ;
+    // InternalSpringFluentDSL.g:1872:1: rule__Feature__Group__4__Impl : ( ( rule__Feature__RelationsAssignment_4 )* ) ;
     public final void rule__Feature__Group__4__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalSpringFluentDSL.g:1726:1: ( ( ( rule__Feature__RelationsAssignment_4 )* ) )
-            // InternalSpringFluentDSL.g:1727:1: ( ( rule__Feature__RelationsAssignment_4 )* )
+            // InternalSpringFluentDSL.g:1876:1: ( ( ( rule__Feature__RelationsAssignment_4 )* ) )
+            // InternalSpringFluentDSL.g:1877:1: ( ( rule__Feature__RelationsAssignment_4 )* )
             {
-            // InternalSpringFluentDSL.g:1727:1: ( ( rule__Feature__RelationsAssignment_4 )* )
-            // InternalSpringFluentDSL.g:1728:2: ( rule__Feature__RelationsAssignment_4 )*
+            // InternalSpringFluentDSL.g:1877:1: ( ( rule__Feature__RelationsAssignment_4 )* )
+            // InternalSpringFluentDSL.g:1878:2: ( rule__Feature__RelationsAssignment_4 )*
             {
              before(grammarAccess.getFeatureAccess().getRelationsAssignment_4()); 
-            // InternalSpringFluentDSL.g:1729:2: ( rule__Feature__RelationsAssignment_4 )*
+            // InternalSpringFluentDSL.g:1879:2: ( rule__Feature__RelationsAssignment_4 )*
             loop9:
             do {
                 int alt9=2;
@@ -5304,7 +5979,7 @@ public class InternalSpringFluentDSLParser extends AbstractInternalContentAssist
 
                 switch (alt9) {
             	case 1 :
-            	    // InternalSpringFluentDSL.g:1729:3: rule__Feature__RelationsAssignment_4
+            	    // InternalSpringFluentDSL.g:1879:3: rule__Feature__RelationsAssignment_4
             	    {
             	    pushFollow(FOLLOW_24);
             	    rule__Feature__RelationsAssignment_4();
@@ -5343,14 +6018,14 @@ public class InternalSpringFluentDSLParser extends AbstractInternalContentAssist
 
 
     // $ANTLR start "rule__Strategy__Group__0"
-    // InternalSpringFluentDSL.g:1738:1: rule__Strategy__Group__0 : rule__Strategy__Group__0__Impl rule__Strategy__Group__1 ;
+    // InternalSpringFluentDSL.g:1888:1: rule__Strategy__Group__0 : rule__Strategy__Group__0__Impl rule__Strategy__Group__1 ;
     public final void rule__Strategy__Group__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalSpringFluentDSL.g:1742:1: ( rule__Strategy__Group__0__Impl rule__Strategy__Group__1 )
-            // InternalSpringFluentDSL.g:1743:2: rule__Strategy__Group__0__Impl rule__Strategy__Group__1
+            // InternalSpringFluentDSL.g:1892:1: ( rule__Strategy__Group__0__Impl rule__Strategy__Group__1 )
+            // InternalSpringFluentDSL.g:1893:2: rule__Strategy__Group__0__Impl rule__Strategy__Group__1
             {
             pushFollow(FOLLOW_21);
             rule__Strategy__Group__0__Impl();
@@ -5381,21 +6056,21 @@ public class InternalSpringFluentDSLParser extends AbstractInternalContentAssist
 
 
     // $ANTLR start "rule__Strategy__Group__0__Impl"
-    // InternalSpringFluentDSL.g:1750:1: rule__Strategy__Group__0__Impl : ( () ) ;
+    // InternalSpringFluentDSL.g:1900:1: rule__Strategy__Group__0__Impl : ( () ) ;
     public final void rule__Strategy__Group__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalSpringFluentDSL.g:1754:1: ( ( () ) )
-            // InternalSpringFluentDSL.g:1755:1: ( () )
+            // InternalSpringFluentDSL.g:1904:1: ( ( () ) )
+            // InternalSpringFluentDSL.g:1905:1: ( () )
             {
-            // InternalSpringFluentDSL.g:1755:1: ( () )
-            // InternalSpringFluentDSL.g:1756:2: ()
+            // InternalSpringFluentDSL.g:1905:1: ( () )
+            // InternalSpringFluentDSL.g:1906:2: ()
             {
              before(grammarAccess.getStrategyAccess().getStrategyAction_0()); 
-            // InternalSpringFluentDSL.g:1757:2: ()
-            // InternalSpringFluentDSL.g:1757:3: 
+            // InternalSpringFluentDSL.g:1907:2: ()
+            // InternalSpringFluentDSL.g:1907:3: 
             {
             }
 
@@ -5418,14 +6093,14 @@ public class InternalSpringFluentDSLParser extends AbstractInternalContentAssist
 
 
     // $ANTLR start "rule__Strategy__Group__1"
-    // InternalSpringFluentDSL.g:1765:1: rule__Strategy__Group__1 : rule__Strategy__Group__1__Impl ;
+    // InternalSpringFluentDSL.g:1915:1: rule__Strategy__Group__1 : rule__Strategy__Group__1__Impl ;
     public final void rule__Strategy__Group__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalSpringFluentDSL.g:1769:1: ( rule__Strategy__Group__1__Impl )
-            // InternalSpringFluentDSL.g:1770:2: rule__Strategy__Group__1__Impl
+            // InternalSpringFluentDSL.g:1919:1: ( rule__Strategy__Group__1__Impl )
+            // InternalSpringFluentDSL.g:1920:2: rule__Strategy__Group__1__Impl
             {
             pushFollow(FOLLOW_2);
             rule__Strategy__Group__1__Impl();
@@ -5451,21 +6126,21 @@ public class InternalSpringFluentDSLParser extends AbstractInternalContentAssist
 
 
     // $ANTLR start "rule__Strategy__Group__1__Impl"
-    // InternalSpringFluentDSL.g:1776:1: rule__Strategy__Group__1__Impl : ( ( rule__Strategy__StrategyAssignment_1 ) ) ;
+    // InternalSpringFluentDSL.g:1926:1: rule__Strategy__Group__1__Impl : ( ( rule__Strategy__StrategyAssignment_1 ) ) ;
     public final void rule__Strategy__Group__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalSpringFluentDSL.g:1780:1: ( ( ( rule__Strategy__StrategyAssignment_1 ) ) )
-            // InternalSpringFluentDSL.g:1781:1: ( ( rule__Strategy__StrategyAssignment_1 ) )
+            // InternalSpringFluentDSL.g:1930:1: ( ( ( rule__Strategy__StrategyAssignment_1 ) ) )
+            // InternalSpringFluentDSL.g:1931:1: ( ( rule__Strategy__StrategyAssignment_1 ) )
             {
-            // InternalSpringFluentDSL.g:1781:1: ( ( rule__Strategy__StrategyAssignment_1 ) )
-            // InternalSpringFluentDSL.g:1782:2: ( rule__Strategy__StrategyAssignment_1 )
+            // InternalSpringFluentDSL.g:1931:1: ( ( rule__Strategy__StrategyAssignment_1 ) )
+            // InternalSpringFluentDSL.g:1932:2: ( rule__Strategy__StrategyAssignment_1 )
             {
              before(grammarAccess.getStrategyAccess().getStrategyAssignment_1()); 
-            // InternalSpringFluentDSL.g:1783:2: ( rule__Strategy__StrategyAssignment_1 )
-            // InternalSpringFluentDSL.g:1783:3: rule__Strategy__StrategyAssignment_1
+            // InternalSpringFluentDSL.g:1933:2: ( rule__Strategy__StrategyAssignment_1 )
+            // InternalSpringFluentDSL.g:1933:3: rule__Strategy__StrategyAssignment_1
             {
             pushFollow(FOLLOW_2);
             rule__Strategy__StrategyAssignment_1();
@@ -5498,14 +6173,14 @@ public class InternalSpringFluentDSLParser extends AbstractInternalContentAssist
 
 
     // $ANTLR start "rule__IDENTITY__Group__0"
-    // InternalSpringFluentDSL.g:1792:1: rule__IDENTITY__Group__0 : rule__IDENTITY__Group__0__Impl rule__IDENTITY__Group__1 ;
+    // InternalSpringFluentDSL.g:1942:1: rule__IDENTITY__Group__0 : rule__IDENTITY__Group__0__Impl rule__IDENTITY__Group__1 ;
     public final void rule__IDENTITY__Group__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalSpringFluentDSL.g:1796:1: ( rule__IDENTITY__Group__0__Impl rule__IDENTITY__Group__1 )
-            // InternalSpringFluentDSL.g:1797:2: rule__IDENTITY__Group__0__Impl rule__IDENTITY__Group__1
+            // InternalSpringFluentDSL.g:1946:1: ( rule__IDENTITY__Group__0__Impl rule__IDENTITY__Group__1 )
+            // InternalSpringFluentDSL.g:1947:2: rule__IDENTITY__Group__0__Impl rule__IDENTITY__Group__1
             {
             pushFollow(FOLLOW_25);
             rule__IDENTITY__Group__0__Impl();
@@ -5536,20 +6211,20 @@ public class InternalSpringFluentDSLParser extends AbstractInternalContentAssist
 
 
     // $ANTLR start "rule__IDENTITY__Group__0__Impl"
-    // InternalSpringFluentDSL.g:1804:1: rule__IDENTITY__Group__0__Impl : ( 'id' ) ;
+    // InternalSpringFluentDSL.g:1954:1: rule__IDENTITY__Group__0__Impl : ( 'id' ) ;
     public final void rule__IDENTITY__Group__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalSpringFluentDSL.g:1808:1: ( ( 'id' ) )
-            // InternalSpringFluentDSL.g:1809:1: ( 'id' )
+            // InternalSpringFluentDSL.g:1958:1: ( ( 'id' ) )
+            // InternalSpringFluentDSL.g:1959:1: ( 'id' )
             {
-            // InternalSpringFluentDSL.g:1809:1: ( 'id' )
-            // InternalSpringFluentDSL.g:1810:2: 'id'
+            // InternalSpringFluentDSL.g:1959:1: ( 'id' )
+            // InternalSpringFluentDSL.g:1960:2: 'id'
             {
              before(grammarAccess.getIDENTITYAccess().getIdKeyword_0()); 
-            match(input,46,FOLLOW_2); 
+            match(input,71,FOLLOW_2); 
              after(grammarAccess.getIDENTITYAccess().getIdKeyword_0()); 
 
             }
@@ -5573,14 +6248,14 @@ public class InternalSpringFluentDSLParser extends AbstractInternalContentAssist
 
 
     // $ANTLR start "rule__IDENTITY__Group__1"
-    // InternalSpringFluentDSL.g:1819:1: rule__IDENTITY__Group__1 : rule__IDENTITY__Group__1__Impl rule__IDENTITY__Group__2 ;
+    // InternalSpringFluentDSL.g:1969:1: rule__IDENTITY__Group__1 : rule__IDENTITY__Group__1__Impl rule__IDENTITY__Group__2 ;
     public final void rule__IDENTITY__Group__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalSpringFluentDSL.g:1823:1: ( rule__IDENTITY__Group__1__Impl rule__IDENTITY__Group__2 )
-            // InternalSpringFluentDSL.g:1824:2: rule__IDENTITY__Group__1__Impl rule__IDENTITY__Group__2
+            // InternalSpringFluentDSL.g:1973:1: ( rule__IDENTITY__Group__1__Impl rule__IDENTITY__Group__2 )
+            // InternalSpringFluentDSL.g:1974:2: rule__IDENTITY__Group__1__Impl rule__IDENTITY__Group__2
             {
             pushFollow(FOLLOW_26);
             rule__IDENTITY__Group__1__Impl();
@@ -5611,20 +6286,20 @@ public class InternalSpringFluentDSLParser extends AbstractInternalContentAssist
 
 
     // $ANTLR start "rule__IDENTITY__Group__1__Impl"
-    // InternalSpringFluentDSL.g:1831:1: rule__IDENTITY__Group__1__Impl : ( ':' ) ;
+    // InternalSpringFluentDSL.g:1981:1: rule__IDENTITY__Group__1__Impl : ( ':' ) ;
     public final void rule__IDENTITY__Group__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalSpringFluentDSL.g:1835:1: ( ( ':' ) )
-            // InternalSpringFluentDSL.g:1836:1: ( ':' )
+            // InternalSpringFluentDSL.g:1985:1: ( ( ':' ) )
+            // InternalSpringFluentDSL.g:1986:1: ( ':' )
             {
-            // InternalSpringFluentDSL.g:1836:1: ( ':' )
-            // InternalSpringFluentDSL.g:1837:2: ':'
+            // InternalSpringFluentDSL.g:1986:1: ( ':' )
+            // InternalSpringFluentDSL.g:1987:2: ':'
             {
              before(grammarAccess.getIDENTITYAccess().getColonKeyword_1()); 
-            match(input,47,FOLLOW_2); 
+            match(input,72,FOLLOW_2); 
              after(grammarAccess.getIDENTITYAccess().getColonKeyword_1()); 
 
             }
@@ -5648,14 +6323,14 @@ public class InternalSpringFluentDSLParser extends AbstractInternalContentAssist
 
 
     // $ANTLR start "rule__IDENTITY__Group__2"
-    // InternalSpringFluentDSL.g:1846:1: rule__IDENTITY__Group__2 : rule__IDENTITY__Group__2__Impl rule__IDENTITY__Group__3 ;
+    // InternalSpringFluentDSL.g:1996:1: rule__IDENTITY__Group__2 : rule__IDENTITY__Group__2__Impl rule__IDENTITY__Group__3 ;
     public final void rule__IDENTITY__Group__2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalSpringFluentDSL.g:1850:1: ( rule__IDENTITY__Group__2__Impl rule__IDENTITY__Group__3 )
-            // InternalSpringFluentDSL.g:1851:2: rule__IDENTITY__Group__2__Impl rule__IDENTITY__Group__3
+            // InternalSpringFluentDSL.g:2000:1: ( rule__IDENTITY__Group__2__Impl rule__IDENTITY__Group__3 )
+            // InternalSpringFluentDSL.g:2001:2: rule__IDENTITY__Group__2__Impl rule__IDENTITY__Group__3
             {
             pushFollow(FOLLOW_27);
             rule__IDENTITY__Group__2__Impl();
@@ -5686,21 +6361,21 @@ public class InternalSpringFluentDSLParser extends AbstractInternalContentAssist
 
 
     // $ANTLR start "rule__IDENTITY__Group__2__Impl"
-    // InternalSpringFluentDSL.g:1858:1: rule__IDENTITY__Group__2__Impl : ( ( rule__IDENTITY__TypeAssignment_2 ) ) ;
+    // InternalSpringFluentDSL.g:2008:1: rule__IDENTITY__Group__2__Impl : ( ( rule__IDENTITY__TypeAssignment_2 ) ) ;
     public final void rule__IDENTITY__Group__2__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalSpringFluentDSL.g:1862:1: ( ( ( rule__IDENTITY__TypeAssignment_2 ) ) )
-            // InternalSpringFluentDSL.g:1863:1: ( ( rule__IDENTITY__TypeAssignment_2 ) )
+            // InternalSpringFluentDSL.g:2012:1: ( ( ( rule__IDENTITY__TypeAssignment_2 ) ) )
+            // InternalSpringFluentDSL.g:2013:1: ( ( rule__IDENTITY__TypeAssignment_2 ) )
             {
-            // InternalSpringFluentDSL.g:1863:1: ( ( rule__IDENTITY__TypeAssignment_2 ) )
-            // InternalSpringFluentDSL.g:1864:2: ( rule__IDENTITY__TypeAssignment_2 )
+            // InternalSpringFluentDSL.g:2013:1: ( ( rule__IDENTITY__TypeAssignment_2 ) )
+            // InternalSpringFluentDSL.g:2014:2: ( rule__IDENTITY__TypeAssignment_2 )
             {
              before(grammarAccess.getIDENTITYAccess().getTypeAssignment_2()); 
-            // InternalSpringFluentDSL.g:1865:2: ( rule__IDENTITY__TypeAssignment_2 )
-            // InternalSpringFluentDSL.g:1865:3: rule__IDENTITY__TypeAssignment_2
+            // InternalSpringFluentDSL.g:2015:2: ( rule__IDENTITY__TypeAssignment_2 )
+            // InternalSpringFluentDSL.g:2015:3: rule__IDENTITY__TypeAssignment_2
             {
             pushFollow(FOLLOW_2);
             rule__IDENTITY__TypeAssignment_2();
@@ -5733,14 +6408,14 @@ public class InternalSpringFluentDSLParser extends AbstractInternalContentAssist
 
 
     // $ANTLR start "rule__IDENTITY__Group__3"
-    // InternalSpringFluentDSL.g:1873:1: rule__IDENTITY__Group__3 : rule__IDENTITY__Group__3__Impl ;
+    // InternalSpringFluentDSL.g:2023:1: rule__IDENTITY__Group__3 : rule__IDENTITY__Group__3__Impl ;
     public final void rule__IDENTITY__Group__3() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalSpringFluentDSL.g:1877:1: ( rule__IDENTITY__Group__3__Impl )
-            // InternalSpringFluentDSL.g:1878:2: rule__IDENTITY__Group__3__Impl
+            // InternalSpringFluentDSL.g:2027:1: ( rule__IDENTITY__Group__3__Impl )
+            // InternalSpringFluentDSL.g:2028:2: rule__IDENTITY__Group__3__Impl
             {
             pushFollow(FOLLOW_2);
             rule__IDENTITY__Group__3__Impl();
@@ -5766,20 +6441,20 @@ public class InternalSpringFluentDSLParser extends AbstractInternalContentAssist
 
 
     // $ANTLR start "rule__IDENTITY__Group__3__Impl"
-    // InternalSpringFluentDSL.g:1884:1: rule__IDENTITY__Group__3__Impl : ( 'pk' ) ;
+    // InternalSpringFluentDSL.g:2034:1: rule__IDENTITY__Group__3__Impl : ( 'pk' ) ;
     public final void rule__IDENTITY__Group__3__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalSpringFluentDSL.g:1888:1: ( ( 'pk' ) )
-            // InternalSpringFluentDSL.g:1889:1: ( 'pk' )
+            // InternalSpringFluentDSL.g:2038:1: ( ( 'pk' ) )
+            // InternalSpringFluentDSL.g:2039:1: ( 'pk' )
             {
-            // InternalSpringFluentDSL.g:1889:1: ( 'pk' )
-            // InternalSpringFluentDSL.g:1890:2: 'pk'
+            // InternalSpringFluentDSL.g:2039:1: ( 'pk' )
+            // InternalSpringFluentDSL.g:2040:2: 'pk'
             {
              before(grammarAccess.getIDENTITYAccess().getPkKeyword_3()); 
-            match(input,48,FOLLOW_2); 
+            match(input,73,FOLLOW_2); 
              after(grammarAccess.getIDENTITYAccess().getPkKeyword_3()); 
 
             }
@@ -5803,14 +6478,14 @@ public class InternalSpringFluentDSLParser extends AbstractInternalContentAssist
 
 
     // $ANTLR start "rule__Operation__Group__0"
-    // InternalSpringFluentDSL.g:1900:1: rule__Operation__Group__0 : rule__Operation__Group__0__Impl rule__Operation__Group__1 ;
+    // InternalSpringFluentDSL.g:2050:1: rule__Operation__Group__0 : rule__Operation__Group__0__Impl rule__Operation__Group__1 ;
     public final void rule__Operation__Group__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalSpringFluentDSL.g:1904:1: ( rule__Operation__Group__0__Impl rule__Operation__Group__1 )
-            // InternalSpringFluentDSL.g:1905:2: rule__Operation__Group__0__Impl rule__Operation__Group__1
+            // InternalSpringFluentDSL.g:2054:1: ( rule__Operation__Group__0__Impl rule__Operation__Group__1 )
+            // InternalSpringFluentDSL.g:2055:2: rule__Operation__Group__0__Impl rule__Operation__Group__1
             {
             pushFollow(FOLLOW_25);
             rule__Operation__Group__0__Impl();
@@ -5841,20 +6516,20 @@ public class InternalSpringFluentDSLParser extends AbstractInternalContentAssist
 
 
     // $ANTLR start "rule__Operation__Group__0__Impl"
-    // InternalSpringFluentDSL.g:1912:1: rule__Operation__Group__0__Impl : ( 'ops' ) ;
+    // InternalSpringFluentDSL.g:2062:1: rule__Operation__Group__0__Impl : ( 'ops' ) ;
     public final void rule__Operation__Group__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalSpringFluentDSL.g:1916:1: ( ( 'ops' ) )
-            // InternalSpringFluentDSL.g:1917:1: ( 'ops' )
+            // InternalSpringFluentDSL.g:2066:1: ( ( 'ops' ) )
+            // InternalSpringFluentDSL.g:2067:1: ( 'ops' )
             {
-            // InternalSpringFluentDSL.g:1917:1: ( 'ops' )
-            // InternalSpringFluentDSL.g:1918:2: 'ops'
+            // InternalSpringFluentDSL.g:2067:1: ( 'ops' )
+            // InternalSpringFluentDSL.g:2068:2: 'ops'
             {
              before(grammarAccess.getOperationAccess().getOpsKeyword_0()); 
-            match(input,49,FOLLOW_2); 
+            match(input,74,FOLLOW_2); 
              after(grammarAccess.getOperationAccess().getOpsKeyword_0()); 
 
             }
@@ -5878,14 +6553,14 @@ public class InternalSpringFluentDSLParser extends AbstractInternalContentAssist
 
 
     // $ANTLR start "rule__Operation__Group__1"
-    // InternalSpringFluentDSL.g:1927:1: rule__Operation__Group__1 : rule__Operation__Group__1__Impl rule__Operation__Group__2 ;
+    // InternalSpringFluentDSL.g:2077:1: rule__Operation__Group__1 : rule__Operation__Group__1__Impl rule__Operation__Group__2 ;
     public final void rule__Operation__Group__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalSpringFluentDSL.g:1931:1: ( rule__Operation__Group__1__Impl rule__Operation__Group__2 )
-            // InternalSpringFluentDSL.g:1932:2: rule__Operation__Group__1__Impl rule__Operation__Group__2
+            // InternalSpringFluentDSL.g:2081:1: ( rule__Operation__Group__1__Impl rule__Operation__Group__2 )
+            // InternalSpringFluentDSL.g:2082:2: rule__Operation__Group__1__Impl rule__Operation__Group__2
             {
             pushFollow(FOLLOW_7);
             rule__Operation__Group__1__Impl();
@@ -5916,20 +6591,20 @@ public class InternalSpringFluentDSLParser extends AbstractInternalContentAssist
 
 
     // $ANTLR start "rule__Operation__Group__1__Impl"
-    // InternalSpringFluentDSL.g:1939:1: rule__Operation__Group__1__Impl : ( ':' ) ;
+    // InternalSpringFluentDSL.g:2089:1: rule__Operation__Group__1__Impl : ( ':' ) ;
     public final void rule__Operation__Group__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalSpringFluentDSL.g:1943:1: ( ( ':' ) )
-            // InternalSpringFluentDSL.g:1944:1: ( ':' )
+            // InternalSpringFluentDSL.g:2093:1: ( ( ':' ) )
+            // InternalSpringFluentDSL.g:2094:1: ( ':' )
             {
-            // InternalSpringFluentDSL.g:1944:1: ( ':' )
-            // InternalSpringFluentDSL.g:1945:2: ':'
+            // InternalSpringFluentDSL.g:2094:1: ( ':' )
+            // InternalSpringFluentDSL.g:2095:2: ':'
             {
              before(grammarAccess.getOperationAccess().getColonKeyword_1()); 
-            match(input,47,FOLLOW_2); 
+            match(input,72,FOLLOW_2); 
              after(grammarAccess.getOperationAccess().getColonKeyword_1()); 
 
             }
@@ -5953,14 +6628,14 @@ public class InternalSpringFluentDSLParser extends AbstractInternalContentAssist
 
 
     // $ANTLR start "rule__Operation__Group__2"
-    // InternalSpringFluentDSL.g:1954:1: rule__Operation__Group__2 : rule__Operation__Group__2__Impl ;
+    // InternalSpringFluentDSL.g:2104:1: rule__Operation__Group__2 : rule__Operation__Group__2__Impl ;
     public final void rule__Operation__Group__2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalSpringFluentDSL.g:1958:1: ( rule__Operation__Group__2__Impl )
-            // InternalSpringFluentDSL.g:1959:2: rule__Operation__Group__2__Impl
+            // InternalSpringFluentDSL.g:2108:1: ( rule__Operation__Group__2__Impl )
+            // InternalSpringFluentDSL.g:2109:2: rule__Operation__Group__2__Impl
             {
             pushFollow(FOLLOW_2);
             rule__Operation__Group__2__Impl();
@@ -5986,21 +6661,21 @@ public class InternalSpringFluentDSLParser extends AbstractInternalContentAssist
 
 
     // $ANTLR start "rule__Operation__Group__2__Impl"
-    // InternalSpringFluentDSL.g:1965:1: rule__Operation__Group__2__Impl : ( ( rule__Operation__OperationAssignment_2 ) ) ;
+    // InternalSpringFluentDSL.g:2115:1: rule__Operation__Group__2__Impl : ( ( rule__Operation__OperationAssignment_2 ) ) ;
     public final void rule__Operation__Group__2__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalSpringFluentDSL.g:1969:1: ( ( ( rule__Operation__OperationAssignment_2 ) ) )
-            // InternalSpringFluentDSL.g:1970:1: ( ( rule__Operation__OperationAssignment_2 ) )
+            // InternalSpringFluentDSL.g:2119:1: ( ( ( rule__Operation__OperationAssignment_2 ) ) )
+            // InternalSpringFluentDSL.g:2120:1: ( ( rule__Operation__OperationAssignment_2 ) )
             {
-            // InternalSpringFluentDSL.g:1970:1: ( ( rule__Operation__OperationAssignment_2 ) )
-            // InternalSpringFluentDSL.g:1971:2: ( rule__Operation__OperationAssignment_2 )
+            // InternalSpringFluentDSL.g:2120:1: ( ( rule__Operation__OperationAssignment_2 ) )
+            // InternalSpringFluentDSL.g:2121:2: ( rule__Operation__OperationAssignment_2 )
             {
              before(grammarAccess.getOperationAccess().getOperationAssignment_2()); 
-            // InternalSpringFluentDSL.g:1972:2: ( rule__Operation__OperationAssignment_2 )
-            // InternalSpringFluentDSL.g:1972:3: rule__Operation__OperationAssignment_2
+            // InternalSpringFluentDSL.g:2122:2: ( rule__Operation__OperationAssignment_2 )
+            // InternalSpringFluentDSL.g:2122:3: rule__Operation__OperationAssignment_2
             {
             pushFollow(FOLLOW_2);
             rule__Operation__OperationAssignment_2();
@@ -6033,14 +6708,14 @@ public class InternalSpringFluentDSLParser extends AbstractInternalContentAssist
 
 
     // $ANTLR start "rule__Attribute__Group__0"
-    // InternalSpringFluentDSL.g:1981:1: rule__Attribute__Group__0 : rule__Attribute__Group__0__Impl rule__Attribute__Group__1 ;
+    // InternalSpringFluentDSL.g:2131:1: rule__Attribute__Group__0 : rule__Attribute__Group__0__Impl rule__Attribute__Group__1 ;
     public final void rule__Attribute__Group__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalSpringFluentDSL.g:1985:1: ( rule__Attribute__Group__0__Impl rule__Attribute__Group__1 )
-            // InternalSpringFluentDSL.g:1986:2: rule__Attribute__Group__0__Impl rule__Attribute__Group__1
+            // InternalSpringFluentDSL.g:2135:1: ( rule__Attribute__Group__0__Impl rule__Attribute__Group__1 )
+            // InternalSpringFluentDSL.g:2136:2: rule__Attribute__Group__0__Impl rule__Attribute__Group__1
             {
             pushFollow(FOLLOW_25);
             rule__Attribute__Group__0__Impl();
@@ -6071,21 +6746,21 @@ public class InternalSpringFluentDSLParser extends AbstractInternalContentAssist
 
 
     // $ANTLR start "rule__Attribute__Group__0__Impl"
-    // InternalSpringFluentDSL.g:1993:1: rule__Attribute__Group__0__Impl : ( ( rule__Attribute__NameAssignment_0 ) ) ;
+    // InternalSpringFluentDSL.g:2143:1: rule__Attribute__Group__0__Impl : ( ( rule__Attribute__NameAssignment_0 ) ) ;
     public final void rule__Attribute__Group__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalSpringFluentDSL.g:1997:1: ( ( ( rule__Attribute__NameAssignment_0 ) ) )
-            // InternalSpringFluentDSL.g:1998:1: ( ( rule__Attribute__NameAssignment_0 ) )
+            // InternalSpringFluentDSL.g:2147:1: ( ( ( rule__Attribute__NameAssignment_0 ) ) )
+            // InternalSpringFluentDSL.g:2148:1: ( ( rule__Attribute__NameAssignment_0 ) )
             {
-            // InternalSpringFluentDSL.g:1998:1: ( ( rule__Attribute__NameAssignment_0 ) )
-            // InternalSpringFluentDSL.g:1999:2: ( rule__Attribute__NameAssignment_0 )
+            // InternalSpringFluentDSL.g:2148:1: ( ( rule__Attribute__NameAssignment_0 ) )
+            // InternalSpringFluentDSL.g:2149:2: ( rule__Attribute__NameAssignment_0 )
             {
              before(grammarAccess.getAttributeAccess().getNameAssignment_0()); 
-            // InternalSpringFluentDSL.g:2000:2: ( rule__Attribute__NameAssignment_0 )
-            // InternalSpringFluentDSL.g:2000:3: rule__Attribute__NameAssignment_0
+            // InternalSpringFluentDSL.g:2150:2: ( rule__Attribute__NameAssignment_0 )
+            // InternalSpringFluentDSL.g:2150:3: rule__Attribute__NameAssignment_0
             {
             pushFollow(FOLLOW_2);
             rule__Attribute__NameAssignment_0();
@@ -6118,14 +6793,14 @@ public class InternalSpringFluentDSLParser extends AbstractInternalContentAssist
 
 
     // $ANTLR start "rule__Attribute__Group__1"
-    // InternalSpringFluentDSL.g:2008:1: rule__Attribute__Group__1 : rule__Attribute__Group__1__Impl rule__Attribute__Group__2 ;
+    // InternalSpringFluentDSL.g:2158:1: rule__Attribute__Group__1 : rule__Attribute__Group__1__Impl rule__Attribute__Group__2 ;
     public final void rule__Attribute__Group__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalSpringFluentDSL.g:2012:1: ( rule__Attribute__Group__1__Impl rule__Attribute__Group__2 )
-            // InternalSpringFluentDSL.g:2013:2: rule__Attribute__Group__1__Impl rule__Attribute__Group__2
+            // InternalSpringFluentDSL.g:2162:1: ( rule__Attribute__Group__1__Impl rule__Attribute__Group__2 )
+            // InternalSpringFluentDSL.g:2163:2: rule__Attribute__Group__1__Impl rule__Attribute__Group__2
             {
             pushFollow(FOLLOW_26);
             rule__Attribute__Group__1__Impl();
@@ -6156,20 +6831,20 @@ public class InternalSpringFluentDSLParser extends AbstractInternalContentAssist
 
 
     // $ANTLR start "rule__Attribute__Group__1__Impl"
-    // InternalSpringFluentDSL.g:2020:1: rule__Attribute__Group__1__Impl : ( ':' ) ;
+    // InternalSpringFluentDSL.g:2170:1: rule__Attribute__Group__1__Impl : ( ':' ) ;
     public final void rule__Attribute__Group__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalSpringFluentDSL.g:2024:1: ( ( ':' ) )
-            // InternalSpringFluentDSL.g:2025:1: ( ':' )
+            // InternalSpringFluentDSL.g:2174:1: ( ( ':' ) )
+            // InternalSpringFluentDSL.g:2175:1: ( ':' )
             {
-            // InternalSpringFluentDSL.g:2025:1: ( ':' )
-            // InternalSpringFluentDSL.g:2026:2: ':'
+            // InternalSpringFluentDSL.g:2175:1: ( ':' )
+            // InternalSpringFluentDSL.g:2176:2: ':'
             {
              before(grammarAccess.getAttributeAccess().getColonKeyword_1()); 
-            match(input,47,FOLLOW_2); 
+            match(input,72,FOLLOW_2); 
              after(grammarAccess.getAttributeAccess().getColonKeyword_1()); 
 
             }
@@ -6193,14 +6868,14 @@ public class InternalSpringFluentDSLParser extends AbstractInternalContentAssist
 
 
     // $ANTLR start "rule__Attribute__Group__2"
-    // InternalSpringFluentDSL.g:2035:1: rule__Attribute__Group__2 : rule__Attribute__Group__2__Impl ;
+    // InternalSpringFluentDSL.g:2185:1: rule__Attribute__Group__2 : rule__Attribute__Group__2__Impl ;
     public final void rule__Attribute__Group__2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalSpringFluentDSL.g:2039:1: ( rule__Attribute__Group__2__Impl )
-            // InternalSpringFluentDSL.g:2040:2: rule__Attribute__Group__2__Impl
+            // InternalSpringFluentDSL.g:2189:1: ( rule__Attribute__Group__2__Impl )
+            // InternalSpringFluentDSL.g:2190:2: rule__Attribute__Group__2__Impl
             {
             pushFollow(FOLLOW_2);
             rule__Attribute__Group__2__Impl();
@@ -6226,21 +6901,21 @@ public class InternalSpringFluentDSLParser extends AbstractInternalContentAssist
 
 
     // $ANTLR start "rule__Attribute__Group__2__Impl"
-    // InternalSpringFluentDSL.g:2046:1: rule__Attribute__Group__2__Impl : ( ( rule__Attribute__TypeAssignment_2 ) ) ;
+    // InternalSpringFluentDSL.g:2196:1: rule__Attribute__Group__2__Impl : ( ( rule__Attribute__TypeAssignment_2 ) ) ;
     public final void rule__Attribute__Group__2__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalSpringFluentDSL.g:2050:1: ( ( ( rule__Attribute__TypeAssignment_2 ) ) )
-            // InternalSpringFluentDSL.g:2051:1: ( ( rule__Attribute__TypeAssignment_2 ) )
+            // InternalSpringFluentDSL.g:2200:1: ( ( ( rule__Attribute__TypeAssignment_2 ) ) )
+            // InternalSpringFluentDSL.g:2201:1: ( ( rule__Attribute__TypeAssignment_2 ) )
             {
-            // InternalSpringFluentDSL.g:2051:1: ( ( rule__Attribute__TypeAssignment_2 ) )
-            // InternalSpringFluentDSL.g:2052:2: ( rule__Attribute__TypeAssignment_2 )
+            // InternalSpringFluentDSL.g:2201:1: ( ( rule__Attribute__TypeAssignment_2 ) )
+            // InternalSpringFluentDSL.g:2202:2: ( rule__Attribute__TypeAssignment_2 )
             {
              before(grammarAccess.getAttributeAccess().getTypeAssignment_2()); 
-            // InternalSpringFluentDSL.g:2053:2: ( rule__Attribute__TypeAssignment_2 )
-            // InternalSpringFluentDSL.g:2053:3: rule__Attribute__TypeAssignment_2
+            // InternalSpringFluentDSL.g:2203:2: ( rule__Attribute__TypeAssignment_2 )
+            // InternalSpringFluentDSL.g:2203:3: rule__Attribute__TypeAssignment_2
             {
             pushFollow(FOLLOW_2);
             rule__Attribute__TypeAssignment_2();
@@ -6273,14 +6948,14 @@ public class InternalSpringFluentDSLParser extends AbstractInternalContentAssist
 
 
     // $ANTLR start "rule__Relation__Group__0"
-    // InternalSpringFluentDSL.g:2062:1: rule__Relation__Group__0 : rule__Relation__Group__0__Impl rule__Relation__Group__1 ;
+    // InternalSpringFluentDSL.g:2212:1: rule__Relation__Group__0 : rule__Relation__Group__0__Impl rule__Relation__Group__1 ;
     public final void rule__Relation__Group__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalSpringFluentDSL.g:2066:1: ( rule__Relation__Group__0__Impl rule__Relation__Group__1 )
-            // InternalSpringFluentDSL.g:2067:2: rule__Relation__Group__0__Impl rule__Relation__Group__1
+            // InternalSpringFluentDSL.g:2216:1: ( rule__Relation__Group__0__Impl rule__Relation__Group__1 )
+            // InternalSpringFluentDSL.g:2217:2: rule__Relation__Group__0__Impl rule__Relation__Group__1
             {
             pushFollow(FOLLOW_25);
             rule__Relation__Group__0__Impl();
@@ -6311,21 +6986,21 @@ public class InternalSpringFluentDSLParser extends AbstractInternalContentAssist
 
 
     // $ANTLR start "rule__Relation__Group__0__Impl"
-    // InternalSpringFluentDSL.g:2074:1: rule__Relation__Group__0__Impl : ( ( rule__Relation__NameAssignment_0 ) ) ;
+    // InternalSpringFluentDSL.g:2224:1: rule__Relation__Group__0__Impl : ( ( rule__Relation__NameAssignment_0 ) ) ;
     public final void rule__Relation__Group__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalSpringFluentDSL.g:2078:1: ( ( ( rule__Relation__NameAssignment_0 ) ) )
-            // InternalSpringFluentDSL.g:2079:1: ( ( rule__Relation__NameAssignment_0 ) )
+            // InternalSpringFluentDSL.g:2228:1: ( ( ( rule__Relation__NameAssignment_0 ) ) )
+            // InternalSpringFluentDSL.g:2229:1: ( ( rule__Relation__NameAssignment_0 ) )
             {
-            // InternalSpringFluentDSL.g:2079:1: ( ( rule__Relation__NameAssignment_0 ) )
-            // InternalSpringFluentDSL.g:2080:2: ( rule__Relation__NameAssignment_0 )
+            // InternalSpringFluentDSL.g:2229:1: ( ( rule__Relation__NameAssignment_0 ) )
+            // InternalSpringFluentDSL.g:2230:2: ( rule__Relation__NameAssignment_0 )
             {
              before(grammarAccess.getRelationAccess().getNameAssignment_0()); 
-            // InternalSpringFluentDSL.g:2081:2: ( rule__Relation__NameAssignment_0 )
-            // InternalSpringFluentDSL.g:2081:3: rule__Relation__NameAssignment_0
+            // InternalSpringFluentDSL.g:2231:2: ( rule__Relation__NameAssignment_0 )
+            // InternalSpringFluentDSL.g:2231:3: rule__Relation__NameAssignment_0
             {
             pushFollow(FOLLOW_2);
             rule__Relation__NameAssignment_0();
@@ -6358,14 +7033,14 @@ public class InternalSpringFluentDSLParser extends AbstractInternalContentAssist
 
 
     // $ANTLR start "rule__Relation__Group__1"
-    // InternalSpringFluentDSL.g:2089:1: rule__Relation__Group__1 : rule__Relation__Group__1__Impl rule__Relation__Group__2 ;
+    // InternalSpringFluentDSL.g:2239:1: rule__Relation__Group__1 : rule__Relation__Group__1__Impl rule__Relation__Group__2 ;
     public final void rule__Relation__Group__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalSpringFluentDSL.g:2093:1: ( rule__Relation__Group__1__Impl rule__Relation__Group__2 )
-            // InternalSpringFluentDSL.g:2094:2: rule__Relation__Group__1__Impl rule__Relation__Group__2
+            // InternalSpringFluentDSL.g:2243:1: ( rule__Relation__Group__1__Impl rule__Relation__Group__2 )
+            // InternalSpringFluentDSL.g:2244:2: rule__Relation__Group__1__Impl rule__Relation__Group__2
             {
             pushFollow(FOLLOW_14);
             rule__Relation__Group__1__Impl();
@@ -6396,20 +7071,20 @@ public class InternalSpringFluentDSLParser extends AbstractInternalContentAssist
 
 
     // $ANTLR start "rule__Relation__Group__1__Impl"
-    // InternalSpringFluentDSL.g:2101:1: rule__Relation__Group__1__Impl : ( ':' ) ;
+    // InternalSpringFluentDSL.g:2251:1: rule__Relation__Group__1__Impl : ( ':' ) ;
     public final void rule__Relation__Group__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalSpringFluentDSL.g:2105:1: ( ( ':' ) )
-            // InternalSpringFluentDSL.g:2106:1: ( ':' )
+            // InternalSpringFluentDSL.g:2255:1: ( ( ':' ) )
+            // InternalSpringFluentDSL.g:2256:1: ( ':' )
             {
-            // InternalSpringFluentDSL.g:2106:1: ( ':' )
-            // InternalSpringFluentDSL.g:2107:2: ':'
+            // InternalSpringFluentDSL.g:2256:1: ( ':' )
+            // InternalSpringFluentDSL.g:2257:2: ':'
             {
              before(grammarAccess.getRelationAccess().getColonKeyword_1()); 
-            match(input,47,FOLLOW_2); 
+            match(input,72,FOLLOW_2); 
              after(grammarAccess.getRelationAccess().getColonKeyword_1()); 
 
             }
@@ -6433,14 +7108,14 @@ public class InternalSpringFluentDSLParser extends AbstractInternalContentAssist
 
 
     // $ANTLR start "rule__Relation__Group__2"
-    // InternalSpringFluentDSL.g:2116:1: rule__Relation__Group__2 : rule__Relation__Group__2__Impl rule__Relation__Group__3 ;
+    // InternalSpringFluentDSL.g:2266:1: rule__Relation__Group__2 : rule__Relation__Group__2__Impl rule__Relation__Group__3 ;
     public final void rule__Relation__Group__2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalSpringFluentDSL.g:2120:1: ( rule__Relation__Group__2__Impl rule__Relation__Group__3 )
-            // InternalSpringFluentDSL.g:2121:2: rule__Relation__Group__2__Impl rule__Relation__Group__3
+            // InternalSpringFluentDSL.g:2270:1: ( rule__Relation__Group__2__Impl rule__Relation__Group__3 )
+            // InternalSpringFluentDSL.g:2271:2: rule__Relation__Group__2__Impl rule__Relation__Group__3
             {
             pushFollow(FOLLOW_28);
             rule__Relation__Group__2__Impl();
@@ -6471,21 +7146,21 @@ public class InternalSpringFluentDSLParser extends AbstractInternalContentAssist
 
 
     // $ANTLR start "rule__Relation__Group__2__Impl"
-    // InternalSpringFluentDSL.g:2128:1: rule__Relation__Group__2__Impl : ( ( rule__Relation__TargetAssignment_2 ) ) ;
+    // InternalSpringFluentDSL.g:2278:1: rule__Relation__Group__2__Impl : ( ( rule__Relation__TargetAssignment_2 ) ) ;
     public final void rule__Relation__Group__2__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalSpringFluentDSL.g:2132:1: ( ( ( rule__Relation__TargetAssignment_2 ) ) )
-            // InternalSpringFluentDSL.g:2133:1: ( ( rule__Relation__TargetAssignment_2 ) )
+            // InternalSpringFluentDSL.g:2282:1: ( ( ( rule__Relation__TargetAssignment_2 ) ) )
+            // InternalSpringFluentDSL.g:2283:1: ( ( rule__Relation__TargetAssignment_2 ) )
             {
-            // InternalSpringFluentDSL.g:2133:1: ( ( rule__Relation__TargetAssignment_2 ) )
-            // InternalSpringFluentDSL.g:2134:2: ( rule__Relation__TargetAssignment_2 )
+            // InternalSpringFluentDSL.g:2283:1: ( ( rule__Relation__TargetAssignment_2 ) )
+            // InternalSpringFluentDSL.g:2284:2: ( rule__Relation__TargetAssignment_2 )
             {
              before(grammarAccess.getRelationAccess().getTargetAssignment_2()); 
-            // InternalSpringFluentDSL.g:2135:2: ( rule__Relation__TargetAssignment_2 )
-            // InternalSpringFluentDSL.g:2135:3: rule__Relation__TargetAssignment_2
+            // InternalSpringFluentDSL.g:2285:2: ( rule__Relation__TargetAssignment_2 )
+            // InternalSpringFluentDSL.g:2285:3: rule__Relation__TargetAssignment_2
             {
             pushFollow(FOLLOW_2);
             rule__Relation__TargetAssignment_2();
@@ -6518,14 +7193,14 @@ public class InternalSpringFluentDSLParser extends AbstractInternalContentAssist
 
 
     // $ANTLR start "rule__Relation__Group__3"
-    // InternalSpringFluentDSL.g:2143:1: rule__Relation__Group__3 : rule__Relation__Group__3__Impl ;
+    // InternalSpringFluentDSL.g:2293:1: rule__Relation__Group__3 : rule__Relation__Group__3__Impl ;
     public final void rule__Relation__Group__3() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalSpringFluentDSL.g:2147:1: ( rule__Relation__Group__3__Impl )
-            // InternalSpringFluentDSL.g:2148:2: rule__Relation__Group__3__Impl
+            // InternalSpringFluentDSL.g:2297:1: ( rule__Relation__Group__3__Impl )
+            // InternalSpringFluentDSL.g:2298:2: rule__Relation__Group__3__Impl
             {
             pushFollow(FOLLOW_2);
             rule__Relation__Group__3__Impl();
@@ -6551,21 +7226,21 @@ public class InternalSpringFluentDSLParser extends AbstractInternalContentAssist
 
 
     // $ANTLR start "rule__Relation__Group__3__Impl"
-    // InternalSpringFluentDSL.g:2154:1: rule__Relation__Group__3__Impl : ( ( rule__Relation__TypeAssignment_3 ) ) ;
+    // InternalSpringFluentDSL.g:2304:1: rule__Relation__Group__3__Impl : ( ( rule__Relation__TypeAssignment_3 ) ) ;
     public final void rule__Relation__Group__3__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalSpringFluentDSL.g:2158:1: ( ( ( rule__Relation__TypeAssignment_3 ) ) )
-            // InternalSpringFluentDSL.g:2159:1: ( ( rule__Relation__TypeAssignment_3 ) )
+            // InternalSpringFluentDSL.g:2308:1: ( ( ( rule__Relation__TypeAssignment_3 ) ) )
+            // InternalSpringFluentDSL.g:2309:1: ( ( rule__Relation__TypeAssignment_3 ) )
             {
-            // InternalSpringFluentDSL.g:2159:1: ( ( rule__Relation__TypeAssignment_3 ) )
-            // InternalSpringFluentDSL.g:2160:2: ( rule__Relation__TypeAssignment_3 )
+            // InternalSpringFluentDSL.g:2309:1: ( ( rule__Relation__TypeAssignment_3 ) )
+            // InternalSpringFluentDSL.g:2310:2: ( rule__Relation__TypeAssignment_3 )
             {
              before(grammarAccess.getRelationAccess().getTypeAssignment_3()); 
-            // InternalSpringFluentDSL.g:2161:2: ( rule__Relation__TypeAssignment_3 )
-            // InternalSpringFluentDSL.g:2161:3: rule__Relation__TypeAssignment_3
+            // InternalSpringFluentDSL.g:2311:2: ( rule__Relation__TypeAssignment_3 )
+            // InternalSpringFluentDSL.g:2311:3: rule__Relation__TypeAssignment_3
             {
             pushFollow(FOLLOW_2);
             rule__Relation__TypeAssignment_3();
@@ -6598,17 +7273,17 @@ public class InternalSpringFluentDSLParser extends AbstractInternalContentAssist
 
 
     // $ANTLR start "rule__Model__PrefixAssignment_0"
-    // InternalSpringFluentDSL.g:2170:1: rule__Model__PrefixAssignment_0 : ( rulePrefix ) ;
+    // InternalSpringFluentDSL.g:2320:1: rule__Model__PrefixAssignment_0 : ( rulePrefix ) ;
     public final void rule__Model__PrefixAssignment_0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalSpringFluentDSL.g:2174:1: ( ( rulePrefix ) )
-            // InternalSpringFluentDSL.g:2175:2: ( rulePrefix )
+            // InternalSpringFluentDSL.g:2324:1: ( ( rulePrefix ) )
+            // InternalSpringFluentDSL.g:2325:2: ( rulePrefix )
             {
-            // InternalSpringFluentDSL.g:2175:2: ( rulePrefix )
-            // InternalSpringFluentDSL.g:2176:3: rulePrefix
+            // InternalSpringFluentDSL.g:2325:2: ( rulePrefix )
+            // InternalSpringFluentDSL.g:2326:3: rulePrefix
             {
              before(grammarAccess.getModelAccess().getPrefixPrefixParserRuleCall_0_0()); 
             pushFollow(FOLLOW_2);
@@ -6639,17 +7314,17 @@ public class InternalSpringFluentDSLParser extends AbstractInternalContentAssist
 
 
     // $ANTLR start "rule__Model__AppNameAssignment_1"
-    // InternalSpringFluentDSL.g:2185:1: rule__Model__AppNameAssignment_1 : ( ruleAppName ) ;
+    // InternalSpringFluentDSL.g:2335:1: rule__Model__AppNameAssignment_1 : ( ruleAppName ) ;
     public final void rule__Model__AppNameAssignment_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalSpringFluentDSL.g:2189:1: ( ( ruleAppName ) )
-            // InternalSpringFluentDSL.g:2190:2: ( ruleAppName )
+            // InternalSpringFluentDSL.g:2339:1: ( ( ruleAppName ) )
+            // InternalSpringFluentDSL.g:2340:2: ( ruleAppName )
             {
-            // InternalSpringFluentDSL.g:2190:2: ( ruleAppName )
-            // InternalSpringFluentDSL.g:2191:3: ruleAppName
+            // InternalSpringFluentDSL.g:2340:2: ( ruleAppName )
+            // InternalSpringFluentDSL.g:2341:3: ruleAppName
             {
              before(grammarAccess.getModelAccess().getAppNameAppNameParserRuleCall_1_0()); 
             pushFollow(FOLLOW_2);
@@ -6680,17 +7355,17 @@ public class InternalSpringFluentDSLParser extends AbstractInternalContentAssist
 
 
     // $ANTLR start "rule__Model__DependenciesAssignment_2"
-    // InternalSpringFluentDSL.g:2200:1: rule__Model__DependenciesAssignment_2 : ( ruleDependencies ) ;
+    // InternalSpringFluentDSL.g:2350:1: rule__Model__DependenciesAssignment_2 : ( ruleDependencies ) ;
     public final void rule__Model__DependenciesAssignment_2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalSpringFluentDSL.g:2204:1: ( ( ruleDependencies ) )
-            // InternalSpringFluentDSL.g:2205:2: ( ruleDependencies )
+            // InternalSpringFluentDSL.g:2354:1: ( ( ruleDependencies ) )
+            // InternalSpringFluentDSL.g:2355:2: ( ruleDependencies )
             {
-            // InternalSpringFluentDSL.g:2205:2: ( ruleDependencies )
-            // InternalSpringFluentDSL.g:2206:3: ruleDependencies
+            // InternalSpringFluentDSL.g:2355:2: ( ruleDependencies )
+            // InternalSpringFluentDSL.g:2356:3: ruleDependencies
             {
              before(grammarAccess.getModelAccess().getDependenciesDependenciesParserRuleCall_2_0()); 
             pushFollow(FOLLOW_2);
@@ -6721,17 +7396,17 @@ public class InternalSpringFluentDSLParser extends AbstractInternalContentAssist
 
 
     // $ANTLR start "rule__Model__EntitiesAssignment_3"
-    // InternalSpringFluentDSL.g:2215:1: rule__Model__EntitiesAssignment_3 : ( ruleEntities ) ;
+    // InternalSpringFluentDSL.g:2365:1: rule__Model__EntitiesAssignment_3 : ( ruleEntities ) ;
     public final void rule__Model__EntitiesAssignment_3() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalSpringFluentDSL.g:2219:1: ( ( ruleEntities ) )
-            // InternalSpringFluentDSL.g:2220:2: ( ruleEntities )
+            // InternalSpringFluentDSL.g:2369:1: ( ( ruleEntities ) )
+            // InternalSpringFluentDSL.g:2370:2: ( ruleEntities )
             {
-            // InternalSpringFluentDSL.g:2220:2: ( ruleEntities )
-            // InternalSpringFluentDSL.g:2221:3: ruleEntities
+            // InternalSpringFluentDSL.g:2370:2: ( ruleEntities )
+            // InternalSpringFluentDSL.g:2371:3: ruleEntities
             {
              before(grammarAccess.getModelAccess().getEntitiesEntitiesParserRuleCall_3_0()); 
             pushFollow(FOLLOW_2);
@@ -6762,17 +7437,17 @@ public class InternalSpringFluentDSLParser extends AbstractInternalContentAssist
 
 
     // $ANTLR start "rule__Prefix__PrefixAssignment_2"
-    // InternalSpringFluentDSL.g:2230:1: rule__Prefix__PrefixAssignment_2 : ( RULE_STRING ) ;
+    // InternalSpringFluentDSL.g:2380:1: rule__Prefix__PrefixAssignment_2 : ( RULE_STRING ) ;
     public final void rule__Prefix__PrefixAssignment_2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalSpringFluentDSL.g:2234:1: ( ( RULE_STRING ) )
-            // InternalSpringFluentDSL.g:2235:2: ( RULE_STRING )
+            // InternalSpringFluentDSL.g:2384:1: ( ( RULE_STRING ) )
+            // InternalSpringFluentDSL.g:2385:2: ( RULE_STRING )
             {
-            // InternalSpringFluentDSL.g:2235:2: ( RULE_STRING )
-            // InternalSpringFluentDSL.g:2236:3: RULE_STRING
+            // InternalSpringFluentDSL.g:2385:2: ( RULE_STRING )
+            // InternalSpringFluentDSL.g:2386:3: RULE_STRING
             {
              before(grammarAccess.getPrefixAccess().getPrefixSTRINGTerminalRuleCall_2_0()); 
             match(input,RULE_STRING,FOLLOW_2); 
@@ -6799,17 +7474,17 @@ public class InternalSpringFluentDSLParser extends AbstractInternalContentAssist
 
 
     // $ANTLR start "rule__AppName__AppNameAssignment_2"
-    // InternalSpringFluentDSL.g:2245:1: rule__AppName__AppNameAssignment_2 : ( RULE_STRING ) ;
+    // InternalSpringFluentDSL.g:2395:1: rule__AppName__AppNameAssignment_2 : ( RULE_STRING ) ;
     public final void rule__AppName__AppNameAssignment_2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalSpringFluentDSL.g:2249:1: ( ( RULE_STRING ) )
-            // InternalSpringFluentDSL.g:2250:2: ( RULE_STRING )
+            // InternalSpringFluentDSL.g:2399:1: ( ( RULE_STRING ) )
+            // InternalSpringFluentDSL.g:2400:2: ( RULE_STRING )
             {
-            // InternalSpringFluentDSL.g:2250:2: ( RULE_STRING )
-            // InternalSpringFluentDSL.g:2251:3: RULE_STRING
+            // InternalSpringFluentDSL.g:2400:2: ( RULE_STRING )
+            // InternalSpringFluentDSL.g:2401:3: RULE_STRING
             {
              before(grammarAccess.getAppNameAccess().getAppNameSTRINGTerminalRuleCall_2_0()); 
             match(input,RULE_STRING,FOLLOW_2); 
@@ -6836,17 +7511,17 @@ public class InternalSpringFluentDSLParser extends AbstractInternalContentAssist
 
 
     // $ANTLR start "rule__Dependencies__DependenciesAssignment_3"
-    // InternalSpringFluentDSL.g:2260:1: rule__Dependencies__DependenciesAssignment_3 : ( ruleDependency ) ;
+    // InternalSpringFluentDSL.g:2410:1: rule__Dependencies__DependenciesAssignment_3 : ( ruleDependency ) ;
     public final void rule__Dependencies__DependenciesAssignment_3() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalSpringFluentDSL.g:2264:1: ( ( ruleDependency ) )
-            // InternalSpringFluentDSL.g:2265:2: ( ruleDependency )
+            // InternalSpringFluentDSL.g:2414:1: ( ( ruleDependency ) )
+            // InternalSpringFluentDSL.g:2415:2: ( ruleDependency )
             {
-            // InternalSpringFluentDSL.g:2265:2: ( ruleDependency )
-            // InternalSpringFluentDSL.g:2266:3: ruleDependency
+            // InternalSpringFluentDSL.g:2415:2: ( ruleDependency )
+            // InternalSpringFluentDSL.g:2416:3: ruleDependency
             {
              before(grammarAccess.getDependenciesAccess().getDependenciesDependencyParserRuleCall_3_0()); 
             pushFollow(FOLLOW_2);
@@ -6877,17 +7552,17 @@ public class InternalSpringFluentDSLParser extends AbstractInternalContentAssist
 
 
     // $ANTLR start "rule__Dependencies__DependenciesAssignment_4_1"
-    // InternalSpringFluentDSL.g:2275:1: rule__Dependencies__DependenciesAssignment_4_1 : ( ruleDependency ) ;
+    // InternalSpringFluentDSL.g:2425:1: rule__Dependencies__DependenciesAssignment_4_1 : ( ruleDependency ) ;
     public final void rule__Dependencies__DependenciesAssignment_4_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalSpringFluentDSL.g:2279:1: ( ( ruleDependency ) )
-            // InternalSpringFluentDSL.g:2280:2: ( ruleDependency )
+            // InternalSpringFluentDSL.g:2429:1: ( ( ruleDependency ) )
+            // InternalSpringFluentDSL.g:2430:2: ( ruleDependency )
             {
-            // InternalSpringFluentDSL.g:2280:2: ( ruleDependency )
-            // InternalSpringFluentDSL.g:2281:3: ruleDependency
+            // InternalSpringFluentDSL.g:2430:2: ( ruleDependency )
+            // InternalSpringFluentDSL.g:2431:3: ruleDependency
             {
              before(grammarAccess.getDependenciesAccess().getDependenciesDependencyParserRuleCall_4_1_0()); 
             pushFollow(FOLLOW_2);
@@ -6918,17 +7593,17 @@ public class InternalSpringFluentDSLParser extends AbstractInternalContentAssist
 
 
     // $ANTLR start "rule__Dependency__DependencyAssignment_1"
-    // InternalSpringFluentDSL.g:2290:1: rule__Dependency__DependencyAssignment_1 : ( ruleDependencyType ) ;
+    // InternalSpringFluentDSL.g:2440:1: rule__Dependency__DependencyAssignment_1 : ( ruleDependencyType ) ;
     public final void rule__Dependency__DependencyAssignment_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalSpringFluentDSL.g:2294:1: ( ( ruleDependencyType ) )
-            // InternalSpringFluentDSL.g:2295:2: ( ruleDependencyType )
+            // InternalSpringFluentDSL.g:2444:1: ( ( ruleDependencyType ) )
+            // InternalSpringFluentDSL.g:2445:2: ( ruleDependencyType )
             {
-            // InternalSpringFluentDSL.g:2295:2: ( ruleDependencyType )
-            // InternalSpringFluentDSL.g:2296:3: ruleDependencyType
+            // InternalSpringFluentDSL.g:2445:2: ( ruleDependencyType )
+            // InternalSpringFluentDSL.g:2446:3: ruleDependencyType
             {
              before(grammarAccess.getDependencyAccess().getDependencyDependencyTypeEnumRuleCall_1_0()); 
             pushFollow(FOLLOW_2);
@@ -6959,17 +7634,17 @@ public class InternalSpringFluentDSLParser extends AbstractInternalContentAssist
 
 
     // $ANTLR start "rule__Entities__EntitiesAssignment_3"
-    // InternalSpringFluentDSL.g:2305:1: rule__Entities__EntitiesAssignment_3 : ( ruleEntity ) ;
+    // InternalSpringFluentDSL.g:2455:1: rule__Entities__EntitiesAssignment_3 : ( ruleEntity ) ;
     public final void rule__Entities__EntitiesAssignment_3() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalSpringFluentDSL.g:2309:1: ( ( ruleEntity ) )
-            // InternalSpringFluentDSL.g:2310:2: ( ruleEntity )
+            // InternalSpringFluentDSL.g:2459:1: ( ( ruleEntity ) )
+            // InternalSpringFluentDSL.g:2460:2: ( ruleEntity )
             {
-            // InternalSpringFluentDSL.g:2310:2: ( ruleEntity )
-            // InternalSpringFluentDSL.g:2311:3: ruleEntity
+            // InternalSpringFluentDSL.g:2460:2: ( ruleEntity )
+            // InternalSpringFluentDSL.g:2461:3: ruleEntity
             {
              before(grammarAccess.getEntitiesAccess().getEntitiesEntityParserRuleCall_3_0()); 
             pushFollow(FOLLOW_2);
@@ -7000,17 +7675,17 @@ public class InternalSpringFluentDSLParser extends AbstractInternalContentAssist
 
 
     // $ANTLR start "rule__Entity__NameAssignment_1"
-    // InternalSpringFluentDSL.g:2320:1: rule__Entity__NameAssignment_1 : ( RULE_ID ) ;
+    // InternalSpringFluentDSL.g:2470:1: rule__Entity__NameAssignment_1 : ( RULE_ID ) ;
     public final void rule__Entity__NameAssignment_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalSpringFluentDSL.g:2324:1: ( ( RULE_ID ) )
-            // InternalSpringFluentDSL.g:2325:2: ( RULE_ID )
+            // InternalSpringFluentDSL.g:2474:1: ( ( RULE_ID ) )
+            // InternalSpringFluentDSL.g:2475:2: ( RULE_ID )
             {
-            // InternalSpringFluentDSL.g:2325:2: ( RULE_ID )
-            // InternalSpringFluentDSL.g:2326:3: RULE_ID
+            // InternalSpringFluentDSL.g:2475:2: ( RULE_ID )
+            // InternalSpringFluentDSL.g:2476:3: RULE_ID
             {
              before(grammarAccess.getEntityAccess().getNameIDTerminalRuleCall_1_0()); 
             match(input,RULE_ID,FOLLOW_2); 
@@ -7037,17 +7712,17 @@ public class InternalSpringFluentDSLParser extends AbstractInternalContentAssist
 
 
     // $ANTLR start "rule__Entity__StrategyAssignment_2_4"
-    // InternalSpringFluentDSL.g:2335:1: rule__Entity__StrategyAssignment_2_4 : ( ruleStrategy ) ;
+    // InternalSpringFluentDSL.g:2485:1: rule__Entity__StrategyAssignment_2_4 : ( ruleStrategy ) ;
     public final void rule__Entity__StrategyAssignment_2_4() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalSpringFluentDSL.g:2339:1: ( ( ruleStrategy ) )
-            // InternalSpringFluentDSL.g:2340:2: ( ruleStrategy )
+            // InternalSpringFluentDSL.g:2489:1: ( ( ruleStrategy ) )
+            // InternalSpringFluentDSL.g:2490:2: ( ruleStrategy )
             {
-            // InternalSpringFluentDSL.g:2340:2: ( ruleStrategy )
-            // InternalSpringFluentDSL.g:2341:3: ruleStrategy
+            // InternalSpringFluentDSL.g:2490:2: ( ruleStrategy )
+            // InternalSpringFluentDSL.g:2491:3: ruleStrategy
             {
              before(grammarAccess.getEntityAccess().getStrategyStrategyParserRuleCall_2_4_0()); 
             pushFollow(FOLLOW_2);
@@ -7078,21 +7753,21 @@ public class InternalSpringFluentDSLParser extends AbstractInternalContentAssist
 
 
     // $ANTLR start "rule__Entity__SuperTypeAssignment_2_6"
-    // InternalSpringFluentDSL.g:2350:1: rule__Entity__SuperTypeAssignment_2_6 : ( ( RULE_ID ) ) ;
+    // InternalSpringFluentDSL.g:2500:1: rule__Entity__SuperTypeAssignment_2_6 : ( ( RULE_ID ) ) ;
     public final void rule__Entity__SuperTypeAssignment_2_6() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalSpringFluentDSL.g:2354:1: ( ( ( RULE_ID ) ) )
-            // InternalSpringFluentDSL.g:2355:2: ( ( RULE_ID ) )
+            // InternalSpringFluentDSL.g:2504:1: ( ( ( RULE_ID ) ) )
+            // InternalSpringFluentDSL.g:2505:2: ( ( RULE_ID ) )
             {
-            // InternalSpringFluentDSL.g:2355:2: ( ( RULE_ID ) )
-            // InternalSpringFluentDSL.g:2356:3: ( RULE_ID )
+            // InternalSpringFluentDSL.g:2505:2: ( ( RULE_ID ) )
+            // InternalSpringFluentDSL.g:2506:3: ( RULE_ID )
             {
              before(grammarAccess.getEntityAccess().getSuperTypeEntityCrossReference_2_6_0()); 
-            // InternalSpringFluentDSL.g:2357:3: ( RULE_ID )
-            // InternalSpringFluentDSL.g:2358:4: RULE_ID
+            // InternalSpringFluentDSL.g:2507:3: ( RULE_ID )
+            // InternalSpringFluentDSL.g:2508:4: RULE_ID
             {
              before(grammarAccess.getEntityAccess().getSuperTypeEntityIDTerminalRuleCall_2_6_0_1()); 
             match(input,RULE_ID,FOLLOW_2); 
@@ -7123,17 +7798,17 @@ public class InternalSpringFluentDSLParser extends AbstractInternalContentAssist
 
 
     // $ANTLR start "rule__Entity__FeatureAssignment_4"
-    // InternalSpringFluentDSL.g:2369:1: rule__Entity__FeatureAssignment_4 : ( ruleFeature ) ;
+    // InternalSpringFluentDSL.g:2519:1: rule__Entity__FeatureAssignment_4 : ( ruleFeature ) ;
     public final void rule__Entity__FeatureAssignment_4() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalSpringFluentDSL.g:2373:1: ( ( ruleFeature ) )
-            // InternalSpringFluentDSL.g:2374:2: ( ruleFeature )
+            // InternalSpringFluentDSL.g:2523:1: ( ( ruleFeature ) )
+            // InternalSpringFluentDSL.g:2524:2: ( ruleFeature )
             {
-            // InternalSpringFluentDSL.g:2374:2: ( ruleFeature )
-            // InternalSpringFluentDSL.g:2375:3: ruleFeature
+            // InternalSpringFluentDSL.g:2524:2: ( ruleFeature )
+            // InternalSpringFluentDSL.g:2525:3: ruleFeature
             {
              before(grammarAccess.getEntityAccess().getFeatureFeatureParserRuleCall_4_0()); 
             pushFollow(FOLLOW_2);
@@ -7164,17 +7839,17 @@ public class InternalSpringFluentDSLParser extends AbstractInternalContentAssist
 
 
     // $ANTLR start "rule__Feature__OperationAssignment_1"
-    // InternalSpringFluentDSL.g:2384:1: rule__Feature__OperationAssignment_1 : ( ruleOperation ) ;
+    // InternalSpringFluentDSL.g:2534:1: rule__Feature__OperationAssignment_1 : ( ruleOperation ) ;
     public final void rule__Feature__OperationAssignment_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalSpringFluentDSL.g:2388:1: ( ( ruleOperation ) )
-            // InternalSpringFluentDSL.g:2389:2: ( ruleOperation )
+            // InternalSpringFluentDSL.g:2538:1: ( ( ruleOperation ) )
+            // InternalSpringFluentDSL.g:2539:2: ( ruleOperation )
             {
-            // InternalSpringFluentDSL.g:2389:2: ( ruleOperation )
-            // InternalSpringFluentDSL.g:2390:3: ruleOperation
+            // InternalSpringFluentDSL.g:2539:2: ( ruleOperation )
+            // InternalSpringFluentDSL.g:2540:3: ruleOperation
             {
              before(grammarAccess.getFeatureAccess().getOperationOperationParserRuleCall_1_0()); 
             pushFollow(FOLLOW_2);
@@ -7205,17 +7880,17 @@ public class InternalSpringFluentDSLParser extends AbstractInternalContentAssist
 
 
     // $ANTLR start "rule__Feature__IdAssignment_2"
-    // InternalSpringFluentDSL.g:2399:1: rule__Feature__IdAssignment_2 : ( ruleIDENTITY ) ;
+    // InternalSpringFluentDSL.g:2549:1: rule__Feature__IdAssignment_2 : ( ruleIDENTITY ) ;
     public final void rule__Feature__IdAssignment_2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalSpringFluentDSL.g:2403:1: ( ( ruleIDENTITY ) )
-            // InternalSpringFluentDSL.g:2404:2: ( ruleIDENTITY )
+            // InternalSpringFluentDSL.g:2553:1: ( ( ruleIDENTITY ) )
+            // InternalSpringFluentDSL.g:2554:2: ( ruleIDENTITY )
             {
-            // InternalSpringFluentDSL.g:2404:2: ( ruleIDENTITY )
-            // InternalSpringFluentDSL.g:2405:3: ruleIDENTITY
+            // InternalSpringFluentDSL.g:2554:2: ( ruleIDENTITY )
+            // InternalSpringFluentDSL.g:2555:3: ruleIDENTITY
             {
              before(grammarAccess.getFeatureAccess().getIdIDENTITYParserRuleCall_2_0()); 
             pushFollow(FOLLOW_2);
@@ -7246,17 +7921,17 @@ public class InternalSpringFluentDSLParser extends AbstractInternalContentAssist
 
 
     // $ANTLR start "rule__Feature__AttributesAssignment_3"
-    // InternalSpringFluentDSL.g:2414:1: rule__Feature__AttributesAssignment_3 : ( ruleAttribute ) ;
+    // InternalSpringFluentDSL.g:2564:1: rule__Feature__AttributesAssignment_3 : ( ruleAttribute ) ;
     public final void rule__Feature__AttributesAssignment_3() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalSpringFluentDSL.g:2418:1: ( ( ruleAttribute ) )
-            // InternalSpringFluentDSL.g:2419:2: ( ruleAttribute )
+            // InternalSpringFluentDSL.g:2568:1: ( ( ruleAttribute ) )
+            // InternalSpringFluentDSL.g:2569:2: ( ruleAttribute )
             {
-            // InternalSpringFluentDSL.g:2419:2: ( ruleAttribute )
-            // InternalSpringFluentDSL.g:2420:3: ruleAttribute
+            // InternalSpringFluentDSL.g:2569:2: ( ruleAttribute )
+            // InternalSpringFluentDSL.g:2570:3: ruleAttribute
             {
              before(grammarAccess.getFeatureAccess().getAttributesAttributeParserRuleCall_3_0()); 
             pushFollow(FOLLOW_2);
@@ -7287,17 +7962,17 @@ public class InternalSpringFluentDSLParser extends AbstractInternalContentAssist
 
 
     // $ANTLR start "rule__Feature__RelationsAssignment_4"
-    // InternalSpringFluentDSL.g:2429:1: rule__Feature__RelationsAssignment_4 : ( ruleRelation ) ;
+    // InternalSpringFluentDSL.g:2579:1: rule__Feature__RelationsAssignment_4 : ( ruleRelation ) ;
     public final void rule__Feature__RelationsAssignment_4() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalSpringFluentDSL.g:2433:1: ( ( ruleRelation ) )
-            // InternalSpringFluentDSL.g:2434:2: ( ruleRelation )
+            // InternalSpringFluentDSL.g:2583:1: ( ( ruleRelation ) )
+            // InternalSpringFluentDSL.g:2584:2: ( ruleRelation )
             {
-            // InternalSpringFluentDSL.g:2434:2: ( ruleRelation )
-            // InternalSpringFluentDSL.g:2435:3: ruleRelation
+            // InternalSpringFluentDSL.g:2584:2: ( ruleRelation )
+            // InternalSpringFluentDSL.g:2585:3: ruleRelation
             {
              before(grammarAccess.getFeatureAccess().getRelationsRelationParserRuleCall_4_0()); 
             pushFollow(FOLLOW_2);
@@ -7328,21 +8003,21 @@ public class InternalSpringFluentDSLParser extends AbstractInternalContentAssist
 
 
     // $ANTLR start "rule__Strategy__StrategyAssignment_1"
-    // InternalSpringFluentDSL.g:2444:1: rule__Strategy__StrategyAssignment_1 : ( ( rule__Strategy__StrategyAlternatives_1_0 ) ) ;
+    // InternalSpringFluentDSL.g:2594:1: rule__Strategy__StrategyAssignment_1 : ( ( rule__Strategy__StrategyAlternatives_1_0 ) ) ;
     public final void rule__Strategy__StrategyAssignment_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalSpringFluentDSL.g:2448:1: ( ( ( rule__Strategy__StrategyAlternatives_1_0 ) ) )
-            // InternalSpringFluentDSL.g:2449:2: ( ( rule__Strategy__StrategyAlternatives_1_0 ) )
+            // InternalSpringFluentDSL.g:2598:1: ( ( ( rule__Strategy__StrategyAlternatives_1_0 ) ) )
+            // InternalSpringFluentDSL.g:2599:2: ( ( rule__Strategy__StrategyAlternatives_1_0 ) )
             {
-            // InternalSpringFluentDSL.g:2449:2: ( ( rule__Strategy__StrategyAlternatives_1_0 ) )
-            // InternalSpringFluentDSL.g:2450:3: ( rule__Strategy__StrategyAlternatives_1_0 )
+            // InternalSpringFluentDSL.g:2599:2: ( ( rule__Strategy__StrategyAlternatives_1_0 ) )
+            // InternalSpringFluentDSL.g:2600:3: ( rule__Strategy__StrategyAlternatives_1_0 )
             {
              before(grammarAccess.getStrategyAccess().getStrategyAlternatives_1_0()); 
-            // InternalSpringFluentDSL.g:2451:3: ( rule__Strategy__StrategyAlternatives_1_0 )
-            // InternalSpringFluentDSL.g:2451:4: rule__Strategy__StrategyAlternatives_1_0
+            // InternalSpringFluentDSL.g:2601:3: ( rule__Strategy__StrategyAlternatives_1_0 )
+            // InternalSpringFluentDSL.g:2601:4: rule__Strategy__StrategyAlternatives_1_0
             {
             pushFollow(FOLLOW_2);
             rule__Strategy__StrategyAlternatives_1_0();
@@ -7375,17 +8050,17 @@ public class InternalSpringFluentDSLParser extends AbstractInternalContentAssist
 
 
     // $ANTLR start "rule__IDENTITY__TypeAssignment_2"
-    // InternalSpringFluentDSL.g:2459:1: rule__IDENTITY__TypeAssignment_2 : ( ruleType ) ;
+    // InternalSpringFluentDSL.g:2609:1: rule__IDENTITY__TypeAssignment_2 : ( ruleType ) ;
     public final void rule__IDENTITY__TypeAssignment_2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalSpringFluentDSL.g:2463:1: ( ( ruleType ) )
-            // InternalSpringFluentDSL.g:2464:2: ( ruleType )
+            // InternalSpringFluentDSL.g:2613:1: ( ( ruleType ) )
+            // InternalSpringFluentDSL.g:2614:2: ( ruleType )
             {
-            // InternalSpringFluentDSL.g:2464:2: ( ruleType )
-            // InternalSpringFluentDSL.g:2465:3: ruleType
+            // InternalSpringFluentDSL.g:2614:2: ( ruleType )
+            // InternalSpringFluentDSL.g:2615:3: ruleType
             {
              before(grammarAccess.getIDENTITYAccess().getTypeTypeEnumRuleCall_2_0()); 
             pushFollow(FOLLOW_2);
@@ -7416,17 +8091,17 @@ public class InternalSpringFluentDSLParser extends AbstractInternalContentAssist
 
 
     // $ANTLR start "rule__Operation__OperationAssignment_2"
-    // InternalSpringFluentDSL.g:2474:1: rule__Operation__OperationAssignment_2 : ( RULE_STRING ) ;
+    // InternalSpringFluentDSL.g:2624:1: rule__Operation__OperationAssignment_2 : ( RULE_STRING ) ;
     public final void rule__Operation__OperationAssignment_2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalSpringFluentDSL.g:2478:1: ( ( RULE_STRING ) )
-            // InternalSpringFluentDSL.g:2479:2: ( RULE_STRING )
+            // InternalSpringFluentDSL.g:2628:1: ( ( RULE_STRING ) )
+            // InternalSpringFluentDSL.g:2629:2: ( RULE_STRING )
             {
-            // InternalSpringFluentDSL.g:2479:2: ( RULE_STRING )
-            // InternalSpringFluentDSL.g:2480:3: RULE_STRING
+            // InternalSpringFluentDSL.g:2629:2: ( RULE_STRING )
+            // InternalSpringFluentDSL.g:2630:3: RULE_STRING
             {
              before(grammarAccess.getOperationAccess().getOperationSTRINGTerminalRuleCall_2_0()); 
             match(input,RULE_STRING,FOLLOW_2); 
@@ -7453,17 +8128,17 @@ public class InternalSpringFluentDSLParser extends AbstractInternalContentAssist
 
 
     // $ANTLR start "rule__Attribute__NameAssignment_0"
-    // InternalSpringFluentDSL.g:2489:1: rule__Attribute__NameAssignment_0 : ( RULE_ID ) ;
+    // InternalSpringFluentDSL.g:2639:1: rule__Attribute__NameAssignment_0 : ( RULE_ID ) ;
     public final void rule__Attribute__NameAssignment_0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalSpringFluentDSL.g:2493:1: ( ( RULE_ID ) )
-            // InternalSpringFluentDSL.g:2494:2: ( RULE_ID )
+            // InternalSpringFluentDSL.g:2643:1: ( ( RULE_ID ) )
+            // InternalSpringFluentDSL.g:2644:2: ( RULE_ID )
             {
-            // InternalSpringFluentDSL.g:2494:2: ( RULE_ID )
-            // InternalSpringFluentDSL.g:2495:3: RULE_ID
+            // InternalSpringFluentDSL.g:2644:2: ( RULE_ID )
+            // InternalSpringFluentDSL.g:2645:3: RULE_ID
             {
              before(grammarAccess.getAttributeAccess().getNameIDTerminalRuleCall_0_0()); 
             match(input,RULE_ID,FOLLOW_2); 
@@ -7490,17 +8165,17 @@ public class InternalSpringFluentDSLParser extends AbstractInternalContentAssist
 
 
     // $ANTLR start "rule__Attribute__TypeAssignment_2"
-    // InternalSpringFluentDSL.g:2504:1: rule__Attribute__TypeAssignment_2 : ( ruleType ) ;
+    // InternalSpringFluentDSL.g:2654:1: rule__Attribute__TypeAssignment_2 : ( ruleType ) ;
     public final void rule__Attribute__TypeAssignment_2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalSpringFluentDSL.g:2508:1: ( ( ruleType ) )
-            // InternalSpringFluentDSL.g:2509:2: ( ruleType )
+            // InternalSpringFluentDSL.g:2658:1: ( ( ruleType ) )
+            // InternalSpringFluentDSL.g:2659:2: ( ruleType )
             {
-            // InternalSpringFluentDSL.g:2509:2: ( ruleType )
-            // InternalSpringFluentDSL.g:2510:3: ruleType
+            // InternalSpringFluentDSL.g:2659:2: ( ruleType )
+            // InternalSpringFluentDSL.g:2660:3: ruleType
             {
              before(grammarAccess.getAttributeAccess().getTypeTypeEnumRuleCall_2_0()); 
             pushFollow(FOLLOW_2);
@@ -7531,17 +8206,17 @@ public class InternalSpringFluentDSLParser extends AbstractInternalContentAssist
 
 
     // $ANTLR start "rule__Relation__NameAssignment_0"
-    // InternalSpringFluentDSL.g:2519:1: rule__Relation__NameAssignment_0 : ( RULE_ID ) ;
+    // InternalSpringFluentDSL.g:2669:1: rule__Relation__NameAssignment_0 : ( RULE_ID ) ;
     public final void rule__Relation__NameAssignment_0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalSpringFluentDSL.g:2523:1: ( ( RULE_ID ) )
-            // InternalSpringFluentDSL.g:2524:2: ( RULE_ID )
+            // InternalSpringFluentDSL.g:2673:1: ( ( RULE_ID ) )
+            // InternalSpringFluentDSL.g:2674:2: ( RULE_ID )
             {
-            // InternalSpringFluentDSL.g:2524:2: ( RULE_ID )
-            // InternalSpringFluentDSL.g:2525:3: RULE_ID
+            // InternalSpringFluentDSL.g:2674:2: ( RULE_ID )
+            // InternalSpringFluentDSL.g:2675:3: RULE_ID
             {
              before(grammarAccess.getRelationAccess().getNameIDTerminalRuleCall_0_0()); 
             match(input,RULE_ID,FOLLOW_2); 
@@ -7568,21 +8243,21 @@ public class InternalSpringFluentDSLParser extends AbstractInternalContentAssist
 
 
     // $ANTLR start "rule__Relation__TargetAssignment_2"
-    // InternalSpringFluentDSL.g:2534:1: rule__Relation__TargetAssignment_2 : ( ( RULE_ID ) ) ;
+    // InternalSpringFluentDSL.g:2684:1: rule__Relation__TargetAssignment_2 : ( ( RULE_ID ) ) ;
     public final void rule__Relation__TargetAssignment_2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalSpringFluentDSL.g:2538:1: ( ( ( RULE_ID ) ) )
-            // InternalSpringFluentDSL.g:2539:2: ( ( RULE_ID ) )
+            // InternalSpringFluentDSL.g:2688:1: ( ( ( RULE_ID ) ) )
+            // InternalSpringFluentDSL.g:2689:2: ( ( RULE_ID ) )
             {
-            // InternalSpringFluentDSL.g:2539:2: ( ( RULE_ID ) )
-            // InternalSpringFluentDSL.g:2540:3: ( RULE_ID )
+            // InternalSpringFluentDSL.g:2689:2: ( ( RULE_ID ) )
+            // InternalSpringFluentDSL.g:2690:3: ( RULE_ID )
             {
              before(grammarAccess.getRelationAccess().getTargetEntityCrossReference_2_0()); 
-            // InternalSpringFluentDSL.g:2541:3: ( RULE_ID )
-            // InternalSpringFluentDSL.g:2542:4: RULE_ID
+            // InternalSpringFluentDSL.g:2691:3: ( RULE_ID )
+            // InternalSpringFluentDSL.g:2692:4: RULE_ID
             {
              before(grammarAccess.getRelationAccess().getTargetEntityIDTerminalRuleCall_2_0_1()); 
             match(input,RULE_ID,FOLLOW_2); 
@@ -7613,21 +8288,21 @@ public class InternalSpringFluentDSLParser extends AbstractInternalContentAssist
 
 
     // $ANTLR start "rule__Relation__TypeAssignment_3"
-    // InternalSpringFluentDSL.g:2553:1: rule__Relation__TypeAssignment_3 : ( ( rule__Relation__TypeAlternatives_3_0 ) ) ;
+    // InternalSpringFluentDSL.g:2703:1: rule__Relation__TypeAssignment_3 : ( ( rule__Relation__TypeAlternatives_3_0 ) ) ;
     public final void rule__Relation__TypeAssignment_3() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalSpringFluentDSL.g:2557:1: ( ( ( rule__Relation__TypeAlternatives_3_0 ) ) )
-            // InternalSpringFluentDSL.g:2558:2: ( ( rule__Relation__TypeAlternatives_3_0 ) )
+            // InternalSpringFluentDSL.g:2707:1: ( ( ( rule__Relation__TypeAlternatives_3_0 ) ) )
+            // InternalSpringFluentDSL.g:2708:2: ( ( rule__Relation__TypeAlternatives_3_0 ) )
             {
-            // InternalSpringFluentDSL.g:2558:2: ( ( rule__Relation__TypeAlternatives_3_0 ) )
-            // InternalSpringFluentDSL.g:2559:3: ( rule__Relation__TypeAlternatives_3_0 )
+            // InternalSpringFluentDSL.g:2708:2: ( ( rule__Relation__TypeAlternatives_3_0 ) )
+            // InternalSpringFluentDSL.g:2709:3: ( rule__Relation__TypeAlternatives_3_0 )
             {
              before(grammarAccess.getRelationAccess().getTypeAlternatives_3_0()); 
-            // InternalSpringFluentDSL.g:2560:3: ( rule__Relation__TypeAlternatives_3_0 )
-            // InternalSpringFluentDSL.g:2560:4: rule__Relation__TypeAlternatives_3_0
+            // InternalSpringFluentDSL.g:2710:3: ( rule__Relation__TypeAlternatives_3_0 )
+            // InternalSpringFluentDSL.g:2710:4: rule__Relation__TypeAlternatives_3_0
             {
             pushFollow(FOLLOW_2);
             rule__Relation__TypeAlternatives_3_0();
@@ -7665,31 +8340,31 @@ public class InternalSpringFluentDSLParser extends AbstractInternalContentAssist
 
     public static final BitSet FOLLOW_1 = new BitSet(new long[]{0x0000000000000000L});
     public static final BitSet FOLLOW_2 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_3 = new BitSet(new long[]{0x0000000400000000L});
-    public static final BitSet FOLLOW_4 = new BitSet(new long[]{0x0000000800000000L});
-    public static final BitSet FOLLOW_5 = new BitSet(new long[]{0x0000008000000000L});
-    public static final BitSet FOLLOW_6 = new BitSet(new long[]{0x0000000200000000L});
+    public static final BitSet FOLLOW_3 = new BitSet(new long[]{0x0800000000000000L});
+    public static final BitSet FOLLOW_4 = new BitSet(new long[]{0x1000000000000000L});
+    public static final BitSet FOLLOW_5 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000001L});
+    public static final BitSet FOLLOW_6 = new BitSet(new long[]{0x0400000000000000L});
     public static final BitSet FOLLOW_7 = new BitSet(new long[]{0x0000000000000010L});
-    public static final BitSet FOLLOW_8 = new BitSet(new long[]{0x0000001000000000L});
-    public static final BitSet FOLLOW_9 = new BitSet(new long[]{0x0000000003FC0000L});
-    public static final BitSet FOLLOW_10 = new BitSet(new long[]{0x0000006000000000L});
-    public static final BitSet FOLLOW_11 = new BitSet(new long[]{0x0000004000000002L});
-    public static final BitSet FOLLOW_12 = new BitSet(new long[]{0x0000012000000000L});
-    public static final BitSet FOLLOW_13 = new BitSet(new long[]{0x0000010000000002L});
+    public static final BitSet FOLLOW_8 = new BitSet(new long[]{0x2000000000000000L});
+    public static final BitSet FOLLOW_9 = new BitSet(new long[]{0x0007FFFFFFFC0000L});
+    public static final BitSet FOLLOW_10 = new BitSet(new long[]{0xC000000000000000L});
+    public static final BitSet FOLLOW_11 = new BitSet(new long[]{0x8000000000000002L});
+    public static final BitSet FOLLOW_12 = new BitSet(new long[]{0x4000000000000000L,0x0000000000000002L});
+    public static final BitSet FOLLOW_13 = new BitSet(new long[]{0x0000000000000002L,0x0000000000000002L});
     public static final BitSet FOLLOW_14 = new BitSet(new long[]{0x0000000000000020L});
-    public static final BitSet FOLLOW_15 = new BitSet(new long[]{0x0000021000000000L});
-    public static final BitSet FOLLOW_16 = new BitSet(new long[]{0x0002000000000000L});
-    public static final BitSet FOLLOW_17 = new BitSet(new long[]{0x0000002000000000L});
-    public static final BitSet FOLLOW_18 = new BitSet(new long[]{0x0000040000000000L});
-    public static final BitSet FOLLOW_19 = new BitSet(new long[]{0x0000080000000000L});
-    public static final BitSet FOLLOW_20 = new BitSet(new long[]{0x0000100000000000L});
+    public static final BitSet FOLLOW_15 = new BitSet(new long[]{0x2000000000000000L,0x0000000000000004L});
+    public static final BitSet FOLLOW_16 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000400L});
+    public static final BitSet FOLLOW_17 = new BitSet(new long[]{0x4000000000000000L});
+    public static final BitSet FOLLOW_18 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000008L});
+    public static final BitSet FOLLOW_19 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000010L});
+    public static final BitSet FOLLOW_20 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000020L});
     public static final BitSet FOLLOW_21 = new BitSet(new long[]{0x0000000000003800L});
-    public static final BitSet FOLLOW_22 = new BitSet(new long[]{0x0000200000000000L});
-    public static final BitSet FOLLOW_23 = new BitSet(new long[]{0x0000400000000000L});
+    public static final BitSet FOLLOW_22 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000040L});
+    public static final BitSet FOLLOW_23 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000080L});
     public static final BitSet FOLLOW_24 = new BitSet(new long[]{0x0000000000000022L});
-    public static final BitSet FOLLOW_25 = new BitSet(new long[]{0x0000800000000000L});
-    public static final BitSet FOLLOW_26 = new BitSet(new long[]{0x00000001FC000000L});
-    public static final BitSet FOLLOW_27 = new BitSet(new long[]{0x0001000000000000L});
+    public static final BitSet FOLLOW_25 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000100L});
+    public static final BitSet FOLLOW_26 = new BitSet(new long[]{0x03F8000000000000L});
+    public static final BitSet FOLLOW_27 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000200L});
     public static final BitSet FOLLOW_28 = new BitSet(new long[]{0x000000000003C000L});
 
 }

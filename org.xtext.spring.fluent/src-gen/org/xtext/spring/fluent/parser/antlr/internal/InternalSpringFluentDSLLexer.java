@@ -12,15 +12,27 @@ import java.util.ArrayList;
 
 @SuppressWarnings("all")
 public class InternalSpringFluentDSLLexer extends Lexer {
+    public static final int T__50=50;
     public static final int T__19=19;
     public static final int T__15=15;
+    public static final int T__59=59;
     public static final int T__16=16;
     public static final int T__17=17;
     public static final int T__18=18;
     public static final int T__11=11;
+    public static final int T__55=55;
     public static final int T__12=12;
+    public static final int T__56=56;
     public static final int T__13=13;
+    public static final int T__57=57;
     public static final int T__14=14;
+    public static final int T__58=58;
+    public static final int T__51=51;
+    public static final int T__52=52;
+    public static final int T__53=53;
+    public static final int T__54=54;
+    public static final int T__60=60;
+    public static final int T__61=61;
     public static final int RULE_ID=5;
     public static final int T__26=26;
     public static final int T__27=27;
@@ -28,12 +40,23 @@ public class InternalSpringFluentDSLLexer extends Lexer {
     public static final int RULE_INT=6;
     public static final int T__29=29;
     public static final int T__22=22;
+    public static final int T__66=66;
     public static final int RULE_ML_COMMENT=7;
     public static final int T__23=23;
+    public static final int T__67=67;
     public static final int T__24=24;
+    public static final int T__68=68;
     public static final int T__25=25;
+    public static final int T__69=69;
+    public static final int T__62=62;
+    public static final int T__63=63;
     public static final int T__20=20;
+    public static final int T__64=64;
     public static final int T__21=21;
+    public static final int T__65=65;
+    public static final int T__70=70;
+    public static final int T__71=71;
+    public static final int T__72=72;
     public static final int RULE_STRING=4;
     public static final int RULE_SL_COMMENT=8;
     public static final int T__37=37;
@@ -43,8 +66,10 @@ public class InternalSpringFluentDSLLexer extends Lexer {
     public static final int T__34=34;
     public static final int T__35=35;
     public static final int T__36=36;
+    public static final int T__73=73;
     public static final int EOF=-1;
     public static final int T__30=30;
+    public static final int T__74=74;
     public static final int T__31=31;
     public static final int T__32=32;
     public static final int RULE_WS=9;
@@ -680,10 +705,10 @@ public class InternalSpringFluentDSLLexer extends Lexer {
         try {
             int _type = T__40;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // InternalSpringFluentDSL.g:40:7: ( 'Thymeleaf' )
-            // InternalSpringFluentDSL.g:40:9: 'Thymeleaf'
+            // InternalSpringFluentDSL.g:40:7: ( 'SpringKafka' )
+            // InternalSpringFluentDSL.g:40:9: 'SpringKafka'
             {
-            match("Thymeleaf"); 
+            match("SpringKafka"); 
 
 
             }
@@ -701,10 +726,10 @@ public class InternalSpringFluentDSLLexer extends Lexer {
         try {
             int _type = T__41;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // InternalSpringFluentDSL.g:41:7: ( 'Swagger' )
-            // InternalSpringFluentDSL.g:41:9: 'Swagger'
+            // InternalSpringFluentDSL.g:41:7: ( 'SpringIntegrationWS' )
+            // InternalSpringFluentDSL.g:41:9: 'SpringIntegrationWS'
             {
-            match("Swagger"); 
+            match("SpringIntegrationWS"); 
 
 
             }
@@ -722,10 +747,10 @@ public class InternalSpringFluentDSLLexer extends Lexer {
         try {
             int _type = T__42;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // InternalSpringFluentDSL.g:42:7: ( 'SpringSecurity' )
-            // InternalSpringFluentDSL.g:42:9: 'SpringSecurity'
+            // InternalSpringFluentDSL.g:42:7: ( 'SpringIntegrationWebFlux' )
+            // InternalSpringFluentDSL.g:42:9: 'SpringIntegrationWebFlux'
             {
-            match("SpringSecurity"); 
+            match("SpringIntegrationWebFlux"); 
 
 
             }
@@ -743,10 +768,10 @@ public class InternalSpringFluentDSLLexer extends Lexer {
         try {
             int _type = T__43;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // InternalSpringFluentDSL.g:43:7: ( 'Long' )
-            // InternalSpringFluentDSL.g:43:9: 'Long'
+            // InternalSpringFluentDSL.g:43:7: ( 'SpringIntegrationSecurity' )
+            // InternalSpringFluentDSL.g:43:9: 'SpringIntegrationSecurity'
             {
-            match("Long"); 
+            match("SpringIntegrationSecurity"); 
 
 
             }
@@ -764,10 +789,10 @@ public class InternalSpringFluentDSLLexer extends Lexer {
         try {
             int _type = T__44;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // InternalSpringFluentDSL.g:44:7: ( 'Integer' )
-            // InternalSpringFluentDSL.g:44:9: 'Integer'
+            // InternalSpringFluentDSL.g:44:7: ( 'SpringIntegrationRedis' )
+            // InternalSpringFluentDSL.g:44:9: 'SpringIntegrationRedis'
             {
-            match("Integer"); 
+            match("SpringIntegrationRedis"); 
 
 
             }
@@ -785,10 +810,10 @@ public class InternalSpringFluentDSLLexer extends Lexer {
         try {
             int _type = T__45;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // InternalSpringFluentDSL.g:45:7: ( 'Double' )
-            // InternalSpringFluentDSL.g:45:9: 'Double'
+            // InternalSpringFluentDSL.g:45:7: ( 'SpringIntegrationMongoDB' )
+            // InternalSpringFluentDSL.g:45:9: 'SpringIntegrationMongoDB'
             {
-            match("Double"); 
+            match("SpringIntegrationMongoDB"); 
 
 
             }
@@ -806,10 +831,10 @@ public class InternalSpringFluentDSLLexer extends Lexer {
         try {
             int _type = T__46;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // InternalSpringFluentDSL.g:46:7: ( 'String' )
-            // InternalSpringFluentDSL.g:46:9: 'String'
+            // InternalSpringFluentDSL.g:46:7: ( 'SpringIntegrationKafka' )
+            // InternalSpringFluentDSL.g:46:9: 'SpringIntegrationKafka'
             {
-            match("String"); 
+            match("SpringIntegrationKafka"); 
 
 
             }
@@ -827,10 +852,10 @@ public class InternalSpringFluentDSLLexer extends Lexer {
         try {
             int _type = T__47;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // InternalSpringFluentDSL.g:47:7: ( 'Date' )
-            // InternalSpringFluentDSL.g:47:9: 'Date'
+            // InternalSpringFluentDSL.g:47:7: ( 'SpringIntegrationJPA' )
+            // InternalSpringFluentDSL.g:47:9: 'SpringIntegrationJPA'
             {
-            match("Date"); 
+            match("SpringIntegrationJPA"); 
 
 
             }
@@ -848,10 +873,10 @@ public class InternalSpringFluentDSLLexer extends Lexer {
         try {
             int _type = T__48;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // InternalSpringFluentDSL.g:48:7: ( 'Time' )
-            // InternalSpringFluentDSL.g:48:9: 'Time'
+            // InternalSpringFluentDSL.g:48:7: ( 'SpringIntegrationJDBC' )
+            // InternalSpringFluentDSL.g:48:9: 'SpringIntegrationJDBC'
             {
-            match("Time"); 
+            match("SpringIntegrationJDBC"); 
 
 
             }
@@ -869,10 +894,10 @@ public class InternalSpringFluentDSLLexer extends Lexer {
         try {
             int _type = T__49;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // InternalSpringFluentDSL.g:49:7: ( 'Boolean' )
-            // InternalSpringFluentDSL.g:49:9: 'Boolean'
+            // InternalSpringFluentDSL.g:49:7: ( 'SpringIntegrationHTTP' )
+            // InternalSpringFluentDSL.g:49:9: 'SpringIntegrationHTTP'
             {
-            match("Boolean"); 
+            match("SpringIntegrationHTTP"); 
 
 
             }
@@ -885,15 +910,540 @@ public class InternalSpringFluentDSLLexer extends Lexer {
     }
     // $ANTLR end "T__49"
 
+    // $ANTLR start "T__50"
+    public final void mT__50() throws RecognitionException {
+        try {
+            int _type = T__50;
+            int _channel = DEFAULT_TOKEN_CHANNEL;
+            // InternalSpringFluentDSL.g:50:7: ( 'SpringIntegrationAMQP' )
+            // InternalSpringFluentDSL.g:50:9: 'SpringIntegrationAMQP'
+            {
+            match("SpringIntegrationAMQP"); 
+
+
+            }
+
+            state.type = _type;
+            state.channel = _channel;
+        }
+        finally {
+        }
+    }
+    // $ANTLR end "T__50"
+
+    // $ANTLR start "T__51"
+    public final void mT__51() throws RecognitionException {
+        try {
+            int _type = T__51;
+            int _channel = DEFAULT_TOKEN_CHANNEL;
+            // InternalSpringFluentDSL.g:51:7: ( 'SpringWebFlux' )
+            // InternalSpringFluentDSL.g:51:9: 'SpringWebFlux'
+            {
+            match("SpringWebFlux"); 
+
+
+            }
+
+            state.type = _type;
+            state.channel = _channel;
+        }
+        finally {
+        }
+    }
+    // $ANTLR end "T__51"
+
+    // $ANTLR start "T__52"
+    public final void mT__52() throws RecognitionException {
+        try {
+            int _type = T__52;
+            int _channel = DEFAULT_TOKEN_CHANNEL;
+            // InternalSpringFluentDSL.g:52:7: ( 'SpringWebServices' )
+            // InternalSpringFluentDSL.g:52:9: 'SpringWebServices'
+            {
+            match("SpringWebServices"); 
+
+
+            }
+
+            state.type = _type;
+            state.channel = _channel;
+        }
+        finally {
+        }
+    }
+    // $ANTLR end "T__52"
+
+    // $ANTLR start "T__53"
+    public final void mT__53() throws RecognitionException {
+        try {
+            int _type = T__53;
+            int _channel = DEFAULT_TOKEN_CHANNEL;
+            // InternalSpringFluentDSL.g:53:7: ( 'SpringValidation' )
+            // InternalSpringFluentDSL.g:53:9: 'SpringValidation'
+            {
+            match("SpringValidation"); 
+
+
+            }
+
+            state.type = _type;
+            state.channel = _channel;
+        }
+        finally {
+        }
+    }
+    // $ANTLR end "T__53"
+
+    // $ANTLR start "T__54"
+    public final void mT__54() throws RecognitionException {
+        try {
+            int _type = T__54;
+            int _channel = DEFAULT_TOKEN_CHANNEL;
+            // InternalSpringFluentDSL.g:54:7: ( 'SpringThymeleaf' )
+            // InternalSpringFluentDSL.g:54:9: 'SpringThymeleaf'
+            {
+            match("SpringThymeleaf"); 
+
+
+            }
+
+            state.type = _type;
+            state.channel = _channel;
+        }
+        finally {
+        }
+    }
+    // $ANTLR end "T__54"
+
+    // $ANTLR start "T__55"
+    public final void mT__55() throws RecognitionException {
+        try {
+            int _type = T__55;
+            int _channel = DEFAULT_TOKEN_CHANNEL;
+            // InternalSpringFluentDSL.g:55:7: ( 'SpringOAuth2Client' )
+            // InternalSpringFluentDSL.g:55:9: 'SpringOAuth2Client'
+            {
+            match("SpringOAuth2Client"); 
+
+
+            }
+
+            state.type = _type;
+            state.channel = _channel;
+        }
+        finally {
+        }
+    }
+    // $ANTLR end "T__55"
+
+    // $ANTLR start "T__56"
+    public final void mT__56() throws RecognitionException {
+        try {
+            int _type = T__56;
+            int _channel = DEFAULT_TOKEN_CHANNEL;
+            // InternalSpringFluentDSL.g:56:7: ( 'SpringJersey' )
+            // InternalSpringFluentDSL.g:56:9: 'SpringJersey'
+            {
+            match("SpringJersey"); 
+
+
+            }
+
+            state.type = _type;
+            state.channel = _channel;
+        }
+        finally {
+        }
+    }
+    // $ANTLR end "T__56"
+
+    // $ANTLR start "T__57"
+    public final void mT__57() throws RecognitionException {
+        try {
+            int _type = T__57;
+            int _channel = DEFAULT_TOKEN_CHANNEL;
+            // InternalSpringFluentDSL.g:57:7: ( 'SpringJDBC' )
+            // InternalSpringFluentDSL.g:57:9: 'SpringJDBC'
+            {
+            match("SpringJDBC"); 
+
+
+            }
+
+            state.type = _type;
+            state.channel = _channel;
+        }
+        finally {
+        }
+    }
+    // $ANTLR end "T__57"
+
+    // $ANTLR start "T__58"
+    public final void mT__58() throws RecognitionException {
+        try {
+            int _type = T__58;
+            int _channel = DEFAULT_TOKEN_CHANNEL;
+            // InternalSpringFluentDSL.g:58:7: ( 'SpringIntegration' )
+            // InternalSpringFluentDSL.g:58:9: 'SpringIntegration'
+            {
+            match("SpringIntegration"); 
+
+
+            }
+
+            state.type = _type;
+            state.channel = _channel;
+        }
+        finally {
+        }
+    }
+    // $ANTLR end "T__58"
+
+    // $ANTLR start "T__59"
+    public final void mT__59() throws RecognitionException {
+        try {
+            int _type = T__59;
+            int _channel = DEFAULT_TOKEN_CHANNEL;
+            // InternalSpringFluentDSL.g:59:7: ( 'SpringDataRest' )
+            // InternalSpringFluentDSL.g:59:9: 'SpringDataRest'
+            {
+            match("SpringDataRest"); 
+
+
+            }
+
+            state.type = _type;
+            state.channel = _channel;
+        }
+        finally {
+        }
+    }
+    // $ANTLR end "T__59"
+
+    // $ANTLR start "T__60"
+    public final void mT__60() throws RecognitionException {
+        try {
+            int _type = T__60;
+            int _channel = DEFAULT_TOKEN_CHANNEL;
+            // InternalSpringFluentDSL.g:60:7: ( 'SpringGraphQL' )
+            // InternalSpringFluentDSL.g:60:9: 'SpringGraphQL'
+            {
+            match("SpringGraphQL"); 
+
+
+            }
+
+            state.type = _type;
+            state.channel = _channel;
+        }
+        finally {
+        }
+    }
+    // $ANTLR end "T__60"
+
+    // $ANTLR start "T__61"
+    public final void mT__61() throws RecognitionException {
+        try {
+            int _type = T__61;
+            int _channel = DEFAULT_TOKEN_CHANNEL;
+            // InternalSpringFluentDSL.g:61:7: ( 'SpringDataElasticsearch' )
+            // InternalSpringFluentDSL.g:61:9: 'SpringDataElasticsearch'
+            {
+            match("SpringDataElasticsearch"); 
+
+
+            }
+
+            state.type = _type;
+            state.channel = _channel;
+        }
+        finally {
+        }
+    }
+    // $ANTLR end "T__61"
+
+    // $ANTLR start "T__62"
+    public final void mT__62() throws RecognitionException {
+        try {
+            int _type = T__62;
+            int _channel = DEFAULT_TOKEN_CHANNEL;
+            // InternalSpringFluentDSL.g:62:7: ( 'SpringDataJDBC' )
+            // InternalSpringFluentDSL.g:62:9: 'SpringDataJDBC'
+            {
+            match("SpringDataJDBC"); 
+
+
+            }
+
+            state.type = _type;
+            state.channel = _channel;
+        }
+        finally {
+        }
+    }
+    // $ANTLR end "T__62"
+
+    // $ANTLR start "T__63"
+    public final void mT__63() throws RecognitionException {
+        try {
+            int _type = T__63;
+            int _channel = DEFAULT_TOKEN_CHANNEL;
+            // InternalSpringFluentDSL.g:63:7: ( 'SpringDataMongoDB' )
+            // InternalSpringFluentDSL.g:63:9: 'SpringDataMongoDB'
+            {
+            match("SpringDataMongoDB"); 
+
+
+            }
+
+            state.type = _type;
+            state.channel = _channel;
+        }
+        finally {
+        }
+    }
+    // $ANTLR end "T__63"
+
+    // $ANTLR start "T__64"
+    public final void mT__64() throws RecognitionException {
+        try {
+            int _type = T__64;
+            int _channel = DEFAULT_TOKEN_CHANNEL;
+            // InternalSpringFluentDSL.g:64:7: ( 'Swagger' )
+            // InternalSpringFluentDSL.g:64:9: 'Swagger'
+            {
+            match("Swagger"); 
+
+
+            }
+
+            state.type = _type;
+            state.channel = _channel;
+        }
+        finally {
+        }
+    }
+    // $ANTLR end "T__64"
+
+    // $ANTLR start "T__65"
+    public final void mT__65() throws RecognitionException {
+        try {
+            int _type = T__65;
+            int _channel = DEFAULT_TOKEN_CHANNEL;
+            // InternalSpringFluentDSL.g:65:7: ( 'SpringSecurity' )
+            // InternalSpringFluentDSL.g:65:9: 'SpringSecurity'
+            {
+            match("SpringSecurity"); 
+
+
+            }
+
+            state.type = _type;
+            state.channel = _channel;
+        }
+        finally {
+        }
+    }
+    // $ANTLR end "T__65"
+
+    // $ANTLR start "T__66"
+    public final void mT__66() throws RecognitionException {
+        try {
+            int _type = T__66;
+            int _channel = DEFAULT_TOKEN_CHANNEL;
+            // InternalSpringFluentDSL.g:66:7: ( 'SpringActuator' )
+            // InternalSpringFluentDSL.g:66:9: 'SpringActuator'
+            {
+            match("SpringActuator"); 
+
+
+            }
+
+            state.type = _type;
+            state.channel = _channel;
+        }
+        finally {
+        }
+    }
+    // $ANTLR end "T__66"
+
+    // $ANTLR start "T__67"
+    public final void mT__67() throws RecognitionException {
+        try {
+            int _type = T__67;
+            int _channel = DEFAULT_TOKEN_CHANNEL;
+            // InternalSpringFluentDSL.g:67:7: ( 'SpringGraphQLTest' )
+            // InternalSpringFluentDSL.g:67:9: 'SpringGraphQLTest'
+            {
+            match("SpringGraphQLTest"); 
+
+
+            }
+
+            state.type = _type;
+            state.channel = _channel;
+        }
+        finally {
+        }
+    }
+    // $ANTLR end "T__67"
+
+    // $ANTLR start "T__68"
+    public final void mT__68() throws RecognitionException {
+        try {
+            int _type = T__68;
+            int _channel = DEFAULT_TOKEN_CHANNEL;
+            // InternalSpringFluentDSL.g:68:7: ( 'Long' )
+            // InternalSpringFluentDSL.g:68:9: 'Long'
+            {
+            match("Long"); 
+
+
+            }
+
+            state.type = _type;
+            state.channel = _channel;
+        }
+        finally {
+        }
+    }
+    // $ANTLR end "T__68"
+
+    // $ANTLR start "T__69"
+    public final void mT__69() throws RecognitionException {
+        try {
+            int _type = T__69;
+            int _channel = DEFAULT_TOKEN_CHANNEL;
+            // InternalSpringFluentDSL.g:69:7: ( 'Integer' )
+            // InternalSpringFluentDSL.g:69:9: 'Integer'
+            {
+            match("Integer"); 
+
+
+            }
+
+            state.type = _type;
+            state.channel = _channel;
+        }
+        finally {
+        }
+    }
+    // $ANTLR end "T__69"
+
+    // $ANTLR start "T__70"
+    public final void mT__70() throws RecognitionException {
+        try {
+            int _type = T__70;
+            int _channel = DEFAULT_TOKEN_CHANNEL;
+            // InternalSpringFluentDSL.g:70:7: ( 'Double' )
+            // InternalSpringFluentDSL.g:70:9: 'Double'
+            {
+            match("Double"); 
+
+
+            }
+
+            state.type = _type;
+            state.channel = _channel;
+        }
+        finally {
+        }
+    }
+    // $ANTLR end "T__70"
+
+    // $ANTLR start "T__71"
+    public final void mT__71() throws RecognitionException {
+        try {
+            int _type = T__71;
+            int _channel = DEFAULT_TOKEN_CHANNEL;
+            // InternalSpringFluentDSL.g:71:7: ( 'String' )
+            // InternalSpringFluentDSL.g:71:9: 'String'
+            {
+            match("String"); 
+
+
+            }
+
+            state.type = _type;
+            state.channel = _channel;
+        }
+        finally {
+        }
+    }
+    // $ANTLR end "T__71"
+
+    // $ANTLR start "T__72"
+    public final void mT__72() throws RecognitionException {
+        try {
+            int _type = T__72;
+            int _channel = DEFAULT_TOKEN_CHANNEL;
+            // InternalSpringFluentDSL.g:72:7: ( 'Date' )
+            // InternalSpringFluentDSL.g:72:9: 'Date'
+            {
+            match("Date"); 
+
+
+            }
+
+            state.type = _type;
+            state.channel = _channel;
+        }
+        finally {
+        }
+    }
+    // $ANTLR end "T__72"
+
+    // $ANTLR start "T__73"
+    public final void mT__73() throws RecognitionException {
+        try {
+            int _type = T__73;
+            int _channel = DEFAULT_TOKEN_CHANNEL;
+            // InternalSpringFluentDSL.g:73:7: ( 'Time' )
+            // InternalSpringFluentDSL.g:73:9: 'Time'
+            {
+            match("Time"); 
+
+
+            }
+
+            state.type = _type;
+            state.channel = _channel;
+        }
+        finally {
+        }
+    }
+    // $ANTLR end "T__73"
+
+    // $ANTLR start "T__74"
+    public final void mT__74() throws RecognitionException {
+        try {
+            int _type = T__74;
+            int _channel = DEFAULT_TOKEN_CHANNEL;
+            // InternalSpringFluentDSL.g:74:7: ( 'Boolean' )
+            // InternalSpringFluentDSL.g:74:9: 'Boolean'
+            {
+            match("Boolean"); 
+
+
+            }
+
+            state.type = _type;
+            state.channel = _channel;
+        }
+        finally {
+        }
+    }
+    // $ANTLR end "T__74"
+
     // $ANTLR start "RULE_ID"
     public final void mRULE_ID() throws RecognitionException {
         try {
             int _type = RULE_ID;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // InternalSpringFluentDSL.g:1127:9: ( ( '^' )? ( 'a' .. 'z' | 'A' .. 'Z' | '_' ) ( 'a' .. 'z' | 'A' .. 'Z' | '_' | '0' .. '9' )* )
-            // InternalSpringFluentDSL.g:1127:11: ( '^' )? ( 'a' .. 'z' | 'A' .. 'Z' | '_' ) ( 'a' .. 'z' | 'A' .. 'Z' | '_' | '0' .. '9' )*
+            // InternalSpringFluentDSL.g:1327:9: ( ( '^' )? ( 'a' .. 'z' | 'A' .. 'Z' | '_' ) ( 'a' .. 'z' | 'A' .. 'Z' | '_' | '0' .. '9' )* )
+            // InternalSpringFluentDSL.g:1327:11: ( '^' )? ( 'a' .. 'z' | 'A' .. 'Z' | '_' ) ( 'a' .. 'z' | 'A' .. 'Z' | '_' | '0' .. '9' )*
             {
-            // InternalSpringFluentDSL.g:1127:11: ( '^' )?
+            // InternalSpringFluentDSL.g:1327:11: ( '^' )?
             int alt1=2;
             int LA1_0 = input.LA(1);
 
@@ -902,7 +1452,7 @@ public class InternalSpringFluentDSLLexer extends Lexer {
             }
             switch (alt1) {
                 case 1 :
-                    // InternalSpringFluentDSL.g:1127:11: '^'
+                    // InternalSpringFluentDSL.g:1327:11: '^'
                     {
                     match('^'); 
 
@@ -920,7 +1470,7 @@ public class InternalSpringFluentDSLLexer extends Lexer {
                 recover(mse);
                 throw mse;}
 
-            // InternalSpringFluentDSL.g:1127:40: ( 'a' .. 'z' | 'A' .. 'Z' | '_' | '0' .. '9' )*
+            // InternalSpringFluentDSL.g:1327:40: ( 'a' .. 'z' | 'A' .. 'Z' | '_' | '0' .. '9' )*
             loop2:
             do {
                 int alt2=2;
@@ -969,10 +1519,10 @@ public class InternalSpringFluentDSLLexer extends Lexer {
         try {
             int _type = RULE_INT;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // InternalSpringFluentDSL.g:1129:10: ( ( '0' .. '9' )+ )
-            // InternalSpringFluentDSL.g:1129:12: ( '0' .. '9' )+
+            // InternalSpringFluentDSL.g:1329:10: ( ( '0' .. '9' )+ )
+            // InternalSpringFluentDSL.g:1329:12: ( '0' .. '9' )+
             {
-            // InternalSpringFluentDSL.g:1129:12: ( '0' .. '9' )+
+            // InternalSpringFluentDSL.g:1329:12: ( '0' .. '9' )+
             int cnt3=0;
             loop3:
             do {
@@ -986,7 +1536,7 @@ public class InternalSpringFluentDSLLexer extends Lexer {
 
                 switch (alt3) {
             	case 1 :
-            	    // InternalSpringFluentDSL.g:1129:13: '0' .. '9'
+            	    // InternalSpringFluentDSL.g:1329:13: '0' .. '9'
             	    {
             	    matchRange('0','9'); 
 
@@ -1018,10 +1568,10 @@ public class InternalSpringFluentDSLLexer extends Lexer {
         try {
             int _type = RULE_STRING;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // InternalSpringFluentDSL.g:1131:13: ( ( '\"' ( '\\\\' . | ~ ( ( '\\\\' | '\"' ) ) )* '\"' | '\\'' ( '\\\\' . | ~ ( ( '\\\\' | '\\'' ) ) )* '\\'' ) )
-            // InternalSpringFluentDSL.g:1131:15: ( '\"' ( '\\\\' . | ~ ( ( '\\\\' | '\"' ) ) )* '\"' | '\\'' ( '\\\\' . | ~ ( ( '\\\\' | '\\'' ) ) )* '\\'' )
+            // InternalSpringFluentDSL.g:1331:13: ( ( '\"' ( '\\\\' . | ~ ( ( '\\\\' | '\"' ) ) )* '\"' | '\\'' ( '\\\\' . | ~ ( ( '\\\\' | '\\'' ) ) )* '\\'' ) )
+            // InternalSpringFluentDSL.g:1331:15: ( '\"' ( '\\\\' . | ~ ( ( '\\\\' | '\"' ) ) )* '\"' | '\\'' ( '\\\\' . | ~ ( ( '\\\\' | '\\'' ) ) )* '\\'' )
             {
-            // InternalSpringFluentDSL.g:1131:15: ( '\"' ( '\\\\' . | ~ ( ( '\\\\' | '\"' ) ) )* '\"' | '\\'' ( '\\\\' . | ~ ( ( '\\\\' | '\\'' ) ) )* '\\'' )
+            // InternalSpringFluentDSL.g:1331:15: ( '\"' ( '\\\\' . | ~ ( ( '\\\\' | '\"' ) ) )* '\"' | '\\'' ( '\\\\' . | ~ ( ( '\\\\' | '\\'' ) ) )* '\\'' )
             int alt6=2;
             int LA6_0 = input.LA(1);
 
@@ -1039,10 +1589,10 @@ public class InternalSpringFluentDSLLexer extends Lexer {
             }
             switch (alt6) {
                 case 1 :
-                    // InternalSpringFluentDSL.g:1131:16: '\"' ( '\\\\' . | ~ ( ( '\\\\' | '\"' ) ) )* '\"'
+                    // InternalSpringFluentDSL.g:1331:16: '\"' ( '\\\\' . | ~ ( ( '\\\\' | '\"' ) ) )* '\"'
                     {
                     match('\"'); 
-                    // InternalSpringFluentDSL.g:1131:20: ( '\\\\' . | ~ ( ( '\\\\' | '\"' ) ) )*
+                    // InternalSpringFluentDSL.g:1331:20: ( '\\\\' . | ~ ( ( '\\\\' | '\"' ) ) )*
                     loop4:
                     do {
                         int alt4=3;
@@ -1058,7 +1608,7 @@ public class InternalSpringFluentDSLLexer extends Lexer {
 
                         switch (alt4) {
                     	case 1 :
-                    	    // InternalSpringFluentDSL.g:1131:21: '\\\\' .
+                    	    // InternalSpringFluentDSL.g:1331:21: '\\\\' .
                     	    {
                     	    match('\\'); 
                     	    matchAny(); 
@@ -1066,7 +1616,7 @@ public class InternalSpringFluentDSLLexer extends Lexer {
                     	    }
                     	    break;
                     	case 2 :
-                    	    // InternalSpringFluentDSL.g:1131:28: ~ ( ( '\\\\' | '\"' ) )
+                    	    // InternalSpringFluentDSL.g:1331:28: ~ ( ( '\\\\' | '\"' ) )
                     	    {
                     	    if ( (input.LA(1)>='\u0000' && input.LA(1)<='!')||(input.LA(1)>='#' && input.LA(1)<='[')||(input.LA(1)>=']' && input.LA(1)<='\uFFFF') ) {
                     	        input.consume();
@@ -1091,10 +1641,10 @@ public class InternalSpringFluentDSLLexer extends Lexer {
                     }
                     break;
                 case 2 :
-                    // InternalSpringFluentDSL.g:1131:48: '\\'' ( '\\\\' . | ~ ( ( '\\\\' | '\\'' ) ) )* '\\''
+                    // InternalSpringFluentDSL.g:1331:48: '\\'' ( '\\\\' . | ~ ( ( '\\\\' | '\\'' ) ) )* '\\''
                     {
                     match('\''); 
-                    // InternalSpringFluentDSL.g:1131:53: ( '\\\\' . | ~ ( ( '\\\\' | '\\'' ) ) )*
+                    // InternalSpringFluentDSL.g:1331:53: ( '\\\\' . | ~ ( ( '\\\\' | '\\'' ) ) )*
                     loop5:
                     do {
                         int alt5=3;
@@ -1110,7 +1660,7 @@ public class InternalSpringFluentDSLLexer extends Lexer {
 
                         switch (alt5) {
                     	case 1 :
-                    	    // InternalSpringFluentDSL.g:1131:54: '\\\\' .
+                    	    // InternalSpringFluentDSL.g:1331:54: '\\\\' .
                     	    {
                     	    match('\\'); 
                     	    matchAny(); 
@@ -1118,7 +1668,7 @@ public class InternalSpringFluentDSLLexer extends Lexer {
                     	    }
                     	    break;
                     	case 2 :
-                    	    // InternalSpringFluentDSL.g:1131:61: ~ ( ( '\\\\' | '\\'' ) )
+                    	    // InternalSpringFluentDSL.g:1331:61: ~ ( ( '\\\\' | '\\'' ) )
                     	    {
                     	    if ( (input.LA(1)>='\u0000' && input.LA(1)<='&')||(input.LA(1)>='(' && input.LA(1)<='[')||(input.LA(1)>=']' && input.LA(1)<='\uFFFF') ) {
                     	        input.consume();
@@ -1161,12 +1711,12 @@ public class InternalSpringFluentDSLLexer extends Lexer {
         try {
             int _type = RULE_ML_COMMENT;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // InternalSpringFluentDSL.g:1133:17: ( '/*' ( options {greedy=false; } : . )* '*/' )
-            // InternalSpringFluentDSL.g:1133:19: '/*' ( options {greedy=false; } : . )* '*/'
+            // InternalSpringFluentDSL.g:1333:17: ( '/*' ( options {greedy=false; } : . )* '*/' )
+            // InternalSpringFluentDSL.g:1333:19: '/*' ( options {greedy=false; } : . )* '*/'
             {
             match("/*"); 
 
-            // InternalSpringFluentDSL.g:1133:24: ( options {greedy=false; } : . )*
+            // InternalSpringFluentDSL.g:1333:24: ( options {greedy=false; } : . )*
             loop7:
             do {
                 int alt7=2;
@@ -1191,7 +1741,7 @@ public class InternalSpringFluentDSLLexer extends Lexer {
 
                 switch (alt7) {
             	case 1 :
-            	    // InternalSpringFluentDSL.g:1133:52: .
+            	    // InternalSpringFluentDSL.g:1333:52: .
             	    {
             	    matchAny(); 
 
@@ -1221,12 +1771,12 @@ public class InternalSpringFluentDSLLexer extends Lexer {
         try {
             int _type = RULE_SL_COMMENT;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // InternalSpringFluentDSL.g:1135:17: ( '//' (~ ( ( '\\n' | '\\r' ) ) )* ( ( '\\r' )? '\\n' )? )
-            // InternalSpringFluentDSL.g:1135:19: '//' (~ ( ( '\\n' | '\\r' ) ) )* ( ( '\\r' )? '\\n' )?
+            // InternalSpringFluentDSL.g:1335:17: ( '//' (~ ( ( '\\n' | '\\r' ) ) )* ( ( '\\r' )? '\\n' )? )
+            // InternalSpringFluentDSL.g:1335:19: '//' (~ ( ( '\\n' | '\\r' ) ) )* ( ( '\\r' )? '\\n' )?
             {
             match("//"); 
 
-            // InternalSpringFluentDSL.g:1135:24: (~ ( ( '\\n' | '\\r' ) ) )*
+            // InternalSpringFluentDSL.g:1335:24: (~ ( ( '\\n' | '\\r' ) ) )*
             loop8:
             do {
                 int alt8=2;
@@ -1239,7 +1789,7 @@ public class InternalSpringFluentDSLLexer extends Lexer {
 
                 switch (alt8) {
             	case 1 :
-            	    // InternalSpringFluentDSL.g:1135:24: ~ ( ( '\\n' | '\\r' ) )
+            	    // InternalSpringFluentDSL.g:1335:24: ~ ( ( '\\n' | '\\r' ) )
             	    {
             	    if ( (input.LA(1)>='\u0000' && input.LA(1)<='\t')||(input.LA(1)>='\u000B' && input.LA(1)<='\f')||(input.LA(1)>='\u000E' && input.LA(1)<='\uFFFF') ) {
             	        input.consume();
@@ -1259,7 +1809,7 @@ public class InternalSpringFluentDSLLexer extends Lexer {
                 }
             } while (true);
 
-            // InternalSpringFluentDSL.g:1135:40: ( ( '\\r' )? '\\n' )?
+            // InternalSpringFluentDSL.g:1335:40: ( ( '\\r' )? '\\n' )?
             int alt10=2;
             int LA10_0 = input.LA(1);
 
@@ -1268,9 +1818,9 @@ public class InternalSpringFluentDSLLexer extends Lexer {
             }
             switch (alt10) {
                 case 1 :
-                    // InternalSpringFluentDSL.g:1135:41: ( '\\r' )? '\\n'
+                    // InternalSpringFluentDSL.g:1335:41: ( '\\r' )? '\\n'
                     {
-                    // InternalSpringFluentDSL.g:1135:41: ( '\\r' )?
+                    // InternalSpringFluentDSL.g:1335:41: ( '\\r' )?
                     int alt9=2;
                     int LA9_0 = input.LA(1);
 
@@ -1279,7 +1829,7 @@ public class InternalSpringFluentDSLLexer extends Lexer {
                     }
                     switch (alt9) {
                         case 1 :
-                            // InternalSpringFluentDSL.g:1135:41: '\\r'
+                            // InternalSpringFluentDSL.g:1335:41: '\\r'
                             {
                             match('\r'); 
 
@@ -1311,10 +1861,10 @@ public class InternalSpringFluentDSLLexer extends Lexer {
         try {
             int _type = RULE_WS;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // InternalSpringFluentDSL.g:1137:9: ( ( ' ' | '\\t' | '\\r' | '\\n' )+ )
-            // InternalSpringFluentDSL.g:1137:11: ( ' ' | '\\t' | '\\r' | '\\n' )+
+            // InternalSpringFluentDSL.g:1337:9: ( ( ' ' | '\\t' | '\\r' | '\\n' )+ )
+            // InternalSpringFluentDSL.g:1337:11: ( ' ' | '\\t' | '\\r' | '\\n' )+
             {
-            // InternalSpringFluentDSL.g:1137:11: ( ' ' | '\\t' | '\\r' | '\\n' )+
+            // InternalSpringFluentDSL.g:1337:11: ( ' ' | '\\t' | '\\r' | '\\n' )+
             int cnt11=0;
             loop11:
             do {
@@ -1368,8 +1918,8 @@ public class InternalSpringFluentDSLLexer extends Lexer {
         try {
             int _type = RULE_ANY_OTHER;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // InternalSpringFluentDSL.g:1139:16: ( . )
-            // InternalSpringFluentDSL.g:1139:18: .
+            // InternalSpringFluentDSL.g:1339:16: ( . )
+            // InternalSpringFluentDSL.g:1339:18: .
             {
             matchAny(); 
 
@@ -1384,8 +1934,8 @@ public class InternalSpringFluentDSLLexer extends Lexer {
     // $ANTLR end "RULE_ANY_OTHER"
 
     public void mTokens() throws RecognitionException {
-        // InternalSpringFluentDSL.g:1:8: ( T__11 | T__12 | T__13 | T__14 | T__15 | T__16 | T__17 | T__18 | T__19 | T__20 | T__21 | T__22 | T__23 | T__24 | T__25 | T__26 | T__27 | T__28 | T__29 | T__30 | T__31 | T__32 | T__33 | T__34 | T__35 | T__36 | T__37 | T__38 | T__39 | T__40 | T__41 | T__42 | T__43 | T__44 | T__45 | T__46 | T__47 | T__48 | T__49 | RULE_ID | RULE_INT | RULE_STRING | RULE_ML_COMMENT | RULE_SL_COMMENT | RULE_WS | RULE_ANY_OTHER )
-        int alt12=46;
+        // InternalSpringFluentDSL.g:1:8: ( T__11 | T__12 | T__13 | T__14 | T__15 | T__16 | T__17 | T__18 | T__19 | T__20 | T__21 | T__22 | T__23 | T__24 | T__25 | T__26 | T__27 | T__28 | T__29 | T__30 | T__31 | T__32 | T__33 | T__34 | T__35 | T__36 | T__37 | T__38 | T__39 | T__40 | T__41 | T__42 | T__43 | T__44 | T__45 | T__46 | T__47 | T__48 | T__49 | T__50 | T__51 | T__52 | T__53 | T__54 | T__55 | T__56 | T__57 | T__58 | T__59 | T__60 | T__61 | T__62 | T__63 | T__64 | T__65 | T__66 | T__67 | T__68 | T__69 | T__70 | T__71 | T__72 | T__73 | T__74 | RULE_ID | RULE_INT | RULE_STRING | RULE_ML_COMMENT | RULE_SL_COMMENT | RULE_WS | RULE_ANY_OTHER )
+        int alt12=71;
         alt12 = dfa12.predict(input);
         switch (alt12) {
             case 1 :
@@ -1662,49 +2212,224 @@ public class InternalSpringFluentDSLLexer extends Lexer {
                 }
                 break;
             case 40 :
-                // InternalSpringFluentDSL.g:1:244: RULE_ID
+                // InternalSpringFluentDSL.g:1:244: T__50
+                {
+                mT__50(); 
+
+                }
+                break;
+            case 41 :
+                // InternalSpringFluentDSL.g:1:250: T__51
+                {
+                mT__51(); 
+
+                }
+                break;
+            case 42 :
+                // InternalSpringFluentDSL.g:1:256: T__52
+                {
+                mT__52(); 
+
+                }
+                break;
+            case 43 :
+                // InternalSpringFluentDSL.g:1:262: T__53
+                {
+                mT__53(); 
+
+                }
+                break;
+            case 44 :
+                // InternalSpringFluentDSL.g:1:268: T__54
+                {
+                mT__54(); 
+
+                }
+                break;
+            case 45 :
+                // InternalSpringFluentDSL.g:1:274: T__55
+                {
+                mT__55(); 
+
+                }
+                break;
+            case 46 :
+                // InternalSpringFluentDSL.g:1:280: T__56
+                {
+                mT__56(); 
+
+                }
+                break;
+            case 47 :
+                // InternalSpringFluentDSL.g:1:286: T__57
+                {
+                mT__57(); 
+
+                }
+                break;
+            case 48 :
+                // InternalSpringFluentDSL.g:1:292: T__58
+                {
+                mT__58(); 
+
+                }
+                break;
+            case 49 :
+                // InternalSpringFluentDSL.g:1:298: T__59
+                {
+                mT__59(); 
+
+                }
+                break;
+            case 50 :
+                // InternalSpringFluentDSL.g:1:304: T__60
+                {
+                mT__60(); 
+
+                }
+                break;
+            case 51 :
+                // InternalSpringFluentDSL.g:1:310: T__61
+                {
+                mT__61(); 
+
+                }
+                break;
+            case 52 :
+                // InternalSpringFluentDSL.g:1:316: T__62
+                {
+                mT__62(); 
+
+                }
+                break;
+            case 53 :
+                // InternalSpringFluentDSL.g:1:322: T__63
+                {
+                mT__63(); 
+
+                }
+                break;
+            case 54 :
+                // InternalSpringFluentDSL.g:1:328: T__64
+                {
+                mT__64(); 
+
+                }
+                break;
+            case 55 :
+                // InternalSpringFluentDSL.g:1:334: T__65
+                {
+                mT__65(); 
+
+                }
+                break;
+            case 56 :
+                // InternalSpringFluentDSL.g:1:340: T__66
+                {
+                mT__66(); 
+
+                }
+                break;
+            case 57 :
+                // InternalSpringFluentDSL.g:1:346: T__67
+                {
+                mT__67(); 
+
+                }
+                break;
+            case 58 :
+                // InternalSpringFluentDSL.g:1:352: T__68
+                {
+                mT__68(); 
+
+                }
+                break;
+            case 59 :
+                // InternalSpringFluentDSL.g:1:358: T__69
+                {
+                mT__69(); 
+
+                }
+                break;
+            case 60 :
+                // InternalSpringFluentDSL.g:1:364: T__70
+                {
+                mT__70(); 
+
+                }
+                break;
+            case 61 :
+                // InternalSpringFluentDSL.g:1:370: T__71
+                {
+                mT__71(); 
+
+                }
+                break;
+            case 62 :
+                // InternalSpringFluentDSL.g:1:376: T__72
+                {
+                mT__72(); 
+
+                }
+                break;
+            case 63 :
+                // InternalSpringFluentDSL.g:1:382: T__73
+                {
+                mT__73(); 
+
+                }
+                break;
+            case 64 :
+                // InternalSpringFluentDSL.g:1:388: T__74
+                {
+                mT__74(); 
+
+                }
+                break;
+            case 65 :
+                // InternalSpringFluentDSL.g:1:394: RULE_ID
                 {
                 mRULE_ID(); 
 
                 }
                 break;
-            case 41 :
-                // InternalSpringFluentDSL.g:1:252: RULE_INT
+            case 66 :
+                // InternalSpringFluentDSL.g:1:402: RULE_INT
                 {
                 mRULE_INT(); 
 
                 }
                 break;
-            case 42 :
-                // InternalSpringFluentDSL.g:1:261: RULE_STRING
+            case 67 :
+                // InternalSpringFluentDSL.g:1:411: RULE_STRING
                 {
                 mRULE_STRING(); 
 
                 }
                 break;
-            case 43 :
-                // InternalSpringFluentDSL.g:1:273: RULE_ML_COMMENT
+            case 68 :
+                // InternalSpringFluentDSL.g:1:423: RULE_ML_COMMENT
                 {
                 mRULE_ML_COMMENT(); 
 
                 }
                 break;
-            case 44 :
-                // InternalSpringFluentDSL.g:1:289: RULE_SL_COMMENT
+            case 69 :
+                // InternalSpringFluentDSL.g:1:439: RULE_SL_COMMENT
                 {
                 mRULE_SL_COMMENT(); 
 
                 }
                 break;
-            case 45 :
-                // InternalSpringFluentDSL.g:1:305: RULE_WS
+            case 70 :
+                // InternalSpringFluentDSL.g:1:455: RULE_WS
                 {
                 mRULE_WS(); 
 
                 }
                 break;
-            case 46 :
-                // InternalSpringFluentDSL.g:1:313: RULE_ANY_OTHER
+            case 71 :
+                // InternalSpringFluentDSL.g:1:463: RULE_ANY_OTHER
                 {
                 mRULE_ANY_OTHER(); 
 
@@ -1718,17 +2443,17 @@ public class InternalSpringFluentDSLLexer extends Lexer {
 
     protected DFA12 dfa12 = new DFA12(this);
     static final String DFA12_eotS =
-        "\1\uffff\3\42\3\uffff\1\42\1\uffff\1\42\2\uffff\4\42\1\uffff\7\42\1\37\2\uffff\3\37\2\uffff\1\42\1\110\1\uffff\2\42\3\uffff\2\42\1\uffff\1\42\2\uffff\10\42\1\126\1\uffff\12\42\5\uffff\1\42\1\uffff\15\42\1\uffff\1\162\1\163\1\164\1\165\1\166\25\42\1\u008c\5\uffff\1\42\1\u008e\3\42\1\u0092\17\42\1\uffff\1\42\1\uffff\3\42\1\uffff\6\42\1\u00ad\5\42\1\u00b5\3\42\1\u00b9\2\42\1\u00bc\2\42\1\uffff\3\42\1\uffff\1\u00c2\5\42\1\u00c8\1\uffff\3\42\1\uffff\2\42\1\uffff\1\u00ce\1\u00cf\2\42\1\u00d2\1\uffff\1\u00d3\4\42\1\uffff\4\42\1\u00dc\3\uffff\1\42\2\uffff\2\42\1\u00e0\3\42\1\u00e4\1\42\1\uffff\3\42\1\uffff\3\42\1\uffff\2\42\1\u00ee\2\42\1\u00f1\1\42\1\u00f3\1\u00f4\1\uffff\2\42\1\uffff\1\42\2\uffff\1\u00f8\1\42\1\u00fa\1\uffff\1\u00fb\2\uffff";
+        "\1\uffff\3\42\3\uffff\1\42\1\uffff\1\42\2\uffff\4\42\1\uffff\7\42\1\37\2\uffff\3\37\2\uffff\1\42\1\107\1\uffff\2\42\3\uffff\2\42\1\uffff\1\42\2\uffff\7\42\1\124\1\uffff\12\42\5\uffff\1\42\1\uffff\14\42\1\uffff\1\157\1\160\1\161\1\162\1\163\24\42\1\u0088\5\uffff\1\42\1\u008a\3\42\1\u008e\16\42\1\uffff\1\42\1\uffff\3\42\1\uffff\6\42\1\u00a8\5\42\1\u00b8\2\42\1\u00bb\2\42\1\u00be\2\42\1\uffff\3\42\1\uffff\1\u00c4\15\42\1\u00d3\1\uffff\2\42\1\uffff\2\42\1\uffff\1\u00d8\1\u00d9\2\42\1\u00dc\1\uffff\1\u00dd\15\42\1\uffff\3\42\1\u00ee\3\uffff\1\42\2\uffff\2\42\1\u00f4\15\42\1\uffff\5\42\1\uffff\6\42\1\u0110\7\42\1\u0118\6\42\1\u0120\5\42\1\uffff\3\42\1\u0129\1\42\1\u012b\1\u012c\1\uffff\7\42\1\uffff\4\42\1\u0138\3\42\1\uffff\1\42\2\uffff\1\u013d\4\42\1\u0142\5\42\1\uffff\1\u0149\2\42\1\u014c\1\uffff\1\u014d\1\u014e\2\42\1\uffff\6\42\1\uffff\1\u0157\1\u0158\3\uffff\5\42\1\u015e\2\42\2\uffff\4\42\1\u0165\1\uffff\3\42\1\u0169\1\u016a\1\u0173\1\uffff\1\42\1\u0175\1\42\2\uffff\10\42\1\uffff\1\u0181\1\uffff\1\42\1\u0183\11\42\1\uffff\1\42\1\uffff\5\42\1\u0193\11\42\1\uffff\1\u019d\1\u019e\1\u019f\3\42\1\u01a3\1\42\1\u01a5\3\uffff\1\u01a6\2\42\1\uffff\1\42\2\uffff\1\u01aa\1\42\1\u01ac\1\uffff\1\u01ad\2\uffff";
     static final String DFA12_eofS =
-        "\u00fc\uffff";
+        "\u01ae\uffff";
     static final String DFA12_minS =
-        "\1\0\1\153\1\160\1\145\3\uffff\1\156\1\uffff\1\164\2\uffff\1\151\1\157\1\141\1\144\1\uffff\1\160\1\164\1\157\1\171\1\141\1\156\1\157\1\101\2\uffff\2\0\1\52\2\uffff\1\145\1\60\1\uffff\2\160\3\uffff\2\164\1\uffff\1\162\2\uffff\1\156\1\162\1\141\1\162\1\151\1\142\1\171\1\155\1\60\1\uffff\1\163\3\155\1\123\1\166\1\165\2\164\1\157\5\uffff\1\146\1\uffff\1\137\1\145\1\151\1\145\1\141\1\147\1\151\1\147\1\151\1\156\1\154\1\155\1\145\1\uffff\5\60\1\142\1\147\1\121\1\124\1\142\2\145\1\154\1\151\2\156\1\164\1\156\1\164\1\154\1\156\1\147\1\156\3\145\1\60\5\uffff\1\157\1\60\1\114\1\157\1\154\1\60\1\147\1\145\1\170\1\141\1\144\1\151\1\144\2\145\1\147\1\145\1\147\1\144\1\120\1\154\1\uffff\1\153\1\uffff\1\104\1\157\1\145\1\uffff\1\145\1\141\1\72\1\155\2\145\1\60\1\163\1\147\1\124\1\104\1\162\1\60\1\124\2\145\1\60\1\162\1\154\1\60\1\162\1\156\1\uffff\1\145\1\156\1\163\1\uffff\1\60\1\171\2\141\2\145\1\60\1\uffff\1\141\1\162\1\141\1\uffff\1\151\1\163\1\uffff\2\60\1\72\1\143\1\60\1\uffff\1\60\1\142\1\164\1\142\1\143\1\uffff\1\142\1\103\1\146\1\166\1\60\3\uffff\1\151\2\uffff\1\154\1\141\1\60\1\165\2\154\1\60\1\145\1\uffff\2\145\1\112\1\uffff\1\162\1\145\1\141\1\uffff\1\162\1\163\1\60\1\160\1\151\1\60\1\163\2\60\1\uffff\1\141\1\164\1\uffff\1\163\2\uffff\1\60\1\171\1\60\1\uffff\1\60\2\uffff";
+        "\1\0\1\153\1\160\1\145\3\uffff\1\156\1\uffff\1\164\2\uffff\1\151\1\157\1\141\1\144\1\uffff\1\160\1\164\1\157\1\171\1\141\1\156\1\157\1\101\2\uffff\2\0\1\52\2\uffff\1\145\1\60\1\uffff\2\160\3\uffff\2\164\1\uffff\1\162\2\uffff\1\156\1\162\1\141\1\162\1\151\1\142\1\155\1\60\1\uffff\1\163\3\155\1\123\1\166\1\165\2\164\1\157\5\uffff\1\146\1\uffff\1\137\1\145\1\151\1\145\1\141\1\147\1\151\1\147\1\151\1\156\1\154\1\145\1\uffff\5\60\1\142\1\147\1\121\1\124\1\142\2\145\1\154\1\151\2\156\1\164\1\156\1\164\1\154\1\156\1\147\1\156\2\145\1\60\5\uffff\1\157\1\60\1\114\1\157\1\154\1\60\1\147\1\145\1\170\1\141\1\144\1\151\1\144\2\145\1\147\1\145\1\147\1\144\1\120\1\uffff\1\153\1\uffff\1\104\1\157\1\145\1\uffff\1\145\1\141\1\72\1\155\2\145\1\60\1\163\1\147\1\124\1\101\1\162\1\60\1\124\1\145\1\60\1\162\1\154\1\60\1\162\1\156\1\uffff\1\145\1\156\1\163\1\uffff\1\60\1\171\2\141\1\145\1\141\1\156\1\141\1\150\1\101\1\104\1\162\1\145\1\143\1\60\1\uffff\1\141\1\162\1\uffff\1\151\1\163\1\uffff\2\60\1\72\1\143\1\60\1\uffff\1\60\1\142\1\164\1\142\1\146\1\164\1\154\1\171\1\165\1\162\1\102\1\141\1\143\1\164\1\uffff\1\142\1\103\1\166\1\60\3\uffff\1\151\2\uffff\1\154\1\141\1\60\1\153\1\145\1\151\1\155\1\164\1\163\1\103\1\160\2\165\2\154\1\145\1\uffff\2\145\1\105\1\154\1\145\1\uffff\1\141\1\147\1\144\1\145\1\150\1\145\1\60\1\150\1\162\1\141\1\145\1\141\1\162\1\163\1\60\1\104\1\145\1\154\1\157\1\165\1\162\1\60\1\162\1\141\1\154\1\62\1\171\1\uffff\1\121\1\151\1\164\1\60\1\163\2\60\1\uffff\1\141\1\102\1\163\1\141\1\156\1\170\1\166\1\uffff\1\141\1\164\1\145\1\103\1\60\1\114\1\164\1\157\1\uffff\1\163\2\uffff\1\60\1\103\1\164\1\163\1\147\1\60\1\151\1\164\1\151\1\141\1\154\1\uffff\1\60\1\171\1\162\1\60\1\uffff\2\60\1\164\1\157\1\uffff\1\143\1\151\1\157\1\146\1\151\1\145\1\uffff\2\60\3\uffff\1\151\1\104\1\145\1\157\1\156\1\60\1\145\1\163\2\uffff\1\143\1\102\1\163\1\156\1\60\1\uffff\1\156\1\164\1\163\3\60\1\uffff\1\164\1\60\1\145\2\uffff\1\123\2\145\1\157\1\141\1\104\1\124\1\115\1\uffff\1\60\1\uffff\1\141\1\60\1\142\1\143\1\144\1\156\1\146\1\101\1\102\1\124\1\121\1\uffff\1\162\1\uffff\1\106\1\165\1\151\1\147\1\153\1\60\1\103\2\120\1\143\1\154\1\162\1\163\1\157\1\141\1\uffff\3\60\1\150\1\165\1\151\1\60\1\104\1\60\3\uffff\1\60\1\170\1\164\1\uffff\1\102\2\uffff\1\60\1\171\1\60\1\uffff\1\60\2\uffff";
     static final String DFA12_maxS =
-        "\1\uffff\1\162\1\160\1\145\3\uffff\1\170\1\uffff\1\164\2\uffff\1\167\1\157\1\151\1\144\1\uffff\2\164\1\157\1\171\1\157\1\156\1\157\1\172\2\uffff\2\uffff\1\57\2\uffff\1\145\1\172\1\uffff\2\160\3\uffff\2\164\1\uffff\1\162\2\uffff\1\156\1\162\1\141\1\162\1\151\1\142\1\171\1\155\1\172\1\uffff\1\163\2\157\1\156\1\123\1\166\1\165\2\164\1\157\5\uffff\1\146\1\uffff\1\137\1\145\1\151\1\145\1\141\1\147\1\151\1\147\1\151\1\156\1\154\1\155\1\145\1\uffff\5\172\1\142\1\147\1\121\1\124\1\142\2\145\1\154\1\151\2\156\1\164\1\156\1\164\1\154\1\156\1\147\1\156\3\145\1\172\5\uffff\1\157\1\172\1\114\1\157\1\154\1\172\1\147\1\145\1\170\1\141\1\144\1\171\1\144\2\145\1\147\1\145\1\147\1\144\1\120\1\154\1\uffff\1\153\1\uffff\1\104\1\157\1\145\1\uffff\1\145\1\141\1\72\1\155\2\145\1\172\1\163\1\147\1\124\1\127\1\162\1\172\1\124\2\145\1\172\1\162\1\154\1\172\1\162\1\156\1\uffff\1\145\1\156\1\163\1\uffff\1\172\1\171\2\141\2\145\1\172\1\uffff\1\141\1\162\1\141\1\uffff\1\151\1\163\1\uffff\2\172\1\72\1\143\1\172\1\uffff\1\172\1\142\1\164\1\142\1\143\1\uffff\1\142\1\103\1\146\1\166\1\172\3\uffff\1\151\2\uffff\1\154\1\141\1\172\1\165\2\154\1\172\1\145\1\uffff\2\145\1\112\1\uffff\1\162\1\145\1\141\1\uffff\1\162\1\163\1\172\1\160\1\151\1\172\1\163\2\172\1\uffff\1\141\1\164\1\uffff\1\163\2\uffff\1\172\1\171\1\172\1\uffff\1\172\2\uffff";
+        "\1\uffff\1\162\1\160\1\145\3\uffff\1\170\1\uffff\1\164\2\uffff\1\167\1\157\1\151\1\144\1\uffff\2\164\1\157\1\171\1\157\1\156\1\157\1\172\2\uffff\2\uffff\1\57\2\uffff\1\145\1\172\1\uffff\2\160\3\uffff\2\164\1\uffff\1\162\2\uffff\1\156\1\162\1\141\1\162\1\151\1\142\1\155\1\172\1\uffff\1\163\2\157\1\156\1\123\1\166\1\165\2\164\1\157\5\uffff\1\146\1\uffff\1\137\1\145\1\151\1\145\1\141\1\147\1\151\1\147\1\151\1\156\1\154\1\145\1\uffff\5\172\1\142\1\147\1\121\1\124\1\142\2\145\1\154\1\151\2\156\1\164\1\156\1\164\1\154\1\156\1\147\1\156\2\145\1\172\5\uffff\1\157\1\172\1\114\1\157\1\154\1\172\1\147\1\145\1\170\1\141\1\144\1\171\1\144\2\145\1\147\1\145\1\147\1\144\1\120\1\uffff\1\153\1\uffff\1\104\1\157\1\145\1\uffff\1\145\1\141\1\72\1\155\2\145\1\172\1\163\1\147\1\124\1\127\1\162\1\172\1\124\1\145\1\172\1\162\1\154\1\172\1\162\1\156\1\uffff\1\145\1\156\1\163\1\uffff\1\172\1\171\2\141\1\145\1\141\1\156\1\141\1\150\1\101\1\145\1\162\1\145\1\143\1\172\1\uffff\1\141\1\162\1\uffff\1\151\1\163\1\uffff\2\172\1\72\1\143\1\172\1\uffff\1\172\1\142\1\164\1\142\1\146\1\164\1\154\1\171\1\165\1\162\1\102\1\141\1\143\1\164\1\uffff\1\142\1\103\1\166\1\172\3\uffff\1\151\2\uffff\1\154\1\141\1\172\1\153\1\145\1\151\1\155\1\164\1\163\1\103\1\160\2\165\2\154\1\145\1\uffff\2\145\1\122\1\154\1\145\1\uffff\1\141\1\147\1\144\1\145\1\150\1\145\1\172\1\150\1\162\1\141\1\145\1\141\1\162\1\163\1\172\1\160\1\145\1\154\1\157\1\165\1\162\1\172\1\162\1\141\1\154\1\62\1\171\1\uffff\1\121\1\151\1\164\1\172\1\163\2\172\1\uffff\1\141\1\102\1\163\1\141\1\156\1\170\1\166\1\uffff\1\141\1\164\1\145\1\103\1\172\1\114\1\164\1\157\1\uffff\1\163\2\uffff\1\172\1\103\1\164\1\163\1\147\1\172\1\151\1\164\1\151\1\141\1\154\1\uffff\1\172\1\171\1\162\1\172\1\uffff\2\172\1\164\1\157\1\uffff\1\143\1\151\1\157\1\146\1\151\1\145\1\uffff\2\172\3\uffff\1\151\1\104\1\145\1\157\1\156\1\172\1\145\1\163\2\uffff\1\143\1\102\1\163\1\156\1\172\1\uffff\1\156\1\164\1\163\3\172\1\uffff\1\164\1\172\1\145\2\uffff\3\145\1\157\1\141\1\120\1\124\1\115\1\uffff\1\172\1\uffff\1\141\1\172\1\142\1\143\1\144\1\156\1\146\1\101\1\102\1\124\1\121\1\uffff\1\162\1\uffff\1\106\1\165\1\151\1\147\1\153\1\172\1\103\2\120\1\143\1\154\1\162\1\163\1\157\1\141\1\uffff\3\172\1\150\1\165\1\151\1\172\1\104\1\172\3\uffff\1\172\1\170\1\164\1\uffff\1\102\2\uffff\1\172\1\171\1\172\1\uffff\1\172\2\uffff";
     static final String DFA12_acceptS =
-        "\4\uffff\1\4\1\5\1\6\1\uffff\1\12\1\uffff\1\14\1\15\4\uffff\1\22\10\uffff\1\50\1\51\3\uffff\1\55\1\56\2\uffff\1\50\2\uffff\1\4\1\5\1\6\2\uffff\1\12\1\uffff\1\14\1\15\11\uffff\1\22\12\uffff\1\51\1\52\1\53\1\54\1\55\1\uffff\1\23\15\uffff\1\21\33\uffff\1\24\1\26\1\27\1\25\1\30\25\uffff\1\46\1\uffff\1\41\3\uffff\1\45\26\uffff\1\1\3\uffff\1\10\7\uffff\1\44\3\uffff\1\33\2\uffff\1\43\5\uffff\1\11\5\uffff\1\37\5\uffff\1\42\1\47\1\2\1\uffff\1\7\1\13\10\uffff\1\35\3\uffff\1\32\3\uffff\1\36\11\uffff\1\16\2\uffff\1\17\1\uffff\1\34\1\3\3\uffff\1\31\1\uffff\1\20\1\40";
+        "\4\uffff\1\4\1\5\1\6\1\uffff\1\12\1\uffff\1\14\1\15\4\uffff\1\22\10\uffff\1\101\1\102\3\uffff\1\106\1\107\2\uffff\1\101\2\uffff\1\4\1\5\1\6\2\uffff\1\12\1\uffff\1\14\1\15\10\uffff\1\22\12\uffff\1\102\1\103\1\104\1\105\1\106\1\uffff\1\23\14\uffff\1\21\32\uffff\1\24\1\26\1\27\1\25\1\30\24\uffff\1\77\1\uffff\1\72\3\uffff\1\76\25\uffff\1\1\3\uffff\1\10\17\uffff\1\75\2\uffff\1\33\2\uffff\1\74\5\uffff\1\11\16\uffff\1\66\4\uffff\1\73\1\100\1\2\1\uffff\1\7\1\13\20\uffff\1\35\5\uffff\1\32\33\uffff\1\57\7\uffff\1\16\7\uffff\1\36\10\uffff\1\17\1\uffff\1\34\1\3\13\uffff\1\56\4\uffff\1\31\4\uffff\1\51\6\uffff\1\62\2\uffff\1\20\1\64\1\61\10\uffff\1\67\1\70\5\uffff\1\54\6\uffff\1\53\3\uffff\1\65\1\52\10\uffff\1\60\1\uffff\1\71\13\uffff\1\55\1\uffff\1\37\17\uffff\1\45\11\uffff\1\46\1\47\1\50\3\uffff\1\42\1\uffff\1\44\1\63\3\uffff\1\40\1\uffff\1\43\1\41";
     static final String DFA12_specialS =
-        "\1\0\32\uffff\1\1\1\2\u00df\uffff}>";
+        "\1\2\32\uffff\1\0\1\1\u0191\uffff}>";
     static final String[] DFA12_transitionS = {
             "\11\37\2\36\2\37\1\36\22\37\1\36\1\37\1\33\4\37\1\34\4\37\1\5\2\37\1\35\12\32\1\20\2\37\1\12\3\37\1\31\1\27\1\31\1\25\4\31\1\26\1\15\1\31\1\23\1\24\5\31\1\14\1\16\6\31\1\10\1\37\1\13\1\30\1\31\1\37\1\2\2\31\1\3\1\7\3\31\1\17\3\31\1\22\1\31\1\21\1\1\2\31\1\11\7\31\1\4\1\37\1\6\uff82\37",
             "\1\41\6\uffff\1\40",
@@ -1744,65 +2469,66 @@ public class InternalSpringFluentDSLLexer extends Lexer {
             "",
             "\1\56\6\uffff\1\57\3\uffff\1\61\2\uffff\1\60",
             "\1\62",
-            "\1\63\6\uffff\1\64\1\65",
-            "\1\66",
+            "\1\63\7\uffff\1\64",
+            "\1\65",
             "",
-            "\1\70\3\uffff\1\71",
+            "\1\67\3\uffff\1\70",
+            "\1\71",
             "\1\72",
             "\1\73",
-            "\1\74",
-            "\1\77\3\uffff\1\75\11\uffff\1\76",
+            "\1\76\3\uffff\1\74\11\uffff\1\75",
+            "\1\77",
             "\1\100",
-            "\1\101",
             "\32\42\4\uffff\1\42\1\uffff\32\42",
             "",
             "",
-            "\0\103",
-            "\0\103",
-            "\1\104\4\uffff\1\105",
+            "\0\102",
+            "\0\102",
+            "\1\103\4\uffff\1\104",
             "",
             "",
-            "\1\107",
+            "\1\106",
             "\12\42\7\uffff\32\42\4\uffff\1\42\1\uffff\32\42",
             "",
+            "\1\110",
             "\1\111",
+            "",
+            "",
+            "",
             "\1\112",
-            "",
-            "",
-            "",
             "\1\113",
+            "",
             "\1\114",
             "",
+            "",
             "\1\115",
-            "",
-            "",
             "\1\116",
             "\1\117",
             "\1\120",
             "\1\121",
             "\1\122",
             "\1\123",
-            "\1\124",
-            "\1\125",
             "\12\42\7\uffff\32\42\4\uffff\1\42\1\uffff\32\42",
             "",
-            "\1\127",
-            "\1\130\1\uffff\1\131",
-            "\1\133\1\uffff\1\132",
-            "\1\134\1\135",
+            "\1\125",
+            "\1\126\1\uffff\1\127",
+            "\1\131\1\uffff\1\130",
+            "\1\132\1\133",
+            "\1\134",
+            "\1\135",
             "\1\136",
             "\1\137",
             "\1\140",
             "\1\141",
+            "",
+            "",
+            "",
+            "",
+            "",
             "\1\142",
+            "",
             "\1\143",
-            "",
-            "",
-            "",
-            "",
-            "",
             "\1\144",
-            "",
             "\1\145",
             "\1\146",
             "\1\147",
@@ -1813,15 +2539,15 @@ public class InternalSpringFluentDSLLexer extends Lexer {
             "\1\154",
             "\1\155",
             "\1\156",
-            "\1\157",
-            "\1\160",
-            "\1\161",
             "",
             "\12\42\7\uffff\32\42\4\uffff\1\42\1\uffff\32\42",
             "\12\42\7\uffff\32\42\4\uffff\1\42\1\uffff\32\42",
             "\12\42\7\uffff\32\42\4\uffff\1\42\1\uffff\32\42",
             "\12\42\7\uffff\32\42\4\uffff\1\42\1\uffff\32\42",
             "\12\42\7\uffff\32\42\4\uffff\1\42\1\uffff\32\42",
+            "\1\164",
+            "\1\165",
+            "\1\166",
             "\1\167",
             "\1\170",
             "\1\171",
@@ -1839,144 +2565,321 @@ public class InternalSpringFluentDSLLexer extends Lexer {
             "\1\u0085",
             "\1\u0086",
             "\1\u0087",
-            "\1\u0088",
-            "\1\u0089",
-            "\1\u008a",
-            "\1\u008b",
             "\12\42\7\uffff\32\42\4\uffff\1\42\1\uffff\32\42",
             "",
             "",
             "",
             "",
             "",
+            "\1\u0089",
+            "\12\42\7\uffff\32\42\4\uffff\1\42\1\uffff\32\42",
+            "\1\u008b",
+            "\1\u008c",
             "\1\u008d",
             "\12\42\7\uffff\32\42\4\uffff\1\42\1\uffff\32\42",
             "\1\u008f",
             "\1\u0090",
             "\1\u0091",
-            "\12\42\7\uffff\32\42\4\uffff\1\42\1\uffff\32\42",
+            "\1\u0092",
             "\1\u0093",
-            "\1\u0094",
-            "\1\u0095",
+            "\1\u0094\17\uffff\1\u0095",
             "\1\u0096",
             "\1\u0097",
-            "\1\u0098\17\uffff\1\u0099",
+            "\1\u0098",
+            "\1\u0099",
             "\1\u009a",
             "\1\u009b",
             "\1\u009c",
             "\1\u009d",
+            "",
             "\1\u009e",
+            "",
             "\1\u009f",
             "\1\u00a0",
             "\1\u00a1",
+            "",
             "\1\u00a2",
-            "",
             "\1\u00a3",
-            "",
             "\1\u00a4",
             "\1\u00a5",
             "\1\u00a6",
-            "",
             "\1\u00a7",
-            "\1\u00a8",
+            "\12\42\7\uffff\32\42\4\uffff\1\42\1\uffff\32\42",
             "\1\u00a9",
             "\1\u00aa",
             "\1\u00ab",
-            "\1\u00ac",
-            "\12\42\7\uffff\32\42\4\uffff\1\42\1\uffff\32\42",
-            "\1\u00ae",
-            "\1\u00af",
-            "\1\u00b0",
-            "\1\u00b1\16\uffff\1\u00b3\3\uffff\1\u00b2",
-            "\1\u00b4",
-            "\12\42\7\uffff\32\42\4\uffff\1\42\1\uffff\32\42",
-            "\1\u00b6",
+            "\1\u00b6\2\uffff\1\u00ac\2\uffff\1\u00b4\1\uffff\1\u00af\1\u00b3\1\u00ae\3\uffff\1\u00b2\3\uffff\1\u00b5\1\u00b1\1\uffff\1\u00b0\1\u00ad",
             "\1\u00b7",
-            "\1\u00b8",
             "\12\42\7\uffff\32\42\4\uffff\1\42\1\uffff\32\42",
+            "\1\u00b9",
             "\1\u00ba",
-            "\1\u00bb",
             "\12\42\7\uffff\32\42\4\uffff\1\42\1\uffff\32\42",
+            "\1\u00bc",
             "\1\u00bd",
-            "\1\u00be",
-            "",
+            "\12\42\7\uffff\32\42\4\uffff\1\42\1\uffff\32\42",
             "\1\u00bf",
             "\1\u00c0",
+            "",
             "\1\u00c1",
+            "\1\u00c2",
+            "\1\u00c3",
             "",
             "\12\42\7\uffff\32\42\4\uffff\1\42\1\uffff\32\42",
-            "\1\u00c3",
-            "\1\u00c4",
             "\1\u00c5",
             "\1\u00c6",
             "\1\u00c7",
-            "\12\42\7\uffff\32\42\4\uffff\1\42\1\uffff\32\42",
-            "",
+            "\1\u00c8",
             "\1\u00c9",
             "\1\u00ca",
             "\1\u00cb",
-            "",
             "\1\u00cc",
             "\1\u00cd",
-            "",
-            "\12\42\7\uffff\32\42\4\uffff\1\42\1\uffff\32\42",
-            "\12\42\7\uffff\32\42\4\uffff\1\42\1\uffff\32\42",
+            "\1\u00cf\40\uffff\1\u00ce",
             "\1\u00d0",
             "\1\u00d1",
+            "\1\u00d2",
             "\12\42\7\uffff\32\42\4\uffff\1\42\1\uffff\32\42",
             "",
-            "\12\42\7\uffff\32\42\4\uffff\1\42\1\uffff\32\42",
             "\1\u00d4",
             "\1\u00d5",
+            "",
             "\1\u00d6",
             "\1\u00d7",
             "",
-            "\1\u00d8",
-            "\1\u00d9",
+            "\12\42\7\uffff\32\42\4\uffff\1\42\1\uffff\32\42",
+            "\12\42\7\uffff\32\42\4\uffff\1\42\1\uffff\32\42",
             "\1\u00da",
             "\1\u00db",
             "\12\42\7\uffff\32\42\4\uffff\1\42\1\uffff\32\42",
             "",
-            "",
-            "",
-            "\1\u00dd",
-            "",
-            "",
+            "\12\42\7\uffff\32\42\4\uffff\1\42\1\uffff\32\42",
             "\1\u00de",
             "\1\u00df",
-            "\12\42\7\uffff\32\42\4\uffff\1\42\1\uffff\32\42",
+            "\1\u00e0",
             "\1\u00e1",
             "\1\u00e2",
             "\1\u00e3",
-            "\12\42\7\uffff\32\42\4\uffff\1\42\1\uffff\32\42",
+            "\1\u00e4",
             "\1\u00e5",
-            "",
             "\1\u00e6",
             "\1\u00e7",
             "\1\u00e8",
-            "",
             "\1\u00e9",
             "\1\u00ea",
-            "\1\u00eb",
             "",
+            "\1\u00eb",
             "\1\u00ec",
             "\1\u00ed",
             "\12\42\7\uffff\32\42\4\uffff\1\42\1\uffff\32\42",
-            "\1\u00ef",
-            "\1\u00f0",
-            "\12\42\7\uffff\32\42\4\uffff\1\42\1\uffff\32\42",
-            "\1\u00f2",
-            "\12\42\7\uffff\32\42\4\uffff\1\42\1\uffff\32\42",
-            "\12\42\7\uffff\32\42\4\uffff\1\42\1\uffff\32\42",
             "",
+            "",
+            "",
+            "\1\u00ef",
+            "",
+            "",
+            "\1\u00f0",
+            "\1\u00f1",
+            "\12\42\7\uffff\5\42\1\u00f2\14\42\1\u00f3\7\42\4\uffff\1\42\1\uffff\32\42",
             "\1\u00f5",
             "\1\u00f6",
-            "",
             "\1\u00f7",
+            "\1\u00f8",
+            "\1\u00f9",
+            "\1\u00fa",
+            "\1\u00fb",
+            "\1\u00fc",
+            "\1\u00fd",
+            "\1\u00fe",
+            "\1\u00ff",
+            "\1\u0100",
+            "\1\u0101",
+            "",
+            "\1\u0102",
+            "\1\u0103",
+            "\1\u0106\4\uffff\1\u0104\2\uffff\1\u0107\4\uffff\1\u0105",
+            "\1\u0108",
+            "\1\u0109",
+            "",
+            "\1\u010a",
+            "\1\u010b",
+            "\1\u010c",
+            "\1\u010d",
+            "\1\u010e",
+            "\1\u010f",
+            "\12\42\7\uffff\32\42\4\uffff\1\42\1\uffff\32\42",
+            "\1\u0111",
+            "\1\u0112",
+            "\1\u0113",
+            "\1\u0114",
+            "\1\u0115",
+            "\1\u0116",
+            "\1\u0117",
+            "\12\42\7\uffff\32\42\4\uffff\1\42\1\uffff\32\42",
+            "\1\u011a\53\uffff\1\u0119",
+            "\1\u011b",
+            "\1\u011c",
+            "\1\u011d",
+            "\1\u011e",
+            "\1\u011f",
+            "\12\42\7\uffff\32\42\4\uffff\1\42\1\uffff\32\42",
+            "\1\u0121",
+            "\1\u0122",
+            "\1\u0123",
+            "\1\u0124",
+            "\1\u0125",
+            "",
+            "\1\u0126",
+            "\1\u0127",
+            "\1\u0128",
+            "\12\42\7\uffff\32\42\4\uffff\1\42\1\uffff\32\42",
+            "\1\u012a",
+            "\12\42\7\uffff\32\42\4\uffff\1\42\1\uffff\32\42",
+            "\12\42\7\uffff\32\42\4\uffff\1\42\1\uffff\32\42",
+            "",
+            "\1\u012d",
+            "\1\u012e",
+            "\1\u012f",
+            "\1\u0130",
+            "\1\u0131",
+            "\1\u0132",
+            "\1\u0133",
+            "",
+            "\1\u0134",
+            "\1\u0135",
+            "\1\u0136",
+            "\1\u0137",
+            "\12\42\7\uffff\32\42\4\uffff\1\42\1\uffff\32\42",
+            "\1\u0139",
+            "\1\u013a",
+            "\1\u013b",
+            "",
+            "\1\u013c",
             "",
             "",
             "\12\42\7\uffff\32\42\4\uffff\1\42\1\uffff\32\42",
-            "\1\u00f9",
+            "\1\u013e",
+            "\1\u013f",
+            "\1\u0140",
+            "\1\u0141",
+            "\12\42\7\uffff\32\42\4\uffff\1\42\1\uffff\32\42",
+            "\1\u0143",
+            "\1\u0144",
+            "\1\u0145",
+            "\1\u0146",
+            "\1\u0147",
+            "",
+            "\12\42\7\uffff\23\42\1\u0148\6\42\4\uffff\1\42\1\uffff\32\42",
+            "\1\u014a",
+            "\1\u014b",
+            "\12\42\7\uffff\32\42\4\uffff\1\42\1\uffff\32\42",
+            "",
+            "\12\42\7\uffff\32\42\4\uffff\1\42\1\uffff\32\42",
+            "\12\42\7\uffff\32\42\4\uffff\1\42\1\uffff\32\42",
+            "\1\u014f",
+            "\1\u0150",
+            "",
+            "\1\u0151",
+            "\1\u0152",
+            "\1\u0153",
+            "\1\u0154",
+            "\1\u0155",
+            "\1\u0156",
+            "",
+            "\12\42\7\uffff\32\42\4\uffff\1\42\1\uffff\32\42",
+            "\12\42\7\uffff\32\42\4\uffff\1\42\1\uffff\32\42",
+            "",
+            "",
+            "",
+            "\1\u0159",
+            "\1\u015a",
+            "\1\u015b",
+            "\1\u015c",
+            "\1\u015d",
+            "\12\42\7\uffff\32\42\4\uffff\1\42\1\uffff\32\42",
+            "\1\u015f",
+            "\1\u0160",
+            "",
+            "",
+            "\1\u0161",
+            "\1\u0162",
+            "\1\u0163",
+            "\1\u0164",
+            "\12\42\7\uffff\32\42\4\uffff\1\42\1\uffff\32\42",
+            "",
+            "\1\u0166",
+            "\1\u0167",
+            "\1\u0168",
+            "\12\42\7\uffff\32\42\4\uffff\1\42\1\uffff\32\42",
+            "\12\42\7\uffff\32\42\4\uffff\1\42\1\uffff\32\42",
+            "\12\42\7\uffff\1\u0172\6\42\1\u0171\1\42\1\u0170\1\u016f\1\42\1\u016e\4\42\1\u016d\1\u016c\3\42\1\u016b\3\42\4\uffff\1\42\1\uffff\32\42",
+            "",
+            "\1\u0174",
+            "\12\42\7\uffff\32\42\4\uffff\1\42\1\uffff\32\42",
+            "\1\u0176",
+            "",
+            "",
+            "\1\u0177\21\uffff\1\u0178",
+            "\1\u0179",
+            "\1\u017a",
+            "\1\u017b",
+            "\1\u017c",
+            "\1\u017e\13\uffff\1\u017d",
+            "\1\u017f",
+            "\1\u0180",
+            "",
+            "\12\42\7\uffff\32\42\4\uffff\1\42\1\uffff\32\42",
+            "",
+            "\1\u0182",
+            "\12\42\7\uffff\32\42\4\uffff\1\42\1\uffff\32\42",
+            "\1\u0184",
+            "\1\u0185",
+            "\1\u0186",
+            "\1\u0187",
+            "\1\u0188",
+            "\1\u0189",
+            "\1\u018a",
+            "\1\u018b",
+            "\1\u018c",
+            "",
+            "\1\u018d",
+            "",
+            "\1\u018e",
+            "\1\u018f",
+            "\1\u0190",
+            "\1\u0191",
+            "\1\u0192",
+            "\12\42\7\uffff\32\42\4\uffff\1\42\1\uffff\32\42",
+            "\1\u0194",
+            "\1\u0195",
+            "\1\u0196",
+            "\1\u0197",
+            "\1\u0198",
+            "\1\u0199",
+            "\1\u019a",
+            "\1\u019b",
+            "\1\u019c",
+            "",
+            "\12\42\7\uffff\32\42\4\uffff\1\42\1\uffff\32\42",
+            "\12\42\7\uffff\32\42\4\uffff\1\42\1\uffff\32\42",
+            "\12\42\7\uffff\32\42\4\uffff\1\42\1\uffff\32\42",
+            "\1\u01a0",
+            "\1\u01a1",
+            "\1\u01a2",
+            "\12\42\7\uffff\32\42\4\uffff\1\42\1\uffff\32\42",
+            "\1\u01a4",
+            "\12\42\7\uffff\32\42\4\uffff\1\42\1\uffff\32\42",
+            "",
+            "",
+            "",
+            "\12\42\7\uffff\32\42\4\uffff\1\42\1\uffff\32\42",
+            "\1\u01a7",
+            "\1\u01a8",
+            "",
+            "\1\u01a9",
+            "",
+            "",
+            "\12\42\7\uffff\32\42\4\uffff\1\42\1\uffff\32\42",
+            "\1\u01ab",
             "\12\42\7\uffff\32\42\4\uffff\1\42\1\uffff\32\42",
             "",
             "\12\42\7\uffff\32\42\4\uffff\1\42\1\uffff\32\42",
@@ -2014,13 +2917,33 @@ public class InternalSpringFluentDSLLexer extends Lexer {
             this.transition = DFA12_transition;
         }
         public String getDescription() {
-            return "1:1: Tokens : ( T__11 | T__12 | T__13 | T__14 | T__15 | T__16 | T__17 | T__18 | T__19 | T__20 | T__21 | T__22 | T__23 | T__24 | T__25 | T__26 | T__27 | T__28 | T__29 | T__30 | T__31 | T__32 | T__33 | T__34 | T__35 | T__36 | T__37 | T__38 | T__39 | T__40 | T__41 | T__42 | T__43 | T__44 | T__45 | T__46 | T__47 | T__48 | T__49 | RULE_ID | RULE_INT | RULE_STRING | RULE_ML_COMMENT | RULE_SL_COMMENT | RULE_WS | RULE_ANY_OTHER );";
+            return "1:1: Tokens : ( T__11 | T__12 | T__13 | T__14 | T__15 | T__16 | T__17 | T__18 | T__19 | T__20 | T__21 | T__22 | T__23 | T__24 | T__25 | T__26 | T__27 | T__28 | T__29 | T__30 | T__31 | T__32 | T__33 | T__34 | T__35 | T__36 | T__37 | T__38 | T__39 | T__40 | T__41 | T__42 | T__43 | T__44 | T__45 | T__46 | T__47 | T__48 | T__49 | T__50 | T__51 | T__52 | T__53 | T__54 | T__55 | T__56 | T__57 | T__58 | T__59 | T__60 | T__61 | T__62 | T__63 | T__64 | T__65 | T__66 | T__67 | T__68 | T__69 | T__70 | T__71 | T__72 | T__73 | T__74 | RULE_ID | RULE_INT | RULE_STRING | RULE_ML_COMMENT | RULE_SL_COMMENT | RULE_WS | RULE_ANY_OTHER );";
         }
         public int specialStateTransition(int s, IntStream _input) throws NoViableAltException {
             IntStream input = _input;
         	int _s = s;
             switch ( s ) {
                     case 0 : 
+                        int LA12_27 = input.LA(1);
+
+                        s = -1;
+                        if ( ((LA12_27>='\u0000' && LA12_27<='\uFFFF')) ) {s = 66;}
+
+                        else s = 31;
+
+                        if ( s>=0 ) return s;
+                        break;
+                    case 1 : 
+                        int LA12_28 = input.LA(1);
+
+                        s = -1;
+                        if ( ((LA12_28>='\u0000' && LA12_28<='\uFFFF')) ) {s = 66;}
+
+                        else s = 31;
+
+                        if ( s>=0 ) return s;
+                        break;
+                    case 2 : 
                         int LA12_0 = input.LA(1);
 
                         s = -1;
@@ -2085,26 +3008,6 @@ public class InternalSpringFluentDSLLexer extends Lexer {
                         else if ( ((LA12_0>='\t' && LA12_0<='\n')||LA12_0=='\r'||LA12_0==' ') ) {s = 30;}
 
                         else if ( ((LA12_0>='\u0000' && LA12_0<='\b')||(LA12_0>='\u000B' && LA12_0<='\f')||(LA12_0>='\u000E' && LA12_0<='\u001F')||LA12_0=='!'||(LA12_0>='#' && LA12_0<='&')||(LA12_0>='(' && LA12_0<='+')||(LA12_0>='-' && LA12_0<='.')||(LA12_0>=';' && LA12_0<='<')||(LA12_0>='>' && LA12_0<='@')||LA12_0=='\\'||LA12_0=='`'||LA12_0=='|'||(LA12_0>='~' && LA12_0<='\uFFFF')) ) {s = 31;}
-
-                        if ( s>=0 ) return s;
-                        break;
-                    case 1 : 
-                        int LA12_27 = input.LA(1);
-
-                        s = -1;
-                        if ( ((LA12_27>='\u0000' && LA12_27<='\uFFFF')) ) {s = 67;}
-
-                        else s = 31;
-
-                        if ( s>=0 ) return s;
-                        break;
-                    case 2 : 
-                        int LA12_28 = input.LA(1);
-
-                        s = -1;
-                        if ( ((LA12_28>='\u0000' && LA12_28<='\uFFFF')) ) {s = 67;}
-
-                        else s = 31;
 
                         if ( s>=0 ) return s;
                         break;

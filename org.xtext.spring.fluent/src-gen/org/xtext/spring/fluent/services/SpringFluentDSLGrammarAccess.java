@@ -595,20 +595,84 @@ public class SpringFluentDSLGrammarAccess extends AbstractElementFinder.Abstract
 		private final Keyword cMySQLDriverMySQLDriverKeyword_3_0 = (Keyword)cMySQLDriverEnumLiteralDeclaration_3.eContents().get(0);
 		private final EnumLiteralDeclaration cDevToolsEnumLiteralDeclaration_4 = (EnumLiteralDeclaration)cAlternatives.eContents().get(4);
 		private final Keyword cDevToolsDevToolsKeyword_4_0 = (Keyword)cDevToolsEnumLiteralDeclaration_4.eContents().get(0);
-		private final EnumLiteralDeclaration cThymeleafEnumLiteralDeclaration_5 = (EnumLiteralDeclaration)cAlternatives.eContents().get(5);
-		private final Keyword cThymeleafThymeleafKeyword_5_0 = (Keyword)cThymeleafEnumLiteralDeclaration_5.eContents().get(0);
-		private final EnumLiteralDeclaration cSwaggerEnumLiteralDeclaration_6 = (EnumLiteralDeclaration)cAlternatives.eContents().get(6);
-		private final Keyword cSwaggerSwaggerKeyword_6_0 = (Keyword)cSwaggerEnumLiteralDeclaration_6.eContents().get(0);
-		private final EnumLiteralDeclaration cSpringSecurityEnumLiteralDeclaration_7 = (EnumLiteralDeclaration)cAlternatives.eContents().get(7);
-		private final Keyword cSpringSecuritySpringSecurityKeyword_7_0 = (Keyword)cSpringSecurityEnumLiteralDeclaration_7.eContents().get(0);
+		private final EnumLiteralDeclaration cSpringKafkaEnumLiteralDeclaration_5 = (EnumLiteralDeclaration)cAlternatives.eContents().get(5);
+		private final Keyword cSpringKafkaSpringKafkaKeyword_5_0 = (Keyword)cSpringKafkaEnumLiteralDeclaration_5.eContents().get(0);
+		private final EnumLiteralDeclaration cSpringIntegrationWSEnumLiteralDeclaration_6 = (EnumLiteralDeclaration)cAlternatives.eContents().get(6);
+		private final Keyword cSpringIntegrationWSSpringIntegrationWSKeyword_6_0 = (Keyword)cSpringIntegrationWSEnumLiteralDeclaration_6.eContents().get(0);
+		private final EnumLiteralDeclaration cSpringIntegrationWebFluxEnumLiteralDeclaration_7 = (EnumLiteralDeclaration)cAlternatives.eContents().get(7);
+		private final Keyword cSpringIntegrationWebFluxSpringIntegrationWebFluxKeyword_7_0 = (Keyword)cSpringIntegrationWebFluxEnumLiteralDeclaration_7.eContents().get(0);
+		private final EnumLiteralDeclaration cSpringIntegrationSecurityEnumLiteralDeclaration_8 = (EnumLiteralDeclaration)cAlternatives.eContents().get(8);
+		private final Keyword cSpringIntegrationSecuritySpringIntegrationSecurityKeyword_8_0 = (Keyword)cSpringIntegrationSecurityEnumLiteralDeclaration_8.eContents().get(0);
+		private final EnumLiteralDeclaration cSpringIntegrationRedisEnumLiteralDeclaration_9 = (EnumLiteralDeclaration)cAlternatives.eContents().get(9);
+		private final Keyword cSpringIntegrationRedisSpringIntegrationRedisKeyword_9_0 = (Keyword)cSpringIntegrationRedisEnumLiteralDeclaration_9.eContents().get(0);
+		private final EnumLiteralDeclaration cSpringIntegrationMongoDBEnumLiteralDeclaration_10 = (EnumLiteralDeclaration)cAlternatives.eContents().get(10);
+		private final Keyword cSpringIntegrationMongoDBSpringIntegrationMongoDBKeyword_10_0 = (Keyword)cSpringIntegrationMongoDBEnumLiteralDeclaration_10.eContents().get(0);
+		private final EnumLiteralDeclaration cSpringIntegrationKafkaEnumLiteralDeclaration_11 = (EnumLiteralDeclaration)cAlternatives.eContents().get(11);
+		private final Keyword cSpringIntegrationKafkaSpringIntegrationKafkaKeyword_11_0 = (Keyword)cSpringIntegrationKafkaEnumLiteralDeclaration_11.eContents().get(0);
+		private final EnumLiteralDeclaration cSpringIntegrationJPAEnumLiteralDeclaration_12 = (EnumLiteralDeclaration)cAlternatives.eContents().get(12);
+		private final Keyword cSpringIntegrationJPASpringIntegrationJPAKeyword_12_0 = (Keyword)cSpringIntegrationJPAEnumLiteralDeclaration_12.eContents().get(0);
+		private final EnumLiteralDeclaration cSpringIntegrationJDBCEnumLiteralDeclaration_13 = (EnumLiteralDeclaration)cAlternatives.eContents().get(13);
+		private final Keyword cSpringIntegrationJDBCSpringIntegrationJDBCKeyword_13_0 = (Keyword)cSpringIntegrationJDBCEnumLiteralDeclaration_13.eContents().get(0);
+		private final EnumLiteralDeclaration cSpringIntegrationHTTPEnumLiteralDeclaration_14 = (EnumLiteralDeclaration)cAlternatives.eContents().get(14);
+		private final Keyword cSpringIntegrationHTTPSpringIntegrationHTTPKeyword_14_0 = (Keyword)cSpringIntegrationHTTPEnumLiteralDeclaration_14.eContents().get(0);
+		private final EnumLiteralDeclaration cSpringIntegrationAMQPEnumLiteralDeclaration_15 = (EnumLiteralDeclaration)cAlternatives.eContents().get(15);
+		private final Keyword cSpringIntegrationAMQPSpringIntegrationAMQPKeyword_15_0 = (Keyword)cSpringIntegrationAMQPEnumLiteralDeclaration_15.eContents().get(0);
+		private final EnumLiteralDeclaration cSpringWebFluxEnumLiteralDeclaration_16 = (EnumLiteralDeclaration)cAlternatives.eContents().get(16);
+		private final Keyword cSpringWebFluxSpringWebFluxKeyword_16_0 = (Keyword)cSpringWebFluxEnumLiteralDeclaration_16.eContents().get(0);
+		private final EnumLiteralDeclaration cSpringWebServicesEnumLiteralDeclaration_17 = (EnumLiteralDeclaration)cAlternatives.eContents().get(17);
+		private final Keyword cSpringWebServicesSpringWebServicesKeyword_17_0 = (Keyword)cSpringWebServicesEnumLiteralDeclaration_17.eContents().get(0);
+		private final EnumLiteralDeclaration cSpringValidationEnumLiteralDeclaration_18 = (EnumLiteralDeclaration)cAlternatives.eContents().get(18);
+		private final Keyword cSpringValidationSpringValidationKeyword_18_0 = (Keyword)cSpringValidationEnumLiteralDeclaration_18.eContents().get(0);
+		private final EnumLiteralDeclaration cSpringThymeleafEnumLiteralDeclaration_19 = (EnumLiteralDeclaration)cAlternatives.eContents().get(19);
+		private final Keyword cSpringThymeleafSpringThymeleafKeyword_19_0 = (Keyword)cSpringThymeleafEnumLiteralDeclaration_19.eContents().get(0);
+		private final EnumLiteralDeclaration cSpringOAuth2ClientEnumLiteralDeclaration_20 = (EnumLiteralDeclaration)cAlternatives.eContents().get(20);
+		private final Keyword cSpringOAuth2ClientSpringOAuth2ClientKeyword_20_0 = (Keyword)cSpringOAuth2ClientEnumLiteralDeclaration_20.eContents().get(0);
+		private final EnumLiteralDeclaration cSpringJerseyEnumLiteralDeclaration_21 = (EnumLiteralDeclaration)cAlternatives.eContents().get(21);
+		private final Keyword cSpringJerseySpringJerseyKeyword_21_0 = (Keyword)cSpringJerseyEnumLiteralDeclaration_21.eContents().get(0);
+		private final EnumLiteralDeclaration cSpringJDBCEnumLiteralDeclaration_22 = (EnumLiteralDeclaration)cAlternatives.eContents().get(22);
+		private final Keyword cSpringJDBCSpringJDBCKeyword_22_0 = (Keyword)cSpringJDBCEnumLiteralDeclaration_22.eContents().get(0);
+		private final EnumLiteralDeclaration cSpringIntegrationEnumLiteralDeclaration_23 = (EnumLiteralDeclaration)cAlternatives.eContents().get(23);
+		private final Keyword cSpringIntegrationSpringIntegrationKeyword_23_0 = (Keyword)cSpringIntegrationEnumLiteralDeclaration_23.eContents().get(0);
+		private final EnumLiteralDeclaration cSpringDataRestEnumLiteralDeclaration_24 = (EnumLiteralDeclaration)cAlternatives.eContents().get(24);
+		private final Keyword cSpringDataRestSpringDataRestKeyword_24_0 = (Keyword)cSpringDataRestEnumLiteralDeclaration_24.eContents().get(0);
+		private final EnumLiteralDeclaration cSpringGraphQLEnumLiteralDeclaration_25 = (EnumLiteralDeclaration)cAlternatives.eContents().get(25);
+		private final Keyword cSpringGraphQLSpringGraphQLKeyword_25_0 = (Keyword)cSpringGraphQLEnumLiteralDeclaration_25.eContents().get(0);
+		private final EnumLiteralDeclaration cSpringDataElasticsearchEnumLiteralDeclaration_26 = (EnumLiteralDeclaration)cAlternatives.eContents().get(26);
+		private final Keyword cSpringDataElasticsearchSpringDataElasticsearchKeyword_26_0 = (Keyword)cSpringDataElasticsearchEnumLiteralDeclaration_26.eContents().get(0);
+		private final EnumLiteralDeclaration cSpringDataJDBCEnumLiteralDeclaration_27 = (EnumLiteralDeclaration)cAlternatives.eContents().get(27);
+		private final Keyword cSpringDataJDBCSpringDataJDBCKeyword_27_0 = (Keyword)cSpringDataJDBCEnumLiteralDeclaration_27.eContents().get(0);
+		private final EnumLiteralDeclaration cSpringDataMongoDBEnumLiteralDeclaration_28 = (EnumLiteralDeclaration)cAlternatives.eContents().get(28);
+		private final Keyword cSpringDataMongoDBSpringDataMongoDBKeyword_28_0 = (Keyword)cSpringDataMongoDBEnumLiteralDeclaration_28.eContents().get(0);
+		private final EnumLiteralDeclaration cSwaggerEnumLiteralDeclaration_29 = (EnumLiteralDeclaration)cAlternatives.eContents().get(29);
+		private final Keyword cSwaggerSwaggerKeyword_29_0 = (Keyword)cSwaggerEnumLiteralDeclaration_29.eContents().get(0);
+		private final EnumLiteralDeclaration cSpringSecurityEnumLiteralDeclaration_30 = (EnumLiteralDeclaration)cAlternatives.eContents().get(30);
+		private final Keyword cSpringSecuritySpringSecurityKeyword_30_0 = (Keyword)cSpringSecurityEnumLiteralDeclaration_30.eContents().get(0);
+		private final EnumLiteralDeclaration cSpringActuatorEnumLiteralDeclaration_31 = (EnumLiteralDeclaration)cAlternatives.eContents().get(31);
+		private final Keyword cSpringActuatorSpringActuatorKeyword_31_0 = (Keyword)cSpringActuatorEnumLiteralDeclaration_31.eContents().get(0);
+		private final EnumLiteralDeclaration cSpringGraphQLTestEnumLiteralDeclaration_32 = (EnumLiteralDeclaration)cAlternatives.eContents().get(32);
+		private final Keyword cSpringGraphQLTestSpringGraphQLTestKeyword_32_0 = (Keyword)cSpringGraphQLTestEnumLiteralDeclaration_32.eContents().get(0);
 		
 		//enum DependencyType:
 		//  SpringDataJpa | SpringWeb | Lombok | MySQLDriver | DevTools
-		//  | Thymeleaf | Swagger | SpringSecurity;
+		//  |SpringKafka | SpringIntegrationWS | SpringIntegrationWebFlux |
+		//  SpringIntegrationSecurity | SpringIntegrationRedis | SpringIntegrationMongoDB
+		//  | SpringIntegrationKafka | SpringIntegrationJPA | SpringIntegrationJDBC
+		//  | SpringIntegrationHTTP | SpringIntegrationAMQP | SpringWebFlux |
+		//  SpringWebServices | SpringValidation | SpringThymeleaf | SpringOAuth2Client
+		//  | SpringJersey | SpringJDBC | SpringIntegration | SpringDataRest| SpringGraphQL
+		// | SpringDataElasticsearch | SpringDataJDBC | SpringDataMongoDB |
+		//   Swagger | SpringSecurity | SpringActuator | SpringGraphQLTest;
 		public EnumRule getRule() { return rule; }
 		
-		//SpringDataJpa | SpringWeb | Lombok | MySQLDriver | DevTools
-		//| Thymeleaf | Swagger | SpringSecurity
+		// SpringDataJpa | SpringWeb | Lombok | MySQLDriver | DevTools
+		// |SpringKafka | SpringIntegrationWS | SpringIntegrationWebFlux |
+		// SpringIntegrationSecurity | SpringIntegrationRedis | SpringIntegrationMongoDB
+		// | SpringIntegrationKafka | SpringIntegrationJPA | SpringIntegrationJDBC
+		// | SpringIntegrationHTTP | SpringIntegrationAMQP | SpringWebFlux |
+		// SpringWebServices | SpringValidation | SpringThymeleaf | SpringOAuth2Client
+		// | SpringJersey | SpringJDBC | SpringIntegration | SpringDataRest| SpringGraphQL
+		//| SpringDataElasticsearch | SpringDataJDBC | SpringDataMongoDB |
+		//  Swagger | SpringSecurity | SpringActuator | SpringGraphQLTest
 		public Alternatives getAlternatives() { return cAlternatives; }
 		
 		//SpringDataJpa
@@ -636,20 +700,145 @@ public class SpringFluentDSLGrammarAccess extends AbstractElementFinder.Abstract
 		
 		public Keyword getDevToolsDevToolsKeyword_4_0() { return cDevToolsDevToolsKeyword_4_0; }
 		
-		//Thymeleaf
-		public EnumLiteralDeclaration getThymeleafEnumLiteralDeclaration_5() { return cThymeleafEnumLiteralDeclaration_5; }
+		//SpringKafka
+		public EnumLiteralDeclaration getSpringKafkaEnumLiteralDeclaration_5() { return cSpringKafkaEnumLiteralDeclaration_5; }
 		
-		public Keyword getThymeleafThymeleafKeyword_5_0() { return cThymeleafThymeleafKeyword_5_0; }
+		public Keyword getSpringKafkaSpringKafkaKeyword_5_0() { return cSpringKafkaSpringKafkaKeyword_5_0; }
+		
+		//SpringIntegrationWS
+		public EnumLiteralDeclaration getSpringIntegrationWSEnumLiteralDeclaration_6() { return cSpringIntegrationWSEnumLiteralDeclaration_6; }
+		
+		public Keyword getSpringIntegrationWSSpringIntegrationWSKeyword_6_0() { return cSpringIntegrationWSSpringIntegrationWSKeyword_6_0; }
+		
+		//SpringIntegrationWebFlux
+		public EnumLiteralDeclaration getSpringIntegrationWebFluxEnumLiteralDeclaration_7() { return cSpringIntegrationWebFluxEnumLiteralDeclaration_7; }
+		
+		public Keyword getSpringIntegrationWebFluxSpringIntegrationWebFluxKeyword_7_0() { return cSpringIntegrationWebFluxSpringIntegrationWebFluxKeyword_7_0; }
+		
+		//SpringIntegrationSecurity
+		public EnumLiteralDeclaration getSpringIntegrationSecurityEnumLiteralDeclaration_8() { return cSpringIntegrationSecurityEnumLiteralDeclaration_8; }
+		
+		public Keyword getSpringIntegrationSecuritySpringIntegrationSecurityKeyword_8_0() { return cSpringIntegrationSecuritySpringIntegrationSecurityKeyword_8_0; }
+		
+		//SpringIntegrationRedis
+		public EnumLiteralDeclaration getSpringIntegrationRedisEnumLiteralDeclaration_9() { return cSpringIntegrationRedisEnumLiteralDeclaration_9; }
+		
+		public Keyword getSpringIntegrationRedisSpringIntegrationRedisKeyword_9_0() { return cSpringIntegrationRedisSpringIntegrationRedisKeyword_9_0; }
+		
+		//SpringIntegrationMongoDB
+		public EnumLiteralDeclaration getSpringIntegrationMongoDBEnumLiteralDeclaration_10() { return cSpringIntegrationMongoDBEnumLiteralDeclaration_10; }
+		
+		public Keyword getSpringIntegrationMongoDBSpringIntegrationMongoDBKeyword_10_0() { return cSpringIntegrationMongoDBSpringIntegrationMongoDBKeyword_10_0; }
+		
+		//SpringIntegrationKafka
+		public EnumLiteralDeclaration getSpringIntegrationKafkaEnumLiteralDeclaration_11() { return cSpringIntegrationKafkaEnumLiteralDeclaration_11; }
+		
+		public Keyword getSpringIntegrationKafkaSpringIntegrationKafkaKeyword_11_0() { return cSpringIntegrationKafkaSpringIntegrationKafkaKeyword_11_0; }
+		
+		//SpringIntegrationJPA
+		public EnumLiteralDeclaration getSpringIntegrationJPAEnumLiteralDeclaration_12() { return cSpringIntegrationJPAEnumLiteralDeclaration_12; }
+		
+		public Keyword getSpringIntegrationJPASpringIntegrationJPAKeyword_12_0() { return cSpringIntegrationJPASpringIntegrationJPAKeyword_12_0; }
+		
+		//SpringIntegrationJDBC
+		public EnumLiteralDeclaration getSpringIntegrationJDBCEnumLiteralDeclaration_13() { return cSpringIntegrationJDBCEnumLiteralDeclaration_13; }
+		
+		public Keyword getSpringIntegrationJDBCSpringIntegrationJDBCKeyword_13_0() { return cSpringIntegrationJDBCSpringIntegrationJDBCKeyword_13_0; }
+		
+		//SpringIntegrationHTTP
+		public EnumLiteralDeclaration getSpringIntegrationHTTPEnumLiteralDeclaration_14() { return cSpringIntegrationHTTPEnumLiteralDeclaration_14; }
+		
+		public Keyword getSpringIntegrationHTTPSpringIntegrationHTTPKeyword_14_0() { return cSpringIntegrationHTTPSpringIntegrationHTTPKeyword_14_0; }
+		
+		//SpringIntegrationAMQP
+		public EnumLiteralDeclaration getSpringIntegrationAMQPEnumLiteralDeclaration_15() { return cSpringIntegrationAMQPEnumLiteralDeclaration_15; }
+		
+		public Keyword getSpringIntegrationAMQPSpringIntegrationAMQPKeyword_15_0() { return cSpringIntegrationAMQPSpringIntegrationAMQPKeyword_15_0; }
+		
+		//SpringWebFlux
+		public EnumLiteralDeclaration getSpringWebFluxEnumLiteralDeclaration_16() { return cSpringWebFluxEnumLiteralDeclaration_16; }
+		
+		public Keyword getSpringWebFluxSpringWebFluxKeyword_16_0() { return cSpringWebFluxSpringWebFluxKeyword_16_0; }
+		
+		//SpringWebServices
+		public EnumLiteralDeclaration getSpringWebServicesEnumLiteralDeclaration_17() { return cSpringWebServicesEnumLiteralDeclaration_17; }
+		
+		public Keyword getSpringWebServicesSpringWebServicesKeyword_17_0() { return cSpringWebServicesSpringWebServicesKeyword_17_0; }
+		
+		//SpringValidation
+		public EnumLiteralDeclaration getSpringValidationEnumLiteralDeclaration_18() { return cSpringValidationEnumLiteralDeclaration_18; }
+		
+		public Keyword getSpringValidationSpringValidationKeyword_18_0() { return cSpringValidationSpringValidationKeyword_18_0; }
+		
+		//SpringThymeleaf
+		public EnumLiteralDeclaration getSpringThymeleafEnumLiteralDeclaration_19() { return cSpringThymeleafEnumLiteralDeclaration_19; }
+		
+		public Keyword getSpringThymeleafSpringThymeleafKeyword_19_0() { return cSpringThymeleafSpringThymeleafKeyword_19_0; }
+		
+		//SpringOAuth2Client
+		public EnumLiteralDeclaration getSpringOAuth2ClientEnumLiteralDeclaration_20() { return cSpringOAuth2ClientEnumLiteralDeclaration_20; }
+		
+		public Keyword getSpringOAuth2ClientSpringOAuth2ClientKeyword_20_0() { return cSpringOAuth2ClientSpringOAuth2ClientKeyword_20_0; }
+		
+		//SpringJersey
+		public EnumLiteralDeclaration getSpringJerseyEnumLiteralDeclaration_21() { return cSpringJerseyEnumLiteralDeclaration_21; }
+		
+		public Keyword getSpringJerseySpringJerseyKeyword_21_0() { return cSpringJerseySpringJerseyKeyword_21_0; }
+		
+		//SpringJDBC
+		public EnumLiteralDeclaration getSpringJDBCEnumLiteralDeclaration_22() { return cSpringJDBCEnumLiteralDeclaration_22; }
+		
+		public Keyword getSpringJDBCSpringJDBCKeyword_22_0() { return cSpringJDBCSpringJDBCKeyword_22_0; }
+		
+		//SpringIntegration
+		public EnumLiteralDeclaration getSpringIntegrationEnumLiteralDeclaration_23() { return cSpringIntegrationEnumLiteralDeclaration_23; }
+		
+		public Keyword getSpringIntegrationSpringIntegrationKeyword_23_0() { return cSpringIntegrationSpringIntegrationKeyword_23_0; }
+		
+		//SpringDataRest
+		public EnumLiteralDeclaration getSpringDataRestEnumLiteralDeclaration_24() { return cSpringDataRestEnumLiteralDeclaration_24; }
+		
+		public Keyword getSpringDataRestSpringDataRestKeyword_24_0() { return cSpringDataRestSpringDataRestKeyword_24_0; }
+		
+		//SpringGraphQL
+		public EnumLiteralDeclaration getSpringGraphQLEnumLiteralDeclaration_25() { return cSpringGraphQLEnumLiteralDeclaration_25; }
+		
+		public Keyword getSpringGraphQLSpringGraphQLKeyword_25_0() { return cSpringGraphQLSpringGraphQLKeyword_25_0; }
+		
+		//SpringDataElasticsearch
+		public EnumLiteralDeclaration getSpringDataElasticsearchEnumLiteralDeclaration_26() { return cSpringDataElasticsearchEnumLiteralDeclaration_26; }
+		
+		public Keyword getSpringDataElasticsearchSpringDataElasticsearchKeyword_26_0() { return cSpringDataElasticsearchSpringDataElasticsearchKeyword_26_0; }
+		
+		//SpringDataJDBC
+		public EnumLiteralDeclaration getSpringDataJDBCEnumLiteralDeclaration_27() { return cSpringDataJDBCEnumLiteralDeclaration_27; }
+		
+		public Keyword getSpringDataJDBCSpringDataJDBCKeyword_27_0() { return cSpringDataJDBCSpringDataJDBCKeyword_27_0; }
+		
+		//SpringDataMongoDB
+		public EnumLiteralDeclaration getSpringDataMongoDBEnumLiteralDeclaration_28() { return cSpringDataMongoDBEnumLiteralDeclaration_28; }
+		
+		public Keyword getSpringDataMongoDBSpringDataMongoDBKeyword_28_0() { return cSpringDataMongoDBSpringDataMongoDBKeyword_28_0; }
 		
 		//Swagger
-		public EnumLiteralDeclaration getSwaggerEnumLiteralDeclaration_6() { return cSwaggerEnumLiteralDeclaration_6; }
+		public EnumLiteralDeclaration getSwaggerEnumLiteralDeclaration_29() { return cSwaggerEnumLiteralDeclaration_29; }
 		
-		public Keyword getSwaggerSwaggerKeyword_6_0() { return cSwaggerSwaggerKeyword_6_0; }
+		public Keyword getSwaggerSwaggerKeyword_29_0() { return cSwaggerSwaggerKeyword_29_0; }
 		
 		//SpringSecurity
-		public EnumLiteralDeclaration getSpringSecurityEnumLiteralDeclaration_7() { return cSpringSecurityEnumLiteralDeclaration_7; }
+		public EnumLiteralDeclaration getSpringSecurityEnumLiteralDeclaration_30() { return cSpringSecurityEnumLiteralDeclaration_30; }
 		
-		public Keyword getSpringSecuritySpringSecurityKeyword_7_0() { return cSpringSecuritySpringSecurityKeyword_7_0; }
+		public Keyword getSpringSecuritySpringSecurityKeyword_30_0() { return cSpringSecuritySpringSecurityKeyword_30_0; }
+		
+		//SpringActuator
+		public EnumLiteralDeclaration getSpringActuatorEnumLiteralDeclaration_31() { return cSpringActuatorEnumLiteralDeclaration_31; }
+		
+		public Keyword getSpringActuatorSpringActuatorKeyword_31_0() { return cSpringActuatorSpringActuatorKeyword_31_0; }
+		
+		//SpringGraphQLTest
+		public EnumLiteralDeclaration getSpringGraphQLTestEnumLiteralDeclaration_32() { return cSpringGraphQLTestEnumLiteralDeclaration_32; }
+		
+		public Keyword getSpringGraphQLTestSpringGraphQLTestKeyword_32_0() { return cSpringGraphQLTestSpringGraphQLTestKeyword_32_0; }
 	}
 	public class TypeElements extends AbstractElementFinder.AbstractEnumRuleElementFinder {
 		private final EnumRule rule = (EnumRule) GrammarUtil.findRuleForName(getGrammar(), "org.xtext.spring.fluent.SpringFluentDSL.Type");
@@ -828,7 +1017,14 @@ public class SpringFluentDSLGrammarAccess extends AbstractElementFinder.Abstract
 	
 	//enum DependencyType:
 	//  SpringDataJpa | SpringWeb | Lombok | MySQLDriver | DevTools
-	//  | Thymeleaf | Swagger | SpringSecurity;
+	//  |SpringKafka | SpringIntegrationWS | SpringIntegrationWebFlux |
+	//  SpringIntegrationSecurity | SpringIntegrationRedis | SpringIntegrationMongoDB
+	//  | SpringIntegrationKafka | SpringIntegrationJPA | SpringIntegrationJDBC
+	//  | SpringIntegrationHTTP | SpringIntegrationAMQP | SpringWebFlux |
+	//  SpringWebServices | SpringValidation | SpringThymeleaf | SpringOAuth2Client
+	//  | SpringJersey | SpringJDBC | SpringIntegration | SpringDataRest| SpringGraphQL
+	// | SpringDataElasticsearch | SpringDataJDBC | SpringDataMongoDB |
+	//   Swagger | SpringSecurity | SpringActuator | SpringGraphQLTest;
 	public DependencyTypeElements getDependencyTypeAccess() {
 		return eDependencyType;
 	}

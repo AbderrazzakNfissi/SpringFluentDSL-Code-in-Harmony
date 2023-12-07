@@ -21,7 +21,14 @@ Dependencies:
 
 enum DependencyType:
   SpringDataJpa | SpringWeb | Lombok | MySQLDriver | DevTools 
-  | Thymeleaf | Swagger | SpringSecurity; //to complete
+  |SpringKafka | SpringIntegrationWS | SpringIntegrationWebFlux |
+  SpringIntegrationSecurity | SpringIntegrationRedis | SpringIntegrationMongoDB
+  | SpringIntegrationKafka | SpringIntegrationJPA | SpringIntegrationJDBC
+  | SpringIntegrationHTTP | SpringIntegrationAMQP | SpringWebFlux |
+  SpringWebServices | SpringValidation | SpringThymeleaf | SpringOAuth2Client
+  | SpringJersey | SpringJDBC | SpringIntegration | SpringDataRest| SpringGraphQL
+ | SpringDataElasticsearch | SpringDataJDBC | SpringDataMongoDB |
+   Swagger | SpringSecurity | SpringActuator | SpringGraphQLTest; //to complete
 
 Dependency:
   {Dependency} dependency=DependencyType;

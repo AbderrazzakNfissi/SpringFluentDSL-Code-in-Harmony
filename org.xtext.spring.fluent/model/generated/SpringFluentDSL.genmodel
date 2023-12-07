@@ -12,9 +12,34 @@
       <genEnumLiterals ecoreEnumLiteral="SpringFluentDSL.ecore#//DependencyType/Lombok"/>
       <genEnumLiterals ecoreEnumLiteral="SpringFluentDSL.ecore#//DependencyType/MySQLDriver"/>
       <genEnumLiterals ecoreEnumLiteral="SpringFluentDSL.ecore#//DependencyType/DevTools"/>
-      <genEnumLiterals ecoreEnumLiteral="SpringFluentDSL.ecore#//DependencyType/Thymeleaf"/>
+      <genEnumLiterals ecoreEnumLiteral="SpringFluentDSL.ecore#//DependencyType/SpringKafka"/>
+      <genEnumLiterals ecoreEnumLiteral="SpringFluentDSL.ecore#//DependencyType/SpringIntegrationWS"/>
+      <genEnumLiterals ecoreEnumLiteral="SpringFluentDSL.ecore#//DependencyType/SpringIntegrationWebFlux"/>
+      <genEnumLiterals ecoreEnumLiteral="SpringFluentDSL.ecore#//DependencyType/SpringIntegrationSecurity"/>
+      <genEnumLiterals ecoreEnumLiteral="SpringFluentDSL.ecore#//DependencyType/SpringIntegrationRedis"/>
+      <genEnumLiterals ecoreEnumLiteral="SpringFluentDSL.ecore#//DependencyType/SpringIntegrationMongoDB"/>
+      <genEnumLiterals ecoreEnumLiteral="SpringFluentDSL.ecore#//DependencyType/SpringIntegrationKafka"/>
+      <genEnumLiterals ecoreEnumLiteral="SpringFluentDSL.ecore#//DependencyType/SpringIntegrationJPA"/>
+      <genEnumLiterals ecoreEnumLiteral="SpringFluentDSL.ecore#//DependencyType/SpringIntegrationJDBC"/>
+      <genEnumLiterals ecoreEnumLiteral="SpringFluentDSL.ecore#//DependencyType/SpringIntegrationHTTP"/>
+      <genEnumLiterals ecoreEnumLiteral="SpringFluentDSL.ecore#//DependencyType/SpringIntegrationAMQP"/>
+      <genEnumLiterals ecoreEnumLiteral="SpringFluentDSL.ecore#//DependencyType/SpringWebFlux"/>
+      <genEnumLiterals ecoreEnumLiteral="SpringFluentDSL.ecore#//DependencyType/SpringWebServices"/>
+      <genEnumLiterals ecoreEnumLiteral="SpringFluentDSL.ecore#//DependencyType/SpringValidation"/>
+      <genEnumLiterals ecoreEnumLiteral="SpringFluentDSL.ecore#//DependencyType/SpringThymeleaf"/>
+      <genEnumLiterals ecoreEnumLiteral="SpringFluentDSL.ecore#//DependencyType/SpringOAuth2Client"/>
+      <genEnumLiterals ecoreEnumLiteral="SpringFluentDSL.ecore#//DependencyType/SpringJersey"/>
+      <genEnumLiterals ecoreEnumLiteral="SpringFluentDSL.ecore#//DependencyType/SpringJDBC"/>
+      <genEnumLiterals ecoreEnumLiteral="SpringFluentDSL.ecore#//DependencyType/SpringIntegration"/>
+      <genEnumLiterals ecoreEnumLiteral="SpringFluentDSL.ecore#//DependencyType/SpringDataRest"/>
+      <genEnumLiterals ecoreEnumLiteral="SpringFluentDSL.ecore#//DependencyType/SpringGraphQL"/>
+      <genEnumLiterals ecoreEnumLiteral="SpringFluentDSL.ecore#//DependencyType/SpringDataElasticsearch"/>
+      <genEnumLiterals ecoreEnumLiteral="SpringFluentDSL.ecore#//DependencyType/SpringDataJDBC"/>
+      <genEnumLiterals ecoreEnumLiteral="SpringFluentDSL.ecore#//DependencyType/SpringDataMongoDB"/>
       <genEnumLiterals ecoreEnumLiteral="SpringFluentDSL.ecore#//DependencyType/Swagger"/>
       <genEnumLiterals ecoreEnumLiteral="SpringFluentDSL.ecore#//DependencyType/SpringSecurity"/>
+      <genEnumLiterals ecoreEnumLiteral="SpringFluentDSL.ecore#//DependencyType/SpringActuator"/>
+      <genEnumLiterals ecoreEnumLiteral="SpringFluentDSL.ecore#//DependencyType/SpringGraphQLTest"/>
     </genEnums>
     <genEnums typeSafeEnumCompatible="false" ecoreEnum="SpringFluentDSL.ecore#//Type">
       <genEnumLiterals ecoreEnumLiteral="SpringFluentDSL.ecore#//Type/Long"/>
