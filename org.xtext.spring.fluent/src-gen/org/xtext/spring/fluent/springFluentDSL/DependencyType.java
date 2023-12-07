@@ -71,14 +71,244 @@ public enum DependencyType implements Enumerator
   DEV_TOOLS(4, "DevTools", "DevTools"),
 
   /**
-   * The '<em><b>Thymeleaf</b></em>' literal object.
+   * The '<em><b>Spring Kafka</b></em>' literal object.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @see #THYMELEAF_VALUE
+   * @see #SPRING_KAFKA_VALUE
    * @generated
    * @ordered
    */
-  THYMELEAF(5, "Thymeleaf", "Thymeleaf"),
+  SPRING_KAFKA(5, "SpringKafka", "SpringKafka"),
+
+  /**
+   * The '<em><b>Spring Integration WS</b></em>' literal object.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #SPRING_INTEGRATION_WS_VALUE
+   * @generated
+   * @ordered
+   */
+  SPRING_INTEGRATION_WS(6, "SpringIntegrationWS", "SpringIntegrationWS"),
+
+  /**
+   * The '<em><b>Spring Integration Web Flux</b></em>' literal object.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #SPRING_INTEGRATION_WEB_FLUX_VALUE
+   * @generated
+   * @ordered
+   */
+  SPRING_INTEGRATION_WEB_FLUX(7, "SpringIntegrationWebFlux", "SpringIntegrationWebFlux"),
+
+  /**
+   * The '<em><b>Spring Integration Security</b></em>' literal object.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #SPRING_INTEGRATION_SECURITY_VALUE
+   * @generated
+   * @ordered
+   */
+  SPRING_INTEGRATION_SECURITY(8, "SpringIntegrationSecurity", "SpringIntegrationSecurity"),
+
+  /**
+   * The '<em><b>Spring Integration Redis</b></em>' literal object.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #SPRING_INTEGRATION_REDIS_VALUE
+   * @generated
+   * @ordered
+   */
+  SPRING_INTEGRATION_REDIS(9, "SpringIntegrationRedis", "SpringIntegrationRedis"),
+
+  /**
+   * The '<em><b>Spring Integration Mongo DB</b></em>' literal object.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #SPRING_INTEGRATION_MONGO_DB_VALUE
+   * @generated
+   * @ordered
+   */
+  SPRING_INTEGRATION_MONGO_DB(10, "SpringIntegrationMongoDB", "SpringIntegrationMongoDB"),
+
+  /**
+   * The '<em><b>Spring Integration Kafka</b></em>' literal object.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #SPRING_INTEGRATION_KAFKA_VALUE
+   * @generated
+   * @ordered
+   */
+  SPRING_INTEGRATION_KAFKA(11, "SpringIntegrationKafka", "SpringIntegrationKafka"),
+
+  /**
+   * The '<em><b>Spring Integration JPA</b></em>' literal object.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #SPRING_INTEGRATION_JPA_VALUE
+   * @generated
+   * @ordered
+   */
+  SPRING_INTEGRATION_JPA(12, "SpringIntegrationJPA", "SpringIntegrationJPA"),
+
+  /**
+   * The '<em><b>Spring Integration JDBC</b></em>' literal object.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #SPRING_INTEGRATION_JDBC_VALUE
+   * @generated
+   * @ordered
+   */
+  SPRING_INTEGRATION_JDBC(13, "SpringIntegrationJDBC", "SpringIntegrationJDBC"),
+
+  /**
+   * The '<em><b>Spring Integration HTTP</b></em>' literal object.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #SPRING_INTEGRATION_HTTP_VALUE
+   * @generated
+   * @ordered
+   */
+  SPRING_INTEGRATION_HTTP(14, "SpringIntegrationHTTP", "SpringIntegrationHTTP"),
+
+  /**
+   * The '<em><b>Spring Integration AMQP</b></em>' literal object.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #SPRING_INTEGRATION_AMQP_VALUE
+   * @generated
+   * @ordered
+   */
+  SPRING_INTEGRATION_AMQP(15, "SpringIntegrationAMQP", "SpringIntegrationAMQP"),
+
+  /**
+   * The '<em><b>Spring Web Flux</b></em>' literal object.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #SPRING_WEB_FLUX_VALUE
+   * @generated
+   * @ordered
+   */
+  SPRING_WEB_FLUX(16, "SpringWebFlux", "SpringWebFlux"),
+
+  /**
+   * The '<em><b>Spring Web Services</b></em>' literal object.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #SPRING_WEB_SERVICES_VALUE
+   * @generated
+   * @ordered
+   */
+  SPRING_WEB_SERVICES(17, "SpringWebServices", "SpringWebServices"),
+
+  /**
+   * The '<em><b>Spring Validation</b></em>' literal object.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #SPRING_VALIDATION_VALUE
+   * @generated
+   * @ordered
+   */
+  SPRING_VALIDATION(18, "SpringValidation", "SpringValidation"),
+
+  /**
+   * The '<em><b>Spring Thymeleaf</b></em>' literal object.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #SPRING_THYMELEAF_VALUE
+   * @generated
+   * @ordered
+   */
+  SPRING_THYMELEAF(19, "SpringThymeleaf", "SpringThymeleaf"),
+
+  /**
+   * The '<em><b>Spring OAuth2 Client</b></em>' literal object.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #SPRING_OAUTH2_CLIENT_VALUE
+   * @generated
+   * @ordered
+   */
+  SPRING_OAUTH2_CLIENT(20, "SpringOAuth2Client", "SpringOAuth2Client"),
+
+  /**
+   * The '<em><b>Spring Jersey</b></em>' literal object.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #SPRING_JERSEY_VALUE
+   * @generated
+   * @ordered
+   */
+  SPRING_JERSEY(21, "SpringJersey", "SpringJersey"),
+
+  /**
+   * The '<em><b>Spring JDBC</b></em>' literal object.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #SPRING_JDBC_VALUE
+   * @generated
+   * @ordered
+   */
+  SPRING_JDBC(22, "SpringJDBC", "SpringJDBC"),
+
+  /**
+   * The '<em><b>Spring Integration</b></em>' literal object.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #SPRING_INTEGRATION_VALUE
+   * @generated
+   * @ordered
+   */
+  SPRING_INTEGRATION(23, "SpringIntegration", "SpringIntegration"),
+
+  /**
+   * The '<em><b>Spring Data Rest</b></em>' literal object.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #SPRING_DATA_REST_VALUE
+   * @generated
+   * @ordered
+   */
+  SPRING_DATA_REST(24, "SpringDataRest", "SpringDataRest"),
+
+  /**
+   * The '<em><b>Spring Graph QL</b></em>' literal object.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #SPRING_GRAPH_QL_VALUE
+   * @generated
+   * @ordered
+   */
+  SPRING_GRAPH_QL(25, "SpringGraphQL", "SpringGraphQL"),
+
+  /**
+   * The '<em><b>Spring Data Elasticsearch</b></em>' literal object.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #SPRING_DATA_ELASTICSEARCH_VALUE
+   * @generated
+   * @ordered
+   */
+  SPRING_DATA_ELASTICSEARCH(26, "SpringDataElasticsearch", "SpringDataElasticsearch"),
+
+  /**
+   * The '<em><b>Spring Data JDBC</b></em>' literal object.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #SPRING_DATA_JDBC_VALUE
+   * @generated
+   * @ordered
+   */
+  SPRING_DATA_JDBC(27, "SpringDataJDBC", "SpringDataJDBC"),
+
+  /**
+   * The '<em><b>Spring Data Mongo DB</b></em>' literal object.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #SPRING_DATA_MONGO_DB_VALUE
+   * @generated
+   * @ordered
+   */
+  SPRING_DATA_MONGO_DB(28, "SpringDataMongoDB", "SpringDataMongoDB"),
 
   /**
    * The '<em><b>Swagger</b></em>' literal object.
@@ -88,7 +318,7 @@ public enum DependencyType implements Enumerator
    * @generated
    * @ordered
    */
-  SWAGGER(6, "Swagger", "Swagger"),
+  SWAGGER(29, "Swagger", "Swagger"),
 
   /**
    * The '<em><b>Spring Security</b></em>' literal object.
@@ -98,7 +328,27 @@ public enum DependencyType implements Enumerator
    * @generated
    * @ordered
    */
-  SPRING_SECURITY(7, "SpringSecurity", "SpringSecurity");
+  SPRING_SECURITY(30, "SpringSecurity", "SpringSecurity"),
+
+  /**
+   * The '<em><b>Spring Actuator</b></em>' literal object.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #SPRING_ACTUATOR_VALUE
+   * @generated
+   * @ordered
+   */
+  SPRING_ACTUATOR(31, "SpringActuator", "SpringActuator"),
+
+  /**
+   * The '<em><b>Spring Graph QL Test</b></em>' literal object.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #SPRING_GRAPH_QL_TEST_VALUE
+   * @generated
+   * @ordered
+   */
+  SPRING_GRAPH_QL_TEST(32, "SpringGraphQLTest", "SpringGraphQLTest");
 
   /**
    * The '<em><b>Spring Data Jpa</b></em>' literal value.
@@ -156,15 +406,268 @@ public enum DependencyType implements Enumerator
   public static final int DEV_TOOLS_VALUE = 4;
 
   /**
-   * The '<em><b>Thymeleaf</b></em>' literal value.
+   * The '<em><b>Spring Kafka</b></em>' literal value.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @see #THYMELEAF
-   * @model name="Thymeleaf"
+   * @see #SPRING_KAFKA
+   * @model name="SpringKafka"
    * @generated
    * @ordered
    */
-  public static final int THYMELEAF_VALUE = 5;
+  public static final int SPRING_KAFKA_VALUE = 5;
+
+  /**
+   * The '<em><b>Spring Integration WS</b></em>' literal value.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #SPRING_INTEGRATION_WS
+   * @model name="SpringIntegrationWS"
+   * @generated
+   * @ordered
+   */
+  public static final int SPRING_INTEGRATION_WS_VALUE = 6;
+
+  /**
+   * The '<em><b>Spring Integration Web Flux</b></em>' literal value.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #SPRING_INTEGRATION_WEB_FLUX
+   * @model name="SpringIntegrationWebFlux"
+   * @generated
+   * @ordered
+   */
+  public static final int SPRING_INTEGRATION_WEB_FLUX_VALUE = 7;
+
+  /**
+   * The '<em><b>Spring Integration Security</b></em>' literal value.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #SPRING_INTEGRATION_SECURITY
+   * @model name="SpringIntegrationSecurity"
+   * @generated
+   * @ordered
+   */
+  public static final int SPRING_INTEGRATION_SECURITY_VALUE = 8;
+
+  /**
+   * The '<em><b>Spring Integration Redis</b></em>' literal value.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #SPRING_INTEGRATION_REDIS
+   * @model name="SpringIntegrationRedis"
+   * @generated
+   * @ordered
+   */
+  public static final int SPRING_INTEGRATION_REDIS_VALUE = 9;
+
+  /**
+   * The '<em><b>Spring Integration Mongo DB</b></em>' literal value.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #SPRING_INTEGRATION_MONGO_DB
+   * @model name="SpringIntegrationMongoDB"
+   * @generated
+   * @ordered
+   */
+  public static final int SPRING_INTEGRATION_MONGO_DB_VALUE = 10;
+
+  /**
+   * The '<em><b>Spring Integration Kafka</b></em>' literal value.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #SPRING_INTEGRATION_KAFKA
+   * @model name="SpringIntegrationKafka"
+   * @generated
+   * @ordered
+   */
+  public static final int SPRING_INTEGRATION_KAFKA_VALUE = 11;
+
+  /**
+   * The '<em><b>Spring Integration JPA</b></em>' literal value.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #SPRING_INTEGRATION_JPA
+   * @model name="SpringIntegrationJPA"
+   * @generated
+   * @ordered
+   */
+  public static final int SPRING_INTEGRATION_JPA_VALUE = 12;
+
+  /**
+   * The '<em><b>Spring Integration JDBC</b></em>' literal value.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #SPRING_INTEGRATION_JDBC
+   * @model name="SpringIntegrationJDBC"
+   * @generated
+   * @ordered
+   */
+  public static final int SPRING_INTEGRATION_JDBC_VALUE = 13;
+
+  /**
+   * The '<em><b>Spring Integration HTTP</b></em>' literal value.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #SPRING_INTEGRATION_HTTP
+   * @model name="SpringIntegrationHTTP"
+   * @generated
+   * @ordered
+   */
+  public static final int SPRING_INTEGRATION_HTTP_VALUE = 14;
+
+  /**
+   * The '<em><b>Spring Integration AMQP</b></em>' literal value.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #SPRING_INTEGRATION_AMQP
+   * @model name="SpringIntegrationAMQP"
+   * @generated
+   * @ordered
+   */
+  public static final int SPRING_INTEGRATION_AMQP_VALUE = 15;
+
+  /**
+   * The '<em><b>Spring Web Flux</b></em>' literal value.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #SPRING_WEB_FLUX
+   * @model name="SpringWebFlux"
+   * @generated
+   * @ordered
+   */
+  public static final int SPRING_WEB_FLUX_VALUE = 16;
+
+  /**
+   * The '<em><b>Spring Web Services</b></em>' literal value.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #SPRING_WEB_SERVICES
+   * @model name="SpringWebServices"
+   * @generated
+   * @ordered
+   */
+  public static final int SPRING_WEB_SERVICES_VALUE = 17;
+
+  /**
+   * The '<em><b>Spring Validation</b></em>' literal value.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #SPRING_VALIDATION
+   * @model name="SpringValidation"
+   * @generated
+   * @ordered
+   */
+  public static final int SPRING_VALIDATION_VALUE = 18;
+
+  /**
+   * The '<em><b>Spring Thymeleaf</b></em>' literal value.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #SPRING_THYMELEAF
+   * @model name="SpringThymeleaf"
+   * @generated
+   * @ordered
+   */
+  public static final int SPRING_THYMELEAF_VALUE = 19;
+
+  /**
+   * The '<em><b>Spring OAuth2 Client</b></em>' literal value.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #SPRING_OAUTH2_CLIENT
+   * @model name="SpringOAuth2Client"
+   * @generated
+   * @ordered
+   */
+  public static final int SPRING_OAUTH2_CLIENT_VALUE = 20;
+
+  /**
+   * The '<em><b>Spring Jersey</b></em>' literal value.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #SPRING_JERSEY
+   * @model name="SpringJersey"
+   * @generated
+   * @ordered
+   */
+  public static final int SPRING_JERSEY_VALUE = 21;
+
+  /**
+   * The '<em><b>Spring JDBC</b></em>' literal value.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #SPRING_JDBC
+   * @model name="SpringJDBC"
+   * @generated
+   * @ordered
+   */
+  public static final int SPRING_JDBC_VALUE = 22;
+
+  /**
+   * The '<em><b>Spring Integration</b></em>' literal value.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #SPRING_INTEGRATION
+   * @model name="SpringIntegration"
+   * @generated
+   * @ordered
+   */
+  public static final int SPRING_INTEGRATION_VALUE = 23;
+
+  /**
+   * The '<em><b>Spring Data Rest</b></em>' literal value.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #SPRING_DATA_REST
+   * @model name="SpringDataRest"
+   * @generated
+   * @ordered
+   */
+  public static final int SPRING_DATA_REST_VALUE = 24;
+
+  /**
+   * The '<em><b>Spring Graph QL</b></em>' literal value.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #SPRING_GRAPH_QL
+   * @model name="SpringGraphQL"
+   * @generated
+   * @ordered
+   */
+  public static final int SPRING_GRAPH_QL_VALUE = 25;
+
+  /**
+   * The '<em><b>Spring Data Elasticsearch</b></em>' literal value.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #SPRING_DATA_ELASTICSEARCH
+   * @model name="SpringDataElasticsearch"
+   * @generated
+   * @ordered
+   */
+  public static final int SPRING_DATA_ELASTICSEARCH_VALUE = 26;
+
+  /**
+   * The '<em><b>Spring Data JDBC</b></em>' literal value.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #SPRING_DATA_JDBC
+   * @model name="SpringDataJDBC"
+   * @generated
+   * @ordered
+   */
+  public static final int SPRING_DATA_JDBC_VALUE = 27;
+
+  /**
+   * The '<em><b>Spring Data Mongo DB</b></em>' literal value.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #SPRING_DATA_MONGO_DB
+   * @model name="SpringDataMongoDB"
+   * @generated
+   * @ordered
+   */
+  public static final int SPRING_DATA_MONGO_DB_VALUE = 28;
 
   /**
    * The '<em><b>Swagger</b></em>' literal value.
@@ -175,7 +678,7 @@ public enum DependencyType implements Enumerator
    * @generated
    * @ordered
    */
-  public static final int SWAGGER_VALUE = 6;
+  public static final int SWAGGER_VALUE = 29;
 
   /**
    * The '<em><b>Spring Security</b></em>' literal value.
@@ -186,7 +689,29 @@ public enum DependencyType implements Enumerator
    * @generated
    * @ordered
    */
-  public static final int SPRING_SECURITY_VALUE = 7;
+  public static final int SPRING_SECURITY_VALUE = 30;
+
+  /**
+   * The '<em><b>Spring Actuator</b></em>' literal value.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #SPRING_ACTUATOR
+   * @model name="SpringActuator"
+   * @generated
+   * @ordered
+   */
+  public static final int SPRING_ACTUATOR_VALUE = 31;
+
+  /**
+   * The '<em><b>Spring Graph QL Test</b></em>' literal value.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #SPRING_GRAPH_QL_TEST
+   * @model name="SpringGraphQLTest"
+   * @generated
+   * @ordered
+   */
+  public static final int SPRING_GRAPH_QL_TEST_VALUE = 32;
 
   /**
    * An array of all the '<em><b>Dependency Type</b></em>' enumerators.
@@ -202,9 +727,34 @@ public enum DependencyType implements Enumerator
       LOMBOK,
       MY_SQL_DRIVER,
       DEV_TOOLS,
-      THYMELEAF,
+      SPRING_KAFKA,
+      SPRING_INTEGRATION_WS,
+      SPRING_INTEGRATION_WEB_FLUX,
+      SPRING_INTEGRATION_SECURITY,
+      SPRING_INTEGRATION_REDIS,
+      SPRING_INTEGRATION_MONGO_DB,
+      SPRING_INTEGRATION_KAFKA,
+      SPRING_INTEGRATION_JPA,
+      SPRING_INTEGRATION_JDBC,
+      SPRING_INTEGRATION_HTTP,
+      SPRING_INTEGRATION_AMQP,
+      SPRING_WEB_FLUX,
+      SPRING_WEB_SERVICES,
+      SPRING_VALIDATION,
+      SPRING_THYMELEAF,
+      SPRING_OAUTH2_CLIENT,
+      SPRING_JERSEY,
+      SPRING_JDBC,
+      SPRING_INTEGRATION,
+      SPRING_DATA_REST,
+      SPRING_GRAPH_QL,
+      SPRING_DATA_ELASTICSEARCH,
+      SPRING_DATA_JDBC,
+      SPRING_DATA_MONGO_DB,
       SWAGGER,
       SPRING_SECURITY,
+      SPRING_ACTUATOR,
+      SPRING_GRAPH_QL_TEST,
     };
 
   /**
@@ -274,9 +824,34 @@ public enum DependencyType implements Enumerator
       case LOMBOK_VALUE: return LOMBOK;
       case MY_SQL_DRIVER_VALUE: return MY_SQL_DRIVER;
       case DEV_TOOLS_VALUE: return DEV_TOOLS;
-      case THYMELEAF_VALUE: return THYMELEAF;
+      case SPRING_KAFKA_VALUE: return SPRING_KAFKA;
+      case SPRING_INTEGRATION_WS_VALUE: return SPRING_INTEGRATION_WS;
+      case SPRING_INTEGRATION_WEB_FLUX_VALUE: return SPRING_INTEGRATION_WEB_FLUX;
+      case SPRING_INTEGRATION_SECURITY_VALUE: return SPRING_INTEGRATION_SECURITY;
+      case SPRING_INTEGRATION_REDIS_VALUE: return SPRING_INTEGRATION_REDIS;
+      case SPRING_INTEGRATION_MONGO_DB_VALUE: return SPRING_INTEGRATION_MONGO_DB;
+      case SPRING_INTEGRATION_KAFKA_VALUE: return SPRING_INTEGRATION_KAFKA;
+      case SPRING_INTEGRATION_JPA_VALUE: return SPRING_INTEGRATION_JPA;
+      case SPRING_INTEGRATION_JDBC_VALUE: return SPRING_INTEGRATION_JDBC;
+      case SPRING_INTEGRATION_HTTP_VALUE: return SPRING_INTEGRATION_HTTP;
+      case SPRING_INTEGRATION_AMQP_VALUE: return SPRING_INTEGRATION_AMQP;
+      case SPRING_WEB_FLUX_VALUE: return SPRING_WEB_FLUX;
+      case SPRING_WEB_SERVICES_VALUE: return SPRING_WEB_SERVICES;
+      case SPRING_VALIDATION_VALUE: return SPRING_VALIDATION;
+      case SPRING_THYMELEAF_VALUE: return SPRING_THYMELEAF;
+      case SPRING_OAUTH2_CLIENT_VALUE: return SPRING_OAUTH2_CLIENT;
+      case SPRING_JERSEY_VALUE: return SPRING_JERSEY;
+      case SPRING_JDBC_VALUE: return SPRING_JDBC;
+      case SPRING_INTEGRATION_VALUE: return SPRING_INTEGRATION;
+      case SPRING_DATA_REST_VALUE: return SPRING_DATA_REST;
+      case SPRING_GRAPH_QL_VALUE: return SPRING_GRAPH_QL;
+      case SPRING_DATA_ELASTICSEARCH_VALUE: return SPRING_DATA_ELASTICSEARCH;
+      case SPRING_DATA_JDBC_VALUE: return SPRING_DATA_JDBC;
+      case SPRING_DATA_MONGO_DB_VALUE: return SPRING_DATA_MONGO_DB;
       case SWAGGER_VALUE: return SWAGGER;
       case SPRING_SECURITY_VALUE: return SPRING_SECURITY;
+      case SPRING_ACTUATOR_VALUE: return SPRING_ACTUATOR;
+      case SPRING_GRAPH_QL_TEST_VALUE: return SPRING_GRAPH_QL_TEST;
     }
     return null;
   }

@@ -502,21 +502,171 @@ rule__DependencyType__Alternatives
 	)
 	|
 	(
-		{ before(grammarAccess.getDependencyTypeAccess().getThymeleafEnumLiteralDeclaration_5()); }
-		('Thymeleaf')
-		{ after(grammarAccess.getDependencyTypeAccess().getThymeleafEnumLiteralDeclaration_5()); }
+		{ before(grammarAccess.getDependencyTypeAccess().getSpringKafkaEnumLiteralDeclaration_5()); }
+		('SpringKafka')
+		{ after(grammarAccess.getDependencyTypeAccess().getSpringKafkaEnumLiteralDeclaration_5()); }
 	)
 	|
 	(
-		{ before(grammarAccess.getDependencyTypeAccess().getSwaggerEnumLiteralDeclaration_6()); }
+		{ before(grammarAccess.getDependencyTypeAccess().getSpringIntegrationWSEnumLiteralDeclaration_6()); }
+		('SpringIntegrationWS')
+		{ after(grammarAccess.getDependencyTypeAccess().getSpringIntegrationWSEnumLiteralDeclaration_6()); }
+	)
+	|
+	(
+		{ before(grammarAccess.getDependencyTypeAccess().getSpringIntegrationWebFluxEnumLiteralDeclaration_7()); }
+		('SpringIntegrationWebFlux')
+		{ after(grammarAccess.getDependencyTypeAccess().getSpringIntegrationWebFluxEnumLiteralDeclaration_7()); }
+	)
+	|
+	(
+		{ before(grammarAccess.getDependencyTypeAccess().getSpringIntegrationSecurityEnumLiteralDeclaration_8()); }
+		('SpringIntegrationSecurity')
+		{ after(grammarAccess.getDependencyTypeAccess().getSpringIntegrationSecurityEnumLiteralDeclaration_8()); }
+	)
+	|
+	(
+		{ before(grammarAccess.getDependencyTypeAccess().getSpringIntegrationRedisEnumLiteralDeclaration_9()); }
+		('SpringIntegrationRedis')
+		{ after(grammarAccess.getDependencyTypeAccess().getSpringIntegrationRedisEnumLiteralDeclaration_9()); }
+	)
+	|
+	(
+		{ before(grammarAccess.getDependencyTypeAccess().getSpringIntegrationMongoDBEnumLiteralDeclaration_10()); }
+		('SpringIntegrationMongoDB')
+		{ after(grammarAccess.getDependencyTypeAccess().getSpringIntegrationMongoDBEnumLiteralDeclaration_10()); }
+	)
+	|
+	(
+		{ before(grammarAccess.getDependencyTypeAccess().getSpringIntegrationKafkaEnumLiteralDeclaration_11()); }
+		('SpringIntegrationKafka')
+		{ after(grammarAccess.getDependencyTypeAccess().getSpringIntegrationKafkaEnumLiteralDeclaration_11()); }
+	)
+	|
+	(
+		{ before(grammarAccess.getDependencyTypeAccess().getSpringIntegrationJPAEnumLiteralDeclaration_12()); }
+		('SpringIntegrationJPA')
+		{ after(grammarAccess.getDependencyTypeAccess().getSpringIntegrationJPAEnumLiteralDeclaration_12()); }
+	)
+	|
+	(
+		{ before(grammarAccess.getDependencyTypeAccess().getSpringIntegrationJDBCEnumLiteralDeclaration_13()); }
+		('SpringIntegrationJDBC')
+		{ after(grammarAccess.getDependencyTypeAccess().getSpringIntegrationJDBCEnumLiteralDeclaration_13()); }
+	)
+	|
+	(
+		{ before(grammarAccess.getDependencyTypeAccess().getSpringIntegrationHTTPEnumLiteralDeclaration_14()); }
+		('SpringIntegrationHTTP')
+		{ after(grammarAccess.getDependencyTypeAccess().getSpringIntegrationHTTPEnumLiteralDeclaration_14()); }
+	)
+	|
+	(
+		{ before(grammarAccess.getDependencyTypeAccess().getSpringIntegrationAMQPEnumLiteralDeclaration_15()); }
+		('SpringIntegrationAMQP')
+		{ after(grammarAccess.getDependencyTypeAccess().getSpringIntegrationAMQPEnumLiteralDeclaration_15()); }
+	)
+	|
+	(
+		{ before(grammarAccess.getDependencyTypeAccess().getSpringWebFluxEnumLiteralDeclaration_16()); }
+		('SpringWebFlux')
+		{ after(grammarAccess.getDependencyTypeAccess().getSpringWebFluxEnumLiteralDeclaration_16()); }
+	)
+	|
+	(
+		{ before(grammarAccess.getDependencyTypeAccess().getSpringWebServicesEnumLiteralDeclaration_17()); }
+		('SpringWebServices')
+		{ after(grammarAccess.getDependencyTypeAccess().getSpringWebServicesEnumLiteralDeclaration_17()); }
+	)
+	|
+	(
+		{ before(grammarAccess.getDependencyTypeAccess().getSpringValidationEnumLiteralDeclaration_18()); }
+		('SpringValidation')
+		{ after(grammarAccess.getDependencyTypeAccess().getSpringValidationEnumLiteralDeclaration_18()); }
+	)
+	|
+	(
+		{ before(grammarAccess.getDependencyTypeAccess().getSpringThymeleafEnumLiteralDeclaration_19()); }
+		('SpringThymeleaf')
+		{ after(grammarAccess.getDependencyTypeAccess().getSpringThymeleafEnumLiteralDeclaration_19()); }
+	)
+	|
+	(
+		{ before(grammarAccess.getDependencyTypeAccess().getSpringOAuth2ClientEnumLiteralDeclaration_20()); }
+		('SpringOAuth2Client')
+		{ after(grammarAccess.getDependencyTypeAccess().getSpringOAuth2ClientEnumLiteralDeclaration_20()); }
+	)
+	|
+	(
+		{ before(grammarAccess.getDependencyTypeAccess().getSpringJerseyEnumLiteralDeclaration_21()); }
+		('SpringJersey')
+		{ after(grammarAccess.getDependencyTypeAccess().getSpringJerseyEnumLiteralDeclaration_21()); }
+	)
+	|
+	(
+		{ before(grammarAccess.getDependencyTypeAccess().getSpringJDBCEnumLiteralDeclaration_22()); }
+		('SpringJDBC')
+		{ after(grammarAccess.getDependencyTypeAccess().getSpringJDBCEnumLiteralDeclaration_22()); }
+	)
+	|
+	(
+		{ before(grammarAccess.getDependencyTypeAccess().getSpringIntegrationEnumLiteralDeclaration_23()); }
+		('SpringIntegration')
+		{ after(grammarAccess.getDependencyTypeAccess().getSpringIntegrationEnumLiteralDeclaration_23()); }
+	)
+	|
+	(
+		{ before(grammarAccess.getDependencyTypeAccess().getSpringDataRestEnumLiteralDeclaration_24()); }
+		('SpringDataRest')
+		{ after(grammarAccess.getDependencyTypeAccess().getSpringDataRestEnumLiteralDeclaration_24()); }
+	)
+	|
+	(
+		{ before(grammarAccess.getDependencyTypeAccess().getSpringGraphQLEnumLiteralDeclaration_25()); }
+		('SpringGraphQL')
+		{ after(grammarAccess.getDependencyTypeAccess().getSpringGraphQLEnumLiteralDeclaration_25()); }
+	)
+	|
+	(
+		{ before(grammarAccess.getDependencyTypeAccess().getSpringDataElasticsearchEnumLiteralDeclaration_26()); }
+		('SpringDataElasticsearch')
+		{ after(grammarAccess.getDependencyTypeAccess().getSpringDataElasticsearchEnumLiteralDeclaration_26()); }
+	)
+	|
+	(
+		{ before(grammarAccess.getDependencyTypeAccess().getSpringDataJDBCEnumLiteralDeclaration_27()); }
+		('SpringDataJDBC')
+		{ after(grammarAccess.getDependencyTypeAccess().getSpringDataJDBCEnumLiteralDeclaration_27()); }
+	)
+	|
+	(
+		{ before(grammarAccess.getDependencyTypeAccess().getSpringDataMongoDBEnumLiteralDeclaration_28()); }
+		('SpringDataMongoDB')
+		{ after(grammarAccess.getDependencyTypeAccess().getSpringDataMongoDBEnumLiteralDeclaration_28()); }
+	)
+	|
+	(
+		{ before(grammarAccess.getDependencyTypeAccess().getSwaggerEnumLiteralDeclaration_29()); }
 		('Swagger')
-		{ after(grammarAccess.getDependencyTypeAccess().getSwaggerEnumLiteralDeclaration_6()); }
+		{ after(grammarAccess.getDependencyTypeAccess().getSwaggerEnumLiteralDeclaration_29()); }
 	)
 	|
 	(
-		{ before(grammarAccess.getDependencyTypeAccess().getSpringSecurityEnumLiteralDeclaration_7()); }
+		{ before(grammarAccess.getDependencyTypeAccess().getSpringSecurityEnumLiteralDeclaration_30()); }
 		('SpringSecurity')
-		{ after(grammarAccess.getDependencyTypeAccess().getSpringSecurityEnumLiteralDeclaration_7()); }
+		{ after(grammarAccess.getDependencyTypeAccess().getSpringSecurityEnumLiteralDeclaration_30()); }
+	)
+	|
+	(
+		{ before(grammarAccess.getDependencyTypeAccess().getSpringActuatorEnumLiteralDeclaration_31()); }
+		('SpringActuator')
+		{ after(grammarAccess.getDependencyTypeAccess().getSpringActuatorEnumLiteralDeclaration_31()); }
+	)
+	|
+	(
+		{ before(grammarAccess.getDependencyTypeAccess().getSpringGraphQLTestEnumLiteralDeclaration_32()); }
+		('SpringGraphQLTest')
+		{ after(grammarAccess.getDependencyTypeAccess().getSpringGraphQLTestEnumLiteralDeclaration_32()); }
 	)
 ;
 finally {

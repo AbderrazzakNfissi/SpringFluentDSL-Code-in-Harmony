@@ -28,9 +28,34 @@
     <eLiterals name="Lombok" value="2" literal="Lombok"/>
     <eLiterals name="MySQLDriver" value="3" literal="MySQLDriver"/>
     <eLiterals name="DevTools" value="4" literal="DevTools"/>
-    <eLiterals name="Thymeleaf" value="5" literal="Thymeleaf"/>
-    <eLiterals name="Swagger" value="6" literal="Swagger"/>
-    <eLiterals name="SpringSecurity" value="7" literal="SpringSecurity"/>
+    <eLiterals name="SpringKafka" value="5" literal="SpringKafka"/>
+    <eLiterals name="SpringIntegrationWS" value="6" literal="SpringIntegrationWS"/>
+    <eLiterals name="SpringIntegrationWebFlux" value="7" literal="SpringIntegrationWebFlux"/>
+    <eLiterals name="SpringIntegrationSecurity" value="8" literal="SpringIntegrationSecurity"/>
+    <eLiterals name="SpringIntegrationRedis" value="9" literal="SpringIntegrationRedis"/>
+    <eLiterals name="SpringIntegrationMongoDB" value="10" literal="SpringIntegrationMongoDB"/>
+    <eLiterals name="SpringIntegrationKafka" value="11" literal="SpringIntegrationKafka"/>
+    <eLiterals name="SpringIntegrationJPA" value="12" literal="SpringIntegrationJPA"/>
+    <eLiterals name="SpringIntegrationJDBC" value="13" literal="SpringIntegrationJDBC"/>
+    <eLiterals name="SpringIntegrationHTTP" value="14" literal="SpringIntegrationHTTP"/>
+    <eLiterals name="SpringIntegrationAMQP" value="15" literal="SpringIntegrationAMQP"/>
+    <eLiterals name="SpringWebFlux" value="16" literal="SpringWebFlux"/>
+    <eLiterals name="SpringWebServices" value="17" literal="SpringWebServices"/>
+    <eLiterals name="SpringValidation" value="18" literal="SpringValidation"/>
+    <eLiterals name="SpringThymeleaf" value="19" literal="SpringThymeleaf"/>
+    <eLiterals name="SpringOAuth2Client" value="20" literal="SpringOAuth2Client"/>
+    <eLiterals name="SpringJersey" value="21" literal="SpringJersey"/>
+    <eLiterals name="SpringJDBC" value="22" literal="SpringJDBC"/>
+    <eLiterals name="SpringIntegration" value="23" literal="SpringIntegration"/>
+    <eLiterals name="SpringDataRest" value="24" literal="SpringDataRest"/>
+    <eLiterals name="SpringGraphQL" value="25" literal="SpringGraphQL"/>
+    <eLiterals name="SpringDataElasticsearch" value="26" literal="SpringDataElasticsearch"/>
+    <eLiterals name="SpringDataJDBC" value="27" literal="SpringDataJDBC"/>
+    <eLiterals name="SpringDataMongoDB" value="28" literal="SpringDataMongoDB"/>
+    <eLiterals name="Swagger" value="29" literal="Swagger"/>
+    <eLiterals name="SpringSecurity" value="30" literal="SpringSecurity"/>
+    <eLiterals name="SpringActuator" value="31" literal="SpringActuator"/>
+    <eLiterals name="SpringGraphQLTest" value="32" literal="SpringGraphQLTest"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Dependency">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="dependency" eType="#//DependencyType"/>

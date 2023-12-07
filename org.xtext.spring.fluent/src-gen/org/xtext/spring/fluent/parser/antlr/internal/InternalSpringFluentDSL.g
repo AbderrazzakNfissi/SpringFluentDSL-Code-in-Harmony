@@ -1032,26 +1032,226 @@ ruleDependencyType returns [Enumerator current=null]
 		)
 		    |
 		(
-			enumLiteral_5='Thymeleaf'
+			enumLiteral_5='SpringKafka'
 			{
-				$current = grammarAccess.getDependencyTypeAccess().getThymeleafEnumLiteralDeclaration_5().getEnumLiteral().getInstance();
-				newLeafNode(enumLiteral_5, grammarAccess.getDependencyTypeAccess().getThymeleafEnumLiteralDeclaration_5());
+				$current = grammarAccess.getDependencyTypeAccess().getSpringKafkaEnumLiteralDeclaration_5().getEnumLiteral().getInstance();
+				newLeafNode(enumLiteral_5, grammarAccess.getDependencyTypeAccess().getSpringKafkaEnumLiteralDeclaration_5());
 			}
 		)
 		    |
 		(
-			enumLiteral_6='Swagger'
+			enumLiteral_6='SpringIntegrationWS'
 			{
-				$current = grammarAccess.getDependencyTypeAccess().getSwaggerEnumLiteralDeclaration_6().getEnumLiteral().getInstance();
-				newLeafNode(enumLiteral_6, grammarAccess.getDependencyTypeAccess().getSwaggerEnumLiteralDeclaration_6());
+				$current = grammarAccess.getDependencyTypeAccess().getSpringIntegrationWSEnumLiteralDeclaration_6().getEnumLiteral().getInstance();
+				newLeafNode(enumLiteral_6, grammarAccess.getDependencyTypeAccess().getSpringIntegrationWSEnumLiteralDeclaration_6());
 			}
 		)
 		    |
 		(
-			enumLiteral_7='SpringSecurity'
+			enumLiteral_7='SpringIntegrationWebFlux'
 			{
-				$current = grammarAccess.getDependencyTypeAccess().getSpringSecurityEnumLiteralDeclaration_7().getEnumLiteral().getInstance();
-				newLeafNode(enumLiteral_7, grammarAccess.getDependencyTypeAccess().getSpringSecurityEnumLiteralDeclaration_7());
+				$current = grammarAccess.getDependencyTypeAccess().getSpringIntegrationWebFluxEnumLiteralDeclaration_7().getEnumLiteral().getInstance();
+				newLeafNode(enumLiteral_7, grammarAccess.getDependencyTypeAccess().getSpringIntegrationWebFluxEnumLiteralDeclaration_7());
+			}
+		)
+		    |
+		(
+			enumLiteral_8='SpringIntegrationSecurity'
+			{
+				$current = grammarAccess.getDependencyTypeAccess().getSpringIntegrationSecurityEnumLiteralDeclaration_8().getEnumLiteral().getInstance();
+				newLeafNode(enumLiteral_8, grammarAccess.getDependencyTypeAccess().getSpringIntegrationSecurityEnumLiteralDeclaration_8());
+			}
+		)
+		    |
+		(
+			enumLiteral_9='SpringIntegrationRedis'
+			{
+				$current = grammarAccess.getDependencyTypeAccess().getSpringIntegrationRedisEnumLiteralDeclaration_9().getEnumLiteral().getInstance();
+				newLeafNode(enumLiteral_9, grammarAccess.getDependencyTypeAccess().getSpringIntegrationRedisEnumLiteralDeclaration_9());
+			}
+		)
+		    |
+		(
+			enumLiteral_10='SpringIntegrationMongoDB'
+			{
+				$current = grammarAccess.getDependencyTypeAccess().getSpringIntegrationMongoDBEnumLiteralDeclaration_10().getEnumLiteral().getInstance();
+				newLeafNode(enumLiteral_10, grammarAccess.getDependencyTypeAccess().getSpringIntegrationMongoDBEnumLiteralDeclaration_10());
+			}
+		)
+		    |
+		(
+			enumLiteral_11='SpringIntegrationKafka'
+			{
+				$current = grammarAccess.getDependencyTypeAccess().getSpringIntegrationKafkaEnumLiteralDeclaration_11().getEnumLiteral().getInstance();
+				newLeafNode(enumLiteral_11, grammarAccess.getDependencyTypeAccess().getSpringIntegrationKafkaEnumLiteralDeclaration_11());
+			}
+		)
+		    |
+		(
+			enumLiteral_12='SpringIntegrationJPA'
+			{
+				$current = grammarAccess.getDependencyTypeAccess().getSpringIntegrationJPAEnumLiteralDeclaration_12().getEnumLiteral().getInstance();
+				newLeafNode(enumLiteral_12, grammarAccess.getDependencyTypeAccess().getSpringIntegrationJPAEnumLiteralDeclaration_12());
+			}
+		)
+		    |
+		(
+			enumLiteral_13='SpringIntegrationJDBC'
+			{
+				$current = grammarAccess.getDependencyTypeAccess().getSpringIntegrationJDBCEnumLiteralDeclaration_13().getEnumLiteral().getInstance();
+				newLeafNode(enumLiteral_13, grammarAccess.getDependencyTypeAccess().getSpringIntegrationJDBCEnumLiteralDeclaration_13());
+			}
+		)
+		    |
+		(
+			enumLiteral_14='SpringIntegrationHTTP'
+			{
+				$current = grammarAccess.getDependencyTypeAccess().getSpringIntegrationHTTPEnumLiteralDeclaration_14().getEnumLiteral().getInstance();
+				newLeafNode(enumLiteral_14, grammarAccess.getDependencyTypeAccess().getSpringIntegrationHTTPEnumLiteralDeclaration_14());
+			}
+		)
+		    |
+		(
+			enumLiteral_15='SpringIntegrationAMQP'
+			{
+				$current = grammarAccess.getDependencyTypeAccess().getSpringIntegrationAMQPEnumLiteralDeclaration_15().getEnumLiteral().getInstance();
+				newLeafNode(enumLiteral_15, grammarAccess.getDependencyTypeAccess().getSpringIntegrationAMQPEnumLiteralDeclaration_15());
+			}
+		)
+		    |
+		(
+			enumLiteral_16='SpringWebFlux'
+			{
+				$current = grammarAccess.getDependencyTypeAccess().getSpringWebFluxEnumLiteralDeclaration_16().getEnumLiteral().getInstance();
+				newLeafNode(enumLiteral_16, grammarAccess.getDependencyTypeAccess().getSpringWebFluxEnumLiteralDeclaration_16());
+			}
+		)
+		    |
+		(
+			enumLiteral_17='SpringWebServices'
+			{
+				$current = grammarAccess.getDependencyTypeAccess().getSpringWebServicesEnumLiteralDeclaration_17().getEnumLiteral().getInstance();
+				newLeafNode(enumLiteral_17, grammarAccess.getDependencyTypeAccess().getSpringWebServicesEnumLiteralDeclaration_17());
+			}
+		)
+		    |
+		(
+			enumLiteral_18='SpringValidation'
+			{
+				$current = grammarAccess.getDependencyTypeAccess().getSpringValidationEnumLiteralDeclaration_18().getEnumLiteral().getInstance();
+				newLeafNode(enumLiteral_18, grammarAccess.getDependencyTypeAccess().getSpringValidationEnumLiteralDeclaration_18());
+			}
+		)
+		    |
+		(
+			enumLiteral_19='SpringThymeleaf'
+			{
+				$current = grammarAccess.getDependencyTypeAccess().getSpringThymeleafEnumLiteralDeclaration_19().getEnumLiteral().getInstance();
+				newLeafNode(enumLiteral_19, grammarAccess.getDependencyTypeAccess().getSpringThymeleafEnumLiteralDeclaration_19());
+			}
+		)
+		    |
+		(
+			enumLiteral_20='SpringOAuth2Client'
+			{
+				$current = grammarAccess.getDependencyTypeAccess().getSpringOAuth2ClientEnumLiteralDeclaration_20().getEnumLiteral().getInstance();
+				newLeafNode(enumLiteral_20, grammarAccess.getDependencyTypeAccess().getSpringOAuth2ClientEnumLiteralDeclaration_20());
+			}
+		)
+		    |
+		(
+			enumLiteral_21='SpringJersey'
+			{
+				$current = grammarAccess.getDependencyTypeAccess().getSpringJerseyEnumLiteralDeclaration_21().getEnumLiteral().getInstance();
+				newLeafNode(enumLiteral_21, grammarAccess.getDependencyTypeAccess().getSpringJerseyEnumLiteralDeclaration_21());
+			}
+		)
+		    |
+		(
+			enumLiteral_22='SpringJDBC'
+			{
+				$current = grammarAccess.getDependencyTypeAccess().getSpringJDBCEnumLiteralDeclaration_22().getEnumLiteral().getInstance();
+				newLeafNode(enumLiteral_22, grammarAccess.getDependencyTypeAccess().getSpringJDBCEnumLiteralDeclaration_22());
+			}
+		)
+		    |
+		(
+			enumLiteral_23='SpringIntegration'
+			{
+				$current = grammarAccess.getDependencyTypeAccess().getSpringIntegrationEnumLiteralDeclaration_23().getEnumLiteral().getInstance();
+				newLeafNode(enumLiteral_23, grammarAccess.getDependencyTypeAccess().getSpringIntegrationEnumLiteralDeclaration_23());
+			}
+		)
+		    |
+		(
+			enumLiteral_24='SpringDataRest'
+			{
+				$current = grammarAccess.getDependencyTypeAccess().getSpringDataRestEnumLiteralDeclaration_24().getEnumLiteral().getInstance();
+				newLeafNode(enumLiteral_24, grammarAccess.getDependencyTypeAccess().getSpringDataRestEnumLiteralDeclaration_24());
+			}
+		)
+		    |
+		(
+			enumLiteral_25='SpringGraphQL'
+			{
+				$current = grammarAccess.getDependencyTypeAccess().getSpringGraphQLEnumLiteralDeclaration_25().getEnumLiteral().getInstance();
+				newLeafNode(enumLiteral_25, grammarAccess.getDependencyTypeAccess().getSpringGraphQLEnumLiteralDeclaration_25());
+			}
+		)
+		    |
+		(
+			enumLiteral_26='SpringDataElasticsearch'
+			{
+				$current = grammarAccess.getDependencyTypeAccess().getSpringDataElasticsearchEnumLiteralDeclaration_26().getEnumLiteral().getInstance();
+				newLeafNode(enumLiteral_26, grammarAccess.getDependencyTypeAccess().getSpringDataElasticsearchEnumLiteralDeclaration_26());
+			}
+		)
+		    |
+		(
+			enumLiteral_27='SpringDataJDBC'
+			{
+				$current = grammarAccess.getDependencyTypeAccess().getSpringDataJDBCEnumLiteralDeclaration_27().getEnumLiteral().getInstance();
+				newLeafNode(enumLiteral_27, grammarAccess.getDependencyTypeAccess().getSpringDataJDBCEnumLiteralDeclaration_27());
+			}
+		)
+		    |
+		(
+			enumLiteral_28='SpringDataMongoDB'
+			{
+				$current = grammarAccess.getDependencyTypeAccess().getSpringDataMongoDBEnumLiteralDeclaration_28().getEnumLiteral().getInstance();
+				newLeafNode(enumLiteral_28, grammarAccess.getDependencyTypeAccess().getSpringDataMongoDBEnumLiteralDeclaration_28());
+			}
+		)
+		    |
+		(
+			enumLiteral_29='Swagger'
+			{
+				$current = grammarAccess.getDependencyTypeAccess().getSwaggerEnumLiteralDeclaration_29().getEnumLiteral().getInstance();
+				newLeafNode(enumLiteral_29, grammarAccess.getDependencyTypeAccess().getSwaggerEnumLiteralDeclaration_29());
+			}
+		)
+		    |
+		(
+			enumLiteral_30='SpringSecurity'
+			{
+				$current = grammarAccess.getDependencyTypeAccess().getSpringSecurityEnumLiteralDeclaration_30().getEnumLiteral().getInstance();
+				newLeafNode(enumLiteral_30, grammarAccess.getDependencyTypeAccess().getSpringSecurityEnumLiteralDeclaration_30());
+			}
+		)
+		    |
+		(
+			enumLiteral_31='SpringActuator'
+			{
+				$current = grammarAccess.getDependencyTypeAccess().getSpringActuatorEnumLiteralDeclaration_31().getEnumLiteral().getInstance();
+				newLeafNode(enumLiteral_31, grammarAccess.getDependencyTypeAccess().getSpringActuatorEnumLiteralDeclaration_31());
+			}
+		)
+		    |
+		(
+			enumLiteral_32='SpringGraphQLTest'
+			{
+				$current = grammarAccess.getDependencyTypeAccess().getSpringGraphQLTestEnumLiteralDeclaration_32().getEnumLiteral().getInstance();
+				newLeafNode(enumLiteral_32, grammarAccess.getDependencyTypeAccess().getSpringGraphQLTestEnumLiteralDeclaration_32());
 			}
 		)
 	)
