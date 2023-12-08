@@ -27,6 +27,8 @@ class SpringFluentDSLGenerator extends AbstractGenerator {
 
         // Generate Dependencies
         dependenciesGenerator.generateDependencies(model.dependencies, fsa)
+        val generator = new ConfigurationApplicationGenerator()
+		generator.generateApplicationProperties(appName, fsa)
   
     val basePackage = "com." + appName.toLowerCase()
 
@@ -34,12 +36,17 @@ class SpringFluentDSLGenerator extends AbstractGenerator {
     val controllerGenerator = new ControllerGenerator
     val repositoryGenerator = new RepositoryGenerator
     val serviceGenerator = new ServiceGenerator
-
+    val exceptionGenerator = new ExceptionsGenerator
+    val entryApplicationGenerator = new EntryApplicationGenerator
+    
+    
+    entryApplicationGenerator.generateEntryApplication(appName,fsa,basePackage);
     for (entity : resource.allContents.toIterable.filter(Entity)) {
       entityGenerator.generateEntity(entity, fsa, basePackage)
       controllerGenerator.generateController(entity, fsa, basePackage,prefix)
       repositoryGenerator.generateRepository(entity, fsa, basePackage)
       serviceGenerator.generateService(entity, fsa, basePackage)
+      exceptionGenerator.generateExceptions(entity, fsa, basePackage);
     }
   }
 
