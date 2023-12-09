@@ -13,16 +13,102 @@ public class ServiceGenerator {
   public void generateService(final Entity entity, final IFileSystemAccess2 fsa, final String basePackage) {
     final String entityName = entity.getName();
     final String servicePackage = (basePackage + ".services");
-    final String serviceContent = this.generateServiceCode(entity, basePackage, servicePackage);
+    final String serviceImplementationPackage = (servicePackage + ".implementations");
+    final String serviceInterfaceContent = this.generateServiceInterfaceCode(entity, basePackage, servicePackage);
+    final String serviceImplementationContent = this.generateServiceImplementationCode(entity, basePackage, servicePackage, serviceImplementationPackage);
     String _replace = servicePackage.replace(".", "/");
     String _plus = ("src/main/java/" + _replace);
     String _plus_1 = (_plus + "/");
     String _plus_2 = (_plus_1 + entityName);
     String _plus_3 = (_plus_2 + "Service.java");
-    fsa.generateFile(_plus_3, serviceContent);
+    fsa.generateFile(_plus_3, serviceInterfaceContent);
+    String _replace_1 = serviceImplementationPackage.replace(".", "/");
+    String _plus_4 = ("src/main/java/" + _replace_1);
+    String _plus_5 = (_plus_4 + "/");
+    String _plus_6 = (_plus_5 + entityName);
+    String _plus_7 = (_plus_6 + "ServiceImpl.java");
+    fsa.generateFile(_plus_7, serviceImplementationContent);
   }
 
-  public String generateServiceCode(final Entity entity, final String basePackage, final String servicePackage) {
+  public String generateServiceInterfaceCode(final Entity entity, final String basePackage, final String servicePackage) {
+    String _xblockexpression = null;
+    {
+      final String entityName = entity.getName();
+      final String exceptionPackage = (basePackage + ".exceptions.");
+      final String exceptionNameNOTFOUND = (entityName + "NotFoundException");
+      final String exceptionNameValidation = (entityName + "ValidationException");
+      final String createMethodInterface = this.generateServiceCreateMethodSignature(entity);
+      final String readAllMethodInterface = this.generateServiceReadAllMethodSignature(entity);
+      final String readByIdMethodInterface = this.generateServiceReadByIdMethodSignature(entity);
+      final String updateMethodInterface = this.generateServiceUpdateMethodSignature(entity);
+      final String deleteMethodInterface = this.generateServiceDeleteMethodSignature(entity);
+      StringConcatenation _builder = new StringConcatenation();
+      _builder.append("package ");
+      String _plus = (_builder.toString() + servicePackage);
+      StringConcatenation _builder_1 = new StringConcatenation();
+      _builder_1.append(";");
+      _builder_1.newLine();
+      _builder_1.append("\t");
+      _builder_1.append("import ");
+      String _plus_1 = (_plus + _builder_1);
+      String _plus_2 = (_plus_1 + exceptionPackage);
+      String _plus_3 = (_plus_2 + "notfound.");
+      String _plus_4 = (_plus_3 + exceptionNameNOTFOUND);
+      StringConcatenation _builder_2 = new StringConcatenation();
+      _builder_2.append(";");
+      _builder_2.newLine();
+      _builder_2.append("\t");
+      _builder_2.append("import ");
+      String _plus_5 = (_plus_4 + _builder_2);
+      String _plus_6 = (_plus_5 + exceptionPackage);
+      String _plus_7 = (_plus_6 + "validation.");
+      String _plus_8 = (_plus_7 + exceptionNameValidation);
+      StringConcatenation _builder_3 = new StringConcatenation();
+      _builder_3.append(";");
+      _builder_3.newLine();
+      _builder_3.append("    ");
+      _builder_3.append("import java.util.List;");
+      _builder_3.newLine();
+      _builder_3.newLine();
+      _builder_3.append("    ");
+      _builder_3.append("public interface ");
+      String _plus_9 = (_plus_8 + _builder_3);
+      String _plus_10 = (_plus_9 + entityName);
+      StringConcatenation _builder_4 = new StringConcatenation();
+      _builder_4.append("Service {");
+      _builder_4.newLine();
+      _builder_4.newLine();
+      String _plus_11 = (_plus_10 + _builder_4);
+      String _plus_12 = (_plus_11 + createMethodInterface);
+      StringConcatenation _builder_5 = new StringConcatenation();
+      _builder_5.append("       ");
+      _builder_5.newLine();
+      String _plus_13 = (_plus_12 + _builder_5);
+      String _plus_14 = (_plus_13 + readAllMethodInterface);
+      StringConcatenation _builder_6 = new StringConcatenation();
+      _builder_6.append("       ");
+      _builder_6.newLine();
+      String _plus_15 = (_plus_14 + _builder_6);
+      String _plus_16 = (_plus_15 + readByIdMethodInterface);
+      StringConcatenation _builder_7 = new StringConcatenation();
+      _builder_7.append("       ");
+      _builder_7.newLine();
+      String _plus_17 = (_plus_16 + _builder_7);
+      String _plus_18 = (_plus_17 + updateMethodInterface);
+      StringConcatenation _builder_8 = new StringConcatenation();
+      _builder_8.append("       ");
+      _builder_8.newLine();
+      String _plus_19 = (_plus_18 + _builder_8);
+      String _plus_20 = (_plus_19 + deleteMethodInterface);
+      StringConcatenation _builder_9 = new StringConcatenation();
+      _builder_9.append("}");
+      _builder_9.newLine();
+      _xblockexpression = (_plus_20 + _builder_9);
+    }
+    return _xblockexpression;
+  }
+
+  public String generateServiceImplementationCode(final Entity entity, final String basePackage, final String servicePackage, final String serviceImplementationPackage) {
     String _xblockexpression = null;
     {
       final String entityName = entity.getName();
@@ -38,7 +124,7 @@ public class ServiceGenerator {
       final String deleteMethod = this.generateServiceDeleteMethod(entity);
       StringConcatenation _builder = new StringConcatenation();
       _builder.append("package ");
-      String _plus = (_builder.toString() + servicePackage);
+      String _plus = (_builder.toString() + serviceImplementationPackage);
       StringConcatenation _builder_1 = new StringConcatenation();
       _builder_1.append(";");
       _builder_1.newLine();
@@ -65,7 +151,7 @@ public class ServiceGenerator {
       _builder_2.append("import ");
       String _plus_5 = (_plus_4 + _builder_2);
       String _plus_6 = (_plus_5 + exceptionPackage);
-      String _plus_7 = (_plus_6 + ".notfound.");
+      String _plus_7 = (_plus_6 + "notfound.");
       String _plus_8 = (_plus_7 + exceptionNameNOTFOUND);
       StringConcatenation _builder_3 = new StringConcatenation();
       _builder_3.append(";");
@@ -74,7 +160,7 @@ public class ServiceGenerator {
       _builder_3.append("import ");
       String _plus_9 = (_plus_8 + _builder_3);
       String _plus_10 = (_plus_9 + exceptionPackage);
-      String _plus_11 = (_plus_10 + ".validation.");
+      String _plus_11 = (_plus_10 + "validation.");
       String _plus_12 = (_plus_11 + exceptionNameValidation);
       StringConcatenation _builder_4 = new StringConcatenation();
       _builder_4.append(";");
@@ -100,46 +186,224 @@ public class ServiceGenerator {
       String _plus_13 = (_plus_12 + _builder_4);
       String _plus_14 = (_plus_13 + entityName);
       StringConcatenation _builder_5 = new StringConcatenation();
-      _builder_5.append("Service {");
-      _builder_5.newLine();
-      _builder_5.newLine();
-      _builder_5.append("        ");
-      _builder_5.append("private ");
+      _builder_5.append("ServiceImpl implements ");
       String _plus_15 = (_plus_14 + _builder_5);
       String _plus_16 = (_plus_15 + entityName);
       StringConcatenation _builder_6 = new StringConcatenation();
-      _builder_6.append("Repository ");
+      _builder_6.append("Service {");
+      _builder_6.newLine();
+      _builder_6.newLine();
+      _builder_6.append("        ");
+      _builder_6.append("private final ");
       String _plus_17 = (_plus_16 + _builder_6);
-      String _lowerCase = entityName.toLowerCase();
-      String _plus_18 = (_plus_17 + _lowerCase);
+      String _plus_18 = (_plus_17 + entityName);
       StringConcatenation _builder_7 = new StringConcatenation();
-      _builder_7.append("Repository;");
-      _builder_7.newLine();
-      _builder_7.newLine();
+      _builder_7.append("Repository ");
       String _plus_19 = (_plus_18 + _builder_7);
-      String _plus_20 = (_plus_19 + createMethod);
+      String _lowerCase = entityName.toLowerCase();
+      String _plus_20 = (_plus_19 + _lowerCase);
       StringConcatenation _builder_8 = new StringConcatenation();
+      _builder_8.append("Repository;");
+      _builder_8.newLine();
       _builder_8.newLine();
       String _plus_21 = (_plus_20 + _builder_8);
-      String _plus_22 = (_plus_21 + readAllMethod);
+      String _plus_22 = (_plus_21 + createMethod);
       StringConcatenation _builder_9 = new StringConcatenation();
       _builder_9.newLine();
       String _plus_23 = (_plus_22 + _builder_9);
-      String _plus_24 = (_plus_23 + readByIdMethod);
+      String _plus_24 = (_plus_23 + readAllMethod);
       StringConcatenation _builder_10 = new StringConcatenation();
       _builder_10.newLine();
       String _plus_25 = (_plus_24 + _builder_10);
-      String _plus_26 = (_plus_25 + updateMethod);
+      String _plus_26 = (_plus_25 + readByIdMethod);
       StringConcatenation _builder_11 = new StringConcatenation();
       _builder_11.newLine();
       String _plus_27 = (_plus_26 + _builder_11);
-      String _plus_28 = (_plus_27 + deleteMethod);
+      String _plus_28 = (_plus_27 + updateMethod);
       StringConcatenation _builder_12 = new StringConcatenation();
-      _builder_12.append("}");
       _builder_12.newLine();
-      _xblockexpression = (_plus_28 + _builder_12);
+      String _plus_29 = (_plus_28 + _builder_12);
+      String _plus_30 = (_plus_29 + deleteMethod);
+      StringConcatenation _builder_13 = new StringConcatenation();
+      _builder_13.append("}");
+      _builder_13.newLine();
+      _xblockexpression = (_plus_30 + _builder_13);
     }
     return _xblockexpression;
+  }
+
+  public String generateServiceCreateMethodSignature(final Entity entity) {
+    String _xifexpression = null;
+    boolean _contains = entity.getFeature().getOperation().getOperation().contains("c");
+    if (_contains) {
+      String _xblockexpression = null;
+      {
+        final String entityName = entity.getName();
+        StringConcatenation _builder = new StringConcatenation();
+        _builder.append("public ");
+        String _plus = (_builder.toString() + entityName);
+        StringConcatenation _builder_1 = new StringConcatenation();
+        _builder_1.append(" ");
+        _builder_1.append("create");
+        String _plus_1 = (_plus + _builder_1);
+        String _plus_2 = (_plus_1 + entityName);
+        StringConcatenation _builder_2 = new StringConcatenation();
+        _builder_2.append("(");
+        String _plus_3 = (_plus_2 + _builder_2);
+        String _plus_4 = (_plus_3 + entityName);
+        StringConcatenation _builder_3 = new StringConcatenation();
+        _builder_3.append(" ");
+        String _plus_5 = (_plus_4 + _builder_3);
+        String _lowerCase = entityName.toLowerCase();
+        String _plus_6 = (_plus_5 + _lowerCase);
+        StringConcatenation _builder_4 = new StringConcatenation();
+        _builder_4.append(");");
+        _builder_4.newLine();
+        _xblockexpression = (_plus_6 + _builder_4);
+      }
+      _xifexpression = _xblockexpression;
+    } else {
+      _xifexpression = "";
+    }
+    return _xifexpression;
+  }
+
+  public String generateServiceReadAllMethodSignature(final Entity entity) {
+    String _xifexpression = null;
+    boolean _contains = entity.getFeature().getOperation().getOperation().contains("r");
+    if (_contains) {
+      String _xblockexpression = null;
+      {
+        final String entityName = entity.getName();
+        StringConcatenation _builder = new StringConcatenation();
+        _builder.append("public List<");
+        String _plus = (_builder.toString() + entityName);
+        StringConcatenation _builder_1 = new StringConcatenation();
+        _builder_1.append("> getAll");
+        String _plus_1 = (_plus + _builder_1);
+        String _plus_2 = (_plus_1 + entityName);
+        StringConcatenation _builder_2 = new StringConcatenation();
+        _builder_2.append("s();");
+        _builder_2.newLine();
+        _xblockexpression = (_plus_2 + _builder_2);
+      }
+      _xifexpression = _xblockexpression;
+    } else {
+      _xifexpression = "";
+    }
+    return _xifexpression;
+  }
+
+  public String generateServiceReadByIdMethodSignature(final Entity entity) {
+    String _xifexpression = null;
+    boolean _contains = entity.getFeature().getOperation().getOperation().contains("r");
+    if (_contains) {
+      String _xblockexpression = null;
+      {
+        final String entityName = entity.getName();
+        StringConcatenation _builder = new StringConcatenation();
+        _builder.append("public ");
+        String _plus = (_builder.toString() + entityName);
+        StringConcatenation _builder_1 = new StringConcatenation();
+        _builder_1.append(" ");
+        _builder_1.append("get");
+        String _plus_1 = (_plus + _builder_1);
+        String _plus_2 = (_plus_1 + entityName);
+        StringConcatenation _builder_2 = new StringConcatenation();
+        _builder_2.append("ById(Long ");
+        String _plus_3 = (_plus_2 + _builder_2);
+        String _lowerCase = entityName.toLowerCase();
+        String _plus_4 = (_plus_3 + _lowerCase);
+        StringConcatenation _builder_3 = new StringConcatenation();
+        _builder_3.append("Id);");
+        _builder_3.newLine();
+        _xblockexpression = (_plus_4 + _builder_3);
+      }
+      _xifexpression = _xblockexpression;
+    } else {
+      _xifexpression = "";
+    }
+    return _xifexpression;
+  }
+
+  public String generateServiceUpdateMethodSignature(final Entity entity) {
+    String _xifexpression = null;
+    boolean _contains = entity.getFeature().getOperation().getOperation().contains("u");
+    if (_contains) {
+      String _xblockexpression = null;
+      {
+        final String entityName = entity.getName();
+        StringConcatenation _builder = new StringConcatenation();
+        _builder.append("public ");
+        String _plus = (_builder.toString() + entityName);
+        StringConcatenation _builder_1 = new StringConcatenation();
+        _builder_1.append(" ");
+        _builder_1.append("update");
+        String _plus_1 = (_plus + _builder_1);
+        String _plus_2 = (_plus_1 + entityName);
+        StringConcatenation _builder_2 = new StringConcatenation();
+        _builder_2.append("(Long ");
+        String _plus_3 = (_plus_2 + _builder_2);
+        String _lowerCase = entityName.toLowerCase();
+        String _plus_4 = (_plus_3 + _lowerCase);
+        StringConcatenation _builder_3 = new StringConcatenation();
+        _builder_3.append("Id, ");
+        String _plus_5 = (_plus_4 + _builder_3);
+        String _plus_6 = (_plus_5 + entityName);
+        StringConcatenation _builder_4 = new StringConcatenation();
+        _builder_4.append(" ");
+        _builder_4.append("updated");
+        String _plus_7 = (_plus_6 + _builder_4);
+        String _plus_8 = (_plus_7 + entityName);
+        StringConcatenation _builder_5 = new StringConcatenation();
+        _builder_5.append(") throws ");
+        String _plus_9 = (_plus_8 + _builder_5);
+        String _plus_10 = (_plus_9 + entityName);
+        StringConcatenation _builder_6 = new StringConcatenation();
+        _builder_6.append("ValidationException, ");
+        String _plus_11 = (_plus_10 + _builder_6);
+        String _plus_12 = (_plus_11 + entityName);
+        StringConcatenation _builder_7 = new StringConcatenation();
+        _builder_7.append("NotFoundException;");
+        _builder_7.newLine();
+        _xblockexpression = (_plus_12 + _builder_7);
+      }
+      _xifexpression = _xblockexpression;
+    } else {
+      _xifexpression = "";
+    }
+    return _xifexpression;
+  }
+
+  public String generateServiceDeleteMethodSignature(final Entity entity) {
+    String _xifexpression = null;
+    boolean _contains = entity.getFeature().getOperation().getOperation().contains("d");
+    if (_contains) {
+      String _xblockexpression = null;
+      {
+        final String entityName = entity.getName();
+        StringConcatenation _builder = new StringConcatenation();
+        _builder.append("public void delete");
+        String _plus = (_builder.toString() + entityName);
+        StringConcatenation _builder_1 = new StringConcatenation();
+        _builder_1.append("(Long ");
+        String _plus_1 = (_plus + _builder_1);
+        String _lowerCase = entityName.toLowerCase();
+        String _plus_2 = (_plus_1 + _lowerCase);
+        StringConcatenation _builder_2 = new StringConcatenation();
+        _builder_2.append("Id) throws ");
+        String _plus_3 = (_plus_2 + _builder_2);
+        String _plus_4 = (_plus_3 + entityName);
+        StringConcatenation _builder_3 = new StringConcatenation();
+        _builder_3.append("NotFoundException;");
+        _builder_3.newLine();
+        _xblockexpression = (_plus_4 + _builder_3);
+      }
+      _xifexpression = _xblockexpression;
+    } else {
+      _xifexpression = "";
+    }
+    return _xifexpression;
   }
 
   public String generateServiceCreateMethod(final Entity entity) {
@@ -546,7 +810,7 @@ public class ServiceGenerator {
         String _plus_3 = (_plus_2 + _builder_2);
         String _plus_4 = (_plus_3 + entityName);
         StringConcatenation _builder_3 = new StringConcatenation();
-        _builder_3.append("NotFound {");
+        _builder_3.append("NotFoundException {");
         _builder_3.newLine();
         _builder_3.append("        ");
         _builder_3.append("Optional<");
@@ -596,7 +860,7 @@ public class ServiceGenerator {
         String _plus_19 = (_plus_18 + _builder_10);
         String _plus_20 = (_plus_19 + entityName);
         StringConcatenation _builder_11 = new StringConcatenation();
-        _builder_11.append("NotFound(\"");
+        _builder_11.append("NotFoundException(\"");
         String _plus_21 = (_plus_20 + _builder_11);
         String _plus_22 = (_plus_21 + entityName);
         StringConcatenation _builder_12 = new StringConcatenation();
