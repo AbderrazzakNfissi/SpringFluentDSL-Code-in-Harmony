@@ -17,27 +17,31 @@ Our superhero for this journey is **Xtext**, the maestro of language creation. W
 Imagine crafting APIs with a few lines of magic code:
 
 ```c
+
 prefix: "api/v1"
-app_name: "DemoApp"
+app_name: "appName"
 
 dependencies {
   SpringDataJpa,
   DevTools,
   Lombok,
   SpringSecurity,
-  SpringWeb
+  SpringWeb,
+  MySQLDriver,
+  SpringWebServices
+  
 }
 
 entities {
   entity Person {
-    ops: c r u d // Operations c: create, r: read, u: update, d: delete
+    ops: "crud" // Operations c: create, r: read, u: update, d: delete
     id: Long pk // Primary key
     name: String
     age: Integer
   }
 
   entity Address {
-  	ops: c r u d
+  	ops: "crud"
     id: Long pk
     street: String
     city: String
@@ -46,13 +50,13 @@ entities {
 
   //Utilisation de l'héritage (Single Table Strategy)
   entity Employee extends[strategy=SingleTable] Person{
-    ops: c r u
+    ops: "cru"
     id : Long pk
     salary: Double
   }
 
   entity Bank {
-    ops: c r u d // Operations c: create, r: read, u: update, d: delete or none
+    ops: "cr" // Operations c: create, r: read, u: update, d: delete or none
     id: Long pk // Primary key
     name: String
     location: String
@@ -61,7 +65,7 @@ entities {
   }
 
   entity Customer {
-    ops: c r u d
+    ops: "cru"
     id: Integer pk
     address: String
     accountNumber: Integer
@@ -70,10 +74,11 @@ entities {
   }
   
   entity Transaction{
-  	ops : c r u d
+  	ops : "crud"
   	id : Long pk
   }
 }
+
 
 ```
 
