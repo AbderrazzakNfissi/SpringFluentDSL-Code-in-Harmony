@@ -106,7 +106,7 @@ DemoApp/
 |       |           |-- controllers/
 |       |           |   |-- BankController.java
 |       |           |   |-- CustomerController.java
-|       |           |-- models/
+|       |           |-- entities/
 |       |           |   |-- Bank.java
 |       |           |   |-- Customer.java
 |       |           |-- services/
@@ -115,11 +115,14 @@ DemoApp/
 |       |           |-- repositories/
 |       |               |-- BankRepository.java
 |       |               |-- CustomerRepository.java
+|       |           |-- exceptions/
+|       |               |-- BankNotFoundException.java
+|       |               |-- CustomerNotFoundException.java
+|       |           |-- AppNameApplication.java
 |       |-- resources/
 |           |-- application.properties
 |
 |-- target/
-|-- .gitignore
 |-- pom.xml
 |-- README.md
 ```
