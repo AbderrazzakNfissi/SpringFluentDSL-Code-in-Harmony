@@ -127,7 +127,8 @@ This is just a glimpse - our generated Spring Boot project will have controllers
 
 ## Meta Model of SpringFluentDSL :)
 
-![metamodel](https://github.com/AbderrazzakNfissi/SpringFluentDSL-Code-in-Harmony/assets/110425764/dc089bcc-212e-40e4-922f-1fafc99720ab)
+![SpringFluentDS_Meta_Model](https://github.com/AbderrazzakNfissi/SpringFluentDSL-Code-in-Harmony/assets/110425764/8c30516d-8a9a-4802-ae68-28ce6196f83c)
+
 
 ## Getting Started
 
