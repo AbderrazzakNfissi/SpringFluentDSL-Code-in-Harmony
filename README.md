@@ -47,7 +47,6 @@ dependencies {
   SpringWeb,
   MySQLDriver,
   SpringWebServices
-  
 }
 
 entities {
@@ -59,11 +58,11 @@ entities {
   }
 
   entity Address {
-  	ops: "crud"
+    ops: "crud"
     id: Long pk
     street: String
     city: String
-    person: Person oto
+    person: Person mto
   }
 
   //Utilisation de l'héritage (Single Table Strategy)
