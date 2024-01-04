@@ -8,6 +8,27 @@ Hey Coding Enthusiasts! 🚀 Welcome to an exciting project that's about to revo
 
 Creating Spring Boot APIs is about to become as delightful as choosing your favorite ice cream flavor. 🍦 We're not just building an app; we're creating a language, a DSL that will make Spring Boot dance to our commands! 🌐💃
 
+## Problematic: The Repetitive Nature of CRUD Operations in Spring Boot APIs
+
+Building Spring Boot REST APIs is a common task for developers, and while the framework provides a robust foundation, the process of creating CRUD (Create, Read, Update, Delete) operations for entities often involves repetitive and boilerplate code. Manually coding these operations for each entity can be time-consuming, error-prone, and may hinder the overall development experience.
+
+### Challenges Faced:
+
+1. **Repetitive CRUD Operations:** Writing CRUD operations for entities like `Person`, `Address`, `Employee`, `Bank`, and `Customer` can be monotonous and prone to errors when done manually.
+
+2. **Maintenance Overhead:** With evolving requirements, maintaining and updating CRUD operations for multiple entities becomes a challenging task. Any change in the data model requires corresponding updates in the API code, leading to potential bugs and development inefficiencies.
+
+3. **Time-Consuming Development:** The traditional approach of handcrafting CRUD operations takes valuable development time, reducing the agility and responsiveness of the development process.
+
+## Why SpringFluentDSL?
+
+Enter **SpringFluentDSL** - a revolutionary Domain-Specific Language (DSL) designed specifically for generating Spring Boot REST APIs. This project aims to eliminate the pain points associated with repetitive CRUD operations, providing a seamless and efficient way to define and generate API code.
+
+By leveraging Xtext and Xtend, SpringFluentDSL empowers developers to express their data model in a concise DSL, automating the generation of CRUD operations and the entire Spring Boot project structure. With this approach, developers can focus more on defining their entities and business logic, letting the DSL handle the tedious aspects of API implementation.
+
+Join us on this journey to simplify Spring Boot API development, enhance code quality, and boost developer productivity with SpringFluentDSL. Let's break free from the chains of repetitive CRUD coding and embrace a new era of code generation and harmony in Spring Boot development! 🌱💻
+
+
 ## Language Design with Xtext
 
 Our superhero for this journey is **Xtext**, the maestro of language creation. With Xtext, we'll design a language so slick, it'll feel like conversing in emojis with our computers. 🤖💬
