@@ -26,9 +26,6 @@ Enter **SpringFluentDSL** - a revolutionary Domain-Specific Language (DSL) desig
 
 By leveraging Xtext and Xtend, SpringFluentDSL empowers developers to express their data model in a concise DSL, automating the generation of CRUD operations and the entire Spring Boot project structure. With this approach, developers can focus more on defining their entities and business logic, letting the DSL handle the tedious aspects of API implementation.
 
-Join us on this journey to simplify Spring Boot API development, enhance code quality, and boost developer productivity with SpringFluentDSL. Let's break free from the chains of repetitive CRUD coding and embrace a new era of code generation and harmony in Spring Boot development! 🌱💻
-
-
 ## Language Design with Xtext
 
 Our superhero for this journey is **Xtext**, the maestro of language creation. With Xtext, we'll design a language so slick, it'll feel like conversing in emojis with our computers. 🤖💬
