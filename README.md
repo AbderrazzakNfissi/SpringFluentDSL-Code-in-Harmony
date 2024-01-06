@@ -151,6 +151,32 @@ DemoApp/
 |-- README.md
 ```
 
+## Generation Code Overview
+
+Curious about how the magic happens? Let's take a peek behind the scenes of the SpringFluentDSL code generation process.
+
+### Entry Point: `SpringFluentDSLGenearator.xtend`
+
+The journey begins at the `SpringFluentDSLGenearator.xtend` file, serving as the entry point for our code generation process. Here's a high-level overview of the key steps:
+
+1. **POM and Application Properties Generation:**
+   - The code initiates POM (Project Object Model) and application properties generation by calling `pomGenerator.generatePom(appName, fsa)`.
+   - Dependencies are generated using `dependenciesGenerator.generateDependencies(model.dependencies, fsa)`.
+   - The `ConfigurationApplicationGenerator` is utilized to create the `application.properties` file, setting up essential configurations for the Spring Boot application.
+
+2. **Entity and Related Files Generation:**
+   - The generator iterates over each entity defined in the DSL using `for (entity : resource.allContents.toIterable.filter(Entity))`.
+   - For each entity, various components are generated:
+     - Entity class: `entityGenerator.generateEntity(entity, fsa, basePackage, appName)`.
+     - Controller class: `controllerGenerator.generateController(entity, fsa, basePackage, prefix, appName)`.
+     - Repository interface: `repositoryGenerator.generateRepository(entity, fsa, basePackage, appName)`.
+     - Service interface and implementation: `serviceGenerator.generateService(entity, fsa, basePackage, appName)`.
+     - Exception classes: `exceptionGenerator.generateExceptions(entity, fsa, basePackage, appName)`.
+
+3. **Entry Application Generation:**
+   - The `entryApplicationGenerator.generateEntryApplication(appName, fsa, basePackage)` generates the entry point for the Spring Boot application.
+
+
 This is just a glimpse - our generated Spring Boot project will have controllers, models, services, repositories, and everything neatly organized. Ready to take over the coding universe!
 
 ## 🔧 Technical architecture
