@@ -127,14 +127,21 @@ DemoApp/
 |       |           |   |-- Bank.java
 |       |           |   |-- Customer.java
 |       |           |-- services/
+|       |               |--implementations/
+|       |                   |-- BankServiceImpl.java
+|       |                   |-- CustomerServiceImpl.java
 |       |               |-- BankService.java
 |       |               |-- CustomerService.java
 |       |           |-- repositories/
 |       |               |-- BankRepository.java
 |       |               |-- CustomerRepository.java
 |       |           |-- exceptions/
-|       |               |-- BankNotFoundException.java
-|       |               |-- CustomerNotFoundException.java
+|       |               |-- notFound/
+|       |                   |-- BankNotFoundException.java
+|       |                   |-- CustomerNotFoundException.java
+|       |               |-- validation/
+|       |                   |-- BankNotValidationException.java
+|       |                   |-- CustomerValidationException.java
 |       |           |-- AppNameApplication.java
 |       |-- resources/
 |           |-- application.properties
